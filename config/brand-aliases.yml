@@ -1,0 +1,8 @@
+# Brand spellings that name the same brand at different retailers, after the
+# generic normalisation in src/crossprice/match.py (case, accents, punctuation,
+# legal and generic suffixes). Keys and values are normalised brand keys. Every
+# entry is backed by the recon catalogs in checks/results/ (docs/decisions.md D-009).
+aliases:
+  manyofactory: manyo
+  puritoseoul: purito
+  drnigmatalib: drnigma

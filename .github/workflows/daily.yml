@@ -1,0 +1,254 @@
+# Daily cross-store comparison run. Schedules run on the default branch.
+# Keep the cron line identical to CRONS in src/crossprice/schedule.py (tested).
+name: daily
+
+on:
+  schedule:
+    - cron: "43 7 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: >-
+          Schedule slot this run fills, ISO UTC (for example 2026-11-21T07:43:00Z).
+          An external on-time trigger sets it; a run for a slot already filled is skipped.
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  # Decides whether this trigger runs the pipeline. GitHub can start a scheduled
+  # slot hours late (F1 INC-006, INC-007): a slot already filled by a watchdog,
+  # manual or external run is skipped. A dispatched run without a slot always runs.
+  slot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      run: ${{ steps.decide.outputs.run }}
+      slot: ${{ steps.decide.outputs.slot }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          sparse-checkout: |
+            data/runs.jsonl
+            src/crossprice
+          sparse-checkout-cone-mode: false
+
+      - name: Decide
+        id: decide
+        env:
+          EVENT: ${{ github.event_name }}
+          SLOT_INPUT: ${{ inputs.slot }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ] && [ -z "$SLOT_INPUT" ]; then
+            echo "manual run without a slot: runs"
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          args=(check --runs data/runs.jsonl)
+          if [ -n "$SLOT_INPUT" ]; then
+            if ! printf '%s' "$SLOT_INPUT" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z$'; then
+              echo "::error::slot must look like 2026-11-21T07:43:00Z"
+              exit 1
+            fi
+            args+=(--slot "$SLOT_INPUT")
+          fi
+          # Fails open: if the check itself fails, the pipeline runs.
+          PYTHONPATH=src python3 -m crossprice.schedule "${args[@]}" | tee check.txt ||
+            echo "slot check failed, running"
+          sed -n 's/^slot=/slot=/p' check.txt >> "$GITHUB_OUTPUT"
+          if grep -qx "covered=true" check.txt; then
+            echo "slot already run: skipped"
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  run:
+    needs: slot
+    if: ${{ !cancelled() && needs.slot.outputs.run == 'true' }}
+    runs-on: ubuntu-24.04
+    # Owner limit: one daily run under 45 minutes on a single runner (D-005).
+    timeout-minutes: 45
+    outputs:
+      pages: ${{ steps.pages_artifact.outcome }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BRANCH: ${{ github.ref_name }}
+      SLOT: ${{ needs.slot.outputs.slot }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Install
+        run: uv sync --locked --no-dev
+
+      - name: Download this month's history
+        run: |
+          month="$(date -u +%Y-%m)"
+          echo "MONTH=$month" >> "$GITHUB_ENV"
+          echo "TAG=data-$month" >> "$GITHUB_ENV"
+          mkdir -p work
+          # A month file that exists must be downloaded: merging without it would drop
+          # the month's earlier closed versions (F1 D-009).
+          assets="$(gh release view "data-$month" --json assets --jq '.assets[].name' 2> /dev/null || true)"
+          if printf '%s\n' "$assets" | grep -qx "offer_history_$month.parquet"; then
+            gh release download "data-$month" -p "offer_history_$month.parquet" -D work
+          fi
+          ls -la work
+
+      - name: Run pipeline
+        id: run
+        timeout-minutes: 41
+        run: |
+          set +e
+          args=(--retailers config/retailers.yml --data data --history-out "work/offer_history_$MONTH.parquet")
+          if [ -f "work/offer_history_$MONTH.parquet" ]; then
+            args+=(--history-in "work/offer_history_$MONTH.parquet")
+          fi
+          if [ -n "$SLOT" ]; then
+            args+=(--slot "$SLOT")
+          fi
+          uv run --no-dev python -m crossprice.run "${args[@]}"
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "pipeline exit code $code"
+
+      - name: Upload history to release
+        id: upload
+        if: steps.run.outputs.code == '0' || steps.run.outputs.code == '2'
+        run: |
+          if ! gh release view "$TAG" > /dev/null 2>&1; then
+            gh release create "$TAG" --title "Comparison data $MONTH" \
+              --notes "comparison.csv: today's cross-store comparison (one row per matched product). offer_history_$MONTH.parquet: every price and stock version of every offer this month. Both are replaced by every good run; the data dictionary is in the README."
+          fi
+          cp data/latest/comparison.csv work/comparison.csv
+          gh release upload "$TAG" "work/offer_history_$MONTH.parquet" work/comparison.csv --clobber
+          gh release edit "$TAG" --latest
+
+      - name: Build dashboard
+        if: always() && steps.run.outputs.code != ''
+        run: uv run --no-dev python -m crossprice.site --data data --retailers config/retailers.yml --out site
+
+      - name: Render README and visuals
+        if: always() && steps.run.outputs.code != ''
+        run: |
+          # The README renderer arrives with the first real runs (docs/plan.md, Phase C).
+          if [ -f src/crossprice/readme.py ]; then
+            uv run --no-dev python -m crossprice.visuals --data data --out assets
+            uv run --no-dev python -m crossprice.readme
+          fi
+
+      - name: Keep the dashboard as a run artifact
+        if: always() && steps.run.outputs.code != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: site
+          path: site
+          retention-days: 14
+
+      - name: Package the dashboard for GitHub Pages
+        id: pages_artifact
+        if: always() && steps.run.outputs.code != '' && vars.PAGES_ENABLED == 'true'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+      # Data is committed only when the history upload succeeded (or was not needed,
+      # as for a held run): a snapshot ahead of the Parquet history would lose the
+      # versions closed in this run.
+      - name: Commit data
+        id: commit
+        if: >-
+          always() && steps.run.outputs.code != '' &&
+          (steps.upload.outcome == 'success' || steps.upload.outcome == 'skipped')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git add README.md assets 2> /dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          run_line="$(tail -n 1 data/runs.jsonl)"
+          run_id="$(printf '%s' "$run_line" | python3 -c 'import json,sys; print(json.load(sys.stdin)["run_id"])')"
+          status="$(printf '%s' "$run_line" | python3 -c 'import json,sys; print(json.load(sys.stdin)["status"])')"
+          git commit -m "data: run $run_id ($status)"
+          # On a conflict the run's own files win: data/ is written only by runs, and
+          # the README and visuals are regenerated by every run (F1 INC-006).
+          for i in 1 2 3 4; do
+            if git pull --rebase -X theirs origin "$BRANCH" && git push origin "HEAD:$BRANCH"; then
+              exit 0
+            fi
+            git rebase --abort 2> /dev/null || true
+            sleep $((2 ** i))
+          done
+          exit 1
+
+      - name: Alert on failed or held run
+        id: alert
+        if: always()
+        run: |
+          uv run --no-dev python -m crossprice.alert --data data --code "${{ steps.run.outputs.code }}" \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --out alert.md || printf 'Alert script failed; see the workflow run.\n' > alert.md
+          for step in "upload:${{ steps.upload.outcome }}" "commit:${{ steps.commit.outcome }}"; do
+            case "$step" in
+              *:failure|commit:skipped)
+                if [ "$step" = "commit:skipped" ] && [ "${{ steps.run.outputs.code }}" = "" ]; then
+                  continue
+                fi
+                printf '\nStep `%s` did not complete; data was not committed.\n' "${step%%:*}" >> alert.md
+                ;;
+            esac
+          done
+          if [ ! -f alert.md ]; then
+            exit 0
+          fi
+          echo "raised=true" >> "$GITHUB_OUTPUT"
+          gh label create run-alert --color D98E14 --description "Daily run failed or held" --force
+          number="$(gh issue list --label run-alert --state open --json number --jq '.[0].number')"
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body-file alert.md
+          else
+            gh issue create --title "Daily run needs attention" --label run-alert --body-file alert.md
+          fi
+
+      - name: Fail the job when an alert was raised
+        if: always() && steps.alert.outputs.raised == 'true'
+        run: |
+          echo "::error::daily run failed or was held, see the run-alert issue"
+          exit 1
+
+  # Publishes site/ to GitHub Pages when the repository variable PAGES_ENABLED is
+  # "true" and Settings, Pages, Source is "GitHub Actions". A held run is deployed
+  # too: the dashboard then shows the held status with the last good data.
+  pages:
+    needs: run
+    if: ${{ !cancelled() && vars.PAGES_ENABLED == 'true' && needs.run.outputs.pages == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy the dashboard
+        id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
