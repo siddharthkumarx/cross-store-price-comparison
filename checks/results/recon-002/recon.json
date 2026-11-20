@@ -1,0 +1,3933 @@
+{
+  "meta": {
+    "id": "recon-002",
+    "check": "catalog",
+    "purpose": "Stage 2 for the two verticals with the most recon-001 passes whose catalogs fit the daily page budget (at most 4,000 products, D-005): skincare (11) and, for comparison, audio/hi-fi (7). Whole catalog up to 16 pages, 8 random product .js probes for GTIN coverage, 1 product page, robots.txt and meta.json. At most 27 requests per retailer.",
+    "started_utc": "2026-11-20T22:43:41+00:00",
+    "finished_utc": "2026-11-20T23:03:02+00:00",
+    "git_sha": "76429a59c8a7f6fb623f2e589d89590d0e6ee1bc",
+    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44831266297",
+    "runner": "Linux x86_64 / Python 3.12.3",
+    "user_agent": "cross-store-price-comparison/0.1 (+https://github.com/siddharthkumarx/cross-store-price-comparison)",
+    "edge_interval_s": 3.0,
+    "delay_s": 4.0,
+    "halted_reason": null,
+    "throttle_events": 0,
+    "requests": 301
+  },
+  "results": [
+    {
+      "store": "Violet Grey",
+      "domain": "violetgrey.com",
+      "vertical": "skincare",
+      "store_id": "violet-grey",
+      "host": "www.violetgrey.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1367,
+      "page1_products": 1269,
+      "page1_variants": 2158,
+      "vendor_count": 161,
+      "top_vendor_share": 0.04,
+      "vendors": {
+        "Chanel": 54,
+        "Victoria Beckham Beauty": 53,
+        "Westman Atelier": 42,
+        "Augustinus Bader": 41,
+        "Biologique Recherche": 40,
+        "Dr. Barbara Sturm": 36,
+        "Sisley-Paris": 30,
+        "Diptyque": 26,
+        "Vyrao": 21,
+        "Fara Homidi": 20,
+        "Oribe": 20,
+        "U Beauty": 19,
+        "Auteur": 19,
+        "PERFUMEHEAD": 18,
+        "N\u00e9cessaire": 18,
+        "Madame Grey": 17,
+        "111SKIN": 17,
+        "iS Clinical": 17,
+        "Santa Maria Novella": 16,
+        "T3": 16,
+        "D.S. & Durga": 16,
+        "Susanne Kaufmann": 16,
+        "Virtue": 16,
+        "Salt & Stone": 16,
+        "Sarah Creal": 15,
+        "Hourglass Cosmetics": 15,
+        "CHANEL": 15,
+        "Crown Affair": 15,
+        "Eighth Day": 14,
+        "Agent Nateur": 14,
+        "Tom Ford Beauty": 14,
+        "Tania Bulhoes": 13,
+        "MBR": 13,
+        "La Mer": 13,
+        "Koh Gen Do": 13,
+        "Liis": 12,
+        "Hair by Sam McKnight": 12,
+        "BOB BEAUTE": 12,
+        "R+Co Bleu": 12,
+        "Utowa": 12,
+        "1986": 11,
+        "MUTHA": 11,
+        "VALMONT": 11,
+        "Eredi Zucca": 10,
+        "Monastery": 10,
+        "Leonor Greyl": 10,
+        "Flamingo Estate": 9,
+        "Saie": 9,
+        "R\u014cZ": 9,
+        "Eau Thermale Av\u00e8ne": 9,
+        "Reservation Parfums": 9,
+        "May Lindstrom Skin": 9,
+        "Shani Darden": 9,
+        "Fabbrica Della Musa": 8,
+        "Altesse Studios": 8,
+        "Slip": 8,
+        "Philip Kingsley": 8,
+        "Royal Fern": 8,
+        "Penhaligon's": 8,
+        "Commune": 8
+      },
+      "sku_share": 0.989,
+      "excluded_share": 0.072,
+      "content_flags": {
+        "tobacco/vape": [
+          "Tobacco Memories Extrait",
+          "Tobacco Memories Eau De Parfum",
+          "Tobacco Vanille Eau de Parfum"
+        ],
+        "medicines": [
+          "Radiant Complexion Cream Apricot Glow",
+          "Micellar Lotion",
+          "Radiant Complexion Cream Rose Glow"
+        ],
+        "alcohol": [
+          "Ile Bourbon Extrait De Parfum"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "shhhowercap-shhhowercap-the-noir-color-black",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "49242076840240": "00856793006053"
+          }
+        },
+        {
+          "handle": "fridge-to-face-blemish-defense-mist",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "49741992263984": "00850067194064"
+          }
+        },
+        {
+          "handle": "airwrap-i-d-multi-styler-and-dryer-curly-coily-hair",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "49577479864624": "00885609040073"
+          }
+        },
+        {
+          "handle": "the-deodorant-1",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "49945504514352": "00810132570230"
+          }
+        },
+        {
+          "handle": "olas-portal-marine-bio-active-toothpaste",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 0,
+          "problems": {
+            "bad check digit": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "slip-tint\u2122-undetectable-baked-setting-powder",
+          "variants": 5,
+          "barcodes_present": 5,
+          "gtins_valid": 5,
+          "problems": {
+            "ok": 5
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "67494957842736": "00810029483308",
+            "67494957875504": "00810029483315",
+            "67494957908272": "00810029483322",
+            "67494957941040": "00810029483339",
+            "67494957973808": "00810029483346"
+          }
+        },
+        {
+          "handle": "puig-usa-inc-darker-skin-tones-foam-cleanser-size-5-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "49242133627184": "04015165343370"
+          }
+        },
+        {
+          "handle": "cheeky-posh",
+          "variants": 7,
+          "barcodes_present": 7,
+          "gtins_valid": 7,
+          "problems": {
+            "ok": 7
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "49555048726832": "00810021281018",
+            "49555048759600": "00810021281025",
+            "49555048792368": "00810021280981",
+            "49555048825136": "00810021281001",
+            "49555048857904": "00810021280998",
+            "49555048890672": "00810021281315",
+            "49555048923440": "00810021281322"
+          }
+        }
+      ],
+      "jsonld_currency": [],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 17,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 309.1,
+      "notes": [],
+      "gtin_variant_share": 0.944,
+      "passed": false,
+      "fail_reasons": [
+        "excluded category: alcohol, medicines, tobacco/vape"
+      ],
+      "pages": 6,
+      "catalog_complete": true,
+      "catalog_products": 1269
+    },
+    {
+      "store": "Moon Audio",
+      "domain": "moon-audio.com",
+      "vertical": "audio-hifi",
+      "store_id": "moon-audio",
+      "host": "www.moon-audio.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 704,
+      "page1_products": 704,
+      "page1_variants": 3374,
+      "vendor_count": 72,
+      "top_vendor_share": 0.2,
+      "vendors": {
+        "Dragon Cables": 141,
+        "Cardas": 84,
+        "Astell & Kern": 28,
+        "Moon Audio": 28,
+        "Furutech": 23,
+        "Focal": 22,
+        "iFi": 21,
+        "IsoAcoustics": 18,
+        "Audio Technica": 18,
+        "Grado": 16,
+        "Chord Electronics": 16,
+        "Sennheiser": 15,
+        "Pass Labs": 14,
+        "Ortofon": 14,
+        "Meze Audio": 14,
+        "Matrix Audio": 13,
+        "TEAC Audio": 12,
+        "Bricasti": 11,
+        "Aurender": 11,
+        "KR Audio": 10,
+        "Audeze": 10,
+        "HIFIMAN": 10,
+        "Technics": 9,
+        "64 Audio": 9,
+        "NAD": 9,
+        "Sony": 8,
+        "Dan Clark Audio": 8,
+        "Genalex": 8,
+        "Cayin": 7,
+        "Campfire Audio": 6,
+        "Ferrum": 6,
+        "HRS": 6,
+        "Wattson Audio": 6,
+        "dCS": 6,
+        "Bluesound": 6,
+        "Torus Power": 4,
+        "Esoteric": 4,
+        "Manley Labs": 4,
+        "General Electric": 3,
+        "Oyaide": 3,
+        "Earthworks": 3,
+        "Bryston": 3,
+        "HEDD": 2,
+        "Surebright": 2,
+        "Sparkos Labs": 2,
+        "HeadAmp": 2,
+        "RAAL requisite": 2,
+        "DENON": 2,
+        "Neutrik": 2,
+        "Loewe": 1,
+        "Korf Audio": 1,
+        "Lemo": 1,
+        "Acoustic Energy": 1,
+        "Grell": 1,
+        "Electro-harmonix": 1,
+        "Lehmann Audio": 1,
+        "Saros Audio Systems": 1,
+        "SovTek": 1,
+        "Tungsram": 1,
+        "Onward": 1
+      },
+      "sku_share": 0.952,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "cardas-crosslink-bulk-speaker-cable",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "chord-hugo-2-dac-headphone-amp",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52003523887418": "05060295370054",
+            "52003523920186": "05060295370245"
+          }
+        },
+        {
+          "handle": "trifecta-iems",
+          "variants": 3,
+          "barcodes_present": 3,
+          "gtins_valid": 3,
+          "problems": {
+            "ok": 3
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "50112975175994": "00850072413204",
+            "67652533780794": "00850072413211",
+            "53108134838586": "00850072413174"
+          }
+        },
+        {
+          "handle": "at-lp7x-fully-manual-belt-drive-turntable",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53673019179322": "04961310164782"
+          }
+        },
+        {
+          "handle": "wattson-audio-emerson-analog-network-bridge-endpoint",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "black-dragon-premium-dan-clark-audio",
+          "variants": 4,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 4
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "furutech-fi-50m-r-ac-power-connector",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "48348077556026": "04582237532708"
+          }
+        },
+        {
+          "handle": "cardas-clear-cygnus-phono-cable",
+          "variants": 18,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 18
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 14,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 252.4,
+      "notes": [],
+      "gtin_variant_share": 0.226,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 704
+    },
+    {
+      "store": "HeadAmp",
+      "domain": "headamp.com",
+      "vertical": "audio-hifi",
+      "store_id": "headamp",
+      "host": "www.headamp.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 573,
+      "page1_products": 573,
+      "page1_variants": 1370,
+      "vendor_count": 47,
+      "top_vendor_share": 0.103,
+      "vendors": {
+        "iFi Audio": 59,
+        "STAX": 53,
+        "HIFIMAN": 50,
+        "Meze Audio": 47,
+        "Campfire Audio": 33,
+        "iBasso": 27,
+        "Dan Clark Audio": 24,
+        "Audeze": 24,
+        "Sennheiser": 22,
+        "Chord Electronics": 22,
+        "Noble Audio": 20,
+        "FOCAL": 18,
+        "Astell&Kern": 17,
+        "JH Audio": 15,
+        "HeadAmp": 15,
+        "RAAL-requisite": 14,
+        "Ferrum Audio": 13,
+        "Empire Ears": 12,
+        "Matrix Audio": 11,
+        "Abyss Headphones": 9,
+        "NAIM": 7,
+        "Kimber Kable": 6,
+        "Spirit Torino": 6,
+        "Mytek": 6,
+        "Feliks Audio": 5,
+        "Final Audio": 4,
+        "Austrian Audio": 4,
+        "ES Lab": 3,
+        "Grimm Audio": 3,
+        "Auris Audio": 3,
+        "Grado Labs": 2,
+        "Audio Research": 2,
+        "Sony": 2,
+        "Warwick Acoustics": 2,
+        "Violectric": 1,
+        "HIFI FOR ALL": 1,
+        "Pass Labs": 1,
+        "McIntosh": 1,
+        "SPL Audio": 1,
+        "LTA": 1,
+        "Enleum": 1,
+        "Schiit": 1,
+        "ZMF Headphones": 1,
+        "64 Audio": 1,
+        "Focal": 1,
+        "Audio Desk": 1,
+        "AKG": 1
+      },
+      "sku_share": 0.831,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "ferrum-wandla",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "47278984626393": "05903900676090",
+            "47278984659161": "05903900676090"
+          }
+        },
+        {
+          "handle": "empire-ears-wraith",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "ak-x-64-audio-xio",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "48458191470809": "00810194100062"
+          }
+        },
+        {
+          "handle": "zen-signature-set",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "chord-poly",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42863586509017": "05060295370139"
+          }
+        },
+        {
+          "handle": "matrix-audio-tt-1",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 0,
+          "problems": {
+            "bad check digit": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "audeze-lcd-x",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42563733323993": "00819343015004",
+            "42563733356761": "00819343015011"
+          }
+        },
+        {
+          "handle": "ibasso-amp16-module-for-dx340",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "47706606403801": "06971585541742"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 14,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 256.0,
+      "notes": [],
+      "gtin_variant_share": 0.636,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 573
+    },
+    {
+      "store": "Headphones.com",
+      "domain": "headphones.com",
+      "vertical": "audio-hifi",
+      "store_id": "headphones-com",
+      "host": "headphones.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 716,
+      "page1_products": 716,
+      "page1_variants": 1208,
+      "vendor_count": 76,
+      "top_vendor_share": 0.071,
+      "vendors": {
+        "Hifiman": 51,
+        "Meze": 37,
+        "Focal": 35,
+        "Sennheiser": 33,
+        "Audeze": 28,
+        "KEF": 27,
+        "Topping": 27,
+        "iFi Audio": 27,
+        "64 Audio": 23,
+        "Dan Clark Audio": 21,
+        "Noble Audio": 19,
+        "Burson Audio": 19,
+        "Chord Electronics": 19,
+        "Headphones.com": 18,
+        "Moondrop": 17,
+        "Ferrum Audio": 14,
+        "Cambridge Audio": 14,
+        "Woo Audio": 13,
+        "HEDD Audio": 13,
+        "Aune Audio": 12,
+        "Symphonium Audio": 12,
+        "Thieaudio": 11,
+        "Dunu": 11,
+        "Naim": 11,
+        "Feliks Audio": 11,
+        "Bowers & Wilkins": 10,
+        "Denon": 9,
+        "HiFi Rose": 9,
+        "Empire Ears": 9,
+        "Eversolo": 8,
+        "Kanto Living": 8,
+        "Dekoni Audio": 7,
+        "Warwick Acoustics": 7,
+        "Final Audio": 7,
+        "ELAC": 6,
+        "T+A": 6,
+        "Capra Audio": 6,
+        "Questyle": 6,
+        "SPL": 6,
+        "CrinEar": 5,
+        "TRUTHEAR": 5,
+        "Klipsch": 5,
+        "EarMen": 5,
+        "RME": 5,
+        "Enleum": 4,
+        "Z\u00e4hl": 4,
+        "Marantz": 4,
+        "RAAL-Requisite": 4,
+        "Bluesound": 4,
+        "Hisenior Audio": 3,
+        "I/O Audio": 3,
+        "Sony": 3,
+        "Violectric": 3,
+        "Benchmark Media Systems": 3,
+        "Status Audio": 2,
+        "Austrian Audio": 2,
+        "Listenmore": 2,
+        "FiiO": 2,
+        "headphones.com": 2,
+        "Grado": 2
+      },
+      "sku_share": 0.988,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "hifiman-edition-xs-headphones",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39568247783495": "06925624202286"
+          }
+        },
+        {
+          "handle": "dan-clark-audio-aeon-2-open-headphones",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "copy-of-naim-mu-so-qb-2nd-generation",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "sennheiser-hdb-630-wireless-headphones-open-box",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42522462027847": "00810091273548"
+          }
+        },
+        {
+          "handle": "dan-clark-audio-expanse-headphones-open-box",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "hifiman-shangri-la-jr-headphones",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "16741345591367": "06925624201562",
+            "16741345624135": "06925624201470"
+          }
+        },
+        {
+          "handle": "topping-l50-desktop-headphone-amplifier",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "64-audio-solo-in-ear-headphones",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 14,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 259.5,
+      "notes": [],
+      "gtin_variant_share": 0.364,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 716
+    },
+    {
+      "store": "Dermsilk",
+      "domain": "dermsilk.com",
+      "vertical": "skincare",
+      "store_id": "dermsilk",
+      "host": "www.dermsilk.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1184,
+      "page1_products": 1184,
+      "page1_variants": 1191,
+      "vendor_count": 36,
+      "top_vendor_share": 0.074,
+      "vendors": {
+        "ZO Skin Health": 88,
+        "Revision Skincare": 73,
+        "iS Clinical": 68,
+        "GlyMed Plus": 67,
+        "Obagi": 65,
+        "PCA Skin": 60,
+        "SkinCeuticals": 57,
+        "Jan Marini": 57,
+        "NeoGenesis": 57,
+        "EltaMD": 55,
+        "SkinBetter Science": 52,
+        "Augustinus Bader": 51,
+        "ISDIN": 46,
+        "SkinMedica": 41,
+        "Epicuren Discovery": 37,
+        "Allies of Skin": 33,
+        "Nutrafol": 29,
+        "Neocutis": 28,
+        "Sent\u00e9": 23,
+        "ALASTIN": 23,
+        "Omnilux": 22,
+        "IMAGE Skincare": 19,
+        "Pavise": 15,
+        "Restorsea": 14,
+        "AnteAGE MD": 14,
+        "Hydrinity": 13,
+        "DefenAge": 13,
+        "SK-II": 12,
+        "Epicutis": 12,
+        "Plated Skin Science": 11,
+        "Murad": 10,
+        "Biocorneum": 8,
+        "Xtress\u00e9": 4,
+        "Biodermis": 4,
+        "DermSilk.com": 2,
+        "REVIAN": 1
+      },
+      "sku_share": 0.636,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "neogenesis-radiance-revival-travel-kit",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "is-clinical-active-serum-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44336652845298": "00817244010036"
+          }
+        },
+        {
+          "handle": "eltamd-skin-recovery-toner-7-3-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40259878650021": "00090205077518"
+          }
+        },
+        {
+          "handle": "neogenesis-skin-restore-serum-vitamin-a-retinoate-0-5-oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "revision-firming-night-treatment-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44330781573362": "00640451095219"
+          }
+        },
+        {
+          "handle": "revision-skincare-youthfull-hands-1-7-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44331875238130": "00640451090627"
+          }
+        },
+        {
+          "handle": "glymed-plus-bio-renewal-serum-1-oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "suzanobagimd-claribright-radiance-brightening-lotion-1-7-oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 16,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 301.3,
+      "notes": [],
+      "gtin_variant_share": 0.5,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 5,
+      "catalog_complete": true,
+      "catalog_products": 1184
+    },
+    {
+      "store": "Cos Bar",
+      "domain": "cosbar.com",
+      "vertical": "skincare",
+      "store_id": "cos-bar",
+      "host": "cosbar.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 2005,
+      "page1_products": 2004,
+      "page1_variants": 4003,
+      "vendor_count": 76,
+      "top_vendor_share": 0.078,
+      "vendors": {
+        "SISLEY PARIS": 156,
+        "CHARLOTTE TILBURY": 89,
+        "ORIBE": 87,
+        "CHANTECAILLE": 87,
+        "JO MALONE": 87,
+        "CLE DE PEAU BEAUTE": 76,
+        "TOM FORD": 76,
+        "LA PRAIRIE": 60,
+        "TRUDON": 54,
+        "HOURGLASS": 53,
+        "DR. BARBARA STURM": 51,
+        "MAISON FRANCIS KURKDJIAN": 48,
+        "111SKIN": 47,
+        "NATURA BISSE": 44,
+        "WESTMAN ATELIER": 44,
+        "SALT & STONE": 42,
+        "LA MER": 41,
+        "AUGUSTINUS BADER": 40,
+        "JENNY PATINKIN": 40,
+        "EX NIHILO": 39,
+        "DIPTYQUE": 37,
+        "PARFUMS DE MARLY": 37,
+        "BYREDO": 35,
+        "REVIVE": 34,
+        "OSEA": 26,
+        "AMOUAGE": 26,
+        "REVITALASH": 25,
+        "ORVEDA": 25,
+        "MIRIAM QUEVEDO": 25,
+        "INITIO PARFUMS PRIVES": 24,
+        "CREED": 23,
+        "HOTEL LOBBY CANDLE": 22,
+        "UBEAUTY": 22,
+        "BIOEFFECT": 21,
+        "SUSANNE KAUFMANN": 21,
+        "R+CO BLEU": 20,
+        "LANCER": 20,
+        "SUPERGOOP!": 19,
+        "EIGHTH DAY": 18,
+        "R+CO": 18,
+        "BACHCA": 17,
+        "NUDA": 17,
+        "MACHETE": 17,
+        "IRENE FORTE": 17,
+        "SLIP": 12,
+        "NEURAE": 12,
+        "ROZ": 12,
+        "MACRENE ACTIVES": 12,
+        "JOANNA CZECH": 10,
+        "THERABODY": 9,
+        "MARVIS": 9,
+        "RESERVATION PARFUMS": 8,
+        "MASON PEARSON": 8,
+        "T3": 7,
+        "LELET": 6,
+        "MIMETIQUE": 6,
+        "TWEEZERMAN": 6,
+        "KUSSHI": 6,
+        "COS BAR GIFT": 5,
+        "VINTNER'S DAUGHTER": 5
+      },
+      "sku_share": 1.0,
+      "excluded_share": 0.0,
+      "content_flags": {
+        "tobacco/vape": [
+          "Tobacco Vanille Eau de Parfum"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "sl-blend-set",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45699377135834": "00860006685591"
+          }
+        },
+        {
+          "handle": "bitter-peach-webp00593001-bl",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42954613194970": "00888066114325",
+            "42954613227738": "00888066121569"
+          }
+        },
+        {
+          "handle": "theraface-depuffing-wand-holiday-edition-winter-berry",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "50507035377882": "00840295412535"
+          }
+        },
+        {
+          "handle": "the-soothing-serum-30-ml-850027882246",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44084633010394": "00850027882246"
+          }
+        },
+        {
+          "handle": "blanc-peony-eye-serum-dark-spot-corrector",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46292900217050": "00656509154975"
+          }
+        },
+        {
+          "handle": "skin-activator-refill-810102032805",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44267223646426": "00810102032805"
+          }
+        },
+        {
+          "handle": "cheek-brush-06-888066079273",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44020674592986": "00888066079273"
+          }
+        },
+        {
+          "handle": "sl-sheer-cheek",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45699377397978": "00856213004324"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 20,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 381.8,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 9,
+      "catalog_complete": true,
+      "catalog_products": 2004
+    },
+    {
+      "store": "Soko Glam",
+      "domain": "sokoglam.com",
+      "vertical": "skincare",
+      "store_id": "soko-glam",
+      "host": "sokoglam.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 506,
+      "page1_products": 505,
+      "page1_variants": 594,
+      "vendor_count": 81,
+      "top_vendor_share": 0.059,
+      "vendors": {
+        "NATURIUM": 30,
+        "NEOGEN": 28,
+        "KLAIRS": 25,
+        "COSRX": 21,
+        "Then I Met You": 19,
+        "HANSKIN": 17,
+        "IOPE": 16,
+        "SOME BY MI": 13,
+        "LEADERS": 12,
+        "Purito Seoul": 12,
+        "Biodance": 12,
+        "SATURDAY SKIN": 12,
+        "Haruharu Wonder": 11,
+        "VT COSMETICS": 11,
+        "Knours": 11,
+        "Soko Glam": 10,
+        "SOKO GLAM": 10,
+        "BANILA CO": 10,
+        "BENTON": 9,
+        "Chasin\u2019 Rabbits": 8,
+        "Celimax": 8,
+        "ACWELL": 8,
+        "MEDIHEAL": 7,
+        "iota": 7,
+        "MISSHA": 7,
+        "THANK YOU FARMER": 7,
+        "Hero Cosmetics": 6,
+        "LAGOM": 6,
+        "Arencia": 6,
+        "Dieux": 6,
+        "TONY MOLY": 6,
+        "AXIS-Y": 6,
+        "LA'DOR": 6,
+        "Superegg": 6,
+        "IUNIK": 5,
+        "GLOWIEST": 5,
+        "Live Tinted": 5,
+        "Standard Seoul": 5,
+        "ETUDE": 5,
+        "ROVECTIN": 5,
+        "MANYO FACTORY": 5,
+        "rom&nd": 4,
+        "Chemist Confessions": 4,
+        "Abib": 4,
+        "SKINRX LAB": 4,
+        "ROUND LAB": 4,
+        "TIRTIR": 4,
+        "Cell Fusion C": 3,
+        "MELIXIR": 3,
+        "Gleamin": 3,
+        "THE PLANT BASE": 3,
+        "Shaishaishai": 3,
+        "OLIVARRIER": 3,
+        "T'else": 2,
+        "BRITISH M": 2,
+        "SUR.MEDIC+": 2,
+        "Plodica": 2,
+        "INWARD": 2,
+        "SIORIS": 2,
+        "Real Barrier": 2
+      },
+      "sku_share": 0.997,
+      "excluded_share": 0.002,
+      "content_flags": {
+        "alcohol": [
+          "Bio-Peel Gauze Peeling Wine"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "celimax-the-real-noni-energy-ampoule",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41121083490373": "08809875907795"
+          }
+        },
+        {
+          "handle": "somebymi-retinol-intense-reactivating-mask",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41125303484485": "08809647392637"
+          }
+        },
+        {
+          "handle": "naturium-purple-ginseng-cleansing-balm",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40498056298565": "00850010792446"
+          }
+        },
+        {
+          "handle": "hanskin-hyaluron-skin-essence",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "31092127137861": "08809448638651"
+          }
+        },
+        {
+          "handle": "cosrx-advanced-snail-peptide-eye-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39750621069381": "08809598451070"
+          }
+        },
+        {
+          "handle": "naturium-retinol-complex-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39644504948805": "00850010792040"
+          }
+        },
+        {
+          "handle": "skinrx-lab-madecera-exo-peptide-fliud",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42981796184133": "08809501972043"
+          }
+        },
+        {
+          "handle": "naturium-niacinamide-serum-12-plus-zinc-2",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39644501475397": "00850010792064"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 14,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 266.6,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 505
+    },
+    {
+      "store": "Ohlolly",
+      "domain": "ohlolly.com",
+      "vertical": "skincare",
+      "store_id": "ohlolly",
+      "host": "ohlolly.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 502,
+      "page1_products": 501,
+      "page1_variants": 549,
+      "vendor_count": 56,
+      "top_vendor_share": 0.056,
+      "vendors": {
+        "Pyunkang Yul": 28,
+        "haruharu wonder": 26,
+        "Wylys": 22,
+        "Heimish": 21,
+        "Purito": 20,
+        "Luvum": 19,
+        "Hyggee": 19,
+        "Dr. Ceuracle": 18,
+        "Urang": 17,
+        "Face Republic": 16,
+        "PINKWONDER": 15,
+        "Returnu": 14,
+        "Sioris": 13,
+        "Mediheal": 13,
+        "ma:nyo": 12,
+        "Koy": 11,
+        "shaishaishai": 11,
+        "Equlib": 10,
+        "Huxley": 10,
+        "Melixir": 9,
+        "107": 9,
+        "Beauty of Joseon": 9,
+        "Aperire": 9,
+        "Tiela": 8,
+        "Aippo": 8,
+        "InfoDPlus": 8,
+        "Bifi Blanche": 7,
+        "Contently": 7,
+        "Hyeja": 7,
+        "Anua": 7,
+        "Cosrx": 7,
+        "Umbraphil": 6,
+        "Teluris": 6,
+        "Ohlolly": 6,
+        "Ecolline": 6,
+        "awe": 6,
+        "Tocobo": 6,
+        "Percent Science": 6,
+        "MediAnswer": 6,
+        "Bephor": 5,
+        "Medicube": 5,
+        "Core by Urang": 4,
+        "Olivarrier": 4,
+        "Moonseal": 3,
+        "Quietone": 3,
+        "Isntree": 3,
+        "Etude": 3,
+        "Mixsoon": 2,
+        "Skin1004": 2,
+        "Zeroset": 2,
+        "Goodal": 2,
+        "Innisfree": 2,
+        "VT Cosmetics": 1,
+        "Peripera": 1,
+        "Clio": 1,
+        "iUnik": 1
+      },
+      "sku_share": 1.0,
+      "excluded_share": 0.002,
+      "content_flags": {
+        "alcohol": [
+          "Umbraphil Rice Wine Bubble Whip Pore Cleanser"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "manyo-pure-deep-cleansing-foam",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40160629129374": "08809730952724"
+          }
+        },
+        {
+          "handle": "wylys-nightinol-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44257955381476": "00850049793063"
+          }
+        },
+        {
+          "handle": "hyggee-all-in-one-care-cleansing-foam",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46149335711972": "08809030730336"
+          }
+        },
+        {
+          "handle": "heimish-matcha-biome-redness-relief-hydrating-toner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43479756701924": "08809481761804"
+          }
+        },
+        {
+          "handle": "aperire-youthful-frozen-water-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46798343373028": "08806135252329"
+          }
+        },
+        {
+          "handle": "purito-from-green-cleansing-oil",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46439537082596": "08809563102532"
+          }
+        },
+        {
+          "handle": "107-hair-scalp-hydrating-microbiome-treatment",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46126013513956": "08809433340774"
+          }
+        },
+        {
+          "handle": "infodplus-xcespi316-gel-cleanser-mini",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46798344224996": "08800266640086"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 14,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 270.0,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 501
+    },
+    {
+      "store": "Linsoul",
+      "domain": "linsoul.com",
+      "vertical": "audio-hifi",
+      "store_id": "linsoul",
+      "host": "www.linsoul.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 808,
+      "page1_products": 806,
+      "page1_variants": 2201,
+      "vendor_count": 77,
+      "top_vendor_share": 0.077,
+      "vendors": {
+        "Moondrop": 62,
+        "KZ": 60,
+        "DDHiFi": 49,
+        "SMSL": 43,
+        "xDuoo": 41,
+        "Kiwi Ears": 39,
+        "Shanling": 38,
+        "Tripowin": 35,
+        "TANGZU": 23,
+        "TRN": 23,
+        "THIEAUDIO": 22,
+        "ZiiGaat": 21,
+        "SIMGOT": 19,
+        "7HZ": 19,
+        "HiBy": 19,
+        "LINSOUL": 15,
+        "DUNU": 15,
+        "TOPPING": 13,
+        "Fearless Audio": 13,
+        "Linsoul Audio": 12,
+        "CCA": 11,
+        "GUSTARD": 11,
+        "TANCHJIM": 10,
+        "LETSHUOER": 10,
+        "HIDIZS": 10,
+        "HeartField": 10,
+        "Celest": 9,
+        "Yanyin": 8,
+        "E1DA": 7,
+        "MUSICIAN": 7,
+        "Kefine": 6,
+        "Softears": 6,
+        "JCALLY": 6,
+        "GoldPlanar": 6,
+        "CrinEar": 5,
+        "FangSound": 5,
+        "EarAcoustic Audio": 5,
+        "CVJ": 5,
+        "TWISTURA": 5,
+        "QOA": 5,
+        "SeeAudio": 5,
+        "INAWAKEN": 4,
+        "EUIU": 4,
+        "ONIX": 4,
+        "AZLA": 4,
+        "Punch Audio": 3,
+        "HarmonicDyne": 3,
+        "SONCOZ": 3,
+        "XENNS": 3,
+        "SpinFit": 3,
+        "Kinera": 3,
+        "Trasam": 3,
+        "UM": 3,
+        "Leisurely Audio": 3,
+        "Apevoix": 2,
+        "YBA": 2,
+        "Open Audio": 2,
+        "SGOR": 2,
+        "Shozy": 2,
+        "Pentaconn": 2
+      },
+      "sku_share": 0.976,
+      "excluded_share": 0.002,
+      "content_flags": {
+        "alcohol": [
+          "QoA Gin",
+          "QOA Whisky Cable"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "tripowin-zombur",
+          "variants": 6,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "spinfit-omni",
+          "variants": 6,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "moondrop-marigold",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "ddhifi-bc35gold",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "shanling-hw600",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "kefine-loric",
+          "variants": 6,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "kiwi-ears-coda",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "gustard-c18",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 15,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 285.8,
+      "notes": [],
+      "gtin_variant_share": 0.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 4,
+      "catalog_complete": true,
+      "catalog_products": 806
+    },
+    {
+      "store": "Safe & Chic",
+      "domain": "safeandchic.com",
+      "vertical": "skincare",
+      "store_id": "safe-chic",
+      "host": "safeandchic.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1678,
+      "page1_products": 1641,
+      "page1_variants": 3370,
+      "vendor_count": 87,
+      "top_vendor_share": 0.101,
+      "vendors": {
+        "Bryan Anthonys": 169,
+        "Butter Me Up Organics": 96,
+        "SwaddleAn": 74,
+        "Carter + Jane": 64,
+        "True Beauty Lashes": 61,
+        "UpCircle": 52,
+        "FRENCH GIRL": 48,
+        "Fitglow Beauty": 48,
+        "Annmarie Skin Care": 44,
+        "Zatik Naturals": 43,
+        "Timeless Organics Skin Care": 42,
+        "Good Medicine Beauty Lab": 36,
+        "Sun Potion": 34,
+        "Elaa Skincare": 32,
+        "Madeline Love": 31,
+        "Taylor Made Organics": 31,
+        "8 Days Botanicals": 31,
+        "Aleavia": 27,
+        "Sally B's Skin Yummies": 27,
+        "EVOLVh": 26,
+        "withSimplicity": 25,
+        "Clover by Clove + Hallow": 25,
+        "Goldfaden MD": 24,
+        "LEAHLANI": 23,
+        "elvis+elvin": 23,
+        "YINA": 21,
+        "Bleu La La": 18,
+        "i.am.gretchen": 18,
+        "DRNKART STUDIOS": 17,
+        "Masami": 17,
+        "Ready Set Jet": 17,
+        "Alison Morse": 16,
+        "Spongell\u00e9": 16,
+        "Nola Tawk": 15,
+        "River Organics": 14,
+        "Dr. Alkaitis Organics": 13,
+        "Cayla Gray \u00ae": 13,
+        "Pretty Simple": 12,
+        "OWL Venice": 12,
+        "UNDER LUNA\u2122": 12,
+        "LASHFOOD": 11,
+        "Athar'a Pure": 11,
+        "Corrective Skin": 11,
+        "Zi Sanzi Performance Organics": 11,
+        "Brittany Hartt Designs": 10,
+        "VOLO Beauty": 10,
+        "Axiology": 10,
+        "carlucce": 10,
+        "Beautyologie": 9,
+        "\u0100THR Beauty": 9,
+        "Chocolate Sun": 9,
+        "CV SKINLABS": 9,
+        "Cleo+Coco": 9,
+        "Minori Beauty": 8,
+        "BEAUTOLOGY LAB": 8,
+        "Vibhsa": 8,
+        "Raphah Candle Co.": 8,
+        "ta\u0457la Skincare": 8,
+        "My Store": 8,
+        "ecobrands\u00ae": 7
+      },
+      "sku_share": 1.0,
+      "excluded_share": 0.022,
+      "content_flags": {
+        "alcohol": [
+          "Gold Stag Deer Whiskey Glasses"
+        ],
+        "medicines": [
+          "Free Bird / Botanical Perfume",
+          "GLOW POTION / radiant body oil",
+          "GODDESS GLOW / blushing buttery body cream"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "jasmin-body-polish",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52252553707816": "00850000595170"
+          }
+        },
+        {
+          "handle": "radiant-skin-gift-kit",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "rosemary",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52296687026472": "00706970762329"
+          }
+        },
+        {
+          "handle": "cleanse-tone-moisturize-set",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52294575718696": "05060571721846"
+          }
+        },
+        {
+          "handle": "vibhsa-dog-cat-elephant-ring-holders-set-silver",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52296808005928": "00810043920070"
+          }
+        },
+        {
+          "handle": "eucalyptus-lavender-shower-spray-2oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52191401247016": "00850024401457"
+          }
+        },
+        {
+          "handle": "organic-liquid-cream-concealer",
+          "variants": 7,
+          "barcodes_present": 7,
+          "gtins_valid": 7,
+          "problems": {
+            "ok": 7
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52354208497960": "00661631007891",
+            "52354208530728": "00661631007907",
+            "52354208563496": "00661631007914",
+            "52354208596264": "00661631007921",
+            "52354208629032": "00661631007945",
+            "52354208661800": "00661631007938",
+            "52354208694568": "00661631007952"
+          }
+        },
+        {
+          "handle": "gratitude-face-serum-1",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 0,
+          "problems": {
+            "not digits": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 18,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 335.8,
+      "notes": [],
+      "gtin_variant_share": 0.857,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 7,
+      "catalog_complete": true,
+      "catalog_products": 1641
+    },
+    {
+      "store": "Thirteen Lune",
+      "domain": "thirteenlune.com",
+      "vertical": "skincare",
+      "store_id": "thirteen-lune",
+      "host": "thirteenlune.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 846,
+      "page1_products": 843,
+      "page1_variants": 1638,
+      "vendor_count": 140,
+      "top_vendor_share": 0.057,
+      "vendors": {
+        "Flamingo Estate": 48,
+        "Danessa Myricks Beauty": 31,
+        "RMS Beauty": 23,
+        "Oak Essentials": 21,
+        "Perroy Parfum": 20,
+        "ECOBROW": 20,
+        "Relevant: Your Skin Seen": 19,
+        "Veronique Gabai": 18,
+        "LolaVie": 17,
+        "Les Eaux Primordiales": 14,
+        "ALLEL": 14,
+        "goop beauty": 13,
+        "Macrene Actives": 12,
+        "Sweet July Skin": 12,
+        "Four Moons Spa": 12,
+        "Rizos Curls": 12,
+        "Stripes": 12,
+        "Mixik Skin": 11,
+        "LYS Beauty": 11,
+        "Nudestix": 11,
+        "Symbiome": 10,
+        "Humanrace": 10,
+        "FAEVES BY CELESTE": 10,
+        "Born to Stand Out": 10,
+        "Vyrao": 10,
+        "Chillhouse": 10,
+        "Briogeo": 10,
+        "KITSCH": 9,
+        "Acaderma": 9,
+        "Lake & Skye": 9,
+        "Monika Blunder": 9,
+        "Kadalys": 9,
+        "Olaplex": 9,
+        "Hourglass Cosmetics": 9,
+        "Maude": 8,
+        "Nusa Holistick": 8,
+        "Becket + Quill": 8,
+        "Dezi Skin": 8,
+        "BeautyStat": 8,
+        "Dr. Nigma Talib": 7,
+        "Brown Bee": 7,
+        "Leier": 7,
+        "Control & Chaos": 7,
+        "Ustawi": 7,
+        "Loved01": 7,
+        "Ere Perez": 7,
+        "Aunu": 6,
+        "B\u00fct\u00fcn": 6,
+        "Thirteen Lune": 6,
+        "Charlotte Mensah": 6,
+        "Solar Eclipse": 6,
+        "Saint Jane Beauty": 6,
+        "OurX": 6,
+        "NCLA Beauty": 6,
+        "Rthvi": 6,
+        "Sara Happ": 6,
+        "Koba Skincare": 6,
+        "Britt Nicole": 5,
+        "Kindia": 5,
+        "Base-K": 5
+      },
+      "sku_share": 0.98,
+      "excluded_share": 0.004,
+      "content_flags": {
+        "alcohol": [
+          "Lip Treatment Rum Cake",
+          "Bourbon Vanilla Signature Candle"
+        ],
+        "adult": [
+          "Spot Personal Vibrator"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "travel-body-routine",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46530755625159": "00810175730905"
+          }
+        },
+        {
+          "handle": "rose-md-signature-moisturizer",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43022055964871": "00860000918909",
+            "43022055997639": "00860000918992"
+          }
+        },
+        {
+          "handle": "beautystat-universal-microbiome-barrier-balancing-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41313214136519": "00860007013607"
+          }
+        },
+        {
+          "handle": "golden-pollinator-candle",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "woo-skin-essentials-revitalizing-body-moisturizer",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40399631515847": "00860002805061"
+          }
+        },
+        {
+          "handle": "pleasure-principles-an-almanac-from-the-garden",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 0,
+          "problems": {
+            "not digits": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "choc-factory-lip-scrub",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45117164126407": "00850063246293"
+          }
+        },
+        {
+          "handle": "rita-defining-crayon-1",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45639877230791": "00850435008016"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 15,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 277.1,
+      "notes": [],
+      "gtin_variant_share": 0.778,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 4,
+      "catalog_complete": true,
+      "catalog_products": 843
+    },
+    {
+      "store": "Audio46",
+      "domain": "audio46.com",
+      "vertical": "audio-hifi",
+      "store_id": "audio46",
+      "host": "audio46.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 3928,
+      "page1_products": 3926,
+      "page1_variants": 7409,
+      "vendor_count": 135,
+      "top_vendor_share": 0.091,
+      "vendors": {
+        "Strauss & Wagner": 357,
+        "DD ddHiFi": 193,
+        "iFi": 188,
+        "Audio-Technica": 186,
+        "Final Audio": 153,
+        "FiiO": 128,
+        "Beyerdynamic": 119,
+        "Sennheiser": 110,
+        "MoonDrop": 105,
+        "Dekoni Audio": 105,
+        "JBL": 98,
+        "HIFIMAN": 98,
+        "Shure": 91,
+        "Meze Audio": 90,
+        "Astell & Kern": 87,
+        "Sony": 78,
+        "Audeze": 72,
+        "Noble": 69,
+        "Focal": 67,
+        "Campfire Audio": 67,
+        "Grado": 57,
+        "SIVGA": 57,
+        "STAX": 56,
+        "Kinera": 55,
+        "Effect Audio": 53,
+        "64 Audio": 52,
+        "Pioneer DJ": 51,
+        "Fostex": 48,
+        "Kennerton": 41,
+        "Chord Electronics": 39,
+        "Thieaudio": 37,
+        "BGVP": 37,
+        "Vision Ears": 35,
+        "Ferrum": 33,
+        "Woo Audio": 32,
+        "Dan Clark Audio": 29,
+        "IKKO": 29,
+        "Eversolo": 27,
+        "ABYSS": 27,
+        "Questyle": 27,
+        "Yamaha": 24,
+        "LETSHUOER": 23,
+        "ALO Audio": 22,
+        "Bowers & Wilkins": 22,
+        "Ultrasone": 21,
+        "FIR Audio": 21,
+        "TinHiFi": 21,
+        "T+A": 20,
+        "Empire Ears": 20,
+        "Etymotic": 19,
+        "Westone": 17,
+        "Queen of Audio": 17,
+        "AZLA": 16,
+        "Shozy": 15,
+        "RME": 15,
+        "Focusrite": 14,
+        "Sendy Audio": 12,
+        "7Hz": 12,
+        "Spinfit": 12,
+        "Flipears": 11
+      },
+      "sku_share": 0.991,
+      "excluded_share": 0.001,
+      "content_flags": {
+        "alcohol": [
+          "Queen of Audio Whisky Silver Plated In-Ear Monitor Upgrade Cable",
+          "Queen of Audio Rum 6N OCC with silver plated Cable"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "ikko-itm05-music-patch",
+          "variants": 4,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2,
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39679830130878": "06971958820092",
+            "39679830163646": "06971958820108"
+          }
+        },
+        {
+          "handle": "final-audio-adagio-v-dynamic-earphones",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "18292100694131": "00811178025593"
+          }
+        },
+        {
+          "handle": "final-audio-a6000-in-ear-monitors",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "48016767910121": "00840095504171"
+          }
+        },
+        {
+          "handle": "moondrop-skyland-open-back-planar-magnetic-headphones",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "51567003042025": "06972585503327"
+          }
+        },
+        {
+          "handle": "astell-kern-a-futura-se300-leather-case",
+          "variants": 2,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "empty": 1,
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44748080316649": "00195674000422"
+          }
+        },
+        {
+          "handle": "64-audio-tia-trio-universal-fit-earphones",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "18291996721267": "00862946000397"
+          }
+        },
+        {
+          "handle": "vision-ears-ve-3-2-custom-in-ear-monitors",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "meze-angled-alcantara-earpads-for-empyrean-elite",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46858985898217": "00761062121194"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 27,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 502.4,
+      "notes": [],
+      "gtin_variant_share": 0.667,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 16,
+      "catalog_complete": true,
+      "catalog_products": 3926
+    },
+    {
+      "store": "Ayla Beauty",
+      "domain": "aylabeauty.com",
+      "vertical": "skincare",
+      "store_id": "ayla-beauty",
+      "host": "aylabeauty.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 753,
+      "page1_products": 752,
+      "page1_variants": 1104,
+      "vendor_count": 73,
+      "top_vendor_share": 0.292,
+      "vendors": {
+        "Ayla Beauty": 220,
+        "Les Fleurs de Bach": 39,
+        "Marie Veronique": 29,
+        "Luzern Labs": 28,
+        "de Mamiel": 27,
+        "M Picaut": 22,
+        "twelveLab": 21,
+        "Olio E Osso": 20,
+        "Eye of Horus": 18,
+        "Biofficina Toscana": 17,
+        "MyHavtorn": 17,
+        "Boucleme": 14,
+        "Macrene Actives": 13,
+        "Manasi7": 12,
+        "Coelho": 11,
+        "EVOLVh": 11,
+        "Ayla": 11,
+        "Elave": 11,
+        "Ursa Major": 11,
+        "Kosas": 11,
+        "VENN": 10,
+        "BioRecept": 10,
+        "Colorescience": 8,
+        "Augustinus Bader": 8,
+        "Natalie's": 8,
+        "Dr. Anna Gold": 7,
+        "Enfance Paris": 7,
+        "Dara Kennedy": 6,
+        "Le Prunier": 6,
+        "Gentlerist": 6,
+        "RiseWell": 6,
+        "La Ferme Saint-Sylvain": 6,
+        "TEK": 6,
+        "MPowder": 5,
+        "Symbiome": 5,
+        "Omni-Biotic": 5,
+        "MD SolarSciences": 5,
+        "Vintner's Daughter": 4,
+        "Kahina": 4,
+        "Reverie": 4,
+        "Activist": 4,
+        "Orce": 4,
+        "Liha": 4,
+        "Inika": 4,
+        "Cecily Braden": 3,
+        "Kerzon": 3,
+        "Paloroma": 3,
+        "J.M. Generals": 3,
+        "Suntegrity": 3,
+        "Kooshoo": 3,
+        "Kroma Wellness": 2,
+        "Ava Isa": 2,
+        "Daphnis and Chloe": 2,
+        "Festina Lente Home": 2,
+        "Bare Hands": 2,
+        "Fueguia": 2,
+        "Dr. Devgan": 2,
+        "Breezy Tee": 1,
+        "Vedi Beauty": 1,
+        "Teabloom": 1
+      },
+      "sku_share": 0.977,
+      "excluded_share": 0.001,
+      "content_flags": {
+        "medicines": [
+          "The Organic Pharmacy Manuka Face Cream"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "activist-manuka-300",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "20771330097263": "00720260144114"
+          }
+        },
+        {
+          "handle": "macrene-actives-high-performance-body-lotion",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41074518261871": "00850046038266"
+          }
+        },
+        {
+          "handle": "biorecept-booster-bio",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19802566066287": "03401560022308"
+          }
+        },
+        {
+          "handle": "les-fleurs-de-bach-pets-comfort-elixir",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52489848815983": "03584850003499"
+          }
+        },
+        {
+          "handle": "risewell-travel-kit",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "eye-of-horus-second-skin-foundation",
+          "variants": 6,
+          "barcodes_present": 6,
+          "gtins_valid": 6,
+          "problems": {
+            "ok": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41103450046575": "09346292002478",
+            "41103450079343": "09346292002485",
+            "42471892058223": "09346292003215",
+            "41103450112111": "09346292002492",
+            "41103450144879": "09346292002508",
+            "42471896744047": "09346292003222"
+          }
+        },
+        {
+          "handle": "macrene-actives-high-performance-concealer",
+          "variants": 6,
+          "barcodes_present": 6,
+          "gtins_valid": 6,
+          "problems": {
+            "ok": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "31455388401775": "00899578002772",
+            "40829710696559": "00899578002888",
+            "31455388434543": "00899578002789",
+            "40829710893167": "00899578002895",
+            "31455388467311": "00899578002796",
+            "40829711089775": "00899578002901"
+          }
+        },
+        {
+          "handle": "gwp-venn-envelope",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 15,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 273.2,
+      "notes": [],
+      "gtin_variant_share": 0.889,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 4,
+      "catalog_complete": true,
+      "catalog_products": 752
+    },
+    {
+      "store": "Credo Beauty",
+      "domain": "credobeauty.com",
+      "vertical": "skincare",
+      "store_id": "credo-beauty",
+      "host": "credobeauty.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1747,
+      "page1_products": 1745,
+      "page1_variants": 3778,
+      "vendor_count": 147,
+      "top_vendor_share": 0.034,
+      "vendors": {
+        "N\u00e9cessaire": 60,
+        "RMS Beauty": 58,
+        "Innersense Organic Beauty": 42,
+        "Westman Atelier": 41,
+        "Ilia": 40,
+        "Kosas": 38,
+        "AKT": 36,
+        "Jenny Patinkin": 34,
+        "Credo Rewards": 32,
+        "OSEA": 32,
+        "True Botanicals": 32,
+        "Emma Lewisham": 31,
+        "Tata Harper": 27,
+        "evolvetogether": 27,
+        "Saie": 26,
+        "goop beauty": 26,
+        "SIDIA": 25,
+        "Tower 28": 25,
+        "SOSHE Beauty": 25,
+        "Maison Louis Marie": 24,
+        "MOB Beauty": 24,
+        "LYS Beauty": 23,
+        "Ursa Major": 23,
+        "Corpus": 21,
+        "Marie Veronique": 21,
+        "Ere Perez": 20,
+        "African Botanics": 20,
+        "Exa": 19,
+        "Kaia Naturals": 19,
+        "Ceremonia": 19,
+        "Follain": 19,
+        "Pai": 18,
+        "Maya Chia": 18,
+        "Grown Alchemist": 18,
+        "Sweed Beauty": 18,
+        "Nopalera": 18,
+        "Three Ships": 17,
+        "iota": 16,
+        "LolaVie": 16,
+        "Arey": 16,
+        "Credo Skincare": 16,
+        "Josh Rosebrook": 16,
+        "Goldfaden MD": 16,
+        "R\u014cZ": 15,
+        "Rituel de Fille": 15,
+        "Evolve Organic Beauty": 14,
+        "MARA": 13,
+        "Heretic": 13,
+        "The Outset": 13,
+        "Kinship": 13,
+        "Sahajan": 12,
+        "Biotyspa": 12,
+        "Doctor Rogers": 12,
+        "Exponent Beauty": 12,
+        "Under Your Skin": 11,
+        "Alpyn Beauty": 11,
+        "Bloomeffects": 11,
+        "Iris&Romeo": 11,
+        "One Love Organics": 11,
+        "Cosmetics 27": 10
+      },
+      "sku_share": 0.986,
+      "excluded_share": 0.001,
+      "content_flags": {
+        "alcohol": [
+          "Color Capsule: The Wine Edit",
+          "Charcoal Deodorant Black Oak & Bourbon"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "fleur-de-la-passion-hair-and-body-mist",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42143207227505": "00850057900293"
+          }
+        },
+        {
+          "handle": "monaco-restorative-hand-wash-refill",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42384571990129": "00850039663963"
+          }
+        },
+        {
+          "handle": "golden-microalgae-body-oil",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41814610509937": "00850036369691"
+          }
+        },
+        {
+          "handle": "200-pts-verdoie-lhuile-barrier-rebuild-oil-5ml",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 0,
+          "problems": {
+            "bad check digit": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "lip-karma-new",
+          "variants": 3,
+          "barcodes_present": 3,
+          "gtins_valid": 3,
+          "problems": {
+            "ok": 3
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42128765780081": "00628250201475",
+            "42128765812849": "00628250201468",
+            "42128765845617": "00628250201482"
+          }
+        },
+        {
+          "handle": "firming-vegan-prep-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41632680935537": "00850032786010"
+          }
+        },
+        {
+          "handle": "the-necessary-eyeshadow-palette",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "29491380715633": "00818107023118"
+          }
+        },
+        {
+          "handle": "daily-detox-foaming-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41844915798129": "00850049258623"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 18,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 343.2,
+      "notes": [],
+      "gtin_variant_share": 0.9,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 7,
+      "catalog_complete": true,
+      "catalog_products": 1745
+    },
+    {
+      "store": "The Detox Market",
+      "domain": "thedetoxmarket.com",
+      "vertical": "skincare",
+      "store_id": "the-detox-market",
+      "host": "www.thedetoxmarket.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1842,
+      "page1_products": 1825,
+      "page1_variants": 3404,
+      "vendor_count": 145,
+      "top_vendor_share": 0.05,
+      "vendors": {
+        "Manucurist": 92,
+        "N\u00e9cessaire": 60,
+        "Odacite": 60,
+        "RMS Beauty": 56,
+        "Rahua": 45,
+        "Innersense": 45,
+        "ILIA": 45,
+        "OSEA": 44,
+        "True Botanicals": 44,
+        "Pai Skincare": 43,
+        "Kosas": 37,
+        "Ere Perez": 35,
+        "goop beauty": 33,
+        "Fitglow Beauty": 32,
+        "Three Ships": 29,
+        "Agent Nateur": 29,
+        "SIDIA": 27,
+        "Josh Rosebrook": 26,
+        "Ursa Major": 25,
+        "MOB Beauty": 25,
+        "SWEED": 24,
+        "Everist": 23,
+        "Irene Forte": 23,
+        "SAHAJAN": 22,
+        "Living Libations": 21,
+        "PAUME": 19,
+        "Kaia Naturals": 19,
+        "Heretic Parfum": 19,
+        "Maya Chia": 19,
+        "The Detox Market": 18,
+        "Lohn": 18,
+        "Kure Bazaar": 18,
+        "Bathorium": 17,
+        "M\u0101nuka Health": 17,
+        "Indie Lee": 17,
+        "DEDCOOL": 16,
+        "19/99 Beauty": 16,
+        "Laurel Skin": 16,
+        "EVOLVh": 16,
+        "Wonder Valley": 15,
+        "Abel": 15,
+        "Herbivore": 15,
+        "Kora Organics": 15,
+        "MARA": 14,
+        "May Lindstrom Skin": 14,
+        "R\u014cZ": 14,
+        "Province Apothecary": 14,
+        "One Love Organics": 14,
+        "Nusa Holistick": 13,
+        "La Bonne Brosse": 13,
+        "Rituel de Fille": 13,
+        "Moon Juice": 13,
+        "Hurraw!": 13,
+        "100% Pure": 12,
+        "Alima Pure": 12,
+        "Alpyn Beauty": 12,
+        "Good Juju": 11,
+        "Wildcraft": 11,
+        "Suntegrity": 10,
+        "Eco Tan": 10
+      },
+      "sku_share": 0.999,
+      "excluded_share": 0.009,
+      "content_flags": {
+        "alcohol": [
+          "White Wine Body Cream With Hyaluronic Acid",
+          "The Takesumi Detox - Black Oak & Bourbon"
+        ],
+        "medicines": [
+          "Jade Gua Sha Tool",
+          "The Jade Massaging Gua Sha Comb",
+          "The Vitality Qi White Jade Gua Sha Sculpting Tool"
+        ],
+        "adult": [
+          "Spot - Green",
+          "Spot - Grey",
+          "Drop"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "rahua-rahua-enchanted-island-vegan-curl-butter",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40048339517515": "00810039250716"
+          }
+        },
+        {
+          "handle": "plump-jelly-hydrating-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "32376973361227": "00815784021826"
+          }
+        },
+        {
+          "handle": "paume-all-in-one-nail-and-cuticle-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41028160127051": "00628011220172"
+          }
+        },
+        {
+          "handle": "sweed-no-lash-lash",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40324776591435": "07350080190393"
+          }
+        },
+        {
+          "handle": "algae-moringa-universal-face-oil",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "33068962086987": "00866003000412",
+            "33068962414667": "00866003000450"
+          }
+        },
+        {
+          "handle": "rms-beauty-hydra-setting-powder",
+          "variants": 3,
+          "barcodes_present": 3,
+          "gtins_valid": 3,
+          "problems": {
+            "ok": 3
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40780885655627": "00816248027750",
+            "40780885688395": "00816248027767",
+            "40780885721163": "00816248027774"
+          }
+        },
+        {
+          "handle": "tease-berry-booster",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40599159636043": "00786468680861"
+          }
+        },
+        {
+          "handle": "roz-foundation-mask",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41028192960587": "00850058671086"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 19,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 353.0,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 8,
+      "catalog_complete": true,
+      "catalog_products": 1825
+    },
+    {
+      "store": "Bloom Audio",
+      "domain": "bloomaudio.com",
+      "vertical": "audio-hifi",
+      "store_id": "bloom-audio",
+      "host": "bloomaudio.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1168,
+      "page1_products": 1167,
+      "page1_variants": 3015,
+      "vendor_count": 87,
+      "top_vendor_share": 0.07,
+      "vendors": {
+        "iFi Audio": 82,
+        "ddHiFi": 62,
+        "HIFIMAN": 44,
+        "iBasso": 41,
+        "Eletech": 38,
+        "Campfire Audio": 35,
+        "Dekoni Audio": 35,
+        "Astell&Kern": 34,
+        "Noble": 32,
+        "Cayin": 32,
+        "Effect Audio": 31,
+        "AudioQuest": 31,
+        "Meze Audio": 29,
+        "FiiO": 28,
+        "Burson Audio": 28,
+        "64 Audio": 26,
+        "Pro-Ject": 26,
+        "MoonDrop": 23,
+        "Sennheiser": 23,
+        "Chord Electronics": 22,
+        "Kiwi Ears": 20,
+        "Dan Clark Audio": 17,
+        "Audio-Technica": 17,
+        "Questyle": 17,
+        "Audeze": 17,
+        "Canton": 17,
+        "ZiiGaat": 16,
+        "EverSolo": 16,
+        "DUNU": 16,
+        "Final Audio": 16,
+        "xDuoo": 16,
+        "Capra Audio": 14,
+        "Thieaudio": 13,
+        "Topping": 13,
+        "Spinfit": 12,
+        "FiR Audio": 10,
+        "Focal": 10,
+        "DITA Audio": 9,
+        "SMSL": 9,
+        "HEDD": 8,
+        "Austrian Audio": 8,
+        "Weiss": 8,
+        "FlipEars": 8,
+        "Sumiko": 8,
+        "Fosi Audio": 8,
+        "XCover - Rate sheet": 8,
+        "Ruark Audio": 7,
+        "Vision Ears": 7,
+        "JCALLY": 7,
+        "Ferrum": 6,
+        "CrinEar": 6,
+        "Astral Acoustics": 6,
+        "Feliks Audio": 6,
+        "DCS": 6,
+        "Matrix Audio": 6,
+        "FATfreq": 6,
+        "Melody Wings": 5,
+        "Ucotech": 5,
+        "Auris Audio": 4,
+        "Triangle Audio": 4
+      },
+      "sku_share": 0.997,
+      "excluded_share": 0.001,
+      "content_flags": {
+        "alcohol": [
+          "AudioQuest Vodka Ethernet | Audiophile Ethernet Cable"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "dan-clark-audio-e3-pads",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "flipears-aurora-xxiv",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "ifi-zen-one-studio",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "noble-audio-onyx",
+          "variants": 2,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1,
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42150069993547": "00699838541795"
+          }
+        },
+        {
+          "handle": "noble-audio-xm-1-xmems",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40970038149195": "00699838541801"
+          }
+        },
+        {
+          "handle": "xduoo-ta-22",
+          "variants": 2,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1,
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41829186666571": "00098185887011"
+          }
+        },
+        {
+          "handle": "dan-clark-audio-msm-pro",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "ddhifi-tc44cm2",
+          "variants": 2,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1,
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42651843657803": "06972062151676"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 16,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 270.9,
+      "notes": [],
+      "gtin_variant_share": 0.308,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 5,
+      "catalog_complete": true,
+      "catalog_products": 1167
+    },
+    {
+      "store": "Integrity Botanicals",
+      "domain": "integritybotanicals.com",
+      "vertical": "skincare",
+      "store_id": "integrity-botanicals",
+      "host": "www.integritybotanicals.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 877,
+      "page1_products": 876,
+      "page1_variants": 1509,
+      "vendor_count": 81,
+      "top_vendor_share": 0.057,
+      "vendors": {
+        "Innersense": 50,
+        "Laurel": 46,
+        "RMS Beauty": 37,
+        "Leahlani Skincare": 34,
+        "Fitglow Beauty": 25,
+        "Lotus Wei": 25,
+        "Agent Nateur": 23,
+        "twelveLab": 23,
+        "Rahua": 23,
+        "Routine": 21,
+        "Hurraw!": 20,
+        "LILFOX": 20,
+        "Blissoma": 19,
+        "Ere Perez": 19,
+        "Evolve": 18,
+        "Babo Botanicals": 18,
+        "Josh Rosebrook": 17,
+        "Maya Chia": 17,
+        "Osmia": 16,
+        "100% Pure": 14,
+        "milk + honey": 14,
+        "Free + True": 13,
+        "BL\u00dcH ALCHEMY": 13,
+        "One Love Organics": 13,
+        "May Lindstrom Skin": 13,
+        "Ursa Major": 13,
+        "Live Botanical": 13,
+        "Kypris": 12,
+        "de Mamiel": 12,
+        "Lily Lolo": 12,
+        "Bdellium Tools": 12,
+        "NAILBERRY": 11,
+        "Und Gretel": 11,
+        "Kari Gran": 11,
+        "Meow Meow Tweet": 11,
+        "LEPAAR": 10,
+        "(M)ANASI 7": 9,
+        "Mahalo": 8,
+        "EVOLVh": 8,
+        "Plume": 8,
+        "Manucurist": 7,
+        "Fontana Candle Co.": 7,
+        "Vintner's Daughter": 7,
+        "Chester Candle Company": 7,
+        "CV Skinlabs": 7,
+        "The Other Skincare Company": 7,
+        "Yarok": 7,
+        "ANTO YUKON": 6,
+        "Kosmatology": 6,
+        "JINsoon": 6,
+        "Solara Suncare": 6,
+        "Davids": 6,
+        "Cleo + Coco": 6,
+        "Jenny Patinkin": 6,
+        "Rituel de Fille": 6,
+        "PAUME": 5,
+        "SWEED": 5,
+        "Henn\u00e9 Organics": 5,
+        "Graydon": 4,
+        "Le Prunier": 4
+      },
+      "sku_share": 0.949,
+      "excluded_share": 0.001,
+      "content_flags": {
+        "alcohol": [
+          "No. 12 Bourbon & Apple Soy Candle"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "mini-lip-oil-trio",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "super-shield-sport-stick-sunscreen-spf-50",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "20061744454": "00899248002194"
+          }
+        },
+        {
+          "handle": "terra-co-gwp-single-use-dental-floss",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "holi-stick-blackburn-deodorant",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "vanilla-orange-lip-balm",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "almond",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44628271726824": "08715309908552"
+          }
+        },
+        {
+          "handle": "pure-inspiration-daily-conditioner",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19832129749065": "00852415001611",
+            "19832129781833": "00852415001604"
+          }
+        },
+        {
+          "handle": "sample-arnica-concealer",
+          "variants": 8,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 8
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 15,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 235.1,
+      "notes": [],
+      "gtin_variant_share": 0.25,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 4,
+      "catalog_complete": true,
+      "catalog_products": 876
+    },
+    {
+      "store": "Upscale Audio",
+      "domain": "upscaleaudio.com",
+      "vertical": "audio-hifi",
+      "store_id": "upscale-audio",
+      "host": "upscaleaudio.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 2107,
+      "page1_products": 2102,
+      "page1_variants": 6029,
+      "vendor_count": 156,
+      "top_vendor_share": 0.055,
+      "vendors": {
+        "Nordost": 115,
+        "AudioQuest": 110,
+        "Focal": 78,
+        "Cardas": 59,
+        "Fyne Audio": 54,
+        "Rega": 47,
+        "Monitor Audio": 47,
+        "McIntosh Labs": 45,
+        "Naim Audio": 43,
+        "REL": 41,
+        "Clearaudio": 41,
+        "Musical Fidelity": 40,
+        "Pro-Ject": 38,
+        "Ortofon": 36,
+        "Marantz": 35,
+        "MoFi Electronics": 33,
+        "NAD": 33,
+        "T+A Elektroakustik": 32,
+        "PrimaLuna": 29,
+        "GoldenEar": 29,
+        "VPI": 28,
+        "IsoAcoustics": 28,
+        "Pathos": 27,
+        "Grado": 26,
+        "Sonus faber": 25,
+        "Audio Technica": 25,
+        "DH Labs": 24,
+        "Spendor": 22,
+        "Solidsteel": 22,
+        "Klipsch": 21,
+        "Technics": 21,
+        "Chord Electronics": 20,
+        "Cambridge Audio": 20,
+        "Phasemation": 20,
+        "Aurender": 19,
+        "Soundsmith": 19,
+        "Arcam": 18,
+        "Campfire Audio": 18,
+        "Lumin": 17,
+        "Sumiko": 16,
+        "IsoTek": 16,
+        "Eversolo": 15,
+        "Audio Research": 15,
+        "Anthem": 15,
+        "HiFi Rose": 15,
+        "Music Hall": 15,
+        "Kimber": 15,
+        "Tung-Sol": 14,
+        "Upscale Audio": 14,
+        "Tannoy": 14,
+        "Feliks Audio": 12,
+        "Bluesound": 12,
+        "Quad": 12,
+        "Denon": 12,
+        "JBL": 12,
+        "Auris": 12,
+        "Meze Audio": 12,
+        "Kirmuss Audio": 12,
+        "Mark Levinson": 12,
+        "Electro-Harmonix": 11
+      },
+      "sku_share": 0.995,
+      "excluded_share": 0.002,
+      "content_flags": {
+        "alcohol": [
+          "AudioQuest Vodka RJ/E Ethernet Cable",
+          "AudioQuest Vodka Optical Cable",
+          "AudioQuest Vodka e-ARC HDMI Cable"
+        ],
+        "weapons": [
+          "Acoustic Zen Satori Shotgun Bi-Wire Speaker Cable (OPEN)"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "cardas-clear-beyond-headphone-cable",
+          "variants": 18,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 18
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "primaluna-evo-300-tube-integrated-amp",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "21413381046332": "00644216294374",
+            "21413381079100": "00644216294473"
+          }
+        },
+        {
+          "handle": "nagaoka-mp-300-phono-cartridge",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "chord-hugo-tt2-dac-headphone-amplifier-preamplifier",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "mcintosh-mb25-bluetooth-transceiver",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "54132944502968": "00842548114678"
+          }
+        },
+        {
+          "handle": "tannoy-tfx-2-way-center-channel-loudspeaker-each",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "feliks-audio-euforia-evo-headphone-amplifier",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "primaluna-evo-100-tube-dac",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "21413380292668": "00644216293575",
+            "21413380325436": "00644216293674"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 20,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 183.3,
+      "notes": [],
+      "gtin_variant_share": 0.179,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 9,
+      "catalog_complete": true,
+      "catalog_products": 2102
+    }
+  ]
+}
