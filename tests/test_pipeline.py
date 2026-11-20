@@ -204,3 +204,18 @@ def test_dashboard_builds_from_run_files(workdir: Path, monkeypatch: pytest.Monk
     assert (workdir / "site" / "data" / "comparison.csv").exists()
     for word in ("overpriced", "MAP violation", "too expensive"):
         assert word.lower() not in html.lower()
+
+
+def test_manual_check_sample_is_drawn_from_the_run(
+    workdir: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    from crossprice.precision_sample import draw
+
+    monkeypatch.setattr(run_mod, "make_client", _client_for({}))
+    run(_cfg(workdir), now=T0)
+    run_id, pairs = draw(workdir / "data", n=10)
+    assert run_id == "20261120T074300Z"
+    assert len(pairs) == 2
+    assert {p["retailer_a"] for p in pairs} == {"alpha"}
+    assert all(p["title_a"] and p["title_b"] and p["verdict"] == "" for p in pairs)
+    assert draw(workdir / "data", n=10)[1] == pairs
