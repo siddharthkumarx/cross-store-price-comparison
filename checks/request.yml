@@ -1,14 +1,37 @@
 # Live check request. Started by hand: Actions, "checks", Run workflow
 # (workflow_dispatch). Results are committed to checks/results/<id>/.
-id: recon-001
-check: recon
+id: recon-002
+check: catalog
 purpose: >-
-  Stage 1 over 8 verticals: Shopify, robots, US/USD, multi-brand, SKU and GTIN
-  coverage on 2 sampled products. At most 6 requests per retailer.
+  Stage 2 for the two verticals with the most recon-001 passes whose catalogs fit
+  the daily page budget (at most 4,000 products, D-005): skincare (11) and, for
+  comparison, audio/hi-fi (7). Whole catalog up to 16 pages, 8 random product .js
+  probes for GTIN coverage, 1 product page, robots.txt and meta.json. At most 27
+  requests per retailer.
 candidates: checks/candidates.yml
+only:
+  - ayla-beauty
+  - cos-bar
+  - credo-beauty
+  - dermsilk
+  - integrity-botanicals
+  - ohlolly
+  - safe-chic
+  - soko-glam
+  - the-detox-market
+  - thirteen-lune
+  - violet-grey
+  - audio46
+  - bloom-audio
+  - headamp
+  - headphones-com
+  - linsoul
+  - moon-audio
+  - upscale-audio
+max_pages: 16
+random_probes: 8
 concurrency: 5
 delay_s: 4.0
 jitter_s: 3.0
 edge_interval_s: 3.0
 edge_jitter_s: 1.5
-trip_after: 6
