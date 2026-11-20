@@ -1,0 +1,2643 @@
+{
+  "meta": {
+    "id": "recon-004",
+    "check": "catalog",
+    "purpose": "Stage 2 for the skincare retailers: the 3 that passed recon-003 get their whole catalog and 4 random GTIN probes; all 13 get product .js probes on overlap candidates drawn from the recon-002 catalogs at random within score bands 0.5-0.6, 0.6-0.7, 0.7-0.8 and 0.8+, so the precision of each cut-off can be checked against GTINs (D-002). At most 18 named probes per retailer.",
+    "started_utc": "2026-11-20T23:11:54+00:00",
+    "finished_utc": "2026-11-20T23:31:47+00:00",
+    "git_sha": "c89cc04b195feeb9a7f1edb635883a2ddea652a4",
+    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44834949148",
+    "runner": "Linux x86_64 / Python 3.12.3",
+    "user_agent": "cross-store-price-comparison/0.1 (+https://github.com/siddharthkumarx/cross-store-price-comparison)",
+    "edge_interval_s": 3.0,
+    "delay_s": 4.0,
+    "halted_reason": null,
+    "throttle_events": 20,
+    "requests": 204
+  },
+  "results": [
+    {
+      "store": "The Choosy Chick",
+      "domain": "thechoosychick.com",
+      "vertical": "skincare",
+      "store_id": "the-choosy-chick",
+      "host": "thechoosychick.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 463,
+      "page1_products": 463,
+      "page1_variants": 737,
+      "vendor_count": 38,
+      "top_vendor_share": 0.119,
+      "vendors": {
+        "Inika Organic": 55,
+        "100% Pure": 34,
+        "Lily Lolo": 30,
+        "Badger": 27,
+        "Kari Gran": 26,
+        "Griffin Remedy": 26,
+        "ACURE": 25,
+        "Innersense": 23,
+        "Eco by Sonya Driver": 17,
+        "HollyBeth Organics": 15,
+        "Kimberly Sayer of London": 13,
+        "28 Litsea": 11,
+        "Au Naturale": 11,
+        "Rustic Maka": 11,
+        "Evolvh": 11,
+        "H is for Love": 9,
+        "Dr. Alkaitis": 9,
+        "Luna Nectar": 8,
+        "Davids": 8,
+        "Magic Organic Apothecary": 8,
+        "Kosmatology": 7,
+        "ECO Tan": 7,
+        "GingerChi": 7,
+        "Orgaid": 7,
+        "MUN": 6,
+        "Max Green Alchemy": 6,
+        "schaf": 6,
+        "Green & Gorgeous Organics": 5,
+        "Salt & Stone Soap Co.": 5,
+        "WYLD Skincare": 5,
+        "The Choosy Chick": 4,
+        "Prim Botanicals": 4,
+        "Blue Q": 4,
+        "Indie Girl": 4,
+        "Yubi Beauty": 3,
+        "Jack N' Jill": 3,
+        "Makeup Eraser": 2,
+        "The Natural Family Co": 1
+      },
+      "sku_share": 0.039,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "all-glowing-celestial-creme-highlighter-stick",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "12613119475796": "00638317384133"
+          }
+        },
+        {
+          "handle": "organic-nourishing-treatment-oil",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "7898101776414": "00857239007078",
+            "889148989": "00793573052094"
+          }
+        },
+        {
+          "handle": "vegan-crease-brush",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "38030860170": "09553527050504"
+          }
+        },
+        {
+          "handle": "hand-butter-cream",
+          "variants": 6,
+          "barcodes_present": 6,
+          "gtins_valid": 6,
+          "problems": {
+            "ok": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "6961832689694": "00843585100044",
+            "6962039816222": "00899738009368",
+            "6962039848990": "00899738009313",
+            "6962039881758": "00899738009375",
+            "43782646268157": "00843585103212",
+            "45726287593725": "00843585103236"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 9,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 151.5,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 2,
+      "catalog_complete": true,
+      "catalog_products": 463
+    },
+    {
+      "store": "Onda Beauty",
+      "domain": "ondabeauty.com",
+      "vertical": "skincare",
+      "store_id": "onda-beauty",
+      "host": "ondabeauty.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 464,
+      "page1_products": 460,
+      "page1_variants": 642,
+      "vendor_count": 89,
+      "top_vendor_share": 0.043,
+      "vendors": {
+        "MARIE VERONIQUE": 20,
+        "GOOP BEAUTY": 16,
+        "VENN SKINCARE": 15,
+        "TAMMY FENDER": 14,
+        "FARA HOMIDI": 14,
+        "ROZ HAIR": 14,
+        "NECESSAIRE": 14,
+        "ACTIVIST": 13,
+        "WONDER VALLEY": 12,
+        "THE OUTSET": 12,
+        "AUGUSTINUS BADER": 12,
+        "SOFIE PAVITT FACE": 11,
+        "CORPUS": 10,
+        "LA BONNE BROSSE": 10,
+        "MONASTERY": 10,
+        "HERETIC": 9,
+        "VERTLY": 9,
+        "DE MAMIEL": 8,
+        "MAY LINDSTROM": 8,
+        "ADLAN": 7,
+        "KATE MCLEOD": 7,
+        "SAYA": 7,
+        "THE QUIET BOTANIST": 7,
+        "MDSOLARSCIENCES": 7,
+        "SALT & STONE": 7,
+        "EPI.LOGIC": 6,
+        "OLIO E OSSO": 6,
+        "BIOGRAPHY": 6,
+        "PEEKAY'S HERBS": 5,
+        "ANGELA CAGLIA": 5,
+        "Stripes": 5,
+        "FURTUNA SKIN": 5,
+        "JANINE KNIZIA SKINCARE": 5,
+        "AUNU BEAUTY": 5,
+        "I PROFUMI DI FIRENZE": 5,
+        "OSEA": 5,
+        "14TH NIGHT": 5,
+        "CECILY BRADEN": 4,
+        "LE PRUNIER": 4,
+        "VINTNER'S DAUGHTER": 4,
+        "GOOD WEATHER SKIN": 4,
+        "HINDSGAUL HAIR": 4,
+        "IOTA": 4,
+        "EVOLVETOGETHER": 4,
+        "SWEET CHEMISTRY": 4,
+        "FRENCH FARMACIE": 4,
+        "ORRIS PARIS": 4,
+        "Rose Inc": 4,
+        "BLUE LAGOON SKIN SCIENCE": 4,
+        "DR ALKAITIS": 4,
+        "SANDOR": 3,
+        "FORMULARY 55": 3,
+        "BONJOUT BEAUTY": 3,
+        "POETS ATELIER": 3,
+        "TENNEN STUDIO": 3,
+        "RYE": 3,
+        "FIGARO APOTHECARY": 3,
+        "SYMBIOME": 3,
+        "OMAD": 3,
+        "THE SKINSHEET": 3
+      },
+      "sku_share": 0.667,
+      "excluded_share": 0.009,
+      "content_flags": {
+        "cannabis/cbd": [
+          "Restorative Eucalyptus Bath Salts",
+          "Muscle Soak with Arnica - Bath Salts",
+          "California Bloom Body Oil"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "the-body-wash-hinoki-core-copy",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "le-botaniste",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "age-responsecompoundkhyaluronicbooster",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40386331803815": "00858871007327"
+          }
+        },
+        {
+          "handle": "mandelic-clearing-serum",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 9,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 156.9,
+      "notes": [],
+      "gtin_variant_share": 0.25,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 2,
+      "catalog_complete": true,
+      "catalog_products": 460
+    },
+    {
+      "store": "Dermsilk",
+      "domain": "dermsilk.com",
+      "vertical": "skincare",
+      "store_id": "dermsilk",
+      "host": "www.dermsilk.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 1184,
+      "page1_products": 1184,
+      "page1_variants": 1191,
+      "vendor_count": 36,
+      "top_vendor_share": 0.074,
+      "vendors": {
+        "ZO Skin Health": 88,
+        "Revision Skincare": 73,
+        "iS Clinical": 68,
+        "GlyMed Plus": 67,
+        "Obagi": 65,
+        "PCA Skin": 60,
+        "SkinCeuticals": 57,
+        "Jan Marini": 57,
+        "NeoGenesis": 57,
+        "EltaMD": 55,
+        "SkinBetter Science": 52,
+        "Augustinus Bader": 51,
+        "ISDIN": 46,
+        "SkinMedica": 41,
+        "Epicuren Discovery": 37,
+        "Allies of Skin": 33,
+        "Nutrafol": 29,
+        "Neocutis": 28,
+        "Sent\u00e9": 23,
+        "ALASTIN": 23,
+        "Omnilux": 22,
+        "IMAGE Skincare": 19,
+        "Pavise": 15,
+        "Restorsea": 14,
+        "AnteAGE MD": 14,
+        "Hydrinity": 13,
+        "DefenAge": 13,
+        "SK-II": 12,
+        "Epicutis": 12,
+        "Plated Skin Science": 11,
+        "Murad": 10,
+        "Biocorneum": 8,
+        "Xtress\u00e9": 4,
+        "Biodermis": 4,
+        "DermSilk.com": 2,
+        "REVIAN": 1
+      },
+      "sku_share": 0.636,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "augustinus-bader-the-body-cleanser-6-7-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53353518793070": "05060552908617"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-eye-cream-complete-set-0-5-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53410771435886": "05060990631733"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-eye-cream-nomad-0-5-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53410799354222": "05060990630262"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-hair-oil-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53427200557422": "05060552903278"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-light-cream-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53409353662830": "05060552905647"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-mineral-sunscreen-broad-spectrum-spf-50-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53409268597102": "05060990632983"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-overnight-restorative-cream-1-6-oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "augustinus-bader-the-rich-conditioner-5-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53423938765166": "05060552909867"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-rich-eye-cream-0-5-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53410809217390": "05060990630996"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-rich-shampoo-6-7-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53423933030766": "05060552909850"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-scalp-treatment-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52971669291374": "05060552903216"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-vitamin-c-serum-1-oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "neogenesis-radiance-revival-travel-kit",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "is-clinical-active-serum-1-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44336652845298": "00817244010036"
+          }
+        },
+        {
+          "handle": "eltamd-skin-recovery-toner-7-3-oz",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40259878650021": "00090205077518"
+          }
+        },
+        {
+          "handle": "neogenesis-skin-restore-serum-vitamin-a-retinoate-0-5-oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 24,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 479.8,
+      "notes": [],
+      "gtin_variant_share": 0.75,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 5,
+      "catalog_complete": true,
+      "catalog_products": 1184
+    },
+    {
+      "store": "Cos Bar",
+      "domain": "cosbar.com",
+      "vertical": "skincare",
+      "store_id": "cos-bar",
+      "host": "cosbar.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": "retries exhausted: http 429",
+      "shopify": true,
+      "meta_country": null,
+      "meta_currency": null,
+      "meta_products": null,
+      "page1_products": 0,
+      "page1_variants": 0,
+      "vendor_count": 0,
+      "top_vendor_share": null,
+      "vendors": {},
+      "sku_share": null,
+      "excluded_share": null,
+      "content_flags": {},
+      "js_probes": [],
+      "jsonld_currency": [],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": null,
+      "requests": 9,
+      "retries": 3,
+      "retry_causes": [
+        "http 429",
+        "http 429",
+        "http 429"
+      ],
+      "elapsed_s": 321.5,
+      "notes": [],
+      "gtin_variant_share": null,
+      "passed": false,
+      "fail_reasons": [
+        "blocked mid-recon",
+        "empty catalog",
+        "currency not proven USD",
+        "single-brand store",
+        "needed 429 retries"
+      ],
+      "pages": 4,
+      "catalog_complete": false,
+      "catalog_products": 1000
+    },
+    {
+      "store": "Soko Glam",
+      "domain": "sokoglam.com",
+      "vertical": "skincare",
+      "store_id": "soko-glam",
+      "host": "sokoglam.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 506,
+      "page1_products": 505,
+      "page1_variants": 594,
+      "vendor_count": 81,
+      "top_vendor_share": 0.059,
+      "vendors": {
+        "NATURIUM": 30,
+        "NEOGEN": 28,
+        "KLAIRS": 25,
+        "COSRX": 21,
+        "Then I Met You": 19,
+        "HANSKIN": 17,
+        "IOPE": 16,
+        "SOME BY MI": 13,
+        "LEADERS": 12,
+        "Purito Seoul": 12,
+        "Biodance": 12,
+        "SATURDAY SKIN": 12,
+        "Haruharu Wonder": 11,
+        "VT COSMETICS": 11,
+        "Knours": 11,
+        "Soko Glam": 10,
+        "SOKO GLAM": 10,
+        "BANILA CO": 10,
+        "BENTON": 9,
+        "Chasin\u2019 Rabbits": 8,
+        "Celimax": 8,
+        "ACWELL": 8,
+        "MEDIHEAL": 7,
+        "iota": 7,
+        "MISSHA": 7,
+        "THANK YOU FARMER": 7,
+        "Hero Cosmetics": 6,
+        "LAGOM": 6,
+        "Arencia": 6,
+        "Dieux": 6,
+        "TONY MOLY": 6,
+        "AXIS-Y": 6,
+        "LA'DOR": 6,
+        "Superegg": 6,
+        "IUNIK": 5,
+        "GLOWIEST": 5,
+        "Live Tinted": 5,
+        "Standard Seoul": 5,
+        "ETUDE": 5,
+        "ROVECTIN": 5,
+        "MANYO FACTORY": 5,
+        "rom&nd": 4,
+        "Chemist Confessions": 4,
+        "Abib": 4,
+        "SKINRX LAB": 4,
+        "ROUND LAB": 4,
+        "TIRTIR": 4,
+        "Cell Fusion C": 3,
+        "MELIXIR": 3,
+        "Gleamin": 3,
+        "THE PLANT BASE": 3,
+        "Shaishaishai": 3,
+        "OLIVARRIER": 3,
+        "T'else": 2,
+        "BRITISH M": 2,
+        "SUR.MEDIC+": 2,
+        "Plodica": 2,
+        "INWARD": 2,
+        "SIORIS": 2,
+        "Real Barrier": 2
+      },
+      "sku_share": 0.997,
+      "excluded_share": 0.002,
+      "content_flags": {
+        "alcohol": [
+          "Bio-Peel Gauze Peeling Wine"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "airfit-invisible-sunscreen-spf-50",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43702990667845": "08809751071367"
+          }
+        },
+        {
+          "handle": "black-rice-probiotics-barrier-essence",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43245838532677": "08809532221967"
+          }
+        },
+        {
+          "handle": "centella-4-txa-gel-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43245854130245": "08809532221813"
+          }
+        },
+        {
+          "handle": "centella-calming-gel-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45907589955653": "08809728080118"
+          }
+        },
+        {
+          "handle": "cosrx-advanced-snail-92-all-in-one-cream",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41600791085125": "08809416470016",
+            "41600791117893": "08809598455283"
+          }
+        },
+        {
+          "handle": "full-fit-propolis-synergy-toner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39750624116805": "08809598451896"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-bakuchiol-eye-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40559454322757": "08809532221523"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-hyaluronic-cream-unscented",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40559454912581": "08809532221721"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-moisture-5-5-soft-cleansing-gel",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40559454847045": "08809532221356"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-moisture-cleansing-oil",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40559454355525": "08809532221349"
+          }
+        },
+        {
+          "handle": "isntree-green-tea-fresh-toner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19199841796165": "08809541190421"
+          }
+        },
+        {
+          "handle": "isntree-hyaluronic-acid-daily-sun-gel-spf-30",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41125912576069": "08809800940743"
+          }
+        },
+        {
+          "handle": "mediheal-collagen-essential-mask",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19736206737477": "08809615057490",
+            "29456867688517": "08809615057032"
+          }
+        },
+        {
+          "handle": "mediheal-tea-tree-essential-blemish-control-sheet-mask",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19736228593733": "08809615057469",
+            "29456882827333": "08809615056974"
+          }
+        },
+        {
+          "handle": "melixir-mandarin-morning-face-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43704353226821": "08809751071237"
+          }
+        },
+        {
+          "handle": "olivarrier-comfort-barrier-cream",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40558718091333": "08806158552727",
+            "40558718419013": "08806158553236"
+          }
+        },
+        {
+          "handle": "olivarrier-wash-all-barrier-relief",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "39287091462213": "08806158551614"
+          }
+        },
+        {
+          "handle": "shaishaishai-caffeine-shot-collagen-eye-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41025165852741": "08809850070063"
+          }
+        },
+        {
+          "handle": "celimax-the-real-noni-energy-ampoule",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41121083490373": "08809875907795"
+          }
+        },
+        {
+          "handle": "somebymi-retinol-intense-reactivating-mask",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41125303484485": "08809647392637"
+          }
+        },
+        {
+          "handle": "naturium-purple-ginseng-cleansing-balm",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40498056298565": "00850010792446"
+          }
+        },
+        {
+          "handle": "hanskin-hyaluron-skin-essence",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "31092127137861": "08809448638651"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 28,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 571.7,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 505
+    },
+    {
+      "store": "Ohlolly",
+      "domain": "ohlolly.com",
+      "vertical": "skincare",
+      "store_id": "ohlolly",
+      "host": "ohlolly.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 502,
+      "page1_products": 501,
+      "page1_variants": 549,
+      "vendor_count": 56,
+      "top_vendor_share": 0.056,
+      "vendors": {
+        "Pyunkang Yul": 28,
+        "haruharu wonder": 26,
+        "Wylys": 22,
+        "Heimish": 21,
+        "Purito": 20,
+        "Luvum": 19,
+        "Hyggee": 19,
+        "Dr. Ceuracle": 18,
+        "Urang": 17,
+        "Face Republic": 16,
+        "PINKWONDER": 15,
+        "Returnu": 14,
+        "Sioris": 13,
+        "Mediheal": 13,
+        "ma:nyo": 12,
+        "Koy": 11,
+        "shaishaishai": 11,
+        "Equlib": 10,
+        "Huxley": 10,
+        "Melixir": 9,
+        "107": 9,
+        "Beauty of Joseon": 9,
+        "Aperire": 9,
+        "Tiela": 8,
+        "Aippo": 8,
+        "InfoDPlus": 8,
+        "Bifi Blanche": 7,
+        "Contently": 7,
+        "Hyeja": 7,
+        "Anua": 7,
+        "Cosrx": 7,
+        "Umbraphil": 6,
+        "Teluris": 6,
+        "Ohlolly": 6,
+        "Ecolline": 6,
+        "awe": 6,
+        "Tocobo": 6,
+        "Percent Science": 6,
+        "MediAnswer": 6,
+        "Bephor": 5,
+        "Medicube": 5,
+        "Core by Urang": 4,
+        "Olivarrier": 4,
+        "Moonseal": 3,
+        "Quietone": 3,
+        "Isntree": 3,
+        "Etude": 3,
+        "Mixsoon": 2,
+        "Skin1004": 2,
+        "Zeroset": 2,
+        "Goodal": 2,
+        "Innisfree": 2,
+        "VT Cosmetics": 1,
+        "Peripera": 1,
+        "Clio": 1,
+        "iUnik": 1
+      },
+      "sku_share": 1.0,
+      "excluded_share": 0.002,
+      "content_flags": {
+        "alcohol": [
+          "Umbraphil Rice Wine Bubble Whip Pore Cleanser"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "cosrx-advanced-snail-92-all-in-one-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "8813259205": "08809416470016"
+          }
+        },
+        {
+          "handle": "cosrx-full-fit-propolis-synergy-toner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "34674328862878": "08809598451896"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-10-hyaluronic-cream-unscented",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44397802782948": "08809532221721"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-bakuchiol-eye-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42944807207140": "08809532221523"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-moisture-5-5-soft-cleansing-gel",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "37678509949086": "08809532221356"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-moisture-cleansing-oil",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "37678497497246": "08809532221349"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-black-rice-probiotics-barrier-essence-a-k-a-makgeolli",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45570568519908": "08809532221967"
+          }
+        },
+        {
+          "handle": "haruharu-wonder-centella-4-txa-dark-spot-go-away-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45145751945444": "08809532221813"
+          }
+        },
+        {
+          "handle": "isntree-green-tea-fresh-toner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "36516044472478": "08809541190421"
+          }
+        },
+        {
+          "handle": "isntree-hyaluronic-acid-daily-sun-gel",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46175005147364": "08809800940743"
+          }
+        },
+        {
+          "handle": "iunik-centella-calming-gel-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "35987651723422": "08809728080118"
+          }
+        },
+        {
+          "handle": "mediheal-collagen-essential-mask",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43915981193444": "08809615057490",
+            "43880812347620": "08809615057032"
+          }
+        },
+        {
+          "handle": "mediheal-tea-tree-essential-mask",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43915988271332": "08809615057469",
+            "43880811233508": "08809615056974"
+          }
+        },
+        {
+          "handle": "melixir-airfit-invisible-sunscreen",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46439536951524": "08809751071367"
+          }
+        },
+        {
+          "handle": "melixir-mandarin-morning-face-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "48732915040484": "08809751071237"
+          }
+        },
+        {
+          "handle": "olivarrier-comfort-barrier-cream-50ml",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46878972379364": "08806158552727"
+          }
+        },
+        {
+          "handle": "olivarrier-wash-all-barrier-relief-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "32781819412620": "08806158551614"
+          }
+        },
+        {
+          "handle": "shaishaishai-caffeine-shot-collagen-eye-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46144255590628": "08809850070858"
+          }
+        },
+        {
+          "handle": "manyo-pure-deep-cleansing-foam",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40160629129374": "08809730952724"
+          }
+        },
+        {
+          "handle": "wylys-nightinol-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44257955381476": "00850049793063"
+          }
+        },
+        {
+          "handle": "hyggee-all-in-one-care-cleansing-foam",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46149335711972": "08809030730336"
+          }
+        },
+        {
+          "handle": "heimish-matcha-biome-redness-relief-hydrating-toner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43479756701924": "08809481761804"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 28,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 601.4,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 3,
+      "catalog_complete": true,
+      "catalog_products": 501
+    },
+    {
+      "store": "Petit Vour",
+      "domain": "petitvour.com",
+      "vertical": "skincare",
+      "store_id": "petit-vour",
+      "host": "www.petitvour.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 47,
+      "page1_products": 47,
+      "page1_variants": 83,
+      "vendor_count": 22,
+      "top_vendor_share": 0.149,
+      "vendors": {
+        "Angela Roi": 7,
+        "Ellis Brooklyn": 5,
+        "ILIA Beauty": 4,
+        "Petit Vour": 3,
+        "100% Pure": 3,
+        "Sanara": 3,
+        "Ahimsa": 3,
+        "UpCircle": 2,
+        "Leahlani": 2,
+        "JENTS": 2,
+        "Susi": 2,
+        "Goldfaden MD": 1,
+        "EVIO": 1,
+        "Chiky Botanica": 1,
+        "Bellapierre": 1,
+        "Fitglow Beauty": 1,
+        "Ere Perez": 1,
+        "VEJA": 1,
+        "EVOLVh": 1,
+        "Nae": 1,
+        "Alima Pure": 1,
+        "Juice Beauty\u00ae": 1
+      },
+      "sku_share": 0.831,
+      "excluded_share": 0.0,
+      "content_flags": {},
+      "js_probes": [
+        {
+          "handle": "nova-sneakers-white-tonic",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "bamboo-fiber-and-mango-seed-body-polish",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "smartcolor-protecting-conditioner",
+          "variants": 2,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "cher-micro-signet-7",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 8,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 160.3,
+      "notes": [],
+      "gtin_variant_share": 0.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 1,
+      "catalog_complete": true,
+      "catalog_products": 47
+    },
+    {
+      "store": "Safe & Chic",
+      "domain": "safeandchic.com",
+      "vertical": "skincare",
+      "store_id": "safe-chic",
+      "host": "safeandchic.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": "retries exhausted: http 429",
+      "shopify": true,
+      "meta_country": null,
+      "meta_currency": null,
+      "meta_products": null,
+      "page1_products": 0,
+      "page1_variants": 0,
+      "vendor_count": 0,
+      "top_vendor_share": null,
+      "vendors": {},
+      "sku_share": null,
+      "excluded_share": null,
+      "content_flags": {},
+      "js_probes": [],
+      "jsonld_currency": [],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": null,
+      "requests": 9,
+      "retries": 3,
+      "retry_causes": [
+        "http 429",
+        "http 429",
+        "http 429"
+      ],
+      "elapsed_s": 346.4,
+      "notes": [],
+      "gtin_variant_share": null,
+      "passed": false,
+      "fail_reasons": [
+        "blocked mid-recon",
+        "empty catalog",
+        "currency not proven USD",
+        "single-brand store",
+        "needed 429 retries"
+      ],
+      "pages": 4,
+      "catalog_complete": false,
+      "catalog_products": 1000
+    },
+    {
+      "store": "Thirteen Lune",
+      "domain": "thirteenlune.com",
+      "vertical": "skincare",
+      "store_id": "thirteen-lune",
+      "host": "thirteenlune.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 846,
+      "page1_products": 843,
+      "page1_variants": 1638,
+      "vendor_count": 140,
+      "top_vendor_share": 0.057,
+      "vendors": {
+        "Flamingo Estate": 48,
+        "Danessa Myricks Beauty": 31,
+        "RMS Beauty": 23,
+        "Oak Essentials": 21,
+        "Perroy Parfum": 20,
+        "ECOBROW": 20,
+        "Relevant: Your Skin Seen": 19,
+        "Veronique Gabai": 18,
+        "LolaVie": 17,
+        "Les Eaux Primordiales": 14,
+        "ALLEL": 14,
+        "goop beauty": 13,
+        "Macrene Actives": 12,
+        "Sweet July Skin": 12,
+        "Four Moons Spa": 12,
+        "Rizos Curls": 12,
+        "Stripes": 12,
+        "Mixik Skin": 11,
+        "LYS Beauty": 11,
+        "Nudestix": 11,
+        "Symbiome": 10,
+        "Humanrace": 10,
+        "FAEVES BY CELESTE": 10,
+        "Born to Stand Out": 10,
+        "Vyrao": 10,
+        "Chillhouse": 10,
+        "Briogeo": 10,
+        "KITSCH": 9,
+        "Acaderma": 9,
+        "Lake & Skye": 9,
+        "Monika Blunder": 9,
+        "Kadalys": 9,
+        "Olaplex": 9,
+        "Hourglass Cosmetics": 9,
+        "Maude": 8,
+        "Nusa Holistick": 8,
+        "Becket + Quill": 8,
+        "Dezi Skin": 8,
+        "BeautyStat": 8,
+        "Dr. Nigma Talib": 7,
+        "Brown Bee": 7,
+        "Leier": 7,
+        "Control & Chaos": 7,
+        "Ustawi": 7,
+        "Loved01": 7,
+        "Ere Perez": 7,
+        "Aunu": 6,
+        "B\u00fct\u00fcn": 6,
+        "Thirteen Lune": 6,
+        "Charlotte Mensah": 6,
+        "Solar Eclipse": 6,
+        "Saint Jane Beauty": 6,
+        "OurX": 6,
+        "NCLA Beauty": 6,
+        "Rthvi": 6,
+        "Sara Happ": 6,
+        "Koba Skincare": 6,
+        "Britt Nicole": 5,
+        "Kindia": 5,
+        "Base-K": 5
+      },
+      "sku_share": 0.98,
+      "excluded_share": 0.004,
+      "content_flags": {
+        "alcohol": [
+          "Lip Treatment Rum Cake",
+          "Bourbon Vanilla Signature Candle"
+        ],
+        "adult": [
+          "Spot Personal Vibrator"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "ere-perez-mango-lip-honey",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40894762385607": "09351748001394"
+          }
+        },
+        {
+          "handle": "goop-3x-retinol-regenerative-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "45038800634055": "00850049258319"
+          }
+        },
+        {
+          "handle": "high-performance-cleanser-eco-wood-glass-2oz",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        },
+        {
+          "handle": "hourglass-cosmetics-no-28-lip-treatment-oil",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42743279091911": "00877231002062"
+          }
+        },
+        {
+          "handle": "hourglass-cosmetics-unlocked-instant-extensions-mascara",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "42743259365575": "00877231006527"
+          }
+        },
+        {
+          "handle": "lipstick",
+          "variants": 5,
+          "barcodes_present": 5,
+          "gtins_valid": 5,
+          "problems": {
+            "ok": 5
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40821180661959": "00860002460321",
+            "40821180694727": "00860002460307",
+            "40821180727495": "00860002460314",
+            "40821180760263": "00860002460338",
+            "43120654713031": "00860002460352"
+          }
+        },
+        {
+          "handle": "lolavie-lightweight-hair-oil",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43743817695431": "00850030283061"
+          }
+        },
+        {
+          "handle": "lys-beauty-lash-confidence-mascara",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43553002553543": "00850023802125"
+          }
+        },
+        {
+          "handle": "lys-beauty-powder-brush",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43155324534983": "00850023802583"
+          }
+        },
+        {
+          "handle": "macrene-actives-chria-high-performance-tinted-lip-filler-berry",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46399910117575": "00850046038464"
+          }
+        },
+        {
+          "handle": "macrene-actives-chria-high-performance-tinted-lip-filler-clear",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46399910281415": "00850046038570"
+          }
+        },
+        {
+          "handle": "macrene-actives-chria-high-performance-tinted-lip-filler-nude",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46399910183111": "00850046038457"
+          }
+        },
+        {
+          "handle": "macrene-actives-chria-high-performance-tinted-lip-filler-pink",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46399910248647": "00850046038488"
+          }
+        },
+        {
+          "handle": "macrene-actives-chria-high-performance-tinted-lip-filler-red",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46399910150343": "00850046038471"
+          }
+        },
+        {
+          "handle": "rms-beauty-straight-line-kohl-eye-pencil",
+          "variants": 3,
+          "barcodes_present": 3,
+          "gtins_valid": 3,
+          "problems": {
+            "ok": 3
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "44128785367239": "00816248024995",
+            "44128783630535": "00816248025299",
+            "44128783663303": "00816248025282"
+          }
+        },
+        {
+          "handle": "travel-body-routine",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "46530755625159": "00810175730905"
+          }
+        },
+        {
+          "handle": "rose-md-signature-moisturizer",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "43022055964871": "00860000918909",
+            "43022055997639": "00860000918992"
+          }
+        },
+        {
+          "handle": "beautystat-universal-microbiome-barrier-balancing-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41313214136519": "00860007013607"
+          }
+        },
+        {
+          "handle": "golden-pollinator-candle",
+          "variants": 1,
+          "barcodes_present": 0,
+          "gtins_valid": 0,
+          "problems": {
+            "empty": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {}
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 1,
+      "shopify_currency": "USD",
+      "requests": 26,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 670.6,
+      "notes": [],
+      "gtin_variant_share": 0.923,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 4,
+      "catalog_complete": true,
+      "catalog_products": 843
+    },
+    {
+      "store": "Ayla Beauty",
+      "domain": "aylabeauty.com",
+      "vertical": "skincare",
+      "store_id": "ayla-beauty",
+      "host": "aylabeauty.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": null,
+      "shopify": true,
+      "meta_country": "US",
+      "meta_currency": "USD",
+      "meta_products": 753,
+      "page1_products": 752,
+      "page1_variants": 1104,
+      "vendor_count": 73,
+      "top_vendor_share": 0.292,
+      "vendors": {
+        "Ayla Beauty": 220,
+        "Les Fleurs de Bach": 39,
+        "Marie Veronique": 29,
+        "Luzern Labs": 28,
+        "de Mamiel": 27,
+        "M Picaut": 22,
+        "twelveLab": 21,
+        "Olio E Osso": 20,
+        "Eye of Horus": 18,
+        "Biofficina Toscana": 17,
+        "MyHavtorn": 17,
+        "Boucleme": 14,
+        "Macrene Actives": 13,
+        "Manasi7": 12,
+        "Coelho": 11,
+        "EVOLVh": 11,
+        "Ayla": 11,
+        "Elave": 11,
+        "Ursa Major": 11,
+        "Kosas": 11,
+        "VENN": 10,
+        "BioRecept": 10,
+        "Colorescience": 8,
+        "Augustinus Bader": 8,
+        "Natalie's": 8,
+        "Dr. Anna Gold": 7,
+        "Enfance Paris": 7,
+        "Dara Kennedy": 6,
+        "Le Prunier": 6,
+        "Gentlerist": 6,
+        "RiseWell": 6,
+        "La Ferme Saint-Sylvain": 6,
+        "TEK": 6,
+        "MPowder": 5,
+        "Symbiome": 5,
+        "Omni-Biotic": 5,
+        "MD SolarSciences": 5,
+        "Vintner's Daughter": 4,
+        "Kahina": 4,
+        "Reverie": 4,
+        "Activist": 4,
+        "Orce": 4,
+        "Liha": 4,
+        "Inika": 4,
+        "Cecily Braden": 3,
+        "Kerzon": 3,
+        "Paloroma": 3,
+        "J.M. Generals": 3,
+        "Suntegrity": 3,
+        "Kooshoo": 3,
+        "Kroma Wellness": 2,
+        "Ava Isa": 2,
+        "Daphnis and Chloe": 2,
+        "Festina Lente Home": 2,
+        "Bare Hands": 2,
+        "Fueguia": 2,
+        "Dr. Devgan": 2,
+        "Breezy Tee": 1,
+        "Vedi Beauty": 1,
+        "Teabloom": 1
+      },
+      "sku_share": 0.977,
+      "excluded_share": 0.001,
+      "content_flags": {
+        "medicines": [
+          "The Organic Pharmacy Manuka Face Cream"
+        ]
+      },
+      "js_probes": [
+        {
+          "handle": "augustinus-bader-the-eye-cream",
+          "variants": 2,
+          "barcodes_present": 2,
+          "gtins_valid": 2,
+          "problems": {
+            "ok": 2
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40720235429999": "05060552903407",
+            "40720235462767": "05060552900536"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-light-cream",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41063389102191": "05060552905647"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-scalp-treatment",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40868875862127": "05060552903216"
+          }
+        },
+        {
+          "handle": "augustinus-bader-the-shampoo",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40868864000111": "05060552903230"
+          }
+        },
+        {
+          "handle": "de-mamiel-gravity-fix",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40902632046703": "05060355010418"
+          }
+        },
+        {
+          "handle": "de-mamiel-skin-recovery-concentrate",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "32284603416687": "05060355010432"
+          }
+        },
+        {
+          "handle": "evolvh-better-roots-growth-support-styling-foam",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "51672799969647": "00850012468813"
+          }
+        },
+        {
+          "handle": "evolvh-better-roots-rootboost-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "40929057800303": "00850012468714"
+          }
+        },
+        {
+          "handle": "evolvh-smartcurl-boost-define-conditioner",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "29403750498415": "00850012468219"
+          }
+        },
+        {
+          "handle": "evolvh-smartcurl-boost-define-shampoo",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "29403744370799": "00850012468233"
+          }
+        },
+        {
+          "handle": "evolvh-ultrashine-ultra-hydrating-shampoo",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19802581598319": "00850012468011"
+          }
+        },
+        {
+          "handle": "kosas-brow-pop-nano",
+          "variants": 6,
+          "barcodes_present": 6,
+          "gtins_valid": 6,
+          "problems": {
+            "ok": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41099751719023": "00810021894393",
+            "41099751751791": "00810021894379",
+            "41099751850095": "00810021894355",
+            "41099751882863": "00810021894386",
+            "41099751915631": "00810021894362",
+            "41099751948399": "00810021894409"
+          }
+        },
+        {
+          "handle": "macrene-actives-chria-tinted-lip-filler",
+          "variants": 5,
+          "barcodes_present": 5,
+          "gtins_valid": 5,
+          "problems": {
+            "ok": 5
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "51669056815471": "00850046038457",
+            "51669056848239": "00850046038464",
+            "51669056881007": "00850046038471",
+            "51669056913775": "00850046038488",
+            "51669056946543": "00850046038570"
+          }
+        },
+        {
+          "handle": "macrene-actives-high-performance-cleanser",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "31058388844655": "00899578002574"
+          }
+        },
+        {
+          "handle": "macrene-actives-high-performance-tinted-moisturizer",
+          "variants": 6,
+          "barcodes_present": 6,
+          "gtins_valid": 6,
+          "problems": {
+            "ok": 6
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "31058410504303": "00899578002604",
+            "40727798775919": "00899578002857",
+            "31058410537071": "00899578002611",
+            "40727799365743": "00899578002864",
+            "31058410569839": "00899578002628",
+            "40727799496815": "00899578002871"
+          }
+        },
+        {
+          "handle": "marie-veronique-colorfree-zinc-broad-spectrum-sunscreen-spf-32",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52118718972271": "00850600001491"
+          }
+        },
+        {
+          "handle": "twelvelab-filaggrin-barrier-booster",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53521982357871": "08436633380059"
+          }
+        },
+        {
+          "handle": "twelvelab-phyto-retinol-serum",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "53522034655599": "08436633380103"
+          }
+        },
+        {
+          "handle": "activist-manuka-300",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "20771330097263": "00720260144114"
+          }
+        },
+        {
+          "handle": "macrene-actives-high-performance-body-lotion",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "41074518261871": "00850046038266"
+          }
+        },
+        {
+          "handle": "biorecept-booster-bio",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "19802566066287": "03401560022308"
+          }
+        },
+        {
+          "handle": "les-fleurs-de-bach-pets-comfort-elixir",
+          "variants": 1,
+          "barcodes_present": 1,
+          "gtins_valid": 1,
+          "problems": {
+            "ok": 1
+          },
+          "price_match": true,
+          "status": "ok",
+          "gtins": {
+            "52489848815983": "03584850003499"
+          }
+        }
+      ],
+      "jsonld_currency": [
+        "USD"
+      ],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": "USD",
+      "requests": 29,
+      "retries": 0,
+      "retry_causes": [],
+      "elapsed_s": 700.7,
+      "notes": [],
+      "gtin_variant_share": 1.0,
+      "passed": true,
+      "fail_reasons": [],
+      "pages": 4,
+      "catalog_complete": true,
+      "catalog_products": 752
+    },
+    {
+      "store": "Credo Beauty",
+      "domain": "credobeauty.com",
+      "vertical": "skincare",
+      "store_id": "credo-beauty",
+      "host": "credobeauty.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": "retries exhausted: http 429",
+      "shopify": true,
+      "meta_country": null,
+      "meta_currency": null,
+      "meta_products": null,
+      "page1_products": 0,
+      "page1_variants": 0,
+      "vendor_count": 0,
+      "top_vendor_share": null,
+      "vendors": {},
+      "sku_share": null,
+      "excluded_share": null,
+      "content_flags": {},
+      "js_probes": [],
+      "jsonld_currency": [],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": null,
+      "requests": 9,
+      "retries": 3,
+      "retry_causes": [
+        "http 429",
+        "http 429",
+        "http 429"
+      ],
+      "elapsed_s": 407.5,
+      "notes": [],
+      "gtin_variant_share": null,
+      "passed": false,
+      "fail_reasons": [
+        "blocked mid-recon",
+        "empty catalog",
+        "currency not proven USD",
+        "single-brand store",
+        "needed 429 retries"
+      ],
+      "pages": 4,
+      "catalog_complete": false,
+      "catalog_products": 1000
+    },
+    {
+      "store": "The Detox Market",
+      "domain": "thedetoxmarket.com",
+      "vertical": "skincare",
+      "store_id": "the-detox-market",
+      "host": "www.thedetoxmarket.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": "retries exhausted: http 429",
+      "shopify": true,
+      "meta_country": null,
+      "meta_currency": null,
+      "meta_products": null,
+      "page1_products": 0,
+      "page1_variants": 0,
+      "vendor_count": 0,
+      "top_vendor_share": null,
+      "vendors": {},
+      "sku_share": null,
+      "excluded_share": null,
+      "content_flags": {},
+      "js_probes": [],
+      "jsonld_currency": [],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": null,
+      "requests": 8,
+      "retries": 3,
+      "retry_causes": [
+        "http 429",
+        "http 429",
+        "http 429"
+      ],
+      "elapsed_s": 429.6,
+      "notes": [],
+      "gtin_variant_share": null,
+      "passed": false,
+      "fail_reasons": [
+        "blocked mid-recon",
+        "empty catalog",
+        "currency not proven USD",
+        "single-brand store",
+        "needed 429 retries"
+      ],
+      "pages": 3,
+      "catalog_complete": false,
+      "catalog_products": 750
+    },
+    {
+      "store": "Integrity Botanicals",
+      "domain": "integritybotanicals.com",
+      "vertical": "skincare",
+      "store_id": "integrity-botanicals",
+      "host": "www.integritybotanicals.com",
+      "robots_status": "ok",
+      "robots_products_json": true,
+      "robots_product_js": true,
+      "robots_product_page": true,
+      "crawl_delay_s": null,
+      "reachable": true,
+      "stopped_reason": "retries exhausted: http 429",
+      "shopify": true,
+      "meta_country": null,
+      "meta_currency": null,
+      "meta_products": null,
+      "page1_products": 0,
+      "page1_variants": 0,
+      "vendor_count": 0,
+      "top_vendor_share": null,
+      "vendors": {},
+      "sku_share": null,
+      "excluded_share": null,
+      "content_flags": {},
+      "js_probes": [],
+      "jsonld_currency": [],
+      "jsonld_gtin_fields": 0,
+      "shopify_currency": null,
+      "requests": 8,
+      "retries": 3,
+      "retry_causes": [
+        "http 429",
+        "http 429",
+        "http 429"
+      ],
+      "elapsed_s": 440.3,
+      "notes": [],
+      "gtin_variant_share": null,
+      "passed": false,
+      "fail_reasons": [
+        "blocked mid-recon",
+        "empty catalog",
+        "currency not proven USD",
+        "single-brand store",
+        "needed 429 retries"
+      ],
+      "pages": 3,
+      "catalog_complete": false,
+      "catalog_products": 750
+    }
+  ]
+}
