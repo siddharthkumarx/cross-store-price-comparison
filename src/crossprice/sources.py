@@ -23,6 +23,8 @@ from typing import Any
 
 import yaml
 
+# D-015: 16 pages of 250 products.
+MAX_PRODUCTS = 4000
 STICKY = ("blocked or challenged", "blocked mid-recon", "needed 429 retries", "robots disallows")
 
 
@@ -42,6 +44,9 @@ class Entry:
         out = list(dict.fromkeys(self.sticky))
         if not self.latest.get("passed"):
             out += [r for r in self.latest.get("fail_reasons") or [] if r not in out]
+        size = self.latest.get("meta_products")
+        if isinstance(size, int) and size > MAX_PRODUCTS:
+            out.append(f"catalog too large for the daily budget ({size:,} products)")
         return out
 
     @property

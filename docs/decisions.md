@@ -191,3 +191,19 @@ Kept: retailer, product and variant ids, handle, brand (vendor), product type,
 product and variant titles, options, SKU, GTIN, prices, compare-at prices,
 availability. Never kept: descriptions, images, reviews, personal data. Raw
 response bodies are parsed in memory and dropped.
+
+## D-015 - A retailer's whole catalog must fit the daily page budget (2026-11-20)
+
+A comparison needs every product of every compared retailer every day, and
+`/products.json` is the only request that returns them (250 per page). The daily
+budget allows `MAX_PAGES` = 16 pages per retailer, so a retailer is selected only
+if its published catalog (`/meta.json` `published_products_count`) is at most
+4,000 products. Larger catalogs (World Wide Stereo 25,001, Whole Latte Love 8,704,
+Beauty Habit 6,241 in `recon-001`) would either blow the 45-minute run or be
+compared on a partial catalog, which makes "lowest price" untrue. They are listed
+in `docs/sources.md` as "catalog too large for the daily budget".
+
+Effect on `recon-001` (103 candidates, 52 passed stage 1): retailers that pass and
+fit, per vertical: skincare 11, audio/hi-fi 7, coffee equipment 6, kitchenware 6,
+board games 4, cycling 2, pet supplies 1, outdoor gear 0. Only skincare can meet
+D-002's 8 retailers; audio/hi-fi gets stage 2 as well, for comparison.
