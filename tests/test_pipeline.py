@@ -183,3 +183,24 @@ def test_two_runs_end_to_end(workdir: Path, monkeypatch: pytest.MonkeyPatch) -> 
     assert ("new_lowest", "beta") in events
     status = json.loads((data / "status.json").read_text())
     assert status["runs_good"] == 2
+
+
+def test_dashboard_builds_from_run_files(workdir: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    from crossprice.site import build
+
+    monkeypatch.setattr(run_mod, "make_client", _client_for({}))
+    run(_cfg(workdir), now=T0)
+    monkeypatch.setattr(run_mod, "make_client", _client_for({"beta.example": {201: "159.95"}}))
+    run(_cfg(workdir), now=T0 + timedelta(days=1))
+    index = build(
+        workdir / "data", workdir / "retailers.yml", workdir / "public.yml", workdir / "site"
+    )
+    html = index.read_text()
+    assert "Where is each product cheapest today?" in html
+    assert "Demo on public data" in html
+    assert "https://steadydata.co/contact/" in html
+    assert '<script src="http' not in html  # no external scripts
+    assert (workdir / "site" / "assets" / "fonts" / "plus-jakarta-sans-400.woff2").exists()
+    assert (workdir / "site" / "data" / "comparison.csv").exists()
+    for word in ("overpriced", "MAP violation", "too expensive"):
+        assert word.lower() not in html.lower()
