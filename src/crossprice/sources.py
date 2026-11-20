@@ -25,7 +25,10 @@ import yaml
 
 # D-015: 16 pages of 250 products.
 MAX_PRODUCTS = 4000
-STICKY = ("blocked or challenged", "blocked mid-recon", "needed 429 retries", "robots disallows")
+# Reasons that drop a retailer whatever later runs show (D-006). A 429 alone is not
+# one of them since D-016: it must be followed by a clean re-test.
+STICKY = ("blocked or challenged", "robots disallows")
+THROTTLED = "needed 429 retries"
 
 
 @dataclass
@@ -65,8 +68,13 @@ def collect(paths: list[Path]) -> dict[str, Entry]:
             entries[r["store_id"]] = e
             e.runs.append(run_id)
             e.host = r.get("host") or e.host
-            for reason in r.get("fail_reasons") or []:
-                if reason.startswith(STICKY):
+            reasons = r.get("fail_reasons") or []
+            throttled_only = any(x.startswith(THROTTLED) for x in reasons)
+            for reason in reasons:
+                # "blocked mid-recon" after a 429 is the throttle, not a challenge.
+                if reason.startswith(STICKY) or (
+                    reason.startswith("blocked mid-recon") and not throttled_only
+                ):
                     e.sticky.append(f"{reason} ({run_id})")
             # "not checked (run halted)" says nothing about the retailer: keep the older result.
             if r.get("fail_reasons") != ["not checked (run halted)"] or not e.latest:

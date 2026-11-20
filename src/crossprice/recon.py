@@ -161,8 +161,10 @@ class ReconResult:
         elif not self.shopify:
             fails.append("not shopify")
         else:
-            if self.stopped_reason:
+            if self.stopped_reason and self.stopped_reason.startswith("blocked"):
                 fails.append("blocked mid-recon")
+            elif self.stopped_reason:
+                fails.append(f"stopped mid-recon: {self.stopped_reason}")
             if not self.page1_products:
                 fails.append("empty catalog")
             if self.meta_country and self.meta_country != "US":

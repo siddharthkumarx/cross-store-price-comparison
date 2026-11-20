@@ -23,7 +23,7 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 
-GTIN_BUDGET = 30
+GTIN_BUDGET = 20
 REFRESH_DAYS = 7
 COLUMNS = ("retailer_id", "product_id", "variant_id", "gtin14", "source", "fetched_on")
 

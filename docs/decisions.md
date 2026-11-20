@@ -207,3 +207,45 @@ Effect on `recon-001` (103 candidates, 52 passed stage 1): retailers that pass a
 fit, per vertical: skincare 11, audio/hi-fi 7, coffee equipment 6, kitchenware 6,
 board games 4, cycling 2, pet supplies 1, outdoor gear 0. Only skincare can meet
 D-002's 8 retailers; audio/hi-fi gets stage 2 as well, for comparison.
+
+## D-016 - Vertical: skincare, 13 retailers; a 429 is not a drop reason on its own (2026-11-20, owner decision)
+
+Recon evidence (`recon-001` to `recon-004`, offline analysis in `checks/analysis/`):
+
+- **Skincare** has 13 retailers that pass every stage-1 and stage-2 rule and fit the
+  daily page budget; 79 to 90 % of sampled variants carry a valid GTIN.
+- In `recon-004` five of them (Cos Bar, Credo Beauty, Integrity Botanicals, Safe &
+  Chic, The Detox Market) answered HTTP 429 on `/products.json` page 3 or 4 until
+  the retries ran out. It was the second full read of each catalog within 30
+  minutes; `recon-002` had read the same catalogs without a single 429. Under D-006
+  as written (any 429 retry in any recon run drops a retailer, a rule taken from
+  F1) they would be dropped, leaving 8 retailers whose overlap is at most 15 %.
+- **Overlap** (D-002 rule 2) is not met: with all 13, only Integrity Botanicals
+  (29 % at the strict 0.8 name cut-off, 40 % at 0.5) and The Detox Market (20 % /
+  30 %) reach about 30 %; the third is Ayla Beauty (16 % / 22 %). The retailers span
+  clean, Korean and luxury beauty, which share few brands (34 of 859 brands are sold
+  by 3 or more of them).
+- **Audio/hi-fi** has more overlap among headphone shops (31-46 % for three of them
+  at a 0.6 cut-off) but only 7 retailers within the budget and GTINs on 27 % of
+  sampled variants, so its matching precision could not be measured against GTINs.
+
+Owner decision: skincare with the 13 retailers. A 429 is rate limiting, which F1's
+back-off handles; the owner rule for this project drops a retailer that
+**challenges** (CAPTCHA, anti-bot page, block). Supersedes the 429 line of D-006:
+a retailer that needed 429 retries in recon is kept only if a later re-test, one
+catalog read after a cool-down of at least 90 minutes, passes without a 429;
+otherwise it is dropped. The overlap shortfall is stated wherever the vertical is
+described, and the daily runs measure the real overlap with GTINs as the cache
+fills.
+
+## D-017 - Daily request budget for the 13 skincare retailers (2026-11-20)
+
+From the stage-2 catalogs (`recon-002`, `recon-004`): the 13 catalogs take 59
+`/products.json` pages in all (1 to 9 per retailer, `MAX_PAGES` stays 16). With
+`GTIN_BUDGET` = 20 product `.js` probes per retailer, one robots.txt and one
+product page each, a run makes at most 59 + 260 + 13 + 13 = **345 requests**. At
+F1's measured 4.5 s per request including latency and pacing that is about 26
+minutes, inside the 38-minute request window of the 45-minute job, with room for
+F1-style 429 cool-downs. Over 7 days the probes reach 140 products per retailer,
+enough to keep every compared product's GTIN fresh weekly and keep filling the
+cache with the shared-brand products.
