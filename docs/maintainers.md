@@ -77,3 +77,13 @@ docs/            maintainers (this guide), architecture, decisions, plan, source
                  incidents, precision, repo-settings
 tests/           pytest
 ```
+
+## History rewrite of 2026-11-20
+
+Early commits were signed with a key that the owner's GitHub account does not have,
+so GitHub showed them as "Unverified". The history was rewritten once with
+`git filter-repo` to drop every signature, keeping authors, committers, dates and
+messages; commits are unsigned from then on (`commit.gpgsign false`). The two recon
+results recorded the SHA of the commit they ran on: `git_sha` now names the
+rewritten commit and `git_sha_before_rewrite` the original one, which is also the
+`head_sha` of the Actions run linked in `run_url`.
