@@ -1,0 +1,14 @@
+# Live check request. Started by hand: Actions, "checks", Run workflow
+# (workflow_dispatch). Results are committed to checks/results/<id>/.
+id: recon-001
+check: recon
+purpose: >-
+  Stage 1 over 8 verticals: Shopify, robots, US/USD, multi-brand, SKU and GTIN
+  coverage on 2 sampled products. At most 6 requests per retailer.
+candidates: checks/candidates.yml
+concurrency: 5
+delay_s: 4.0
+jitter_s: 3.0
+edge_interval_s: 3.0
+edge_jitter_s: 1.5
+trip_after: 6

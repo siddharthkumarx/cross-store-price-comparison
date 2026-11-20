@@ -1,0 +1,117 @@
+# Recon candidates: US multi-brand online retailers believed to run on Shopify,
+# grouped by vertical. No marketplaces (Amazon, Walmart, eBay, Etsy, Target), no
+# brand-only stores. Recon (python -m crossprice.checks, checks/request.yml) decides
+# which ones pass; the evidence is in checks/results/recon-*/ and docs/sources.md.
+# The domain is the storefront as typed; recon follows redirects to the canonical host.
+verticals:
+  coffee-equipment:
+    - {store: Prima Coffee Equipment, domain: prima-coffee.com}
+    - {store: Clive Coffee, domain: clivecoffee.com}
+    - {store: Majesty Coffee, domain: majestycoffee.com}
+    - {store: Seattle Coffee Gear, domain: seattlecoffeegear.com}
+    - {store: Whole Latte Love, domain: wholelattelove.com}
+    - {store: 1st-line Equipment, domain: 1st-line.com}
+    - {store: Chris' Coffee, domain: chriscoffee.com}
+    - {store: Espresso Parts, domain: espressoparts.com}
+    - {store: Espresso Outlet, domain: espressooutlet.net}
+    - {store: Voltage Coffee Supply, domain: voltagecoffeesupply.com}
+    - {store: CoffeeAM, domain: coffeeam.com}
+    - {store: Espresso Machine Experts, domain: espressomachineexperts.com}
+    - {store: MiiCoffee, domain: miicoffee.com}
+  audio-hifi:
+    - {store: Headphones.com, domain: headphones.com}
+    - {store: Audio46, domain: audio46.com}
+    - {store: Bloom Audio, domain: bloomaudio.com}
+    - {store: Apos Audio, domain: apos.audio}
+    - {store: Moon Audio, domain: moon-audio.com}
+    - {store: Linsoul, domain: linsoul.com}
+    - {store: Upscale Audio, domain: upscaleaudio.com}
+    - {store: Audio Advice, domain: audioadvice.com}
+    - {store: World Wide Stereo, domain: worldwidestereo.com}
+    - {store: HeadAmp, domain: headamp.com}
+    - {store: Audio Advisor, domain: audioadvisor.com}
+    - {store: Music Direct, domain: musicdirect.com}
+  board-games:
+    - {store: Game Nerdz, domain: gamenerdz.com}
+    - {store: Boardlandia, domain: boardlandia.com}
+    - {store: Tabletop Merchant, domain: tabletopmerchant.com}
+    - {store: Miniature Market, domain: miniaturemarket.com}
+    - {store: CoolStuffInc, domain: coolstuffinc.com}
+    - {store: Funagain Games, domain: funagain.com}
+    - {store: Mox Boarding House, domain: moxboardinghouse.com}
+    - {store: Gamers Guild AZ, domain: gamersguildaz.com}
+    - {store: Cardhaus, domain: cardhaus.com}
+    - {store: The Game Steward, domain: thegamesteward.com}
+    - {store: Atomic Empire, domain: atomicempire.com}
+    - {store: Game Kastle, domain: gamekastle.com}
+    - {store: Labyrinth Games, domain: labyrinthgameshop.com}
+    - {store: Noble Knight Games, domain: nobleknight.com}
+  outdoor-gear:
+    - {store: Garage Grown Gear, domain: garagegrowngear.com}
+    - {store: Bentgate Mountaineering, domain: bentgate.com}
+    - {store: Gear Coop, domain: gearcoop.com}
+    - {store: Outdoor Gear Exchange, domain: gearx.com}
+    - {store: Mountain Gear, domain: mgear.com}
+    - {store: Campsaver, domain: campsaver.com}
+    - {store: Second Ascent, domain: secondascent.com}
+    - {store: Mountain Tools, domain: mtntools.com}
+    - {store: Ramsey Outdoor, domain: ramseyoutdoor.com}
+    - {store: Pro Mountain Sports, domain: promountainsports.com}
+    - {store: Piragis, domain: piragis.com}
+    - {store: Sunlight Sports, domain: sunlightsports.com}
+    - {store: Dancing Light Gear, domain: dancinglightgear.com}
+  cycling:
+    - {store: Worldwide Cyclery, domain: worldwidecyclery.com}
+    - {store: Fanatik Bike, domain: fanatikbike.com}
+    - {store: Above Category, domain: abovecategory.com}
+    - {store: Contender Bicycles, domain: contenderbicycles.com}
+    - {store: The Pro's Closet, domain: theproscloset.com}
+    - {store: Jenson USA, domain: jensonusa.com}
+    - {store: Art's Cyclery, domain: artscyclery.com}
+    - {store: Cambria Bike, domain: cambriabike.com}
+    - {store: R&A Cycles, domain: racycles.com}
+    - {store: Excel Sports, domain: excelsports.com}
+    - {store: Treefort Bikes, domain: treefortbikes.com}
+    - {store: Freewheel Bike, domain: freewheelbike.com}
+    - {store: Universal Cycles, domain: universalcycles.com}
+  kitchenware:
+    - {store: Chubo Knives, domain: chuboknives.com}
+    - {store: Carbon Knife Co, domain: carbonknifeco.com}
+    - {store: Bernal Cutlery, domain: bernalcutlery.com}
+    - {store: Japanese Knife Imports, domain: japaneseknifeimports.com}
+    - {store: Korin, domain: korin.com}
+    - {store: Chef's Edge, domain: chefs-edge.com}
+    - {store: MTC Kitchen, domain: mtckitchen.com}
+    - {store: Cutlery and More, domain: cutleryandmore.com}
+    - {store: Chef Knives To Go, domain: chefknivestogo.com}
+    - {store: Everything Kitchens, domain: everythingkitchens.com}
+    - {store: Kitchen Kapers, domain: kitchenkapers.com}
+    - {store: Burrfection, domain: burrfection.com}
+    - {store: Toiro Kitchen, domain: toirokitchen.com}
+  pet-supplies:
+    - {store: Only Natural Pet, domain: onlynaturalpet.com}
+    - {store: Mud Bay, domain: mudbay.com}
+    - {store: Pet Food Express, domain: petfood.express}
+    - {store: Kriser's, domain: krisers.com}
+    - {store: Pet Mountain, domain: petmountain.com}
+    - {store: Bentley's Pet Stuff, domain: bentleyspetstuff.com}
+    - {store: EarthWise Pet, domain: earthwisepet.com}
+    - {store: PetPeople, domain: petpeoplestores.com}
+    - {store: Petflow, domain: petflow.com}
+    - {store: Healthy Spot, domain: healthyspot.com}
+    - {store: Pet Supplies Plus, domain: petsuppliesplus.com}
+  skincare:
+    - {store: Credo Beauty, domain: credobeauty.com}
+    - {store: The Detox Market, domain: thedetoxmarket.com}
+    - {store: Thirteen Lune, domain: thirteenlune.com}
+    - {store: Soko Glam, domain: sokoglam.com}
+    - {store: Ohlolly, domain: ohlolly.com}
+    - {store: Cos Bar, domain: cosbar.com}
+    - {store: Beauty Habit, domain: beautyhabit.com}
+    - {store: Dermsilk, domain: dermsilk.com}
+    - {store: Integrity Botanicals, domain: integritybotanicals.com}
+    - {store: Safe & Chic, domain: safeandchic.com}
+    - {store: Violet Grey, domain: violetgrey.com}
+    - {store: Ayla Beauty, domain: aylabeauty.com}
+    - {store: SkinCareRx, domain: skincarerx.com}
+    - {store: Goop, domain: goop.com}
