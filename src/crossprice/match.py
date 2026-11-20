@@ -51,11 +51,21 @@ _UNITS = {
     "w", "v", "mah", "pack", "pk", "ct", "pc", "pcs", "piece", "pieces", "cup", "cups",
     "qt", "gal", "hz", "khz", "ohm", "ohms", "db",
 }  # fmt: skip
+# Trailing words that brands add or drop ("Ilia" / "ILIA Beauty", "Tom Ford Beauty").
+_BRAND_SUFFIX = {
+    "beauty", "skincare", "skin", "care", "cosmetics", "organics", "botanicals",
+    "parfum", "parfums", "science", "labs", "lab",
+}  # fmt: skip
+# Option values that mean "no option".
+_NO_OPTION = {"default title", "default", "one size", "onesize", "os", "n/a", "na", "standard"}
 _TOKEN = re.compile(r"[a-z0-9]+")
+_MARKS = re.compile("[\u2122\u00ae\u00a9]")  # trade mark, registered, copyright
+_OPTION_DETAIL = re.compile(r"\s*(\(|\s[-\u2013\u2014]\s|:\s).*$")
 
 
 def fold(text: str) -> str:
     """Lower case, accents removed, ``&`` spelt out."""
+    text = _MARKS.sub(" ", text)
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
     return text.lower().replace("&", " and ").replace("+", " plus ")
 
@@ -63,6 +73,8 @@ def fold(text: str) -> str:
 def brand_key(brand: str, aliases: Mapping[str, str] | None = None) -> str:
     """Normalised brand: folded, punctuation and legal suffixes removed, aliases applied."""
     words = [w for w in _TOKEN.findall(fold(brand)) if w not in _LEGAL]
+    while len(words) > 1 and words[-1] in _BRAND_SUFFIX:
+        words.pop()
     key = "".join(words)
     if aliases:
         key = aliases.get(key, key)
@@ -79,6 +91,13 @@ def tokens(text: str) -> list[str]:
         else:
             out.append(tok)
     return [t for t in out if t not in _STOP]
+
+
+def option_value(value: str) -> str:
+    """The identifying part of an option value: "Lady (cranberry...)" -> "lady"."""
+    main = _OPTION_DETAIL.sub("", value.strip())
+    main = " ".join(_TOKEN.findall(fold(main)))
+    return "" if main in _NO_OPTION else main
 
 
 def sku_key(sku: str, variant_id: int) -> str | None:
@@ -120,7 +139,7 @@ def to_offer(row: OfferRow, aliases: Mapping[str, str] | None = None) -> Offer:
     bkey = brand_key(row.brand, aliases)
     brand_tokens = set(tokens(row.brand)) | {bkey}
     model = [t for t in tokens(row.product_title) if t not in brand_tokens]
-    opts = {t for o in row.options for t in tokens(o)}
+    opts = {t for o in row.options for t in tokens(option_value(o))}
     words = set(model) | opts
     return Offer(
         key=row.key,
@@ -201,11 +220,19 @@ class Idf:
 
 
 def text_similarity(a: Offer, b: Offer, idf: Idf) -> float:
+    """Half weighted Jaccard, half weighted containment of the smaller token set.
+
+    Containment credits a store that names the same model with fewer words
+    ("UnCoverup" / "UnCoverup Concealer"); Jaccard keeps extra words costly.
+    """
     ta, tb = a.model | a.options, b.model | b.options
     union = ta | tb
-    if not union:
+    if not ta or not tb:
         return 0.0
-    return sum(idf.w(t) for t in ta & tb) / sum(idf.w(t) for t in union)
+    common = sum(idf.w(t) for t in ta & tb)
+    jaccard = common / sum(idf.w(t) for t in union)
+    containment = common / min(sum(idf.w(t) for t in ta), sum(idf.w(t) for t in tb))
+    return 0.5 * jaccard + 0.5 * containment
 
 
 def fuzzy_score(a: Offer, b: Offer, idf: Idf) -> float:

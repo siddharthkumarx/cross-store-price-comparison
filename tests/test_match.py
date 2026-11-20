@@ -175,3 +175,29 @@ def test_manual_sample_prefers_non_gtin_pairs() -> None:
     sample = manual_sample(pairs, n=4)
     assert [p.tier for p in sample[:3]] == ["fuzzy"] * 3
     assert sample == manual_sample(list(reversed(pairs)), n=4)
+
+
+def test_option_values_compare_on_their_main_part() -> None:
+    from crossprice.match import option_value
+
+    assert option_value("Lady (cranberry with neutral undertones)") == "lady"
+    assert option_value("Truffle - deep-dark warm") == "truffle"
+    assert option_value("One Size") == option_value("Default Title") == ""
+
+
+def test_trade_marks_and_brand_suffixes_do_not_split_names() -> None:
+    assert tokens("SuperSuede™ Baked Eyeshadow") == ["supersuede", "baked", "eyeshadow"]
+    assert brand_key("ILIA Beauty") == brand_key("Ilia") == "ilia"
+    assert brand_key("Skin") == "skin"  # a one-word brand keeps its name
+
+
+def test_shorter_name_for_the_same_model_still_matches() -> None:
+    rows = [
+        row("a", 10, "UnCoverup", brand="RMS Beauty", options=("000",), price_cents=4200),
+        row("b", 20, "UnCoverup Concealer", brand="RMS", options=("000",), price_cents=4200),
+        row("a", 11, "UnCoverup", brand="RMS Beauty", options=("11",), price_cents=4200),
+    ]
+    pairs = candidate_pairs([to_offer(r) for r in rows])
+    best = max(pairs, key=lambda p: p.score)
+    assert (best.a, best.b) == (("a", 10), ("b", 20))
+    assert best.score >= 0.7

@@ -115,3 +115,17 @@ verticals:
     - {store: Ayla Beauty, domain: aylabeauty.com}
     - {store: SkinCareRx, domain: skincarerx.com}
     - {store: Goop, domain: goop.com}
+    # Added for recon-003: clean and indie beauty shops that carry the same brands as
+    # the clean-beauty retailers that passed recon-002 (D-016).
+    - {store: Beauty Heroes, domain: beautyheroes.com}
+    - {store: The Choosy Chick, domain: thechoosychick.com}
+    - {store: Shen Beauty, domain: shenbeauty.com}
+    - {store: Onda Beauty, domain: ondabeauty.com}
+    - {store: CAP Beauty, domain: capbeauty.com}
+    - {store: Petit Vour, domain: petitvour.com}
+    - {store: Follain, domain: follain.com}
+    - {store: Peach & Lily, domain: peachandlily.com}
+    - {store: Beauteque, domain: beauteque.com}
+    - {store: Spruce Beauty, domain: sprucebeauty.com}
+    - {store: Clean Beauty Collective, domain: cleanbeautycollective.com}
+    - {store: Pure Beauty Boutique, domain: purebeautyboutique.com}
