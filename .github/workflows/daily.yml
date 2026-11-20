@@ -39,6 +39,7 @@ jobs:
           sparse-checkout: |
             data/runs.jsonl
             src/crossprice
+            config/retailers.yml
           sparse-checkout-cone-mode: false
 
       - name: Decide
@@ -47,6 +48,11 @@ jobs:
           EVENT: ${{ github.event_name }}
           SLOT_INPUT: ${{ inputs.slot }}
         run: |
+          if [ ! -f config/retailers.yml ]; then
+            echo "no retailer list yet (docs/plan.md item 6): skipped"
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           if [ "$EVENT" = "workflow_dispatch" ] && [ -z "$SLOT_INPUT" ]; then
             echo "manual run without a slot: runs"
             echo "run=true" >> "$GITHUB_OUTPUT"
