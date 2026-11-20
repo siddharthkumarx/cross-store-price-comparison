@@ -44,7 +44,8 @@ def test_scd2_merge_opens_closes_and_carries(tmp_path: Path) -> None:
         con, None, r1.open_versions, r1.closed_versions, T0.replace(day=1), T1, out
     )
     assert n == 4
-    cols = duckdb.sql(f"SELECT * FROM read_parquet('{out}') LIMIT 0").columns
+    cur = duckdb.connect().execute("SELECT * FROM read_parquet(?) LIMIT 0", [str(out)])
+    cols = [str(d[0]) for d in cur.description]
     assert {"brand", "sku", "gtin14", "valid_from", "valid_to", "exported_at"} <= set(cols)
 
 

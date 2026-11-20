@@ -1,0 +1,12 @@
+# Public identity of the repository, used by the feed, README and dashboard renderers.
+id: cross-store-price-comparison
+name: Cross-store price comparison
+repo: siddharthkumarx/cross-store-price-comparison
+branch: main
+dashboard: https://siddharthkumar.com/cross-store-price-comparison/
+owner: Siddharth Kumar
+company: SteadyData
+company_site: https://steadydata.co
+contact: https://steadydata.co/contact/
+email: hello@steadydata.co
+site: https://siddharthkumar.com
