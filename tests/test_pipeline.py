@@ -99,7 +99,12 @@ def shop(host: str, prices: dict[int, str]) -> Any:
 def workdir(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     cfg = {
         "retailers": [
-            {"id": h.split(".")[0], "name": h.split(".")[0].title(), "vertical": "coffee", "host": h}
+            {
+                "id": h.split(".")[0],
+                "name": h.split(".")[0].title(),
+                "vertical": "coffee",
+                "host": h,
+            }
             for h in CATALOGS
         ]
     }
@@ -112,7 +117,8 @@ def _client_for(prices: dict[str, dict[int, str]]) -> Any:
     handlers = {h: shop(h, prices.get(h, {})) for h in CATALOGS}
 
     def route(request: httpx.Request) -> httpx.Response:
-        return handlers[request.url.host](request)
+        response: httpx.Response = handlers[request.url.host](request)
+        return response
 
     return lambda timeout_s=30.0: httpx.AsyncClient(
         transport=httpx.MockTransport(route), follow_redirects=True
