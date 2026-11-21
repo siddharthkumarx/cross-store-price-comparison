@@ -21,12 +21,12 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 
 | file | rows | what |
 |---|---:|---|
-| `latest/comparison.csv` | 175 | one row per product sold by 2+ stores |
+| `latest/comparison.csv` | 560 | one row per product sold by 2+ stores |
 | `latest/offers.csv` | 17,429 | every product option at every store (open SCD2 versions) |
-| `latest/possible_matches.csv` | 828 | candidate pairs below the confidence bar, never compared |
-| `changes/YYYY/YYYY-MM-DD.csv` | 0 on 2026-11-21 | price moves, new lowest store, stock changes |
+| `latest/possible_matches.csv` | 278 | candidate pairs below the confidence bar, never compared |
+| `changes/YYYY/YYYY-MM-DD.csv` | 3 on 2026-11-21 | price moves, new lowest store, stock changes |
 | `precision/` | one per run | blind matching precision against GTINs |
-| `runs.jsonl` | 2 | one line per run, with every data check |
+| `runs.jsonl` | 3 | one line per run, with every data check |
 | release `data-YYYY-MM` | | `offer_history_YYYY-MM.parquet`: every version of every offer in the month |
 
 ## Collection
@@ -40,9 +40,9 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 - Stores read completely: 11/11
 - Rows rejected by validation: 0
 - Prices proven to be US dollars: USD
-- Prices confirmed by a second source: 447/447
-- Product options with a verified barcode: 4.0%
-- Matching precision (blind, against barcodes): not measured yet
+- Prices confirmed by a second source: 400/400
+- Product options whose barcode has been read so far: 6.0%
+- Matching precision (blind, against barcodes): 97.2%
 
 
 ## Limits

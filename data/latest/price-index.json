@@ -1,26 +1,51 @@
 {
-  "generated_at": "2026-11-21T02:45:59Z",
+  "generated_at": "2026-11-21T12:41:42Z",
   "label": "Demo on public data",
   "retailers": [
     {
       "retailer_id": "ayla-beauty",
-      "products_shared": 23,
+      "products_shared": 98,
       "index": 100.0,
-      "within_band": 23,
+      "within_band": 97,
       "by_brand": [
         {
-          "brand": "Macrene Actives",
-          "products": 11,
+          "brand": "Kosas",
+          "products": 39,
           "index": 100.0
         },
         {
-          "brand": "Kosas",
-          "products": 5,
+          "brand": "Macrene Actives",
+          "products": 22,
+          "index": 100.0
+        },
+        {
+          "brand": "Marie Veronique",
+          "products": 14,
           "index": 100.0
         },
         {
           "brand": "Augustinus Bader",
-          "products": 4,
+          "products": 8,
+          "index": 100.0
+        },
+        {
+          "brand": "VENN",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Activist",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Olio E Osso",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "Symbiome",
+          "products": 2,
           "index": 100.0
         },
         {
@@ -34,38 +59,68 @@
           "index": 100.0
         }
       ],
-      "above": [],
+      "above": [
+        {
+          "product_key": "M74e281064b903",
+          "brand": "Kosas",
+          "product": "Kosas Weightless Lip Color - Deep Talks",
+          "price_usd": "26.00",
+          "market_median_usd": "19.00",
+          "difference_pct": 36.8,
+          "retailers": 2
+        }
+      ],
       "below": []
     },
     {
       "retailer_id": "cos-bar",
-      "products_shared": 83,
+      "products_shared": 214,
       "index": 100.0,
-      "within_band": 73,
+      "within_band": 203,
       "by_brand": [
         {
           "brand": "WESTMAN ATELIER",
-          "products": 46,
+          "products": 145,
+          "index": 100.0
+        },
+        {
+          "brand": "Macrene Actives",
+          "products": 20,
           "index": 100.0
         },
         {
           "brand": "AUGUSTINUS BADER",
-          "products": 13,
+          "products": 15,
           "index": 100.0
         },
         {
           "brand": "HOURGLASS",
-          "products": 10,
+          "products": 11,
           "index": 105.6
         },
         {
-          "brand": "Macrene Actives",
+          "brand": "SALT & STONE",
           "products": 10,
           "index": 100.0
         },
         {
           "brand": "Augustinus Bader",
+          "products": 7,
+          "index": 100.0
+        },
+        {
+          "brand": "LA BONNE BROSSE",
           "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "JENNY PATINKIN",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "VINTNER'S DAUGHTER",
+          "products": 1,
           "index": 100.0
         },
         {
@@ -82,6 +137,15 @@
           "price_usd": "34.00",
           "market_median_usd": "32.00",
           "difference_pct": 6.2,
+          "retailers": 2
+        },
+        {
+          "product_key": "Me28260e3a2840",
+          "brand": "HOURGLASS",
+          "product": "Translucent Setting Powder - Translucent",
+          "price_usd": "52.00",
+          "market_median_usd": "49.00",
+          "difference_pct": 6.1,
           "retailers": 2
         },
         {
@@ -171,47 +235,119 @@
     },
     {
       "retailer_id": "credo-beauty",
-      "products_shared": 77,
+      "products_shared": 294,
       "index": 100.0,
-      "within_band": 75,
+      "within_band": 279,
       "by_brand": [
         {
           "brand": "WESTMAN ATELIER",
-          "products": 46,
+          "products": 145,
           "index": 100.0
         },
         {
           "brand": "RMS Beauty",
-          "products": 19,
+          "products": 51,
           "index": 100.0
         },
         {
           "brand": "Kosas",
-          "products": 5,
+          "products": 39,
           "index": 100.0
         },
         {
-          "brand": "Ere Perez",
-          "products": 3,
+          "brand": "Axiology",
+          "products": 14,
+          "index": 100.0
+        },
+        {
+          "brand": "LolaVie",
+          "products": 8,
           "index": 100.0
         },
         {
           "brand": "LYS Beauty",
-          "products": 2,
-          "index": 116.7
+          "products": 6,
+          "index": 122.2
         },
         {
-          "brand": "LolaVie",
+          "brand": "goop beauty",
+          "products": 6,
+          "index": 68.8
+        },
+        {
+          "brand": "Ere Perez",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Minori",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Ilia",
+          "products": 3,
+          "index": 200.0
+        },
+        {
+          "brand": "KOBA skincare",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Rye Beauty",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "The Outset",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Corpus",
           "products": 1,
           "index": 100.0
         },
         {
-          "brand": "goop beauty",
+          "brand": "JENNY PATINKIN",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Olio E Osso",
           "products": 1,
           "index": 100.0
         }
       ],
       "above": [
+        {
+          "product_key": "M6a4d8fa489c0f",
+          "brand": "Ilia",
+          "product": "Super Serum Skin Tint SPF 40 - ST16.5 Jardin (Very deep with golden undertones)",
+          "price_usd": "48.00",
+          "market_median_usd": "24.00",
+          "difference_pct": 100.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "M96fa21d75590e",
+          "brand": "Ilia",
+          "product": "Super Serum Skin Tint SPF 40 - ST17 Miho (Very deep with neutral cool undertones)",
+          "price_usd": "48.00",
+          "market_median_usd": "24.00",
+          "difference_pct": 100.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "M04be9658fd704",
+          "brand": "Ilia",
+          "product": "Super Serum Skin Tint SPF 40 - ST18 Roque (Extra deep with cool undertones)",
+          "price_usd": "48.00",
+          "market_median_usd": "24.00",
+          "difference_pct": 100.0,
+          "retailers": 2
+        },
         {
           "product_key": "00850023802583",
           "brand": "LYS Beauty",
@@ -229,24 +365,115 @@
           "market_median_usd": "63.75",
           "difference_pct": 33.3,
           "retailers": 2
+        },
+        {
+          "product_key": "00850023802552",
+          "brand": "LYS Beauty",
+          "product": "Speak Love Glossy Lip Treatment Oil - Clear",
+          "price_usd": "15.00",
+          "market_median_usd": "12.00",
+          "difference_pct": 25.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810090430034",
+          "brand": "LYS Beauty",
+          "product": "Higher Standard Satin Matte Cream Blush - Humble (cool soft pink)",
+          "price_usd": "22.00",
+          "market_median_usd": "18.00",
+          "difference_pct": 22.2,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850023802064",
+          "brand": "LYS Beauty",
+          "product": "Higher Standard Satin Matte Cream Blush - Kindness (soft peachy nude)",
+          "price_usd": "22.00",
+          "market_median_usd": "18.00",
+          "difference_pct": 22.2,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850023802101",
+          "brand": "LYS Beauty",
+          "product": "Higher Standard Satin Matte Cream Blush - Passion (fuchsia pink)",
+          "price_usd": "22.00",
+          "market_median_usd": "18.00",
+          "difference_pct": 22.2,
+          "retailers": 2
         }
       ],
-      "below": []
+      "below": [
+        {
+          "product_key": "00850026647952",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
+          "price_usd": "23.00",
+          "market_median_usd": "34.00",
+          "difference_pct": -32.4,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647938",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
+          "price_usd": "23.00",
+          "market_median_usd": "34.00",
+          "difference_pct": -32.4,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647914",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
+          "price_usd": "23.00",
+          "market_median_usd": "34.00",
+          "difference_pct": -32.4,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850049258371",
+          "brand": "goop beauty",
+          "product": "Hydra Barrier Gel Gloss - Fig (purple)",
+          "price_usd": "21.00",
+          "market_median_usd": "30.00",
+          "difference_pct": -30.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850049258272",
+          "brand": "goop beauty",
+          "product": "Hydra Barrier Gel Gloss - Glaze (clear)",
+          "price_usd": "21.00",
+          "market_median_usd": "30.00",
+          "difference_pct": -30.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "M74e281064b903",
+          "brand": "Kosas",
+          "product": "Kosas Weightless Lip Color - Deep Talks",
+          "price_usd": "19.00",
+          "market_median_usd": "26.00",
+          "difference_pct": -26.9,
+          "retailers": 2
+        }
+      ]
     },
     {
       "retailer_id": "dermsilk",
-      "products_shared": 16,
+      "products_shared": 22,
       "index": 100.0,
-      "within_band": 16,
+      "within_band": 22,
       "by_brand": [
         {
           "brand": "AUGUSTINUS BADER",
-          "products": 13,
+          "products": 15,
           "index": 100.0
         },
         {
           "brand": "Augustinus Bader",
-          "products": 3,
+          "products": 7,
           "index": 100.0
         }
       ],
@@ -255,19 +482,19 @@
     },
     {
       "retailer_id": "ohlolly",
-      "products_shared": 16,
+      "products_shared": 21,
       "index": 100.0,
-      "within_band": 10,
+      "within_band": 13,
       "by_brand": [
         {
           "brand": "Purito",
-          "products": 5,
+          "products": 9,
           "index": 100.0
         },
         {
           "brand": "haruharu wonder",
-          "products": 5,
-          "index": 113.6
+          "products": 6,
+          "index": 106.8
         },
         {
           "brand": "Cosrx",
@@ -340,9 +567,27 @@
           "market_median_usd": "19.50",
           "difference_pct": 7.7,
           "retailers": 2
+        },
+        {
+          "product_key": "08809563103652",
+          "brand": "Purito",
+          "product": "Purito Mighty Bamboo Panthenol Cleanser",
+          "price_usd": "15.00",
+          "market_median_usd": "14.00",
+          "difference_pct": 7.1,
+          "retailers": 2
         }
       ],
       "below": [
+        {
+          "product_key": "08809532222186",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Night Knight Retinol Serum",
+          "price_usd": "22.00",
+          "market_median_usd": "26.00",
+          "difference_pct": -15.4,
+          "retailers": 2
+        },
         {
           "product_key": "08809416470085",
           "brand": "Cosrx",
@@ -356,34 +601,200 @@
     },
     {
       "retailer_id": "onda-beauty",
-      "products_shared": 2,
+      "products_shared": 59,
       "index": 100.0,
-      "within_band": 2,
+      "within_band": 56,
       "by_brand": [
+        {
+          "brand": "Marie Veronique",
+          "products": 14,
+          "index": 100.0
+        },
+        {
+          "brand": "SALT & STONE",
+          "products": 10,
+          "index": 100.0
+        },
+        {
+          "brand": "VENN",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "goop beauty",
+          "products": 5,
+          "index": 119.3
+        },
+        {
+          "brand": "AUNU BEAUTY",
+          "products": 4,
+          "index": 100.0
+        },
+        {
+          "brand": "Activist",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "LA BONNE BROSSE",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Rye Beauty",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "The Outset",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "GOOP BEAUTY",
+          "products": 2,
+          "index": 100.0
+        },
         {
           "brand": "Vintner's Daughter",
           "products": 2,
           "index": 100.0
+        },
+        {
+          "brand": "Corpus",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "IOTA",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Olio E Osso",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Symbiome",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "VINTNER'S DAUGHTER",
+          "products": 1,
+          "index": 100.0
         }
       ],
-      "above": [],
+      "above": [
+        {
+          "product_key": "00850026647952",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647938",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647914",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        }
+      ],
       "below": []
     },
     {
       "retailer_id": "petit-vour",
-      "products_shared": 0,
-      "index": null,
+      "products_shared": 4,
+      "index": 50.0,
       "within_band": 0,
-      "by_brand": [],
+      "by_brand": [
+        {
+          "brand": "Ilia",
+          "products": 3,
+          "index": 50.0
+        },
+        {
+          "brand": "Fitglow Beauty",
+          "products": 1,
+          "index": 78.6
+        }
+      ],
       "above": [],
-      "below": []
+      "below": [
+        {
+          "product_key": "M6a4d8fa489c0f",
+          "brand": "Ilia",
+          "product": "Super Serum Skin Tint SPF 40 - ST16.5 Jardin (Very deep with golden undertones)",
+          "price_usd": "24.00",
+          "market_median_usd": "48.00",
+          "difference_pct": -50.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "M96fa21d75590e",
+          "brand": "Ilia",
+          "product": "Super Serum Skin Tint SPF 40 - ST17 Miho (Very deep with neutral cool undertones)",
+          "price_usd": "24.00",
+          "market_median_usd": "48.00",
+          "difference_pct": -50.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "M04be9658fd704",
+          "brand": "Ilia",
+          "product": "Super Serum Skin Tint SPF 40 - ST18 Roque (Extra deep with cool undertones)",
+          "price_usd": "24.00",
+          "market_median_usd": "48.00",
+          "difference_pct": -50.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "00859976001746",
+          "brand": "Fitglow Beauty",
+          "product": "Plant Protein Brow Gel - Grey - Grey",
+          "price_usd": "22.00",
+          "market_median_usd": "28.00",
+          "difference_pct": -21.4,
+          "retailers": 2
+        }
+      ]
     },
     {
       "retailer_id": "safe-chic",
-      "products_shared": 9,
-      "index": 105.9,
-      "within_band": 4,
+      "products_shared": 34,
+      "index": 100.0,
+      "within_band": 28,
       "by_brand": [
+        {
+          "brand": "Axiology",
+          "products": 14,
+          "index": 100.0
+        },
+        {
+          "brand": "28 Litsea",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Minori",
+          "products": 5,
+          "index": 100.0
+        },
         {
           "brand": "Dr. Alkaitis Organics",
           "products": 4,
@@ -398,9 +809,23 @@
           "brand": "EVOLVh",
           "products": 1,
           "index": 100.0
+        },
+        {
+          "brand": "Fitglow Beauty",
+          "products": 1,
+          "index": 127.3
         }
       ],
       "above": [
+        {
+          "product_key": "00859976001746",
+          "brand": "Fitglow Beauty",
+          "product": "Plant Protein Brow Gel - Grey - Grey",
+          "price_usd": "28.00",
+          "market_median_usd": "22.00",
+          "difference_pct": 27.3,
+          "retailers": 2
+        },
         {
           "product_key": "00860002460352",
           "brand": "Madame Gabriela Beauty",
@@ -451,24 +876,29 @@
     },
     {
       "retailer_id": "soko-glam",
-      "products_shared": 16,
+      "products_shared": 22,
       "index": 100.0,
-      "within_band": 10,
+      "within_band": 14,
       "by_brand": [
         {
           "brand": "Purito",
-          "products": 5,
+          "products": 9,
           "index": 100.0
         },
         {
           "brand": "haruharu wonder",
-          "products": 5,
-          "index": 88.0
+          "products": 6,
+          "index": 94.0
         },
         {
           "brand": "Cosrx",
           "products": 2,
           "index": 106.5
+        },
+        {
+          "brand": "IOTA",
+          "products": 1,
+          "index": 100.0
         },
         {
           "brand": "Isntree",
@@ -492,6 +922,15 @@
         }
       ],
       "above": [
+        {
+          "product_key": "08809532222186",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Night Knight Retinol Serum",
+          "price_usd": "26.00",
+          "market_median_usd": "22.00",
+          "difference_pct": 18.2,
+          "retailers": 2
+        },
         {
           "product_key": "08809416470085",
           "brand": "Cosrx",
@@ -547,15 +986,29 @@
           "market_median_usd": "21.00",
           "difference_pct": -7.1,
           "retailers": 2
+        },
+        {
+          "product_key": "08809563103652",
+          "brand": "Purito",
+          "product": "Purito Mighty Bamboo Panthenol Cleanser",
+          "price_usd": "14.00",
+          "market_median_usd": "15.00",
+          "difference_pct": -6.7,
+          "retailers": 2
         }
       ]
     },
     {
       "retailer_id": "the-choosy-chick",
-      "products_shared": 4,
-      "index": 97.3,
-      "within_band": 3,
+      "products_shared": 9,
+      "index": 100.0,
+      "within_band": 8,
       "by_brand": [
+        {
+          "brand": "28 Litsea",
+          "products": 5,
+          "index": 100.0
+        },
         {
           "brand": "Dr. Alkaitis Organics",
           "products": 4,
@@ -577,23 +1030,48 @@
     },
     {
       "retailer_id": "thirteen-lune",
-      "products_shared": 45,
+      "products_shared": 109,
       "index": 100.0,
-      "within_band": 31,
+      "within_band": 85,
       "by_brand": [
         {
           "brand": "RMS Beauty",
-          "products": 19,
+          "products": 51,
           "index": 100.0
         },
         {
           "brand": "HOURGLASS",
-          "products": 10,
+          "products": 11,
           "index": 94.7
         },
         {
+          "brand": "LolaVie",
+          "products": 8,
+          "index": 100.0
+        },
+        {
+          "brand": "goop beauty",
+          "products": 8,
+          "index": 119.3
+        },
+        {
+          "brand": "LYS Beauty",
+          "products": 6,
+          "index": 81.8
+        },
+        {
           "brand": "Macrene Actives",
+          "products": 6,
+          "index": 100.0
+        },
+        {
+          "brand": "Ere Perez",
           "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "AUNU BEAUTY",
+          "products": 4,
           "index": 100.0
         },
         {
@@ -602,27 +1080,68 @@
           "index": 89.7
         },
         {
-          "brand": "Ere Perez",
+          "brand": "KOBA skincare",
           "products": 3,
           "index": 100.0
         },
         {
-          "brand": "LYS Beauty",
+          "brand": "GOOP BEAUTY",
           "products": 2,
-          "index": 87.5
-        },
-        {
-          "brand": "LolaVie",
-          "products": 1,
           "index": 100.0
         },
         {
-          "brand": "goop beauty",
+          "brand": "Symbiome",
           "products": 1,
           "index": 100.0
         }
       ],
-      "above": [],
+      "above": [
+        {
+          "product_key": "00850049258371",
+          "brand": "goop beauty",
+          "product": "Hydra Barrier Gel Gloss - Fig (purple)",
+          "price_usd": "30.00",
+          "market_median_usd": "21.00",
+          "difference_pct": 42.9,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850049258272",
+          "brand": "goop beauty",
+          "product": "Hydra Barrier Gel Gloss - Glaze (clear)",
+          "price_usd": "30.00",
+          "market_median_usd": "21.00",
+          "difference_pct": 42.9,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850026647952",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647938",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647914",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        }
+      ],
       "below": [
         {
           "product_key": "00850023802583",
@@ -631,6 +1150,42 @@
           "price_usd": "15.00",
           "market_median_usd": "20.00",
           "difference_pct": -25.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850023802552",
+          "brand": "LYS Beauty",
+          "product": "Speak Love Glossy Lip Treatment Oil - Clear",
+          "price_usd": "12.00",
+          "market_median_usd": "15.00",
+          "difference_pct": -20.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810090430034",
+          "brand": "LYS Beauty",
+          "product": "Higher Standard Satin Matte Cream Blush - Humble (cool soft pink)",
+          "price_usd": "18.00",
+          "market_median_usd": "22.00",
+          "difference_pct": -18.2,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850023802064",
+          "brand": "LYS Beauty",
+          "product": "Higher Standard Satin Matte Cream Blush - Kindness (soft peachy nude)",
+          "price_usd": "18.00",
+          "market_median_usd": "22.00",
+          "difference_pct": -18.2,
+          "retailers": 2
+        },
+        {
+          "product_key": "00850023802101",
+          "brand": "LYS Beauty",
+          "product": "Higher Standard Satin Matte Cream Blush - Passion (fuchsia pink)",
+          "price_usd": "18.00",
+          "market_median_usd": "22.00",
+          "difference_pct": -18.2,
           "retailers": 2
         },
         {
@@ -676,6 +1231,15 @@
           "price_usd": "32.00",
           "market_median_usd": "34.00",
           "difference_pct": -5.9,
+          "retailers": 2
+        },
+        {
+          "product_key": "Me28260e3a2840",
+          "brand": "HOURGLASS",
+          "product": "Translucent Setting Powder - Translucent",
+          "price_usd": "49.00",
+          "market_median_usd": "52.00",
+          "difference_pct": -5.8,
           "retailers": 2
         },
         {

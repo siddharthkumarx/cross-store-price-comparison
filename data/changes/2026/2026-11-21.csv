@@ -1,0 +1,4 @@
+observed_at,product_key,brand,product,event,retailer_id,old_value,new_value,change_pct
+2026-11-21T12:41:42Z,05060552900222,Augustinus Bader,Augustinus Bader The Cream - 1.0 oz,new_lowest,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,
+2026-11-21T12:41:42Z,05060552901892,Augustinus Bader,Augustinus Bader The Rich Cream - 1.7 oz,new_lowest,ayla-beauty cos-bar dermsilk,cos-bar dermsilk,ayla-beauty cos-bar dermsilk,
+2026-11-21T12:41:42Z,05060552903346,Augustinus Bader,Augustinus Bader The Ultimate Soothing Cream,new_lowest,ayla-beauty cos-bar dermsilk,cos-bar dermsilk,ayla-beauty cos-bar dermsilk,

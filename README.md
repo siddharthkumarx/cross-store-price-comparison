@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-still.svg">
-    <img src="assets/hero.svg" width="820" alt="Same product, different price: LYS Beauty Everyday Powder Brush - One Size costs $15.00 at Thirteen Lune and up to $20.00 elsewhere (33.3% gap) on 2026-11-21. 175 products compared across 11 US skincare and beauty stores in that run.">
+    <img src="assets/hero.svg" width="820" alt="Same product, different price: goop beauty Colorblur Glow Balm - Velveteen (soft mauve) costs $23.00 at Credo Beauty and up to $34.00 elsewhere (47.8% gap) on 2026-11-21. 560 products compared across 11 US skincare and beauty stores in that run.">
   </picture>
 </p>
 
@@ -19,20 +19,29 @@
 
 ## What does a daily cross-store price comparison give you?
 
-One row per product sold by at least two of the stores, with each store's price, stock and link, the lowest price and the gap between the highest and the lowest. Real rows from the run of 2026-11-21 ([run log](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44857592994)):
+One row per product sold by at least two of the stores, with each store's price, stock and link, the lowest price and the gap between the highest and the lowest. Real rows from the run of 2026-11-21 ([run log](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44905134307)):
 
 | product | lowest price | at | gap | stores in stock | matched by |
 |---|---:|---|---:|---:|---|
+| goop beauty · Colorblur Glow Balm - Velveteen (soft mauve) | $23.00 | Credo Beauty | 47.8% | 3 | name |
+| goop beauty · Colorblur Glow Balm - Venus (soft fuscia) | $23.00 | Credo Beauty | 47.8% | 3 | name |
+| goop beauty · Colorblur Glow Balm - Whiskey (warm terra-cotta) | $23.00 | Credo Beauty | 47.8% | 3 | name |
 | LYS Beauty · Everyday Powder Brush - One Size | $15.00 | Thirteen Lune | 33.3% | 2 | barcode |
 | WESTMAN ATELIER · Lip Suede - Les Nudes | $63.75 | Cos Bar | 33.3% | 2 | barcode |
-| haruharu wonder · Black Rice Bakuchiol Eye Cream | $17.00 | Soko Glam | 29.4% | 2 | barcode |
-| haruharu wonder · Black Rice Hyaluronic Toner for Sensitive Skin | $17.00 | Soko Glam | 29.4% | 2 | barcode |
-| haruharu wonder · Black Rice Moisture Cleansing Oil | $22.00 | Soko Glam | 13.6% | 2 | barcode |
 
 
 ### What changed today
 
-No changes on the compared products.
+3 new lowest-price stores on the compared products since the previous run.
+
+
+| product | change | store | before | now |
+|---|---|---|---:|---:|
+| Augustinus Bader · The Cream - 1.0 oz | new lowest | Ayla Beauty, Cos Bar, Dermsilk | Ayla Beauty, Cos Bar | Ayla Beauty, Cos Bar, Dermsilk |
+| Augustinus Bader · The Rich Cream - 1.7 oz | new lowest | Ayla Beauty, Cos Bar, Dermsilk | Cos Bar, Dermsilk | Ayla Beauty, Cos Bar, Dermsilk |
+| Augustinus Bader · The Ultimate Soothing Cream | new lowest | Ayla Beauty, Cos Bar, Dermsilk | Cos Bar, Dermsilk | Ayla Beauty, Cos Bar, Dermsilk |
+
+Every change of the day: [`data/changes/2026/2026-11-21.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/changes/2026/2026-11-21.csv).
 
 
 ## Why can you trust these numbers?
@@ -44,20 +53,20 @@ Every run checks its own data and publishes the result. Latest run, 2026-11-21:
 | Stores read completely | 11/11 |
 | Rows rejected by validation | 0 |
 | Prices proven to be US dollars | USD |
-| Prices confirmed by a second source | 447/447 |
-| Product options with a verified barcode | 4.0% |
-| Matching precision (blind, against barcodes) | not measured yet |
+| Prices confirmed by a second source | 400/400 |
+| Product options whose barcode has been read so far | 6.0% |
+| Matching precision (blind, against barcodes) | 97.2% (246 of 253 pairs, [measured 2026-11-21](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/precision/2026/2026-11-21.json)) |
 | Matching method | [published, with a manual check](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/precision.md) |
 | Stores that block automated readers | left out, never worked around ([sources](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/sources.md)) |
 
-A product is compared only when the match is certain enough: same barcode, or a part-number or name match whose precision was measured against barcodes on the previous run and reached 98% on at least 100 pairs. Until that bar is reached, only barcode matches are compared (192 barcode pairs in the run of 2026-11-21). Everything below the bar is listed in [`possible_matches.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/possible_matches.csv) and never compared.
+A product is compared only when the match is certain enough: same barcode, or a part-number or name match whose precision was measured against barcodes on the previous run and reached 98% on at least 100 pairs. In the run of 2026-11-21, 246 of 253 name and part-number pairs checked against barcodes were the same item. Everything below the bar is listed in [`possible_matches.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/possible_matches.csv) and never compared.
 
 ## How does cross-store price matching work?
 
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/pipeline-still.svg">
-    <img src="assets/pipeline.svg" width="760" alt="How it works: 1 Read 11 store catalogs (17,429 product options). 2 Match by barcode, part number and name. 3 Compare lowest price, gap and stock for 175 products. 4 Publish CSV, dashboard and feed, 0 changes on 2026-11-21.">
+    <img src="assets/pipeline.svg" width="760" alt="How it works: 1 Read 11 store catalogs (17,429 product options). 2 Match by barcode, part number and name. 3 Compare lowest price, gap and stock for 560 products. 4 Publish CSV, dashboard and feed, 3 changes on 2026-11-21.">
   </picture>
 </p>
 
@@ -70,7 +79,8 @@ A product is compared only when the match is certain enough: same barcode, or a 
 
 - **Commits showed as "Unverified" on GitHub (2026-11-20)** (INC-001). The first commits were signed with an SSH key from the development environment that the owner's GitHub account does not hold. GitHub showed them as "Unverified" (API verification reason `unknown_key`), unlike the owner's other public repositories, whose commits are unsigned and carry no badge. *Fix:* signing switched off for this repository (`commit.gpgsign false`, `tag.gpgsign false`). The history was rewritten once with `git filter-repo`, which drops signatures and keeps authors, committers, dates and messages, and `main` was force-pushed while no live check was running. The two recon results that record the commit they ran on keep both SHAs (`git_sha`, `git_sha_before_rewrite`).
 - **Five retailers throttled a second catalog read (2026-11-20)** (INC-002). In `recon-004` Cos Bar, Credo Beauty, Integrity Botanicals, Safe & Chic and The Detox Market answered HTTP 429 on `/products.json` page 3 or 4 until the retries ran out. It was the second full read of each catalog within 30 minutes; `recon-002` had read the same catalogs without a 429. *Fix:* owner decision D-016: a 429 alone is rate limiting, not a challenge. Each of the five was re-tested with one catalog read after a cool-down of at least 90 minutes (`recon-005`): three passed and are kept, two throttled again and are dropped (D-018). The daily run reads each catalog once per day, and the first daily run started more than 90 minutes after the re-test.
-- **The first daily slot did not fire (2026-11-21)** (INC-003). GitHub created no `schedule` run for `daily.yml` and none for `watchdog.yml` (10:19 UTC): no run, no queued run, read from the public Actions API at 10:51 UTC. Both workflows were `active`; manual runs and push-triggered CI ran normally all night. *Fix:* the schedule rules of F1 INC-009 are ported. The daily gate (`python -m crossprice.schedule gate`) lets a dispatch that names its slot fill it, so an on-time external trigger can start each run at 07:43 UTC; GitHub's late event then skips. The watchdog's dispatch is marked `by=watchdog`. A slot now counts as late, not missed, when a good run starts later the same UTC day, and the on-time count starts with the first triggered slot. The 2026-11-21 slot was filled by hand at 11:00 UTC.
+- **The first daily slot did not fire (2026-11-21)** (INC-003). GitHub created no `schedule` run for `daily.yml` and none for `watchdog.yml` (10:19 UTC): no run, no queued run, read from the public Actions API at 10:51 UTC. Both workflows were `active`; manual runs and push-triggered CI ran normally all night. *Fix:* the schedule rules of F1 INC-009 are ported. The daily gate (`python -m crossprice.schedule gate`) lets a dispatch that names its slot fill it, so an on-time external trigger can start each run at 07:43 UTC; GitHub's late event then skips. The watchdog's dispatch is marked `by=watchdog`. A slot now counts as late, not missed, when a good run starts later the same UTC day, and the on-time count starts with the first triggered slot. The 2026-11-21 slot was filled by hand at 10:54 UTC (dispatch with `slot` and `by=manual`).
+- **A product title with an inch mark crashed the history merge (2026-11-21)** (INC-004). All 11 retailers were read, then the run stopped in the history step with `Value with unterminated quote found` on line 3,260 of the previous snapshot (`data/latest/offers.csv`): the Cos Bar title `T3 SINGLEPASS CURL 1.25" SATIN BLUSH`, written as valid CSV with the quote doubled. The run was recorded as `crashed`; the snapshot, the GTIN cache and the monthly Parquet file were left unchanged, so no data was lost or half-written. *Fix:* the snapshot is read with the dialect stated (`delim ','`, `quote '"'`, `escape '"'`, no auto-detection). A regression test writes 3,999 plain rows and one title with an inch mark and a comma, and reads them back unchanged; it fails on the old query.
 
 The full log, with the evidence for each: [`docs/incidents.md`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/incidents.md).
 
@@ -118,17 +128,17 @@ The same pipeline works for your products and the stores you choose. You get a *
 
 | field | type | meaning | example |
 |---|---|---|---|
-| `product_key` | text | The product's GTIN-14 barcode, or `M` + a stable id for a non-barcode match | 05060552900222 |
-| `brand` | text | Brand, as the first store lists it | Augustinus Bader |
-| `product` | text | Product name and option (shade, size), as the first store lists it | Augustinus Bader The Cream - 1.0 oz |
-| `gtin` | 14 digits or empty | GTIN-14 barcode when the match is barcode-verified | 05060552900222 |
-| `match_tier` | text | `gtin` (barcode), `mpn` (brand + part number) or `fuzzy` (brand + name) | gtin |
-| `match_confidence` | 0 to 1 | Score of the weakest link in the match; 1.00 for barcode | 1.00 |
+| `product_key` | text | The product's GTIN-14 barcode, or `M` + a stable id for a non-barcode match | Me07d7a811a1fe |
+| `brand` | text | Brand, as the first store lists it | 28 Litsea |
+| `product` | text | Product name and option (shade, size), as the first store lists it | Blended With Flowers + Exfoliant For Body - Lavender Mint |
+| `gtin` | 14 digits or empty | GTIN-14 barcode when the match is barcode-verified | (empty) |
+| `match_tier` | text | `gtin` (barcode), `mpn` (brand + part number) or `fuzzy` (brand + name) | fuzzy |
+| `match_confidence` | 0 to 1 | Score of the weakest link in the match; 1.00 for barcode | 0.79 |
 | `retailers` | integer | Stores that sell the product | 2 |
 | `retailers_in_stock` | integer | Stores that have it in stock | 2 |
-| `lowest_price_usd` | USD | Lowest in-stock price (lowest of all when none is in stock) | 195.00 |
-| `lowest_price_retailers` | text | Store id(s) at the lowest price | ayla-beauty cos-bar |
-| `highest_price_usd` | USD | Highest in-stock price | 195.00 |
+| `lowest_price_usd` | USD | Lowest in-stock price (lowest of all when none is in stock) | 28.00 |
+| `lowest_price_retailers` | text | Store id(s) at the lowest price | safe-chic the-choosy-chick |
+| `highest_price_usd` | USD | Highest in-stock price | 28.00 |
 | `spread_pct` | percent or empty | (highest - lowest) / lowest x 100, in-stock prices, 2+ stores | 0.0 |
 | `<store>_price_usd` | USD or empty | That store's price (one column per store) | see the per-store columns |
 | `<store>_in_stock` | yes / no / empty | That store's stock | see the per-store columns |

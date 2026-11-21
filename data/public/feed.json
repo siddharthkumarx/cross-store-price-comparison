@@ -5,23 +5,60 @@
     "name": "Cross-store price comparison",
     "repo": "https://github.com/siddharthkumarx/cross-store-price-comparison",
     "dashboard": "https://siddharthkumar.com/cross-store-price-comparison/",
-    "generated_at": "2026-11-21T11:11:35Z"
+    "generated_at": "2026-11-21T12:58:31Z"
   },
   "last_run": {
-    "run_id": "20261121T105436Z",
-    "started_at": "2026-11-21T10:54:36Z",
-    "finished_at": "2026-11-21T11:11:35Z",
-    "status": "crashed",
-    "duration_s": 1018.4,
-    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44896513350"
+    "run_id": "20261121T124142Z",
+    "started_at": "2026-11-21T12:41:42Z",
+    "finished_at": "2026-11-21T12:58:31Z",
+    "status": "ok",
+    "duration_s": 1008.8,
+    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44905134307"
   },
-  "checks": [],
+  "checks": [
+    {
+      "id": "retailers_read",
+      "label": "Stores read completely",
+      "ok": true,
+      "value": "11/11"
+    },
+    {
+      "id": "validation_rejects",
+      "label": "Rows rejected by validation",
+      "ok": true,
+      "value": 0
+    },
+    {
+      "id": "currency",
+      "label": "Prices proven to be US dollars",
+      "ok": true,
+      "value": "USD"
+    },
+    {
+      "id": "second_source",
+      "label": "Prices confirmed by a second source",
+      "ok": true,
+      "value": "400/400"
+    },
+    {
+      "id": "gtin_coverage",
+      "label": "Product options whose barcode has been read so far",
+      "ok": true,
+      "value": 0.06
+    },
+    {
+      "id": "matching_precision",
+      "label": "Matching precision (blind, against barcodes)",
+      "ok": false,
+      "value": 0.9723
+    }
+  ],
   "totals": {
-    "runs": 2,
-    "runs_good": 1,
+    "runs": 3,
+    "runs_good": 2,
     "days_running": 1,
     "missed_runs": 0,
-    "runs_delivered": 0,
+    "runs_delivered": 1,
     "retailers": 11,
     "offers": 17429
   },
@@ -39,22 +76,29 @@
       "offers": 0,
       "products_matched": 0,
       "changes": 0
+    },
+    {
+      "date": "2026-11-21",
+      "status": "ok",
+      "offers": 17429,
+      "products_matched": 560,
+      "changes": 3
     }
   ],
   "comparison": {
-    "products_matched": 175,
-    "retailers": 10,
+    "products_matched": 560,
+    "retailers": 11,
     "matching_precision": {
-      "gtin_pairs": 192,
-      "measured_at": "2026-11-21T02:45:59Z",
-      "pairs": 0,
-      "recall": 0.0,
+      "gtin_pairs": 303,
+      "measured_at": "2026-11-21T12:41:42Z",
+      "pairs": 253,
+      "recall": 0.8119,
       "thresholds": {
-        "fuzzy": null,
+        "fuzzy": 0.7643,
         "mpn": null
       },
-      "value": null
+      "value": 0.9723
     },
-    "avg_spread_pct": 2.0
+    "avg_spread_pct": 2.3
   }
 }
