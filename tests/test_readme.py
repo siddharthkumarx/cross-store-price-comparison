@@ -89,3 +89,42 @@ def test_sample_rows_prefer_a_price_gap() -> None:
     picked = sample_rows(rows, {"a": "A"}, n=1)
     assert picked[0]["spread_pct"] == "12.5"
     assert picked[0]["title"] == "X"
+
+
+def test_held_back_picks_the_best_measured_point_of_an_unused_tier() -> None:
+    from crossprice.precision import held_back
+
+    curve = [
+        {"threshold": 0.5, "evaluated": 280, "true": 267, "precision": 0.9536},
+        {"threshold": 0.95, "evaluated": 224, "true": 219, "precision": 0.9777},
+        {"threshold": 1.0, "evaluated": 90, "true": 90, "precision": 1.0},  # too few pairs
+    ]
+    used = {"tiers": {"fuzzy": {"threshold_used": 0.76, "curve": curve}}}
+    unused = {"tiers": {"fuzzy": {"threshold_used": None, "curve": curve}}}
+    assert held_back(used) is None
+    assert held_back(None) is None
+    best = held_back(unused)
+    assert best is not None
+    assert (best["tier"], best["threshold"], best["evaluated"]) == ("fuzzy", 0.95, 224)
+
+
+def test_a_barcode_only_run_says_name_matches_were_held_back(tmp_path: Path) -> None:
+    import json
+
+    data = tmp_path / "data"
+    shutil.copytree(ROOT / "data", data)
+    latest = data / "precision" / "latest.json"
+    p = json.loads(latest.read_text())
+    p["tiers"]["fuzzy"]["threshold_used"] = None
+    p.update(combined_evaluated=0, combined_true=0, combined_precision=None)
+    latest.write_text(json.dumps(p))
+    lines = (data / "runs.jsonl").read_text().splitlines()
+    last = json.loads(lines[-1])
+    for c in last["checks"]:
+        if c["id"] == "matching_precision":
+            c["value"] = None
+    (data / "runs.jsonl").write_text("\n".join([*lines[:-1], json.dumps(last)]) + "\n")
+    text = render(ROOT / "templates" / "README.md.j2", context(data, ROOT))
+    assert "name matches held back: best 97.8% on 224 pairs, below 98%" in text
+    assert "so only barcode matches were compared" in text
+    assert "not measured yet" not in text

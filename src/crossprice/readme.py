@@ -22,6 +22,7 @@ import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 from crossprice.match import strip_brand
+from crossprice.precision import held_back
 from crossprice.retailers import load_retailers
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -148,6 +149,7 @@ def context(data: Path, root: Path = ROOT) -> dict[str, Any]:
         "status": status,
         "comp": comp,
         "precision": precision,
+        "held": held_back(precision),
         "precision_file": f"{blob}/data/precision/{day[:4]}/{day}.json",
         "retailers": retailers,
         "names": names,

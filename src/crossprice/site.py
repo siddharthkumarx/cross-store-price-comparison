@@ -21,6 +21,7 @@ from jinja2 import Environment, select_autoescape
 
 from crossprice.match import strip_brand
 from crossprice.outputs import parse_iso, read_runs
+from crossprice.precision import held_back
 from crossprice.retailers import Retailer, load_retailers
 
 ASSETS = Path(__file__).parent / "site_assets"
@@ -163,6 +164,7 @@ def context(data: Path, retailers: list[Retailer], public: dict[str, Any]) -> di
         "compared_by": compared_by,
         "demos": demos,
         "precision": precision,
+        "held": held_back(precision),
         "changes": today_changes(data, run_at),
         "run_at": run_at,
         "vertical": retailers[0].vertical.replace("-", " ") if retailers else "",
@@ -246,7 +248,7 @@ TEMPLATE = r"""<!doctype html>
     <div class="kpis">
       <div class="card kpi"><div class="label">Products compared</div><div class="value">{{ "{:,}".format(comp.products_matched or 0) }}</div><div class="note">sold by 2 or more retailers</div></div>
       <div class="card kpi"><div class="label">Retailers</div><div class="value">{{ retailers|length }}</div><div class="note">US online stores, prices in USD</div></div>
-      <div class="card kpi"><div class="label">Matching precision</div><div class="value">{% if comp.matching_precision and comp.matching_precision.value is not none %}{{ comp.matching_precision.value | share }}{% else %}–{% endif %}</div><div class="note">{% if comp.matching_precision and comp.matching_precision.pairs %}{{ comp.matching_precision.pairs }} pairs checked against barcodes{% else %}barcode matches only until measured{% endif %}</div></div>
+      <div class="card kpi"><div class="label">Matching precision</div><div class="value">{% if comp.matching_precision and comp.matching_precision.value is not none %}{{ comp.matching_precision.value | share }}{% else %}–{% endif %}</div><div class="note">{% if comp.matching_precision and comp.matching_precision.pairs %}{{ comp.matching_precision.pairs }} pairs checked against barcodes{% elif held %}name matches held back: best {{ held.precision | share }} on {{ held.evaluated }} pairs, below 98%{% else %}barcode matches only until measured{% endif %}</div></div>
       <div class="card kpi"><div class="label">Average price gap</div><div class="value">{{ comp.avg_spread_pct | pct }}</div><div class="note">highest vs lowest in-stock price</div></div>
       <div class="card kpi"><div class="label">Changes today</div><div class="value">{{ changes|length }}</div><div class="note">price moves, new lowest, stock</div></div>
     </div>
@@ -364,7 +366,7 @@ TEMPLATE = r"""<!doctype html>
     {% if precision %}
     <div class="card" style="margin-top:12px">
       <h3>Matching precision, measured blind</h3>
-      <p style="margin-top:6px">On {{ precision.measured_at[:10] }}, the part-number and name matchers ran with every barcode hidden. Of the pairs they proposed where both stores publish a barcode, {% if precision.combined_evaluated %}<b>{{ precision.combined_true }} of {{ precision.combined_evaluated }}</b> were the same item (precision {{ precision.combined_precision | share }}, recall {{ precision.combined_recall | share }} of {{ precision.gtin_pairs }} barcode pairs){% else %}none were used yet: until a threshold reaches 98% precision on at least 100 pairs, only barcode matches are compared ({{ precision.gtin_pairs }} barcode pairs today){% endif %}. <a href="https://github.com/{{ public.repo }}/blob/{{ public.branch }}/docs/precision.md">Method and manual check</a>.</p>
+      <p style="margin-top:6px">On {{ precision.measured_at[:10] }}, the part-number and name matchers ran with every barcode hidden. Of the pairs they proposed where both stores publish a barcode, {% if precision.combined_evaluated %}<b>{{ precision.combined_true }} of {{ precision.combined_evaluated }}</b> were the same item (precision {{ precision.combined_precision | share }}, recall {{ precision.combined_recall | share }} of {{ precision.gtin_pairs }} barcode pairs){% elif held %}at best <b>{{ held.precision | share }}</b> were the same item ({{ held.evaluated }} pairs), below the 98% needed on at least 100 pairs, so only barcode matches are compared ({{ precision.gtin_pairs }} barcode pairs today){% else %}none were used yet: until a threshold reaches 98% precision on at least 100 pairs, only barcode matches are compared ({{ precision.gtin_pairs }} barcode pairs today){% endif %}. <a href="https://github.com/{{ public.repo }}/blob/{{ public.branch }}/docs/precision.md">Method and manual check</a>.</p>
     </div>
     {% endif %}
   </div>

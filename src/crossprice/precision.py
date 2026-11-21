@@ -154,3 +154,24 @@ def manual_sample(pairs: list[Pair], n: int = 100, salt: str = "manual-check") -
     non_gtin = sorted((p for p in pairs if p.tier != "gtin"), key=key)
     gtin = sorted((p for p in pairs if p.tier == "gtin"), key=key)
     return (non_gtin + gtin)[:n]
+
+
+def held_back(latest: Mapping[str, Any] | None) -> dict[str, Any] | None:
+    """The best blind result of a tier that was not used, for "held back" wording.
+
+    A tier is held back when it had no threshold on the run; its curve is still
+    measured. Returns the curve point with the highest precision on at least
+    ``MIN_EVALUATED`` pairs, or None when every measured tier was used.
+    """
+    if not latest:
+        return None
+    best: dict[str, Any] | None = None
+    for name, tier in (latest.get("tiers") or {}).items():
+        if tier.get("threshold_used") is not None:
+            continue
+        for point in tier.get("curve") or []:
+            if point.get("precision") is None or point["evaluated"] < MIN_EVALUATED:
+                continue
+            if best is None or point["precision"] > best["precision"]:
+                best = {"tier": name, **point}
+    return best
