@@ -16,7 +16,12 @@ uv run python -m crossprice.site --data data --retailers config/retailers.yml --
 node scripts/render_media.cjs dashboard "$work/site" assets/dashboard.png 1280
 node scripts/render_media.cjs dashboard "$work/site" assets/dashboard-phone.png 390
 stores="$(grep -c '^- id:' config/retailers.yml)"
-products="$(tail -n 1 data/runs.jsonl | python3 -c 'import json,sys; print(f"{json.load(sys.stdin)[\"comparison\"][\"products_matched\"]:,}")')"
+products="$(python3 -c '
+import json
+runs = [json.loads(line) for line in open("data/runs.jsonl") if line.strip()]
+good = [r for r in runs if r.get("status") == "ok"]
+print(format(good[-1]["comparison"]["products_matched"], ","))
+')"
 node scripts/render_media.cjs social src/crossprice/site_assets/fonts "$stores" "$products" assets/social-preview.png
 uv run python -c "
 from pathlib import Path
