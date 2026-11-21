@@ -50,8 +50,30 @@ The development sandbox cannot reach retailers: never request a retailer from it
 ### Schedule
 
 One daily run at a quiet minute, no extra runs around Black Friday. It must finish
-in under 45 minutes on one runner. The `slot` input of `daily.yml` exists so an
-on-time external trigger can start runs later; the watchdog covers missed slots.
+in under 45 minutes on one runner.
+
+GitHub starts `schedule` events for this account hours late or not at all (F1
+INC-009, INC-003 here), so the slot is meant to be filled by an on-time external
+trigger:
+
+- a fine-grained personal access token limited to this repository, with
+  **Actions: read and write** and nothing else;
+- at 07:43 UTC every day, one call:
+
+  ```
+  POST https://api.github.com/repos/siddharthkumarx/cross-store-price-comparison/actions/workflows/daily.yml/dispatches
+  Authorization: Bearer <token>
+  {"ref": "main", "inputs": {"slot": "<today>T07:43Z"}}
+  ```
+
+- `{"slot": "check"}` proves the token and the call work without running anything.
+
+The `slot` gate (`python -m crossprice.schedule gate`) runs a dispatch only for
+the current slot and only if no run filled it; one up to 10 minutes early waits
+for the slot. GitHub's late `schedule` event then skips. Without the trigger the
+schedule and the watchdog still fill each day, late. `status.json` counts every
+slot as on time (a good run within 2 hours), late (later the same UTC day), held
+or missed; the on-time count starts with the first slot the trigger dispatched.
 
 ## Commands
 

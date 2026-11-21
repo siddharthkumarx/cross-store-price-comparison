@@ -1,17 +1,25 @@
 # Daily cross-store comparison run. Schedules run on the default branch.
 # Keep the cron line identical to CRONS in src/crossprice/schedule.py (tested).
 name: daily
+run-name: ${{ inputs.slot && format('daily, slot {0}', inputs.slot) || format('daily, {0}', github.event_name) }}
 
 on:
   schedule:
     - cron: "43 7 * * *"
+  # GitHub starts the schedule above hours late (F1 INC-009), so an external trigger
+  # can dispatch each slot on time with `slot` set; the late schedule event then
+  # finds the slot filled and skips. Without `slot`, a manual run always runs.
   workflow_dispatch:
     inputs:
       slot:
-        description: >-
-          Schedule slot this run fills, ISO UTC (for example 2026-11-21T07:43:00Z).
-          An external on-time trigger sets it; a run for a slot already filled is skipped.
+        description: "Slot this run fills, UTC (e.g. 2026-11-22T07:43Z); empty = manual run; check = test the trigger only"
         required: false
+        type: string
+        default: ""
+      by:
+        description: "Who dispatched the slot: empty = the on-time trigger; watchdog = the watchdog; manual = by hand"
+        required: false
+        type: string
         default: ""
 
 permissions:
@@ -23,12 +31,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Decides whether this trigger runs the pipeline. GitHub can start a scheduled
-  # slot hours late (F1 INC-006, INC-007): a slot already filled by a watchdog,
-  # manual or external run is skipped. A dispatched run without a slot always runs.
+  # Decides whether this trigger runs the pipeline (crossprice.schedule gate). A
+  # manual run always does. A dispatch that names its slot (an on-time external
+  # trigger or the watchdog) and a scheduled run both run only if the slot is not
+  # filled yet: GitHub starts scheduled slots hours late (F1 INC-007, INC-009).
   slot:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 15
     outputs:
       run: ${{ steps.decide.outputs.run }}
       slot: ${{ steps.decide.outputs.slot }}
@@ -46,36 +55,28 @@ jobs:
         id: decide
         env:
           EVENT: ${{ github.event_name }}
-          SLOT_INPUT: ${{ inputs.slot }}
+          SLOT: ${{ inputs.slot }}
         run: |
           if [ ! -f config/retailers.yml ]; then
             echo "no retailer list yet (docs/plan.md item 6): skipped"
             echo "run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          if [ "$EVENT" = "workflow_dispatch" ] && [ -z "$SLOT_INPUT" ]; then
-            echo "manual run without a slot: runs"
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            exit 0
+          # Fails open: if the gate itself fails, the pipeline runs (except for a
+          # trigger check, which never runs it).
+          if ! PYTHONPATH=src python3 -m crossprice.schedule gate --event "$EVENT" \
+            --slot "$SLOT" --runs data/runs.jsonl > gate.txt; then
+            if [ "$SLOT" = "check" ]; then echo "run=false" > gate.txt; else echo "run=true" > gate.txt; fi
+            echo "reason=gate failed" >> gate.txt
           fi
-          args=(check --runs data/runs.jsonl)
-          if [ -n "$SLOT_INPUT" ]; then
-            if ! printf '%s' "$SLOT_INPUT" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z$'; then
-              echo "::error::slot must look like 2026-11-21T07:43:00Z"
-              exit 1
-            fi
-            args+=(--slot "$SLOT_INPUT")
+          cat gate.txt
+          wait_s="$(sed -n 's/^wait_s=//p' gate.txt)"
+          if grep -qx "run=true" gate.txt && [ "${wait_s:-0}" -gt 0 ]; then
+            echo "waiting ${wait_s}s for the slot"
+            sleep "$wait_s"
           fi
-          # Fails open: if the check itself fails, the pipeline runs.
-          PYTHONPATH=src python3 -m crossprice.schedule "${args[@]}" | tee check.txt ||
-            echo "slot check failed, running"
-          sed -n 's/^slot=/slot=/p' check.txt >> "$GITHUB_OUTPUT"
-          if grep -qx "covered=true" check.txt; then
-            echo "slot already run: skipped"
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          fi
+          grep -E '^(run|slot|reason)=' gate.txt >> "$GITHUB_OUTPUT"
+          echo "### $(sed -n 's/^reason=//p' gate.txt)" >> "$GITHUB_STEP_SUMMARY"
 
   run:
     needs: slot
@@ -119,6 +120,9 @@ jobs:
       - name: Run pipeline
         id: run
         timeout-minutes: 41
+        env:
+          DISPATCH_SLOT: ${{ inputs.slot }}
+          DISPATCH_BY: ${{ inputs.by }}
         run: |
           set +e
           args=(--retailers config/retailers.yml --data data --history-out "work/offer_history_$MONTH.parquet")

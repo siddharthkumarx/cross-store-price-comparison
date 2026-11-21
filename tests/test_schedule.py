@@ -9,7 +9,17 @@ from typing import Any
 import pytest
 import yaml
 
-from crossprice.schedule import CRONS, WATCHDOG_CRONS, check_slot, latest_slot, main
+from crossprice.schedule import (
+    CRONS,
+    WATCHDOG_CRONS,
+    accounting,
+    check_slot,
+    dispatch_slot,
+    gate,
+    latest_slot,
+    main,
+    slot_states,
+)
 
 WF = Path(__file__).resolve().parents[1] / ".github" / "workflows"
 
@@ -71,3 +81,125 @@ def test_cli_prints_github_output_lines(tmp_path: Path, capsys: pytest.CaptureFi
     main(["check", "--runs", str(runs), "--now", "2026-11-21T10:19:00Z"])
     out = capsys.readouterr().out.splitlines()
     assert out == ["slot=2026-11-21T07:43:00Z", "covered=true", "run_id=a"]
+
+
+# -- the gate and honest accounting (F1 INC-009) -------------------------------------
+def dispatched(started: str, slot: str, by: str = "trigger") -> dict[str, object]:
+    return {
+        "run_id": started,
+        "started_at": started,
+        "status": "ok",
+        "trigger": "workflow_dispatch",
+        "dispatch": {"slot": dispatch_slot(slot), "by": by},
+    }
+
+
+def scheduled(started: str) -> dict[str, object]:
+    return {"run_id": started, "started_at": started, "status": "ok", "trigger": "schedule"}
+
+
+def test_on_time_dispatch_runs_and_the_late_schedule_event_then_skips() -> None:
+    first = gate("workflow_dispatch", [], at(22, 7, 43), slot="2026-11-22T07:43Z")
+    assert (first["run"], first["slot"]) == ("true", "2026-11-22T07:43:00Z")
+    runs = [run("2026-11-22T07:44:30Z", run_id="20261122T074430Z")]
+    late = gate("schedule", runs, at(22, 15, 40))  # GitHub's event, 8 h late
+    assert late["run"] == "false"
+    assert "20261122T074430Z" in late["reason"]
+    again = gate("workflow_dispatch", runs, at(22, 8, 10), slot="2026-11-22T07:43Z")
+    assert again["run"] == "false"  # a retry does not read the stores again
+    assert gate("schedule", [], at(22, 15, 40))["run"] == "true"  # nothing filled it
+
+
+def test_dispatch_slot_rules() -> None:
+    assert gate("workflow_dispatch", [], at(22, 8), slot="2026-11-22T08:00Z")["run"] == "false"
+    stale = gate("workflow_dispatch", [], at(23, 7, 50), slot="2026-11-22T07:43Z")
+    assert (stale["run"], "no longer the current slot" in stale["reason"]) == ("false", True)
+    assert gate("workflow_dispatch", [], at(22, 7), slot="tomorrow")["run"] == "false"
+    early = gate("workflow_dispatch", [], at(22, 7, 41), slot="2026-11-22T07:43Z")
+    assert (early["run"], early["wait_s"]) == ("true", "120")
+    assert gate("workflow_dispatch", [], at(22, 7, 20), slot="2026-11-22T07:43Z")["run"] == "false"
+    assert gate("workflow_dispatch", [], at(22, 7, 43), slot="check")["run"] == "false"
+    manual = gate("workflow_dispatch", [run("2026-11-22T07:44:00Z")], at(22, 9))
+    assert manual["run"] == "true"
+
+
+def test_gate_cli(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+    runs = tmp_path / "runs.jsonl"
+    runs.write_text('{"run_id": "a", "started_at": "2026-11-22T07:44:00Z", "status": "ok"}\n')
+    assert (
+        main(["gate", "--runs", str(runs), "--now", "2026-11-22T15:00:00Z", "--event", "schedule"])
+        == 0
+    )
+    out = capsys.readouterr().out.splitlines()
+    assert out[:2] == ["run=false", "slot=2026-11-22T07:43:00Z"]
+
+
+def test_slot_states_on_time_late_held_missed_pending() -> None:
+    runs = [
+        run("2026-11-21T02:45:59Z", run_id="before"),  # before the day's slot: fills nothing
+        run("2026-11-21T16:10:00Z", run_id="late"),  # same day: late
+        run("2026-11-22T09:43:00Z", run_id="edge"),  # exactly 2 h: on time
+        run("2026-11-24T08:00:00Z", status="held", run_id="h"),
+        run("2026-11-25T08:00:00Z", status="crashed", run_id="c"),  # a crash fills nothing
+    ]
+    states = slot_states(runs, at(26, 7, 50))
+    assert [(s.slot.day, s.state) for s in states] == [
+        (21, "late"),
+        (22, "on_time"),
+        (23, "missed"),
+        (24, "held"),
+        (25, "missed"),
+        (26, "pending"),
+    ]
+    acc = accounting(runs, at(26, 7, 50))
+    assert (acc["slots"], acc["delivered"], acc["on_time"], acc["late"], acc["missed"]) == (
+        5,
+        2,
+        1,
+        1,
+        2,
+    )
+
+
+def test_a_late_run_is_not_a_missed_run_and_on_time_counts_start_with_the_trigger() -> None:
+    runs = [
+        run("2026-11-21T02:45:59Z", run_id="manual"),
+        dispatched("2026-11-21T10:20:00Z", "2026-11-21T07:43Z", by="watchdog"),
+    ]
+    acc = accounting(runs, at(22, 5))
+    assert (acc["missed"], acc["late"], acc["delivered"]) == (0, 1, 1)
+    assert acc["on_time_since"] is None  # a watchdog dispatch is not the on-time trigger
+    runs += [
+        dispatched("2026-11-22T07:44:00Z", "2026-11-22T07:43Z"),
+        scheduled("2026-11-23T15:00:00Z"),
+    ]
+    acc = accounting(runs, at(24, 5))
+    assert acc["on_time_since"] == "2026-11-22T07:43:00Z"
+    assert acc["since"] == {"slots": 2, "on_time": 1, "late": 1, "held": 0, "missed": 0}
+    assert acc["note"].startswith("Before 22 Nov 2026, ")
+
+
+def test_runs_record_who_dispatched_their_slot(monkeypatch: pytest.MonkeyPatch) -> None:
+    from crossprice.run import _env_run_meta
+
+    monkeypatch.setenv("GITHUB_EVENT_NAME", "workflow_dispatch")
+    monkeypatch.setenv("DISPATCH_SLOT", "2026-11-22T07:43Z")
+    monkeypatch.setenv("DISPATCH_BY", "")
+    assert _env_run_meta()["dispatch"] == {"slot": "2026-11-22T07:43:00Z", "by": "trigger"}
+    monkeypatch.setenv("DISPATCH_BY", "watchdog")
+    assert _env_run_meta()["dispatch"]["by"] == "watchdog"
+    monkeypatch.setenv("DISPATCH_SLOT", "check")
+    assert "dispatch" not in _env_run_meta()
+
+
+def test_workflows_pass_the_dispatch_to_the_run_record() -> None:
+    daily = yaml.safe_load((WF / "daily.yml").read_text())
+    assert "by" in _on(WF / "daily.yml")["workflow_dispatch"]["inputs"]
+    decide = next(s for s in daily["jobs"]["slot"]["steps"] if s.get("id") == "decide")
+    assert decide["env"]["SLOT"] == "${{ inputs.slot }}"
+    assert "${{" not in decide["run"]  # no expression injection
+    step = next(s for s in daily["jobs"]["run"]["steps"] if s.get("id") == "run")
+    assert step["env"] == {"DISPATCH_SLOT": "${{ inputs.slot }}", "DISPATCH_BY": "${{ inputs.by }}"}
+    watchdog = yaml.safe_load((WF / "watchdog.yml").read_text())
+    rescue = next(s for s in watchdog["jobs"]["check"]["steps"] if s.get("id") == "rescue")
+    assert '-f slot="$SLOT" -f by=watchdog' in rescue["run"]

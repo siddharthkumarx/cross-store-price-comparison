@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any
 
 from crossprice.compare import CHANGE_COLUMNS
-from crossprice.schedule import active_crons, missed_slots
+from crossprice.schedule import accounting
 
 GOOD = "0B7468"  # SteadyData accent
 LOOK = "D98E14"  # "look here" amber
@@ -72,16 +72,9 @@ def build_status(
     last_good = good[-1] if good else None
     first_good = parse_iso(good[0]["started_at"]) if good else None
     days_running = max(0, (now.date() - first_good.date()).days + 1) if first_good else 0
-    missed = (
-        missed_slots(
-            [parse_iso(r["started_at"]) for r in good],
-            first_good,
-            now,
-            crons if crons is not None else active_crons(),
-        )
-        if first_good
-        else []
-    )
+    # Every daily slot since the first run: on time (a good run started within 2 h),
+    # late (later that day), held or missed (F1 INC-009).
+    schedule = accounting(runs, now, crons)
     comparison = (last_good or {}).get("comparison") or {}
     return {
         "generated_at": iso(now),
@@ -90,8 +83,9 @@ def build_status(
         "runs_total": len(runs),
         "runs_good": len(good),
         "runs_held": sum(1 for r in runs if r["status"] == "held"),
-        "missed_runs": len(missed),
-        "missed_slots": [iso(m) for m in missed[-10:]],
+        "missed_runs": schedule["missed"],
+        "missed_slots": schedule["missed_slots"],
+        "schedule": schedule,
         "last_run": (
             {
                 "run_id": last["run_id"],
@@ -110,6 +104,28 @@ def build_status(
         "products_matched": comparison.get("products_matched", 0),
         "matching_precision": comparison.get("matching_precision"),
     }
+
+
+def on_time_text(schedule: dict[str, Any]) -> tuple[str, str]:
+    """(label, value) of the on-time count shown to readers (F1 INC-009).
+
+    It starts at the first slot dispatched by the on-time trigger: before that,
+    ("on time", "from next run"); after, ("on time since 22 Nov", "3 of 3").
+    """
+    since = schedule.get("on_time_since")
+    counts = schedule.get("since") or {}
+    if not since or not counts.get("slots"):
+        return "on time", "from next run"
+    day = parse_iso(str(since))
+    return f"on time since {day.day} {day:%b}", f"{counts['on_time']} of {counts['slots']}"
+
+
+def _on_time_badge(schedule: dict[str, Any]) -> dict[str, Any]:
+    label, value = on_time_text(schedule)
+    counts = schedule.get("since") or {}
+    if value == "from next run":
+        return _badge(label, value, GOOD)
+    return _badge(label, value, GOOD if counts["on_time"] == counts["slots"] else LOOK)
 
 
 def write_status(data: Path, status: dict[str, Any]) -> None:
@@ -132,6 +148,7 @@ def write_status(data: Path, status: dict[str, Any]) -> None:
         "missed-runs.json": _badge(
             "missed runs", str(status["missed_runs"]), GOOD if status["missed_runs"] == 0 else LOOK
         ),
+        "on-time-runs.json": _on_time_badge(status.get("schedule") or {}),
         "matched-products.json": _badge(
             "matched products",
             f"{status['products_matched']:,}",
@@ -186,6 +203,7 @@ def build_feed(
             "runs_good": status["runs_good"],
             "days_running": status["days_running"],
             "missed_runs": status["missed_runs"],
+            "runs_delivered": (status.get("schedule") or {}).get("delivered", 0),
             "retailers": last_good.get("retailers_total", 0),
             "offers": last_good.get("offers_live", 0),
         },

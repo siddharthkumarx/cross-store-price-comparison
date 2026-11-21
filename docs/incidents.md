@@ -38,3 +38,23 @@ are in [its incident log](https://github.com/siddharthkumarx/ecommerce-price-mon
   `data/runs.jsonl`; eight 429s in a row stop the run, and a retailer that cannot
   be read is listed under `retailers_not_updated` and lowers `retailers_ok` in
   `status.json`.
+
+## INC-003 - The first daily slot did not fire (2026-11-21)
+
+- **Slot:** 07:43 UTC on 2026-11-21, the first scheduled slot of `daily.yml`.
+- **What happened:** GitHub created no `schedule` run for `daily.yml` and none for
+  `watchdog.yml` (10:19 UTC): no run, no queued run, read from the public Actions
+  API at 10:51 UTC. Both workflows were `active`; manual runs and push-triggered CI
+  ran normally all night.
+- **Cause:** GitHub's scheduler delays or drops `schedule` events and gives no
+  start-time guarantee. The store monitor F1 measured 7 to 10 hours of delay on
+  every slot of the same account (F1 INC-009).
+- **Fix:** the schedule rules of F1 INC-009 are ported. The daily gate
+  (`python -m crossprice.schedule gate`) lets a dispatch that names its slot fill
+  it, so an on-time external trigger can start each run at 07:43 UTC; GitHub's
+  late event then skips. The watchdog's dispatch is marked `by=watchdog`. A slot
+  now counts as late, not missed, when a good run starts later the same UTC day,
+  and the on-time count starts with the first triggered slot. The 2026-11-21 slot
+  was filled by hand at 11:00 UTC.
+- **Detection:** `status.json` `schedule` (on time, late, held, missed per slot)
+  and the "on time" and "missed runs" badges.
