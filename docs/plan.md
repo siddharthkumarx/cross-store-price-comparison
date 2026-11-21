@@ -27,8 +27,8 @@ Numbered build items. Status: `done`, `in progress`, `next`, `later`.
 9. `done` GTIN cache with weekly refresh.
 10. `done` Matching: GTIN, brand-scoped MPN/SKU, fuzzy with scores; product groups;
     `possible_matches.csv`.
-11. `in progress` Precision: blind evaluation, thresholds, `data/precision/`; the
-    100-pair manual check in `docs/precision.md`.
+11. `done` Precision: blind evaluation, thresholds, `data/precision/`; the
+    100-pair manual check in `docs/precision.md` (2026-11-21: 97 of 100).
 12. `done` Compare: `comparison.csv` (lowest price, spread), changes (price moves,
     new lowest retailer, stock-outs).
 13. `done` Store: DuckDB SCD2 offer history, snapshot, monthly Parquet release.
@@ -38,13 +38,13 @@ Numbered build items. Status: `done`, `in progress`, `next`, `later`.
 16. `done` "Your price vs competitors" demo.
 17. `done` Dashboard on GitHub Pages in the SteadyData light system (self-hosted
     font subsets, WCAG AA, 390 px, reduced motion).
-18. `in progress` `docs/incidents.md` kept from the first live run on.
+18. `done` `docs/incidents.md` kept from the first live run on (INC-001 to INC-004).
 
 ## Phase C - README and polish (after 2-3 real runs)
 
-19. `later` README template rendered every run; hero and pipeline SVGs (still and
+19. `done` README template rendered every run; hero and pipeline SVGs (still and
     animated, Playwright test); social preview 1280 x 640; LinkedIn video
     1080 x 1080.
-20. `later` SEO/GEO: quotable first sentence, H2s as real searches, comparison
+20. `done` SEO/GEO: quotable first sentence, H2s as real searches, comparison
     table (Prisync, Price2Spy, checking by hand), dated numbers linked to runs,
     `docs/repo-settings.md`, `CITATION.cff`, dataset card.
