@@ -1,0 +1,78 @@
+"""The README and dataset card render from run files, with no template leftovers."""
+
+from __future__ import annotations
+
+import re
+import shutil
+from datetime import timedelta
+from pathlib import Path
+
+import pytest
+
+import crossprice.run as run_mod
+from crossprice.readme import context, render
+from crossprice.run import run
+from tests.test_pipeline import T0, _cfg, _client_for, workdir  # noqa: F401  (fixture)
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+@pytest.fixture
+def rendered(workdir: Path, monkeypatch: pytest.MonkeyPatch) -> dict[str, str]:  # noqa: F811
+    monkeypatch.setattr(run_mod, "make_client", _client_for({}))
+    run(_cfg(workdir), now=T0)
+    monkeypatch.setattr(run_mod, "make_client", _client_for({"beta.example": {201: "159.95"}}))
+    run(_cfg(workdir), now=T0 + timedelta(days=1))
+    root = workdir / "root"
+    (root / "config").mkdir(parents=True)
+    shutil.copy(workdir / "retailers.yml", root / "config" / "retailers.yml")
+    shutil.copy(ROOT / "config" / "public.yml", root / "config" / "public.yml")
+    shutil.copytree(ROOT / "docs", root / "docs")
+    ctx = context(workdir / "data", root)
+    return {
+        name: render(ROOT / "templates" / name, ctx)
+        for name in ("README.md.j2", "DATASET_CARD.md.j2")
+    }
+
+
+def test_no_template_leftovers_comments_or_placeholders(rendered: dict[str, str]) -> None:
+    for text in rendered.values():
+        assert "{{" not in text
+        assert "{%" not in text
+        assert "<!--" not in text
+        assert not re.search(r"\b(TODO|TBD|lorem)\b", text, re.IGNORECASE)
+
+
+def test_readme_client_part_comes_first(rendered: dict[str, str]) -> None:
+    text = rendered["README.md.j2"]
+    order = [
+        "assets/hero.svg",
+        "# Cross-store price comparison",
+        "last-run.json",
+        "Open the dashboard",
+        "## What does a daily cross-store price comparison give you?",
+        "### What changed today",
+        "## Why can you trust these numbers?",
+        "## How does cross-store price matching work?",
+        "## What broke, and how was it fixed?",
+        "## Who uses cross-store price data?",
+        "## Want this for your own stores?",
+        "## FAQ",
+        "## Data dictionary",
+        "<summary><b>For engineers</b></summary>",
+        "## Data use and compliance",
+        "## License",
+        "Built and maintained by Siddharth Kumar, founder of SteadyData",
+    ]
+    positions = [text.index(s) for s in order]
+    assert positions == sorted(positions)
+    assert "https://steadydata.co/contact/" in text
+    assert "hello@steadydata.co" in text
+
+
+def test_numbers_come_from_the_run(rendered: dict[str, str]) -> None:
+    text = rendered["README.md.j2"]
+    assert "Encore ESP Grinder" in text  # a real row of the run
+    assert "$159.95" in text
+    assert "price drop" in text.lower()
+    assert "2026-11-21" in text

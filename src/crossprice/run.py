@@ -315,7 +315,7 @@ def _checks(
     checks: list[dict[str, Any]] = [
         {
             "id": "retailers_read",
-            "label": "Retailers read completely",
+            "label": "Stores read completely",
             "value": f"{ok_n}/{len(fetches)}",
             "ok": ok_n >= RETAILERS_OK_SHARE * len(fetches),
         },
@@ -327,19 +327,19 @@ def _checks(
         },
         {
             "id": "currency",
-            "label": "Currency proven on product pages",
+            "label": "Prices proven to be US dollars",
             "value": ",".join(currencies) or "none",
             "ok": currencies == ["USD"],
         },
         {
             "id": "second_source",
-            "label": "Product .js prices equal to catalog prices",
+            "label": "Prices confirmed by a second source",
             "value": f"{compared - diffs}/{compared}",
             "ok": compared == 0 or diffs <= 0.05 * compared,
         },
         {
             "id": "gtin_coverage",
-            "label": "Offers with a verified GTIN",
+            "label": "Product options with a verified barcode",
             "value": gtin_share,
             "ok": True,
         },
@@ -348,7 +348,7 @@ def _checks(
     checks.append(
         {
             "id": "matching_precision",
-            "label": "Matching precision (blind, against GTINs)",
+            "label": "Matching precision (blind, against barcodes)",
             "value": prec,
             "ok": prec is None or prec >= 0.98,
         }

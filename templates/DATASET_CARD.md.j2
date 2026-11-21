@@ -1,0 +1,50 @@
+---
+license: cc-by-4.0
+pretty_name: Cross-store price comparison, {{ pub.vertical_label }}
+language:
+  - en
+tags:
+  - prices
+  - e-commerce
+  - price-comparison
+  - gtin
+  - {{ vertical | replace(" ", "-") }}
+size_categories:
+  - 1K<n<10K
+---
+
+# Dataset card: cross-store price comparison, {{ pub.vertical_label }}
+
+The same {{ pub.vertical_label }} products at {{ retailers | length }} US online stores, matched by barcode (GTIN), part number or name, with each store's price and stock, compared once a day. Rendered from the run of {{ day }}.
+
+## Files
+
+| file | rows | what |
+|---|---:|---|
+| `latest/comparison.csv` | {{ comp.products_matched | n }} | one row per product sold by 2+ stores |
+| `latest/offers.csv` | {{ lg.offers_live | n }} | every product option at every store (open SCD2 versions) |
+| `latest/possible_matches.csv` | {{ comp.possible_matches | n }} | candidate pairs below the confidence bar, never compared |
+| `changes/YYYY/YYYY-MM-DD.csv` | {{ change_count | n }} on {{ day }} | price moves, new lowest store, stock changes |
+| `precision/` | one per run | blind matching precision against GTINs |
+| `runs.jsonl` | {{ status.runs_total }} | one line per run, with every data check |
+| release `data-YYYY-MM` | | `offer_history_YYYY-MM.parquet`: every version of every offer in the month |
+
+## Collection
+
+- Public `/products.json` catalogs and product `.js` files of Shopify storefronts, read once a day from one GitHub Actions runner, within robots.txt, at least 3 s between requests per store, with a user agent that links to the repository.
+- Prices in integer US cents (USD proven on a product page every run), availability as in stock / out of stock.
+- Products in excluded categories (alcohol, tobacco/vape, weapons, adult, CBD, medicines) are never stored.
+
+## Quality, run of {{ day }}
+
+{% for c in checks %}- {{ c.label }}: {% if c.value is none %}not measured yet{% elif c.id == "gtin_coverage" %}{{ "%.1f"|format(c.value * 100) }}%{% elif c.id == "matching_precision" %}{{ "%.1f"|format(c.value * 100) }}%{% else %}{{ c.value }}{% endif %}
+{% endfor %}
+
+## Limits
+
+- The stores span clean, Korean and luxury beauty; most of their brands are sold by one store only, so most products are not compared (recon overlap: [decisions D-016]({{ blob }}/docs/decisions.md)).
+- Prices are list prices on the store page; discount codes, member prices and shipping are not included.
+
+## Use and opt-out
+
+Code MIT, data CC BY 4.0 with attribution. Store and product names belong to their owners. Opt-out: [{{ pub.email }}](mailto:{{ pub.email }}), removal within 24 hours.

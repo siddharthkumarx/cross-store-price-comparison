@@ -1,0 +1,142 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-still.svg">
+    <img src="assets/hero.svg" width="820" alt="Same product, different price: {% for o in rows[:1] %}{{ o.brand }} {{ o.product }} costs {{ o.lowest_price_usd | usd }} at {{ o.lowest_names }} and up to {{ o.highest_price_usd | usd }} elsewhere ({{ o.spread_pct }}% gap) on {{ day }}. {% endfor %}{{ comp.products_matched | n }} products compared across {{ retailers | length }} US {{ pub.vertical_label }} stores in that run.">
+  </picture>
+</p>
+
+# Cross-store price comparison: {{ pub.vertical_label }} at {{ retailers | length }} US stores
+
+**A free, open, daily price comparison of the same {{ pub.vertical_label }} products at {{ retailers | length }} US online stores: matched by barcode, with the lowest price, the price gap and stock for every product, published as CSV every day and checked in public.**
+
+[![last run]({{ badge }}/last-run.json)]({{ repo_url }}/actions/workflows/daily.yml)
+[![days running]({{ badge }}/days-running.json)]({{ blob }}/data/status.json)
+[![runs]({{ badge }}/runs.json)]({{ blob }}/data/runs.jsonl)
+[![matched products]({{ badge }}/matched-products.json)]({{ blob }}/data/latest/comparison.csv)
+[![CI]({{ repo_url }}/actions/workflows/ci.yml/badge.svg)]({{ repo_url }}/actions/workflows/ci.yml)
+
+**[Open the dashboard]({{ pub.dashboard }})** · **[Download today's comparison (CSV)]({{ blob }}/data/latest/comparison.csv)** · [Monthly history (Parquet)]({{ repo_url }}/releases/latest) · [Run feed (JSON)]({{ blob }}/data/public/feed.json)
+
+## What does a daily cross-store price comparison give you?
+
+One row per product sold by at least two of the stores, with each store's price, stock and link, the lowest price and the gap between the highest and the lowest. Real rows from the run of {{ day }}{% if lg.run_url %} ([run log]({{ lg.run_url }})){% endif %}:
+
+| product | lowest price | at | gap | stores in stock | matched by |
+|---|---:|---|---:|---:|---|
+{% for r in rows %}| {{ r.brand | md }} · {{ r.product | md }} | {{ r.lowest_price_usd | usd }} | {{ r.lowest_names | md }} | {{ r.spread_pct }}% | {{ r.retailers_in_stock }} | {{ "barcode" if r.match_tier == "gtin" else ("part number" if r.match_tier == "mpn" else "name") }} |
+{% endfor %}
+
+### What changed today
+
+{{ change_summary | capitalize }}{% if change_count %} on the compared products since the previous run{% endif %}.
+{% if changes %}
+
+| product | change | store | before | now |
+|---|---|---|---:|---:|
+{% for c in changes %}| {{ c.brand | md }} · {{ c.product | md }} | {{ c.event.replace("_", " ") }} | {% for rid in c.retailer_id.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %} | {% if c.event in ("price_up", "price_down") %}{{ c.old_value | usd }}{% elif c.event == "new_lowest" %}{% for rid in c.old_value.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}{{ c.old_value }}{% endif %} | {% if c.event in ("price_up", "price_down") %}{{ c.new_value | usd }} ({{ c.change_pct }}%){% elif c.event == "new_lowest" %}{% for rid in c.new_value.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}{{ c.new_value }}{% endif %} |
+{% endfor %}
+Every change of the day: [`data/changes/{{ day[:4] }}/{{ day }}.csv`]({{ blob }}/data/changes/{{ day[:4] }}/{{ day }}.csv).
+{% endif %}
+
+## Why can you trust these numbers?
+
+Every run checks its own data and publishes the result. Latest run, {{ day }}:
+
+| check | result |
+|---|---|
+{% for c in checks %}| {{ c.label }} | {% if c.value is none %}not measured yet{% elif c.id == "gtin_coverage" %}{{ "%.1f"|format(c.value * 100) }}%{% elif c.id == "matching_precision" %}{{ "%.1f"|format(c.value * 100) }}% ({{ precision.combined_true }} of {{ precision.combined_evaluated }} pairs, [measured {{ day }}]({{ precision_file }})){% else %}{{ c.value }}{% endif %} |
+{% endfor %}| Matching method | [published, with a manual check]({{ blob }}/docs/precision.md) |
+| Stores that block automated readers | left out, never worked around ([sources]({{ blob }}/docs/sources.md)) |
+
+A product is compared only when the match is certain enough: same barcode, or a part-number or name match whose precision was measured against barcodes on the previous run and reached 98% on at least 100 pairs. {% if precision and precision.combined_evaluated %}In the run of {{ day }}, {{ precision.combined_true }} of {{ precision.combined_evaluated }} name and part-number pairs checked against barcodes were the same item.{% else %}Until that bar is reached, only barcode matches are compared ({{ precision.gtin_pairs if precision else 0 }} barcode pairs in the run of {{ day }}).{% endif %} Everything below the bar is listed in [`possible_matches.csv`]({{ blob }}/data/latest/possible_matches.csv) and never compared.
+
+## How does cross-store price matching work?
+
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/pipeline-still.svg">
+    <img src="assets/pipeline.svg" width="760" alt="How it works: 1 Read {{ lg.retailers_ok }} store catalogs ({{ lg.offers_observed | n }} product options). 2 Match by barcode, part number and name. 3 Compare lowest price, gap and stock for {{ comp.products_matched | n }} products. 4 Publish CSV, dashboard and feed, {{ lg.changes_total | n }} changes on {{ day }}.">
+  </picture>
+</p>
+
+1. **Read.** Once a day, each store's public catalog is read politely: at least 3 seconds between requests to a store, within its robots.txt rules, nothing behind a login.
+2. **Match.** The same item at two stores is found by its barcode (GTIN), then by brand and manufacturer part number, then by brand, model words and options. Barcodes are read once per product and refreshed weekly.
+3. **Compare.** For every product sold by two or more stores: each store's price and stock, the lowest in-stock price and the gap between highest and lowest.
+4. **Publish.** A CSV, a dashboard, a change log and a run feed, with every price and stock change kept in a monthly history file.
+
+## What broke, and how was it fixed?
+
+{% for i in incidents %}- **{{ i.title }}** ({{ i.id }}). {{ i.what }} *Fix:* {{ i.fix }}
+{% endfor %}
+The full log, with the evidence for each: [`docs/incidents.md`]({{ blob }}/docs/incidents.md).
+
+## Who uses cross-store price data?
+
+- **Brands** that sell through several retailers and want to see where their products are cheapest, out of stock or on sale.
+- **Retailers** that want their prices next to the same products at other stores, every morning.
+- **Analysts and investors** who follow pricing and stock in a category over time.
+
+## Want this for your own stores?
+
+The same pipeline works for your products and the stores you choose. You get a **free sample first**: your products at your competitors, compared, as a CSV or Google Sheet. Then daily or weekly delivery as CSV, Excel, Google Sheets or straight into your database.
+
+**[Ask for a free sample]({{ pub.contact }})** · or email [{{ pub.email }}](mailto:{{ pub.email }})
+
+## How is this different from Prisync, Price2Spy or checking by hand?
+
+| | This project / SteadyData | Prisync | Price2Spy | Checking by hand |
+|---|---|---|---|---|
+| Setup | done for you | you, in their app | you, in their app | you |
+| Same-product matching | barcode, then part number, then name; precision measured and published | you link the products, or use the tool's matching | you link the products, or use the tool's matching | by eye |
+| Delivery | CSV, Google Sheets or your database, plus a dashboard | their web app and exports | their web app and exports | a spreadsheet you keep up |
+| Cost | per project, free sample first | monthly subscription | monthly subscription | your time |
+| Best for | data delivered and checked | a self-serve tool | a self-serve tool | a few products, now and then |
+
+## FAQ
+
+**How often is the comparison updated?** Once a day, at 07:43 UTC. The badges above show the last run and how many runs there have been.
+
+**Which stores are compared?** {{ retailers | length }} US online stores: {% for r in retailers %}{{ r.name }}{% if not loop.last %}, {% endif %}{% endfor %}. How they were chosen, and why other stores were left out, is in [`docs/sources.md`]({{ blob }}/docs/sources.md).
+
+**How do you know two stores sell the same product?** By barcode first. Name and part-number matches are used only above a threshold whose precision was measured against barcodes, and 100 compared pairs are checked by hand ([method]({{ blob }}/docs/precision.md)).
+
+**What does "price gap" mean?** The highest in-stock price minus the lowest, as a percentage of the lowest, for one product on one day. It is a number, not a judgment of any store.
+
+**Is reading store prices allowed?** Only public product pages and public catalog feeds are read, within each store's robots.txt rules, slowly, and with a name that links back here. No logins, no personal data, no images or descriptions are kept. A store can opt out by email.
+
+**Can I get my own products and competitors?** Yes, see [Want this for your own stores?](#want-this-for-your-own-stores). The first sample is free.
+
+## Data dictionary
+
+`data/latest/comparison.csv`, one row per compared product. Example values from the run of {{ day }}.
+
+| field | type | meaning | example |
+|---|---|---|---|
+{% for name, typ, meaning in fields %}| `{{ name }}` | {{ typ }} | {{ meaning | md }} | {% if name in example %}{{ (example[name] or "(empty)") | md }}{% else %}see the per-store columns{% endif %} |
+{% endfor %}
+
+Other files: [`offers.csv`]({{ blob }}/data/latest/offers.csv) (every product option at every store), [`possible_matches.csv`]({{ blob }}/data/latest/possible_matches.csv), [`price-index.json`]({{ blob }}/data/latest/price-index.json) (the "your price vs competitors" demo), the [change log]({{ repo_url }}/tree/{{ pub.branch }}/data/changes), [`runs.jsonl`]({{ blob }}/data/runs.jsonl) and the [dataset card]({{ blob }}/data/README.md).
+
+<details>
+<summary><b>For engineers</b></summary>
+
+- **Stack:** Python 3.12, httpx, Protego (robots.txt), Pydantic, DuckDB (SCD2 history), PyArrow (Parquet), GitHub Actions, GitHub Pages. ruff, mypy strict, pytest.
+- **Pipeline:** `src/crossprice/run.py`: collect (catalogs, then GTIN probes within a fixed budget) → validate (Pydantic, batch guard) → match (`match.py`) → blind precision (`precision.py`) → compare (`compare.py`) → SCD2 merge (`history.py`) → outputs.
+- **Politeness:** one runner per run, at least 3 s between requests per host, one run-wide pace, a 429 pauses the whole run, a challenge stops the store ([decisions D-004, D-016]({{ blob }}/docs/decisions.md)).
+- **Docs:** [architecture]({{ blob }}/docs/architecture.md), [decisions]({{ blob }}/docs/decisions.md), [plan]({{ blob }}/docs/plan.md), [sources]({{ blob }}/docs/sources.md), [precision]({{ blob }}/docs/precision.md), [incidents]({{ blob }}/docs/incidents.md), [maintainers]({{ blob }}/docs/maintainers.md).
+- **Run locally:** `uv sync && uv run pytest`. Live requests run only on GitHub Actions (`checks.yml` for recon, `daily.yml` for the pipeline).
+- **Reuse:** the polite HTTP client, witnesses, validation, history and status come from the store monitor [ecommerce-price-monitor](https://github.com/siddharthkumarx/ecommerce-price-monitor).
+
+</details>
+
+## Data use and compliance
+
+Public prices and stock only, read from public pages within robots.txt rules. No personal data, no images, no product descriptions. Prices are shown as found; differences are shown as numbers. Store and product names belong to their owners. A store that wants to be left out can email [{{ pub.email }}](mailto:{{ pub.email }}); it is removed within 24 hours.
+
+## License
+
+Code: [MIT](LICENSE). Data: prices and stock are facts; the compiled dataset is shared under CC BY 4.0 with attribution to this repository.
+
+---
+
+Built and maintained by {{ pub.owner }}, founder of {{ pub.company }} · [steadydata.co]({{ pub.company_site }}) · [siddharthkumar.com]({{ pub.site }})
