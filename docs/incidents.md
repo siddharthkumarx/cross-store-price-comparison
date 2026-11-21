@@ -58,3 +58,25 @@ are in [its incident log](https://github.com/siddharthkumarx/ecommerce-price-mon
   was filled by hand at 10:54 UTC (dispatch with `slot` and `by=manual`).
 - **Detection:** `status.json` `schedule` (on time, late, held, missed per slot)
   and the "on time" and "missed runs" badges.
+
+## INC-004 - A product title with an inch mark crashed the history merge (2026-11-21)
+
+- **Run:** `daily` for the 07:43 slot of 2026-11-21, dispatched by hand,
+  [Actions run 44896513350](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44896513350);
+  alert issue #1.
+- **What happened:** all 11 retailers were read, then the run stopped in the
+  history step with `Value with unterminated quote found` on line 3,260 of the
+  previous snapshot (`data/latest/offers.csv`): the Cos Bar title
+  `T3 SINGLEPASS CURL 1.25" SATIN BLUSH`, written as valid CSV with the quote
+  doubled. The run was recorded as `crashed`; the snapshot, the GTIN cache and the
+  monthly Parquet file were left unchanged, so no data was lost or half-written.
+- **Cause:** DuckDB's `read_csv` sniffs the CSV dialect even when the column
+  types are given. The first 3,259 rows hold no quote at all, and the sniffer
+  settled on a dialect that does not read `""` as an escaped quote. The first run
+  had no previous snapshot to read, so it did not meet the problem.
+- **Fix:** the snapshot is read with the dialect stated (`delim ','`, `quote '"'`,
+  `escape '"'`, no auto-detection). A regression test writes 3,999 plain rows and
+  one title with an inch mark and a comma, and reads them back unchanged; it fails
+  on the old query.
+- **Detection:** a crash is a run record with `status: crashed` and its error, the
+  "last run" badge, and the `run-alert` issue.

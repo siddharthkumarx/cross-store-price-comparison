@@ -60,3 +60,21 @@ def test_unchanged_offer_keeps_its_version_and_refreshes_identifiers(tmp_path: P
     (v,) = r.open_versions
     assert (v.valid_from, v.product_title, v.sku) == (T0, "New name", "X-1001")
     assert r.closed_versions == []
+
+
+def test_snapshot_round_trips_titles_with_quotes_after_many_plain_rows(tmp_path: Path) -> None:
+    # INC-004: rows without any quote first, then a title holding an inch mark.
+    snap = tmp_path / "offers.csv"
+    con = connect()
+    load_snapshot(con, snap)
+    day0 = [row("a", i, f"Plain item {i}", observed_at=T0) for i in range(1, 4000)]
+    day0.append(row("a", 4000, 'Curl Iron 1.25" Satin, Blush', observed_at=T0))
+    r0 = merge(con, day0, {"a"}, T0)
+    write_snapshot(con, r0.open_versions, snap)
+
+    con = connect()
+    load_snapshot(con, snap)
+    r1 = merge(con, day0, {"a"}, T1)
+    assert (r1.new, r1.changed, r1.removed) == (0, 0, 0)
+    titles = {v.product_title for v in r1.open_versions}
+    assert 'Curl Iron 1.25" Satin, Blush' in titles

@@ -57,9 +57,12 @@ CREATE OR REPLACE TABLE prev (
     valid_to TIMESTAMPTZ
 )
 """
+# The dialect is stated, not sniffed: with sniffing, a quoted title holding an
+# escaped quote (`1.25"" SATIN`) was read as an unterminated quote (INC-004).
 _PREV_LOAD = """
 INSERT INTO prev
-SELECT *, NULL::TIMESTAMPTZ FROM read_csv(?, header = true, columns = {
+SELECT *, NULL::TIMESTAMPTZ FROM read_csv(?, header = true, delim = ',', quote = '"',
+    escape = '"', auto_detect = false, columns = {
     'retailer_id': 'VARCHAR', 'product_id': 'BIGINT', 'variant_id': 'BIGINT',
     'handle': 'VARCHAR', 'brand': 'VARCHAR', 'product_title': 'VARCHAR',
     'variant_title': 'VARCHAR', 'sku': 'VARCHAR', 'gtin14': 'VARCHAR',
