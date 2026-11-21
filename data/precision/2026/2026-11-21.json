@@ -1,0 +1,135 @@
+{
+  "measured_at": "2026-11-21T02:45:59Z",
+  "run_id": "20261121T024559Z",
+  "gtin_pairs": 192,
+  "offers_with_gtin": 699,
+  "offers": 17429,
+  "tiers": {
+    "mpn": {
+      "tier": "mpn",
+      "threshold_used": null,
+      "evaluated": 0,
+      "true_matches": 0,
+      "false_matches": 0,
+      "precision": null,
+      "next_threshold": null,
+      "curve": [
+        {
+          "threshold": 0.5,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 0.6,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 0.7,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 0.8,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 0.85,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 0.9,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 0.95,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        },
+        {
+          "threshold": 1.0,
+          "evaluated": 0,
+          "true": 0,
+          "precision": null
+        }
+      ]
+    },
+    "fuzzy": {
+      "tier": "fuzzy",
+      "threshold_used": null,
+      "evaluated": 0,
+      "true_matches": 0,
+      "false_matches": 0,
+      "precision": null,
+      "next_threshold": 0.7643,
+      "curve": [
+        {
+          "threshold": 0.5,
+          "evaluated": 184,
+          "true": 176,
+          "precision": 0.9565
+        },
+        {
+          "threshold": 0.6,
+          "evaluated": 170,
+          "true": 163,
+          "precision": 0.9588
+        },
+        {
+          "threshold": 0.7,
+          "evaluated": 161,
+          "true": 157,
+          "precision": 0.9752
+        },
+        {
+          "threshold": 0.8,
+          "evaluated": 147,
+          "true": 144,
+          "precision": 0.9796
+        },
+        {
+          "threshold": 0.85,
+          "evaluated": 145,
+          "true": 142,
+          "precision": 0.9793
+        },
+        {
+          "threshold": 0.9,
+          "evaluated": 140,
+          "true": 137,
+          "precision": 0.9786
+        },
+        {
+          "threshold": 0.95,
+          "evaluated": 132,
+          "true": 129,
+          "precision": 0.9773
+        },
+        {
+          "threshold": 1.0,
+          "evaluated": 132,
+          "true": 129,
+          "precision": 0.9773
+        }
+      ]
+    }
+  },
+  "combined_evaluated": 0,
+  "combined_true": 0,
+  "combined_precision": null,
+  "combined_recall": 0.0,
+  "next_thresholds": {
+    "mpn": null,
+    "fuzzy": 0.7643
+  }
+}

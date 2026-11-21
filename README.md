@@ -1,0 +1,158 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-still.svg">
+    <img src="assets/hero.svg" width="820" alt="Same product, different price: Augustinus Bader Augustinus Bader The Cream - 1.7 oz costs $315.00 at Ayla Beauty, Cos Bar, Dermsilk and up to $315.00 elsewhere (0.0% gap) on 2026-11-21. 175 products compared across 11 US skincare and beauty stores in that run.">
+  </picture>
+</p>
+
+# Cross-store price comparison: skincare and beauty at 11 US stores
+
+**A free, open, daily price comparison of the same skincare and beauty products at 11 US online stores: matched by barcode, with the lowest price, the price gap and stock for every product, published as CSV every day and checked in public.**
+
+[![last run](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/siddharthkumarx/cross-store-price-comparison/main/data/badges/last-run.json)](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/workflows/daily.yml)
+[![days running](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/siddharthkumarx/cross-store-price-comparison/main/data/badges/days-running.json)](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/status.json)
+[![runs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/siddharthkumarx/cross-store-price-comparison/main/data/badges/runs.json)](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/runs.jsonl)
+[![matched products](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/siddharthkumarx/cross-store-price-comparison/main/data/badges/matched-products.json)](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/comparison.csv)
+[![CI](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/workflows/ci.yml/badge.svg)](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/workflows/ci.yml)
+
+**[Open the dashboard](https://siddharthkumar.com/cross-store-price-comparison/)** · **[Download today's comparison (CSV)](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/comparison.csv)** · [Monthly history (Parquet)](https://github.com/siddharthkumarx/cross-store-price-comparison/releases/latest) · [Run feed (JSON)](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/public/feed.json)
+
+## What does a daily cross-store price comparison give you?
+
+One row per product sold by at least two of the stores, with each store's price, stock and link, the lowest price and the gap between the highest and the lowest. Real rows from the run of 2026-11-21 ([run log](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44857592994)):
+
+| product | lowest price | at | gap | stores in stock | matched by |
+|---|---:|---|---:|---:|---|
+| Augustinus Bader · Augustinus Bader The Cream - 1.7 oz | $315.00 | Ayla Beauty, Cos Bar, Dermsilk | 0.0% | 3 | barcode |
+| Augustinus Bader · Augustinus Bader The Scalp Treatment | $93.00 | Ayla Beauty, Cos Bar, Dermsilk | 0.0% | 3 | barcode |
+| Macrene Actives · Macrene Actives Chria High Performance Tinted Lip Filler - Berry | $65.00 | Ayla Beauty, Cos Bar, Thirteen Lune | 0.0% | 3 | barcode |
+| Macrene Actives · Macrene Actives Chria High Performance Tinted Lip Filler - Nude | $65.00 | Ayla Beauty, Cos Bar, Thirteen Lune | 0.0% | 3 | barcode |
+| Macrene Actives · Macrene Actives Chria High Performance Tinted Lip Filler - Pink | $65.00 | Ayla Beauty, Cos Bar, Thirteen Lune | 0.0% | 3 | barcode |
+
+
+### What changed today
+
+No changes on the compared products.
+
+
+## Why can you trust these numbers?
+
+Every run checks its own data and publishes the result. Latest run, 2026-11-21:
+
+| check | result |
+|---|---|
+| Stores read completely | 11/11 |
+| Rows rejected by validation | 0 |
+| Prices proven to be US dollars | USD |
+| Prices confirmed by a second source | 447/447 |
+| Product options with a verified barcode | 4.0% |
+| Matching precision (blind, against barcodes) | not measured yet |
+| Matching method | [published, with a manual check](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/precision.md) |
+| Stores that block automated readers | left out, never worked around ([sources](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/sources.md)) |
+
+A product is compared only when the match is certain enough: same barcode, or a part-number or name match whose precision was measured against barcodes on the previous run and reached 98% on at least 100 pairs. Until that bar is reached, only barcode matches are compared (192 barcode pairs in the run of 2026-11-21). Everything below the bar is listed in [`possible_matches.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/possible_matches.csv) and never compared.
+
+## How does cross-store price matching work?
+
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/pipeline-still.svg">
+    <img src="assets/pipeline.svg" width="760" alt="How it works: 1 Read 11 store catalogs (17,429 product options). 2 Match by barcode, part number and name. 3 Compare lowest price, gap and stock for 175 products. 4 Publish CSV, dashboard and feed, 0 changes on 2026-11-21.">
+  </picture>
+</p>
+
+1. **Read.** Once a day, each store's public catalog is read politely: at least 3 seconds between requests to a store, within its robots.txt rules, nothing behind a login.
+2. **Match.** The same item at two stores is found by its barcode (GTIN), then by brand and manufacturer part number, then by brand, model words and options. Barcodes are read once per product and refreshed weekly.
+3. **Compare.** For every product sold by two or more stores: each store's price and stock, the lowest in-stock price and the gap between highest and lowest.
+4. **Publish.** A CSV, a dashboard, a change log and a run feed, with every price and stock change kept in a monthly history file.
+
+## What broke, and how was it fixed?
+
+- **Commits showed as "Unverified" on GitHub (2026-11-20)** (INC-001). the first commits were signed with an SSH key from the development environment that the owner's GitHub account does not hold. GitHub showed them as "Unverified" (API verification reason `unknown_key`), unlike the owner's other public repositories, whose commits are unsigned and carry no badge. *Fix:* signing switched off for this repository (`commit.gpgsign false`, `tag.gpgsign false`). The history was rewritten once with `git filter-repo`, which drops signatures and keeps authors, committers, dates and messages, and `main` was force-pushed while no live check was running. The two recon results that record the commit they ran on keep both SHAs (`git_sha`, `git_sha_before_rewrite`).
+
+The full log, with the evidence for each: [`docs/incidents.md`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/incidents.md).
+
+## Who uses cross-store price data?
+
+- **Brands** that sell through several retailers and want to see where their products are cheapest, out of stock or on sale.
+- **Retailers** that want their prices next to the same products at other stores, every morning.
+- **Analysts and investors** who follow pricing and stock in a category over time.
+
+## Want this for your own stores?
+
+The same pipeline works for your products and the stores you choose. You get a **free sample first**: your products at your competitors, compared, as a CSV or Google Sheet. Then daily or weekly delivery as CSV, Excel, Google Sheets or straight into your database.
+
+**[Ask for a free sample](https://steadydata.co/contact/)** · or email [hello@steadydata.co](mailto:hello@steadydata.co)
+
+## How is this different from Prisync, Price2Spy or checking by hand?
+
+| | This project / SteadyData | Prisync | Price2Spy | Checking by hand |
+|---|---|---|---|---|
+| Setup | done for you | you, in their app | you, in their app | you |
+| Same-product matching | barcode, then part number, then name; precision measured and published | you link the products, or use the tool's matching | you link the products, or use the tool's matching | by eye |
+| Delivery | CSV, Google Sheets or your database, plus a dashboard | their web app and exports | their web app and exports | a spreadsheet you keep up |
+| Cost | per project, free sample first | monthly subscription | monthly subscription | your time |
+| Best for | data delivered and checked | a self-serve tool | a self-serve tool | a few products, now and then |
+
+## FAQ
+
+**How often is the comparison updated?** Once a day, at 07:43 UTC. The badges above show the last run and how many runs there have been.
+
+**Which stores are compared?** 11 US online stores: Ayla Beauty, Cos Bar, Credo Beauty, Dermsilk, Ohlolly, Onda Beauty, Petit Vour, Safe & Chic, Soko Glam, The Choosy Chick, Thirteen Lune. How they were chosen, and why other stores were left out, is in [`docs/sources.md`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/sources.md).
+
+**How do you know two stores sell the same product?** By barcode first. Name and part-number matches are used only above a threshold whose precision was measured against barcodes, and 100 compared pairs are checked by hand ([method](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/precision.md)).
+
+**What does "price gap" mean?** The highest in-stock price minus the lowest, as a percentage of the lowest, for one product on one day. It is a number, not a judgment of any store.
+
+**Is reading store prices allowed?** Only public product pages and public catalog feeds are read, within each store's robots.txt rules, slowly, and with a name that links back here. No logins, no personal data, no images or descriptions are kept. A store can opt out by email.
+
+**Can I get my own products and competitors?** Yes, see [Want this for your own stores?](#want-this-for-your-own-stores). The first sample is free.
+
+## Data dictionary
+
+`data/latest/comparison.csv`, one row per compared product. Example values from the run of 2026-11-21.
+
+| field | type | meaning | example |
+|---|---|---|---|
+| `product_key` | text | The product's GTIN-14 barcode, or `M` + a stable id for a non-barcode match | 05060552900222 |
+| `brand` | text | Brand, as the first store lists it | Augustinus Bader |
+| `product` | text | Product name and option (shade, size), as the first store lists it | Augustinus Bader The Cream - 1.0 oz |
+| `gtin` | 14 digits or empty | GTIN-14 barcode when the match is barcode-verified | 05060552900222 |
+| `match_tier` | text | `gtin` (barcode), `mpn` (brand + part number) or `fuzzy` (brand + name) | gtin |
+| `match_confidence` | 0 to 1 | Score of the weakest link in the match; 1.00 for barcode | 1.00 |
+| `retailers` | integer | Stores that sell the product | 2 |
+| `retailers_in_stock` | integer | Stores that have it in stock | 2 |
+| `lowest_price_usd` | USD | Lowest in-stock price (lowest of all when none is in stock) | 195.00 |
+| `lowest_price_retailers` | text | Store id(s) at the lowest price | ayla-beauty cos-bar |
+| `highest_price_usd` | USD | Highest in-stock price | 195.00 |
+| `spread_pct` | percent or empty | (highest - lowest) / lowest x 100, in-stock prices, 2+ stores | 0.0 |
+| `<store>_price_usd` | USD or empty | That store's price (one column per store) | see the per-store columns |
+| `<store>_in_stock` | yes / no / empty | That store's stock | see the per-store columns |
+| `<store>_url` | URL or empty | The product page at that store | see the per-store columns |
+
+
+Other files: [`offers.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/offers.csv) (every product option at every store), [`possible_matches.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/possible_matches.csv), [`price-index.json`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/price-index.json) (the "your price vs competitors" demo), the [change log](https://github.com/siddharthkumarx/cross-store-price-comparison/tree/main/data/changes), [`runs.jsonl`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/runs.jsonl) and the [dataset card](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/README.md).
+
+<details>
+<summary><b>For engineers</b></summary>
+
+- **Stack:** Python 3.12, httpx, Protego (robots.txt), Pydantic, DuckDB (SCD2 history), PyArrow (Parquet), GitHub Actions, GitHub Pages. ruff, mypy strict, pytest.
+- **Pipeline:** `src/crossprice/run.py`: collect (catalogs, then GTIN probes within a fixed budget) → validate (Pydantic, batch guard) → match (`match.py`) → blind precision (`precision.py`) → compare (`compare.py`) → SCD2 merge (`history.py`) → outputs.
+- **Politeness:** one runner per run, at least 3 s between requests per host, one run-wide pace, a 429 pauses the whole run, a challenge stops the store ([decisions D-004, D-016](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/decisions.md)).
+- **Docs:** [architecture](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/architecture.md), [decisions](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/decisions.md), [plan](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/plan.md), [sources](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/sources.md), [precision](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/precision.md), [incidents](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/incidents.md), [maintainers](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/maintainers.md).
+- **Run locally:** `uv sync && uv run pytest`. Live requests run only on GitHub Actions (`checks.yml` for recon, `daily.yml` for the pipeline).
+- **Reuse:** the polite HTTP client, witnesses, validation, history and status come from the store monitor [ecommerce-price-monitor](https://github.com/siddharthkumarx/ecommerce-price-monitor).
+
+</details>
+
+## Data use and compliance
+
+Public prices and stock only, read from public pages within robots.txt rules. No personal data, no images, no product descriptions. Prices are shown as found; differences are shown as numbers. Store and product names belong to their owners. A store that wants to be left out can email [hello@steadydata.co](mailto:hello@steadydata.co); it is removed within 24 hours.
+
+## License
+
+Code: [MIT](LICENSE). Data: prices and stock are facts; the compiled dataset is shared under CC BY 4.0 with attribution to this repository.
+
+---
+
+Built and maintained by Siddharth Kumar, founder of SteadyData · [steadydata.co](https://steadydata.co) · [siddharthkumar.com](https://siddharthkumar.com)

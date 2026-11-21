@@ -1,0 +1,756 @@
+{
+  "generated_at": "2026-11-21T02:45:59Z",
+  "label": "Demo on public data",
+  "retailers": [
+    {
+      "retailer_id": "ayla-beauty",
+      "products_shared": 23,
+      "index": 100.0,
+      "within_band": 23,
+      "by_brand": [
+        {
+          "brand": "Macrene Actives",
+          "products": 11,
+          "index": 100.0
+        },
+        {
+          "brand": "Kosas",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Augustinus Bader",
+          "products": 4,
+          "index": 100.0
+        },
+        {
+          "brand": "Vintner's Daughter",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "EVOLVh",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [],
+      "below": []
+    },
+    {
+      "retailer_id": "cos-bar",
+      "products_shared": 83,
+      "index": 100.0,
+      "within_band": 73,
+      "by_brand": [
+        {
+          "brand": "WESTMAN ATELIER",
+          "products": 46,
+          "index": 100.0
+        },
+        {
+          "brand": "AUGUSTINUS BADER",
+          "products": 13,
+          "index": 100.0
+        },
+        {
+          "brand": "HOURGLASS",
+          "products": 10,
+          "index": 105.6
+        },
+        {
+          "brand": "Macrene Actives",
+          "products": 10,
+          "index": 100.0
+        },
+        {
+          "brand": "Augustinus Bader",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Vintner's Daughter",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [
+        {
+          "product_key": "00877231006527",
+          "brand": "HOURGLASS",
+          "product": "Unlocked Instant Extensions Mascara - Ultra Black",
+          "price_usd": "34.00",
+          "market_median_usd": "32.00",
+          "difference_pct": 6.2,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690090",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 105 Trace",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690069",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 115 Mist",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690076",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 125 Slip",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690038",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 135 Haze",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690021",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 145 Entice",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690045",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 155 Lucid",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690083",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 165 Thrill",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690052",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 175 Lure",
+          "price_usd": "38.00",
+          "market_median_usd": "36.00",
+          "difference_pct": 5.6,
+          "retailers": 2
+        }
+      ],
+      "below": [
+        {
+          "product_key": "00810102030573",
+          "brand": "WESTMAN ATELIER",
+          "product": "Lip Suede - Les Nudes",
+          "price_usd": "63.75",
+          "market_median_usd": "85.00",
+          "difference_pct": -25.0,
+          "retailers": 2
+        }
+      ]
+    },
+    {
+      "retailer_id": "credo-beauty",
+      "products_shared": 77,
+      "index": 100.0,
+      "within_band": 75,
+      "by_brand": [
+        {
+          "brand": "WESTMAN ATELIER",
+          "products": 46,
+          "index": 100.0
+        },
+        {
+          "brand": "RMS Beauty",
+          "products": 19,
+          "index": 100.0
+        },
+        {
+          "brand": "Kosas",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Ere Perez",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "LYS Beauty",
+          "products": 2,
+          "index": 116.7
+        },
+        {
+          "brand": "LolaVie",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "goop beauty",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [
+        {
+          "product_key": "00850023802583",
+          "brand": "LYS Beauty",
+          "product": "Everyday Powder Brush - One Size",
+          "price_usd": "20.00",
+          "market_median_usd": "15.00",
+          "difference_pct": 33.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810102030573",
+          "brand": "WESTMAN ATELIER",
+          "product": "Lip Suede - Les Nudes",
+          "price_usd": "85.00",
+          "market_median_usd": "63.75",
+          "difference_pct": 33.3,
+          "retailers": 2
+        }
+      ],
+      "below": []
+    },
+    {
+      "retailer_id": "dermsilk",
+      "products_shared": 16,
+      "index": 100.0,
+      "within_band": 16,
+      "by_brand": [
+        {
+          "brand": "AUGUSTINUS BADER",
+          "products": 13,
+          "index": 100.0
+        },
+        {
+          "brand": "Augustinus Bader",
+          "products": 3,
+          "index": 100.0
+        }
+      ],
+      "above": [],
+      "below": []
+    },
+    {
+      "retailer_id": "ohlolly",
+      "products_shared": 16,
+      "index": 100.0,
+      "within_band": 10,
+      "by_brand": [
+        {
+          "brand": "Purito",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "haruharu wonder",
+          "products": 5,
+          "index": 113.6
+        },
+        {
+          "brand": "Cosrx",
+          "products": 2,
+          "index": 94.3
+        },
+        {
+          "brand": "Isntree",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Mediheal",
+          "products": 1,
+          "index": 110.0
+        },
+        {
+          "brand": "Melixir",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Olivarrier",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [
+        {
+          "product_key": "08809532221523",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Bakuchiol Eye Cream",
+          "price_usd": "22.00",
+          "market_median_usd": "17.00",
+          "difference_pct": 29.4,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809532221462",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Hyaluronic Toner for Sensitive Skin",
+          "price_usd": "22.00",
+          "market_median_usd": "17.00",
+          "difference_pct": 29.4,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809532221349",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Moisture Cleansing Oil",
+          "price_usd": "25.00",
+          "market_median_usd": "22.00",
+          "difference_pct": 13.6,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809615058688",
+          "brand": "Mediheal",
+          "product": "Mediheal Madecassoside Blemish Pad",
+          "price_usd": "26.40",
+          "market_median_usd": "24.00",
+          "difference_pct": 10.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809563101054",
+          "brand": "Purito",
+          "product": "Purito Oat-in Calming Gel Cream",
+          "price_usd": "21.00",
+          "market_median_usd": "19.50",
+          "difference_pct": 7.7,
+          "retailers": 2
+        }
+      ],
+      "below": [
+        {
+          "product_key": "08809416470085",
+          "brand": "Cosrx",
+          "product": "Cosrx Centella Water Alcohol-Free Toner",
+          "price_usd": "14.99",
+          "market_median_usd": "17.00",
+          "difference_pct": -11.8,
+          "retailers": 2
+        }
+      ]
+    },
+    {
+      "retailer_id": "onda-beauty",
+      "products_shared": 2,
+      "index": 100.0,
+      "within_band": 2,
+      "by_brand": [
+        {
+          "brand": "Vintner's Daughter",
+          "products": 2,
+          "index": 100.0
+        }
+      ],
+      "above": [],
+      "below": []
+    },
+    {
+      "retailer_id": "petit-vour",
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
+      "above": [],
+      "below": []
+    },
+    {
+      "retailer_id": "safe-chic",
+      "products_shared": 9,
+      "index": 105.9,
+      "within_band": 4,
+      "by_brand": [
+        {
+          "brand": "Dr. Alkaitis Organics",
+          "products": 4,
+          "index": 102.7
+        },
+        {
+          "brand": "Madame Gabriela Beauty",
+          "products": 4,
+          "index": 111.4
+        },
+        {
+          "brand": "EVOLVh",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [
+        {
+          "product_key": "00860002460352",
+          "brand": "Madame Gabriela Beauty",
+          "product": "Mexico City at 9PM",
+          "price_usd": "39.00",
+          "market_median_usd": "35.00",
+          "difference_pct": 11.4,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460314",
+          "brand": "Madame Gabriela Beauty",
+          "product": "New York At 1PM",
+          "price_usd": "39.00",
+          "market_median_usd": "35.00",
+          "difference_pct": 11.4,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460307",
+          "brand": "Madame Gabriela Beauty",
+          "product": "Paris At 7PM",
+          "price_usd": "39.00",
+          "market_median_usd": "35.00",
+          "difference_pct": 11.4,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460321",
+          "brand": "Madame Gabriela Beauty",
+          "product": "Sydney At 8AM",
+          "price_usd": "39.00",
+          "market_median_usd": "35.00",
+          "difference_pct": 11.4,
+          "retailers": 2
+        },
+        {
+          "product_key": "00793573052063",
+          "brand": "Dr. Alkaitis Organics",
+          "product": "Organic Purifying Facial Cleanser - Regular (4oz / 120 ml)",
+          "price_usd": "72.00",
+          "market_median_usd": "68.00",
+          "difference_pct": 5.9,
+          "retailers": 2
+        }
+      ],
+      "below": []
+    },
+    {
+      "retailer_id": "soko-glam",
+      "products_shared": 16,
+      "index": 100.0,
+      "within_band": 10,
+      "by_brand": [
+        {
+          "brand": "Purito",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "haruharu wonder",
+          "products": 5,
+          "index": 88.0
+        },
+        {
+          "brand": "Cosrx",
+          "products": 2,
+          "index": 106.5
+        },
+        {
+          "brand": "Isntree",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Mediheal",
+          "products": 1,
+          "index": 90.9
+        },
+        {
+          "brand": "Melixir",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Olivarrier",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [
+        {
+          "product_key": "08809416470085",
+          "brand": "Cosrx",
+          "product": "Cosrx Centella Water Alcohol-Free Toner",
+          "price_usd": "17.00",
+          "market_median_usd": "14.99",
+          "difference_pct": 13.4,
+          "retailers": 2
+        }
+      ],
+      "below": [
+        {
+          "product_key": "08809532221523",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Bakuchiol Eye Cream",
+          "price_usd": "17.00",
+          "market_median_usd": "22.00",
+          "difference_pct": -22.7,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809532221462",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Hyaluronic Toner for Sensitive Skin",
+          "price_usd": "17.00",
+          "market_median_usd": "22.00",
+          "difference_pct": -22.7,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809532221349",
+          "brand": "haruharu wonder",
+          "product": "haruharu wonder Black Rice Moisture Cleansing Oil",
+          "price_usd": "22.00",
+          "market_median_usd": "25.00",
+          "difference_pct": -12.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809615058688",
+          "brand": "Mediheal",
+          "product": "Mediheal Madecassoside Blemish Pad",
+          "price_usd": "24.00",
+          "market_median_usd": "26.40",
+          "difference_pct": -9.1,
+          "retailers": 2
+        },
+        {
+          "product_key": "08809563101054",
+          "brand": "Purito",
+          "product": "Purito Oat-in Calming Gel Cream",
+          "price_usd": "19.50",
+          "market_median_usd": "21.00",
+          "difference_pct": -7.1,
+          "retailers": 2
+        }
+      ]
+    },
+    {
+      "retailer_id": "the-choosy-chick",
+      "products_shared": 4,
+      "index": 97.3,
+      "within_band": 3,
+      "by_brand": [
+        {
+          "brand": "Dr. Alkaitis Organics",
+          "products": 4,
+          "index": 97.3
+        }
+      ],
+      "above": [],
+      "below": [
+        {
+          "product_key": "00793573052063",
+          "brand": "Dr. Alkaitis Organics",
+          "product": "Organic Purifying Facial Cleanser - Regular (4oz / 120 ml)",
+          "price_usd": "68.00",
+          "market_median_usd": "72.00",
+          "difference_pct": -5.6,
+          "retailers": 2
+        }
+      ]
+    },
+    {
+      "retailer_id": "thirteen-lune",
+      "products_shared": 45,
+      "index": 100.0,
+      "within_band": 31,
+      "by_brand": [
+        {
+          "brand": "RMS Beauty",
+          "products": 19,
+          "index": 100.0
+        },
+        {
+          "brand": "HOURGLASS",
+          "products": 10,
+          "index": 94.7
+        },
+        {
+          "brand": "Macrene Actives",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Madame Gabriela Beauty",
+          "products": 4,
+          "index": 89.7
+        },
+        {
+          "brand": "Ere Perez",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "LYS Beauty",
+          "products": 2,
+          "index": 87.5
+        },
+        {
+          "brand": "LolaVie",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "goop beauty",
+          "products": 1,
+          "index": 100.0
+        }
+      ],
+      "above": [],
+      "below": [
+        {
+          "product_key": "00850023802583",
+          "brand": "LYS Beauty",
+          "product": "Everyday Powder Brush - One Size",
+          "price_usd": "15.00",
+          "market_median_usd": "20.00",
+          "difference_pct": -25.0,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460352",
+          "brand": "Madame Gabriela Beauty",
+          "product": "Mexico City at 9PM",
+          "price_usd": "35.00",
+          "market_median_usd": "39.00",
+          "difference_pct": -10.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460314",
+          "brand": "Madame Gabriela Beauty",
+          "product": "New York At 1PM",
+          "price_usd": "35.00",
+          "market_median_usd": "39.00",
+          "difference_pct": -10.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460307",
+          "brand": "Madame Gabriela Beauty",
+          "product": "Paris At 7PM",
+          "price_usd": "35.00",
+          "market_median_usd": "39.00",
+          "difference_pct": -10.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00860002460321",
+          "brand": "Madame Gabriela Beauty",
+          "product": "Sydney At 8AM",
+          "price_usd": "35.00",
+          "market_median_usd": "39.00",
+          "difference_pct": -10.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00877231006527",
+          "brand": "HOURGLASS",
+          "product": "Unlocked Instant Extensions Mascara - Ultra Black",
+          "price_usd": "32.00",
+          "market_median_usd": "34.00",
+          "difference_pct": -5.9,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690090",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 105 Trace",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690069",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 115 Mist",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690076",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 125 Slip",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690038",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 135 Haze",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690021",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 145 Entice",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690045",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 155 Lucid",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690083",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 165 Thrill",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810063690052",
+          "brand": "HOURGLASS",
+          "product": "Phantom Volumizing Glossy Balm - 175 Lure",
+          "price_usd": "36.00",
+          "market_median_usd": "38.00",
+          "difference_pct": -5.3,
+          "retailers": 2
+        }
+      ]
+    }
+  ]
+}
