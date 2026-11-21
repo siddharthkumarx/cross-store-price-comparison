@@ -218,7 +218,7 @@ def _day(t: datetime) -> str:
 def schedule_note(
     runs: list[dict[str, object]], states: list[SlotState], since: datetime | None
 ) -> str:
-    """One plain sentence on the slots before the on-time trigger (INC-009).
+    """One plain sentence on the slots before the on-time trigger (INC-003).
 
     The lateness range is that of the scheduled (``schedule``) runs before ``since``,
     from the run log; the delivery part counts those slots' good runs.
@@ -237,15 +237,15 @@ def schedule_note(
         span = f"{lo} h" if lo == hi else f"{lo}-{hi} h"
         late = f"GitHub started the scheduled run {span} late"
     else:
-        late = "GitHub's scheduler often started runs late"
+        late = "GitHub's scheduler did not start the daily run"
     delivered = sum(1 for s in before if s.state in ("on_time", "late"))
     if delivered == len(before):
-        kept = "every day was still delivered"
+        kept = "every day was still delivered" if len(before) > 1 else "the day was still delivered"
     else:
         kept = f"{delivered} of {len(before)} due runs were still delivered"
     if since is None:
-        return f"So far {late}; {kept} (INC-009)."
-    return f"Before {_day(since)}, {late}; {kept} (INC-009)."
+        return f"So far {late}; {kept} (INC-003)."
+    return f"Before {_day(since)}, {late}; {kept} (INC-003)."
 
 
 def accounting(

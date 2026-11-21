@@ -176,7 +176,7 @@ def test_a_late_run_is_not_a_missed_run_and_on_time_counts_start_with_the_trigge
     acc = accounting(runs, at(24, 5))
     assert acc["on_time_since"] == "2026-11-22T07:43:00Z"
     assert acc["since"] == {"slots": 2, "on_time": 1, "late": 1, "held": 0, "missed": 0}
-    assert acc["note"].startswith("Before 22 Nov 2026, ")
+    assert str(acc["note"]).startswith("Before 22 Nov 2026, ")
 
 
 def test_runs_record_who_dispatched_their_slot(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -203,3 +203,12 @@ def test_workflows_pass_the_dispatch_to_the_run_record() -> None:
     watchdog = yaml.safe_load((WF / "watchdog.yml").read_text())
     rescue = next(s for s in watchdog["jobs"]["check"]["steps"] if s.get("id") == "rescue")
     assert '-f slot="$SLOT" -f by=watchdog' in rescue["run"]
+
+
+def test_note_when_github_never_started_the_scheduled_run() -> None:
+    runs = [dispatched("2026-11-21T12:41:42Z", "2026-11-21T07:43Z", by="manual")]
+    acc = accounting(runs, at(22, 5))
+    assert acc["note"] == (
+        "So far GitHub's scheduler did not start the daily run; "
+        "the day was still delivered (INC-003)."
+    )
