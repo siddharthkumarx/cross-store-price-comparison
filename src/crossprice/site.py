@@ -202,6 +202,9 @@ def build(data: Path, retailers_path: Path, public_path: Path, out: Path) -> Pat
     shutil.copy(ASSETS / "app.js", out / "assets" / "app.js")
     for f in (ASSETS / "fonts").iterdir():
         shutil.copy(f, out / "assets" / "fonts" / f.name)
+    # The SteadyData icon set, copied from the steadydata.co repo (not edited here).
+    for f in (ASSETS / "icons").iterdir():
+        shutil.copy(f, out / "assets" / f.name)
     (out / "data").mkdir()
     for src in ("latest/comparison.csv", "public/feed.json", "latest/price-index.json"):
         if (data / src).exists():
@@ -217,6 +220,11 @@ TEMPLATE = r"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cross-store price comparison: {{ vertical }} at {{ comp.retailers or retailers|length }} US retailers</title>
 <meta name="description" content="The same {{ vertical }} products at {{ retailers|length }} US online retailers, matched by barcode and compared every day: lowest price, price gaps and stock. Public data, updated daily.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="assets/site.webmanifest">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="preload" href="assets/fonts/plus-jakarta-sans-800.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="alternate" type="application/json" href="data/feed.json" title="Run feed">
@@ -225,7 +233,7 @@ TEMPLATE = r"""<!doctype html>
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="{{ public.company_site }}">SteadyData <span>· public demo</span></a>
+    <a class="brand" href="{{ public.company_site }}"><svg viewBox="10 7 44 50" width="21" height="24" aria-hidden="true" focusable="false"><defs><linearGradient id="sdm" x1="49" x2="15" y1="12" y2="52" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1A9486"/><stop offset="1" stop-color="#5FE8D6"/></linearGradient></defs><path fill="none" stroke="url(#sdm)" stroke-linejoin="round" stroke-width="8" d="M41 14H22l-6.5 6.5v5L22 32h20l6.5 6.5v5L42 50H23"/><path fill="#D98E14" fill-rule="evenodd" d="M40.4 14a6.6 6.6 0 1 0 13.2 0 6.6 6.6 0 1 0-13.2 0m4.1 0a2.5 2.5 0 1 1 5 0 2.5 2.5 0 1 1-5 0"/><path fill="#5FE8D6" fill-rule="evenodd" d="M10.4 50a6.6 6.6 0 1 0 13.2 0 6.6 6.6 0 1 0-13.2 0m4.1 0a2.5 2.5 0 1 1 5 0 2.5 2.5 0 1 1-5 0"/></svg>SteadyData <span>· public demo</span></a>
     <a class="cta" href="{{ public.contact }}">Built by SteadyData · Get a free sample</a>
   </div>
 </header>
