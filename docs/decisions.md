@@ -249,3 +249,28 @@ minutes, inside the 38-minute request window of the 45-minute job, with room for
 F1-style 429 cool-downs. Over 7 days the probes reach 140 products per retailer,
 enough to keep every compared product's GTIN fresh weekly and keep filling the
 cache with the shared-brand products.
+
+## D-018 - Re-test outcome: 11 skincare retailers (2026-11-21)
+
+`recon-005`, one catalog read each after a 90-minute cool-down (D-016): Cos Bar,
+Credo Beauty and Safe & Chic passed without a 429 and are kept. The Detox Market
+(429 at page 6) and Integrity Botanicals (429 at page 4) throttled again and are
+dropped. The compared list is 11 retailers.
+
+Numbers for the 11, from the committed catalogs and probes of `recon-002` to
+`recon-005` (offline, `python -m crossprice.overlap`):
+
+- GTINs: 93 % of probed variants carry a valid GTIN; 92 GTIN-verified pairs already
+  exist among the probed products.
+- Overlap (D-002 rule 2) is **not met**: the highest shares of a retailer's products
+  also sold by another of the 11 are Onda Beauty 15 % (24 % at a 0.5 name cut-off)
+  and Ayla Beauty 12 % (16 %); the rest are at 1 to 7 %
+  (`checks/analysis/overlap-final.md`). The two retailers with the most overlap in
+  `recon-002` are the two that throttled.
+- Name matches checked against GTINs: 52 of 54 the same item at score 0.9 or more,
+  88 of 95 over all scores from 0.5. Too few cases for a threshold yet (D-011 needs
+  100 at 98 %); the daily runs gather them.
+
+Consequence: the comparison starts small (barcode pairs only, until the blind test
+clears a name threshold) and grows as the GTIN cache fills. The README and the
+dataset card state the overlap shortfall.

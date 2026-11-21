@@ -78,7 +78,9 @@ def probe_gtins(results: list[dict[str, Any]]) -> dict[str, dict[int, str]]:
     return out
 
 
-def analyse(result_dirs: list[Path], verticals: set[str] | None = None) -> dict[str, Any]:
+def analyse(
+    result_dirs: list[Path], verticals: set[str] | None = None, passing_only: bool = True
+) -> dict[str, Any]:
     results: list[dict[str, Any]] = []
     for d in result_dirs:
         results += json.loads((d / "recon.json").read_text(encoding="utf-8"))["results"]
@@ -92,6 +94,10 @@ def analyse(result_dirs: list[Path], verticals: set[str] | None = None) -> dict[
             catalogs[path.name.removesuffix(".csv.gz")] = path
     by_vertical: dict[str, list[str]] = defaultdict(list)
     for sid, r in latest.items():
+        # D-002 measures overlap among retailers that pass: a dropped retailer's
+        # products must not count as "sold elsewhere".
+        if passing_only and not r.get("passed"):
+            continue
         if sid in catalogs and (not verticals or r["vertical"] in verticals):
             by_vertical[r["vertical"]].append(sid)
     report: dict[str, Any] = {}
@@ -223,8 +229,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--vertical", action="append", default=[])
     p.add_argument("--json", type=Path)
     p.add_argument("--md", type=Path)
+    p.add_argument("--all", action="store_true", help="also count retailers that failed recon")
     a = p.parse_args(argv)
-    report = analyse(a.dirs, set(a.vertical) or None)
+    report = analyse(a.dirs, set(a.vertical) or None, passing_only=not a.all)
     if a.json:
         a.json.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     md = render_md(report)

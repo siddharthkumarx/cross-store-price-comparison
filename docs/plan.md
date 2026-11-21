@@ -11,11 +11,13 @@ Numbered build items. Status: `done`, `in progress`, `next`, `later`.
 3. `done` Two-stage recon and the `checks` workflow (`workflow_dispatch`, one
    runner, results committed to `checks/results/<id>/`).
 4. `done` Stage 1 recon over 103 candidates in 8 verticals (`recon-001`): 52 passed; only skincare had 8 or more that fit the daily page budget (D-015).
-5. `in progress` Stage 2 catalogs for skincare and, for comparison, audio/hi-fi
+5. `done` Stage 2 catalogs for skincare and, for comparison, audio/hi-fi
    (`recon-002`); 12 more clean-beauty candidates (`recon-003`, 3 passed); GTIN
-   probes on overlap candidates by score band (`recon-004`).
-6. `next` Choose the vertical by D-002; `docs/sources.md` with the evidence for
-   every retailer kept or dropped; `config/retailers.yml` generated from it.
+   probes on overlap candidates by score band (`recon-004`); re-test of the five
+   throttled retailers (`recon-005`, three kept).
+6. `done` Vertical: skincare, 11 retailers (owner decision D-016, outcome D-018;
+   overlap below the D-002 bar); `docs/sources.md` and `config/retailers.yml`
+   generated from the evidence.
 
 ## Phase B - build
 
