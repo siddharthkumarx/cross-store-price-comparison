@@ -6,7 +6,7 @@ Settings that live on GitHub, not in files. Paste them once.
 
 **Description** (under 350 characters):
 
-> Daily cross-store price comparison: the same skincare and beauty products at 13 US online stores, matched by barcode (GTIN), with lowest price, price gap and stock as CSV, a dashboard and a public matching-precision number. Python, DuckDB, GitHub Actions. By SteadyData.
+> Daily cross-store price comparison: the same skincare and beauty products at 11 US online stores, matched by barcode (GTIN), with lowest price, price gap and stock as CSV, a dashboard and a public matching-precision number. Python, DuckDB, GitHub Actions. By SteadyData.
 
 **Website:** https://siddharthkumar.com/cross-store-price-comparison/
 
