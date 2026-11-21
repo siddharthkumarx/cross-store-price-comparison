@@ -55,6 +55,6 @@ are in [its incident log](https://github.com/siddharthkumarx/ecommerce-price-mon
   late event then skips. The watchdog's dispatch is marked `by=watchdog`. A slot
   now counts as late, not missed, when a good run starts later the same UTC day,
   and the on-time count starts with the first triggered slot. The 2026-11-21 slot
-  was filled by hand at 11:00 UTC.
+  was filled by hand at 10:54 UTC (dispatch with `slot` and `by=manual`).
 - **Detection:** `status.json` `schedule` (on time, late, held, missed per slot)
   and the "on time" and "missed runs" badges.
