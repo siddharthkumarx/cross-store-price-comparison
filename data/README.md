@@ -26,7 +26,7 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 | `latest/possible_matches.csv` | 828 | candidate pairs below the confidence bar, never compared |
 | `changes/YYYY/YYYY-MM-DD.csv` | 0 on 2026-11-21 | price moves, new lowest store, stock changes |
 | `precision/` | one per run | blind matching precision against GTINs |
-| `runs.jsonl` | 1 | one line per run, with every data check |
+| `runs.jsonl` | 2 | one line per run, with every data check |
 | release `data-YYYY-MM` | | `offer_history_YYYY-MM.parquet`: every version of every offer in the month |
 
 ## Collection

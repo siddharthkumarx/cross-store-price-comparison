@@ -5,59 +5,23 @@
     "name": "Cross-store price comparison",
     "repo": "https://github.com/siddharthkumarx/cross-store-price-comparison",
     "dashboard": "https://siddharthkumar.com/cross-store-price-comparison/",
-    "generated_at": "2026-11-21T03:04:36Z"
+    "generated_at": "2026-11-21T11:11:35Z"
   },
   "last_run": {
-    "run_id": "20261121T024559Z",
-    "started_at": "2026-11-21T02:45:59Z",
-    "finished_at": "2026-11-21T03:04:36Z",
-    "status": "ok",
-    "duration_s": 1117.7,
-    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44857592994"
+    "run_id": "20261121T105436Z",
+    "started_at": "2026-11-21T10:54:36Z",
+    "finished_at": "2026-11-21T11:11:35Z",
+    "status": "crashed",
+    "duration_s": 1018.4,
+    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44896513350"
   },
-  "checks": [
-    {
-      "id": "retailers_read",
-      "label": "Stores read completely",
-      "ok": true,
-      "value": "11/11"
-    },
-    {
-      "id": "validation_rejects",
-      "label": "Rows rejected by validation",
-      "ok": true,
-      "value": 0
-    },
-    {
-      "id": "currency",
-      "label": "Prices proven to be US dollars",
-      "ok": true,
-      "value": "USD"
-    },
-    {
-      "id": "second_source",
-      "label": "Prices confirmed by a second source",
-      "ok": true,
-      "value": "447/447"
-    },
-    {
-      "id": "gtin_coverage",
-      "label": "Product options with a verified barcode",
-      "ok": true,
-      "value": 0.04
-    },
-    {
-      "id": "matching_precision",
-      "label": "Matching precision (blind, against barcodes)",
-      "ok": true,
-      "value": null
-    }
-  ],
+  "checks": [],
   "totals": {
-    "runs": 1,
+    "runs": 2,
     "runs_good": 1,
     "days_running": 1,
     "missed_runs": 0,
+    "runs_delivered": 0,
     "retailers": 11,
     "offers": 17429
   },
@@ -67,6 +31,13 @@
       "status": "ok",
       "offers": 17429,
       "products_matched": 175,
+      "changes": 0
+    },
+    {
+      "date": "2026-11-21",
+      "status": "crashed",
+      "offers": 0,
+      "products_matched": 0,
       "changes": 0
     }
   ],
