@@ -53,7 +53,7 @@ jobs:
           echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks.tgz" | sha256sum -c -
           tar -xzf gitleaks.tgz gitleaks
       - name: Scan full history
-        run: ./gitleaks git --redact --no-banner --exit-code 1 .
+        run: ./gitleaks git --redact --verbose --no-banner --exit-code 1 .
 
   pip-audit:
     runs-on: ubuntu-24.04
