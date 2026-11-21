@@ -1,0 +1,12 @@
+title = "cross-store-price-comparison"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Generated public catalog data: a shade name such as Whiskey next to a store SKU reads as a generic API key. All other rules still scan these files."
+targetRules = ["generic-api-key"]
+paths = [
+  '''^data/.+\.csv$''',
+  '''^docs/manual-checks/[^/]+\.csv$''',
+]

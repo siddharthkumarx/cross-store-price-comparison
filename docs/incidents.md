@@ -80,3 +80,23 @@ are in [its incident log](https://github.com/siddharthkumarx/ecommerce-price-mon
   on the old query.
 - **Detection:** a crash is a run record with `status: crashed` and its error, the
   "last run" badge, and the `run-alert` issue.
+
+## INC-005 - CI failed on a type error, then on a shade name read as a secret (2026-11-21)
+
+- **Runs:** `ci` from [run 26](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44896509377)
+  to [run 31](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44907191769);
+  the README's CI badge showed "failing" for about two hours. The daily runs were
+  not affected: they do not depend on CI.
+- **What happened:** first, `mypy` rejected a test that called `.startswith` on a
+  value typed `object`; the tests had been run locally, the type check had not.
+  Once that was fixed, the secret scan reported 6 findings in the data committed by
+  the run of 12:41 UTC.
+- **Cause:** gitleaks' `generic-api-key` rule looks for a word such as `key` or
+  `token` followed by a separator and a random-looking value. The store row
+  `Colorblur Glow Balm,Whiskey,GOOBEA-50791-GBW` matches: whis**key**, a comma, and
+  a store SKU.
+- **Fix:** the type is narrowed in the test. `.gitleaks.toml` keeps the default
+  rules and exempts only the generated catalog CSVs (`data/**/*.csv`,
+  `docs/manual-checks/*.csv`) from that one rule; every other rule still scans
+  them, and the rule still scans all code, docs and workflows.
+- **Detection:** the `ci` workflow on every push, and its badge in the README.
