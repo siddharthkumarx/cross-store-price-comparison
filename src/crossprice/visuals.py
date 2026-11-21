@@ -179,6 +179,54 @@ def hero(facts: dict[str, Any]) -> Visual:
     )
 
 
+def hero_square(facts: dict[str, Any]) -> Visual:
+    """The hero as a 1080 x 1080 square for the LinkedIn video: same beats, text 40 px or more."""
+    row = facts["hero_row"]
+    offers = row["offers"][:4]
+    low = min(o["cents"] for o in offers)
+    high = max(o["cents"] for o in offers)
+    parts = [
+        f'<g class="b1"><text class="h" x="64" y="130" font-size="64">Same product,</text>'
+        f'<text class="h" x="64" y="206" font-size="64">different price</text>'
+        f'<text class="b" x="64" y="266" font-size="40">{facts["retailers"]} US {_esc(facts["vertical"])} stores, daily</text></g>',
+        f'<g class="b2"><rect x="40" y="310" width="1000" height="{150 + 86 * len(offers)}" rx="18" fill="{PAGE}" stroke="{LINE}" stroke-width="3"/>'
+        f'<text class="m" x="80" y="372" font-size="40">{_esc(_fit(row["brand"], 24))}</text>'
+        f'<text class="t" x="80" y="422" font-size="42">{_esc(_fit(row["product"], 36))}</text></g>',
+    ]
+    animation = _fade("b1", 0.0, 0.6) + _fade("b2", 0.8, 1.4)
+    for i, o in enumerate(offers):
+        y = 500 + 86 * i
+        is_low = o["cents"] == low
+        bar_w = 230 * o["cents"] / high
+        cls = f"r{i}"
+        label = "lowest" if is_low else f"+{(o['cents'] - low) / low * 100:.1f}%"
+        parts.append(
+            f'<g class="{cls}"><text class="b" x="80" y="{y + 14}" font-size="40">{_esc(_fit(o["retailer"], 13))}</text>'
+            f'<rect class="{cls}bar {"lower" if is_low else "higher"}" x="370" y="{y - 16}" width="{bar_w:.0f}" height="36" rx="5"/>'
+            f'<text class="t" x="624" y="{y + 14}" font-size="40">{money(o["cents"])}</text>'
+            f'<text class="{"t" if is_low else "m"}" x="1000" y="{y + 14}" font-size="40" text-anchor="end">{label}</text></g>'
+        )
+        animation += _fade(cls, 1.6 + 0.6 * i, 2.1 + 0.6 * i) + _grow(
+            f"{cls}bar", 1.8 + 0.6 * i, 2.6 + 0.6 * i
+        )
+    y0 = 310 + 150 + 86 * len(offers) + 100
+    parts.append(
+        f'<g class="b3"><text class="h" x="64" y="{y0}" font-size="60">{facts["products_matched"]:,} products</text>'
+        f'<text class="b" x="64" y="{y0 + 60}" font-size="40">compared every day, {facts["run_date"]}</text></g>'
+    )
+    end = 1.6 + 0.6 * len(offers) + 0.8
+    animation += _fade("b3", end, end + 0.6)
+    return Visual(
+        width=1080,
+        height=1080,
+        title="Same product, different price",
+        desc=hero(facts).desc,
+        body="".join(parts),
+        animation=animation,
+        final="",
+    )
+
+
 def pipeline(facts: dict[str, Any]) -> Visual:
     """The four steps, each with its number from the latest run."""
     steps = [
