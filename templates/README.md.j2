@@ -98,6 +98,8 @@ The same pipeline works for your products and the stores you choose. You get a *
 
 **Which stores are compared?** {{ retailers | length }} US online stores: {% for r in retailers %}{{ r.name }}{% if not loop.last %}, {% endif %}{% endfor %}. How they were chosen, and why other stores were left out, is in [`docs/sources.md`]({{ blob }}/docs/sources.md).
 
+**Why are so few products compared?** The {{ retailers | length }} stores sell clean, Korean and luxury beauty, and most of their brands are sold by one of them only. In the recon before launch, the share of a store's products also sold by another of the stores was 15% at best and 1 to 7% for most, below the 30% this project aimed for ([decisions D-002, D-018]({{ blob }}/docs/decisions.md)). The compared set grows as more barcodes are read each day.
+
 **How do you know two stores sell the same product?** By barcode first. Name and part-number matches are used only above a threshold whose precision was measured against barcodes, and 100 compared pairs are checked by hand ([method]({{ blob }}/docs/precision.md)).
 
 **What does "price gap" mean?** The highest in-stock price minus the lowest, as a percentage of the lowest, for one product on one day. It is a number, not a judgment of any store.
