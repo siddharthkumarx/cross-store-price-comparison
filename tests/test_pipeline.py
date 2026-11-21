@@ -202,6 +202,11 @@ def test_dashboard_builds_from_run_files(workdir: Path, monkeypatch: pytest.Monk
     assert '<script src="http' not in html  # no external scripts
     assert (workdir / "site" / "assets" / "fonts" / "plus-jakarta-sans-400.woff2").exists()
     assert (workdir / "site" / "data" / "comparison.csv").exists()
+    # The SteadyData icon set and theme colour, as on steadydata.co.
+    assert '<meta name="theme-color" content="#FFFFFF">' in html
+    assert '<link rel="manifest" href="assets/site.webmanifest">' in html
+    for name in ("favicon.ico", "icon.svg", "apple-touch-icon.png", "site.webmanifest"):
+        assert (workdir / "site" / "assets" / name).exists()
     for word in ("overpriced", "MAP violation", "too expensive"):
         assert word.lower() not in html.lower()
 
