@@ -50,8 +50,8 @@ Different barcodes do not always mean different items. In the first daily run
 (2026-11-21) the name matcher paired 184 products that carry a barcode at both
 stores; 8 had different barcodes. Five of the 8 are the same item at the same
 price under two barcodes, because the brand moved to a new GS1 company prefix
-(Augustinus Bader 5060552 and 5060990, EVOLVh 850012 and 860014) or registered
-uses two barcodes for one product (MDSolarSciences). The other three are, or may
+(Augustinus Bader 5060552 and 5060990, EVOLVh 850012 and 860014) or uses two
+barcodes for one product (MDSolarSciences). The other three are, or may
 be, different items: a mascara shade against the default listing, an eye cream
 refill against the "Nomad" listing, and one eye cream at two prices under two
 barcodes of the same brand. The blind test counts all 8 as wrong, so the
@@ -71,3 +71,36 @@ names, options, SKUs and prices against these criteria:
 Each verdict and its reason is committed as a CSV in [`docs/manual-checks/`](manual-checks/),
 with the date and the run it was drawn from. The sample is drawn by
 `python -m crossprice.precision_sample`, so anyone can draw the same pairs again.
+
+## Results so far
+
+**Blind test, run of 2026-11-21 12:41 UTC**
+([run](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44905134307),
+[`data/precision/latest.json`](../data/precision/latest.json)). The name matcher used
+the threshold 0.7643 chosen on the first run. Of its pairs with a barcode at both
+stores, 246 of 253 had equal barcodes: **97.2 %**, recall 81.2 %. That is below the
+98 % bar, and no threshold on this run reaches it (the best is 97.8 % at a score of
+0.95 or more), so the next run compares barcode pairs only, until a later run's
+blind test clears the bar again. Three of the 7 pairs counted as wrong are the
+re-barcoded items above (MDSolarSciences, the Augustinus Bader shampoo and Rich
+Cream); the other four are Korean skincare items listed under two different barcodes of
+the same brand, which may be a new barcode or a different edition.
+
+**Manual check, same run**
+([`manual-checks/2026-11-21.csv`](manual-checks/2026-11-21.csv)). All 100 pairs
+in the sample were found by the name matcher without a barcode at one store.
+97 are the same item, 1 is a different item and 2 are unclear: **97 of 100 right**
+(97 of 98 if the two unclear pairs are left out).
+
+- Different: Augustinus Bader *The Retinol Serum* 30 ml matched to *The Serum* 30ml,
+  two serums of the brand at the same $380; the second store also lists The Retinol
+  Serum.
+- Unclear: two de Mamiel items (Altitude Bath Soak, Lip Treatment) with no size at
+  either store and prices $5 to $11 apart.
+- Most names differ only in the brand prefix, a descriptive word, an accent or a
+  shade description; 9 of the 100 pairs show a price gap.
+- The sample covers 53 product lines; shades of the same line (36 Westman Atelier
+  and 17 Kosas pairs) make up half of it, so it says more about those brands than
+  about the rest of the catalog.
+- The check was done from the fields both stores publish (name, option, SKU,
+  price), as listed in the CSV; product pages and photos were not compared.
