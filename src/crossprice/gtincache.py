@@ -137,3 +137,71 @@ def plan_probes(
                 return out
             out.append(pid)
     return out
+
+
+def seed_from_recon(
+    cache: GtinCache, result_dirs: list[Path], retailers: set[str]
+) -> dict[str, int]:
+    """Add the GTINs that recon probes already read (one entry per probed product).
+
+    Product ids come from the committed catalogs of the same recon runs. The fetch
+    date is the recon's start date, so the weekly refresh treats them like any
+    other entry (D-010).
+    """
+    import gzip
+    import json
+
+    added: dict[str, int] = {}
+    for d in sorted(result_dirs, key=lambda p: p.name):
+        meta = json.loads((d / "recon.json").read_text(encoding="utf-8"))
+        day = date.fromisoformat(meta["meta"]["started_utc"][:10])
+        for r in meta["results"]:
+            sid = r["store_id"]
+            if sid not in retailers or not r.get("js_probes"):
+                continue
+            products: dict[str, int] = {}
+            variants_of: dict[int, list[int]] = {}
+            for cat in sorted(Path(x) for x in result_dirs):
+                path = cat / "catalogs" / f"{sid}.csv.gz"
+                if not path.exists():
+                    continue
+                text = gzip.decompress(path.read_bytes()).decode("utf-8")
+                for row in csv.DictReader(text.splitlines()):
+                    pid = int(row["product_id"])
+                    products[row["handle"]] = pid
+                    variants_of.setdefault(pid, [])
+                    if int(row["variant_id"]) not in variants_of[pid]:
+                        variants_of[pid].append(int(row["variant_id"]))
+            for probe in r["js_probes"]:
+                if probe.get("status") != "ok" or probe["handle"] not in products:
+                    continue
+                pid = products[probe["handle"]]
+                found = {int(k): v for k, v in (probe.get("gtins") or {}).items()}
+                gtins = {vid: found.get(vid) for vid in variants_of.get(pid, [])} | found
+                cache.update(sid, pid, gtins, "recon", day)
+                added[sid] = added.get(sid, 0) + 1
+    return added
+
+
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    import yaml
+
+    p = argparse.ArgumentParser(description="GTIN cache maintenance")
+    sub = p.add_subparsers(dest="cmd", required=True)
+    s = sub.add_parser("seed", help="add the GTINs read by recon probes")
+    s.add_argument("recon_dirs", nargs="+", type=Path)
+    s.add_argument("--retailers", type=Path, default=Path("config/retailers.yml"))
+    s.add_argument("--cache", type=Path, default=Path("data/gtin/cache.csv"))
+    a = p.parse_args(argv)
+    ids = {r["id"] for r in yaml.safe_load(a.retailers.read_text())["retailers"]}
+    cache = GtinCache.load(a.cache)
+    added = seed_from_recon(cache, a.recon_dirs, ids)
+    cache.save(a.cache, keep_retailers=ids)
+    print(f"products added per retailer: {added}; cache: {cache.stats()}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
