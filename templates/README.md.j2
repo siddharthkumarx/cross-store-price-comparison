@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-still.svg">
-    <img src="assets/hero.svg" width="820" alt="Same product, different price: {% for o in rows[:1] %}{{ o.brand }} {{ o.product }} costs {{ o.lowest_price_usd | usd }} at {{ o.lowest_names }} and up to {{ o.highest_price_usd | usd }} elsewhere ({{ o.spread_pct }}% gap) on {{ day }}. {% endfor %}{{ comp.products_matched | n }} products compared across {{ retailers | length }} US {{ pub.vertical_label }} stores in that run.">
+    <img src="assets/hero.svg" width="820" alt="Same product, different price: {% for o in rows[:1] %}{{ o.brand }} {{ o.title }} costs {{ o.lowest_price_usd | usd }} at {{ o.lowest_names }} and up to {{ o.highest_price_usd | usd }} elsewhere ({{ o.spread_pct }}% gap) on {{ day }}. {% endfor %}{{ comp.products_matched | n }} products compared across {{ retailers | length }} US {{ pub.vertical_label }} stores in that run.">
   </picture>
 </p>
 
@@ -23,7 +23,7 @@ One row per product sold by at least two of the stores, with each store's price,
 
 | product | lowest price | at | gap | stores in stock | matched by |
 |---|---:|---|---:|---:|---|
-{% for r in rows %}| {{ r.brand | md }} · {{ r.product | md }} | {{ r.lowest_price_usd | usd }} | {{ r.lowest_names | md }} | {{ r.spread_pct }}% | {{ r.retailers_in_stock }} | {{ "barcode" if r.match_tier == "gtin" else ("part number" if r.match_tier == "mpn" else "name") }} |
+{% for r in rows %}| {{ r.brand | md }} · {{ r.title | md }} | {{ r.lowest_price_usd | usd }} | {{ r.lowest_names | md }} | {{ r.spread_pct }}% | {{ r.retailers_in_stock }} | {{ "barcode" if r.match_tier == "gtin" else ("part number" if r.match_tier == "mpn" else "name") }} |
 {% endfor %}
 
 ### What changed today
@@ -33,7 +33,7 @@ One row per product sold by at least two of the stores, with each store's price,
 
 | product | change | store | before | now |
 |---|---|---|---:|---:|
-{% for c in changes %}| {{ c.brand | md }} · {{ c.product | md }} | {{ c.event.replace("_", " ") }} | {% for rid in c.retailer_id.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %} | {% if c.event in ("price_up", "price_down") %}{{ c.old_value | usd }}{% elif c.event == "new_lowest" %}{% for rid in c.old_value.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}{{ c.old_value }}{% endif %} | {% if c.event in ("price_up", "price_down") %}{{ c.new_value | usd }} ({{ c.change_pct }}%){% elif c.event == "new_lowest" %}{% for rid in c.new_value.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}{{ c.new_value }}{% endif %} |
+{% for c in changes %}| {{ c.brand | md }} · {{ c.title | md }} | {{ c.event.replace("_", " ") }} | {% for rid in c.retailer_id.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %} | {% if c.event in ("price_up", "price_down") %}{{ c.old_value | usd }}{% elif c.event == "new_lowest" %}{% for rid in c.old_value.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}{{ c.old_value }}{% endif %} | {% if c.event in ("price_up", "price_down") %}{{ c.new_value | usd }} ({{ c.change_pct }}%){% elif c.event == "new_lowest" %}{% for rid in c.new_value.split() %}{{ names.get(rid, rid) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}{{ c.new_value }}{% endif %} |
 {% endfor %}
 Every change of the day: [`data/changes/{{ day[:4] }}/{{ day }}.csv`]({{ blob }}/data/changes/{{ day[:4] }}/{{ day }}.csv).
 {% endif %}
@@ -66,7 +66,7 @@ A product is compared only when the match is certain enough: same barcode, or a 
 
 ## What broke, and how was it fixed?
 
-{% for i in incidents %}- **{{ i.title }}** ({{ i.id }}). {{ i.what }} *Fix:* {{ i.fix }}
+{% for i in incidents %}- **{{ i.title }}** ({{ i.id }}). {{ i.what[:1] | upper }}{{ i.what[1:] }} *Fix:* {{ i.fix }}
 {% endfor %}
 The full log, with the evidence for each: [`docs/incidents.md`]({{ blob }}/docs/incidents.md).
 

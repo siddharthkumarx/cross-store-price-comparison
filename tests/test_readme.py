@@ -76,3 +76,16 @@ def test_numbers_come_from_the_run(rendered: dict[str, str]) -> None:
     assert "$159.95" in text
     assert "price drop" in text.lower()
     assert "2026-11-21" in text
+
+
+def test_sample_rows_prefer_a_price_gap() -> None:
+    from crossprice.readme import sample_rows
+
+    base = {"match_tier": "gtin", "lowest_price_retailers": "a", "brand": "B", "product": "B X"}
+    rows = [
+        {**base, "spread_pct": "0.0", "retailers_in_stock": "3"},
+        {**base, "spread_pct": "12.5", "retailers_in_stock": "2"},
+    ]
+    picked = sample_rows(rows, {"a": "A"}, n=1)
+    assert picked[0]["spread_pct"] == "12.5"
+    assert picked[0]["title"] == "X"

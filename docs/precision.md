@@ -46,6 +46,17 @@ Test cases need barcodes at both stores, so the pairs where one store publishes 
 barcode (exactly the pairs tiers 2 and 3 add) are not covered by it. The manual
 check below covers them.
 
+Different barcodes do not always mean different items. In the first daily run
+(2026-11-21) the name matcher paired 184 products that carry a barcode at both
+stores; 8 had different barcodes. Five of the 8 are the same item at the same
+price under two barcodes, because the brand moved to a new GS1 company prefix
+(Augustinus Bader 5060552 and 5060990, EVOLVh 850012 and 860014) or registered
+uses two barcodes for one product (MDSolarSciences). The other three are, or may
+be, different items: a mascara shade against the default listing, an eye cream
+refill against the "Nomad" listing, and one eye cream at two prices under two
+barcodes of the same brand. The blind test counts all 8 as wrong, so the
+published precision is a lower bound.
+
 ## Manual check
 
 A stable random sample of 100 compared pairs that are not barcode-verified (filled

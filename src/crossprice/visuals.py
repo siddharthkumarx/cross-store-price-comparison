@@ -32,6 +32,8 @@ from typing import Any
 
 import yaml
 
+from crossprice.match import strip_brand
+
 ASSETS = Path(__file__).parent / "site_assets" / "fonts"
 PAGE, ALT, LINE = "#FFFFFF", "#F3F8F7", "#E2EAE8"
 INK, BODY, MUTED = "#0B1416", "#3D4B49", "#5F716E"
@@ -298,11 +300,20 @@ def collect(data: Path, retailers_path: Path) -> dict[str, Any]:
         ]
         if len(offers) < 2 or not r["spread_pct"]:
             continue
-        # Prefer products at 3+ stores, then the largest gap, then barcode-verified ones.
-        key = (min(len(offers), 3), r["match_tier"] == "gtin", float(r["spread_pct"]))
+        # Prefer a real price gap, then products at 3+ stores, barcode-verified ones,
+        # and the largest gap.
+        spread = float(r["spread_pct"])
+        key = (spread > 0, min(len(offers), 3), r["match_tier"] == "gtin", spread)
         if best is None or key > best[0]:
             offers.sort(key=lambda o: (o["cents"], o["retailer"]))
-            best = (key, {"brand": r["brand"], "product": r["product"], "offers": offers})
+            best = (
+                key,
+                {
+                    "brand": r["brand"],
+                    "product": strip_brand(r["brand"], r["product"]),
+                    "offers": offers,
+                },
+            )
     prec = comp["matching_precision"]
     precision_text = (
         f"{prec['value'] * 100:.1f}%" if prec.get("value") is not None else "barcodes only"

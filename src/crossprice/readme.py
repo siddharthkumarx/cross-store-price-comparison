@@ -21,6 +21,7 @@ from typing import Any
 import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
+from crossprice.match import strip_brand
 from crossprice.retailers import load_retailers
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -102,20 +103,20 @@ def change_summary(rows: list[dict[str, str]]) -> str:
 def sample_rows(
     rows: list[dict[str, str]], names: dict[str, str], n: int = 5
 ) -> list[dict[str, Any]]:
-    """Real rows for the README: most stores first, barcode matches first, then the widest gaps."""
+    """Real rows for the README: products with a price gap first, then most stores in
+    stock, barcode matches, and the widest gaps."""
 
-    def key(r: dict[str, str]) -> tuple[int, bool, float]:
-        return (
-            int(r["retailers_in_stock"]),
-            r["match_tier"] == "gtin",
-            float(r["spread_pct"] or 0),
-        )
+    def key(r: dict[str, str]) -> tuple[bool, int, bool, float]:
+        spread = float(r["spread_pct"])
+        return (spread > 0, int(r["retailers_in_stock"]), r["match_tier"] == "gtin", spread)
 
     picked = sorted((r for r in rows if r["spread_pct"]), key=key, reverse=True)[:n]
     out = []
     for r in picked:
         lows = [names.get(x, x) for x in r["lowest_price_retailers"].split()]
-        out.append({**r, "lowest_names": ", ".join(lows)})
+        out.append(
+            {**r, "lowest_names": ", ".join(lows), "title": strip_brand(r["brand"], r["product"])}
+        )
     return out
 
 
@@ -154,7 +155,7 @@ def context(data: Path, root: Path = ROOT) -> dict[str, Any]:
         "day": day,
         "first_day": first,
         "rows": sample_rows(comparison, names),
-        "changes": changes[:6],
+        "changes": [{**c, "title": strip_brand(c["brand"], c["product"])} for c in changes[:6]],
         "change_count": len(changes),
         "change_summary": change_summary(changes),
         "checks": last_good.get("checks", []),

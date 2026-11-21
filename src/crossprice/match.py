@@ -70,6 +70,26 @@ def fold(text: str) -> str:
     return text.lower().replace("&", " and ").replace("+", " plus ")
 
 
+def strip_brand(brand: str, title: str) -> str:
+    """The title without a leading brand name, for display next to the brand.
+
+    "Augustinus Bader" + "Augustinus Bader The Cream" gives "The Cream". Matching is
+    not affected; titles that do not start with the brand are returned unchanged.
+    """
+    b = [w for w in _TOKEN.findall(fold(brand)) if w not in _LEGAL]
+    if not b:
+        return title
+    words = list(re.finditer(r"\S+", title))
+    for n in range(1, len(words)):
+        head = "".join(_TOKEN.findall(fold(title[: words[n - 1].end()])))
+        if head == "".join(b):
+            rest = title[words[n].start() :].lstrip(" -:|·")
+            return rest or title
+        if len(head) > len("".join(b)):
+            break
+    return title
+
+
 def brand_key(brand: str, aliases: Mapping[str, str] | None = None) -> str:
     """Normalised brand: folded, punctuation and legal suffixes removed, aliases applied."""
     words = [w for w in _TOKEN.findall(fold(brand)) if w not in _LEGAL]

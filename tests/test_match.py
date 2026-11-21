@@ -201,3 +201,17 @@ def test_shorter_name_for_the_same_model_still_matches() -> None:
     best = max(pairs, key=lambda p: p.score)
     assert (best.a, best.b) == (("a", 10), ("b", 20))
     assert best.score >= 0.7
+
+
+def test_strip_brand_for_display() -> None:
+    from crossprice.match import strip_brand
+
+    assert strip_brand("Augustinus Bader", "Augustinus Bader The Cream - 1.7 oz") == (
+        "The Cream - 1.7 oz"
+    )
+    assert strip_brand("MD SolarSciences", "MDSolarSciences Quick Dry Body Spray") == (
+        "Quick Dry Body Spray"
+    )
+    assert strip_brand("Tata Harper", "Tata Harper: Clarifying Mask") == "Clarifying Mask"
+    assert strip_brand("WESTMAN ATELIER", "Lip Suede") == "Lip Suede"
+    assert strip_brand("Purito", "Purito") == "Purito"

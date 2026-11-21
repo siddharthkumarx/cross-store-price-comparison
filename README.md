@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-still.svg">
-    <img src="assets/hero.svg" width="820" alt="Same product, different price: Augustinus Bader Augustinus Bader The Cream - 1.7 oz costs $315.00 at Ayla Beauty, Cos Bar, Dermsilk and up to $315.00 elsewhere (0.0% gap) on 2026-11-21. 175 products compared across 11 US skincare and beauty stores in that run.">
+    <img src="assets/hero.svg" width="820" alt="Same product, different price: LYS Beauty Everyday Powder Brush - One Size costs $15.00 at Thirteen Lune and up to $20.00 elsewhere (33.3% gap) on 2026-11-21. 175 products compared across 11 US skincare and beauty stores in that run.">
   </picture>
 </p>
 
@@ -23,11 +23,11 @@ One row per product sold by at least two of the stores, with each store's price,
 
 | product | lowest price | at | gap | stores in stock | matched by |
 |---|---:|---|---:|---:|---|
-| Augustinus Bader · Augustinus Bader The Cream - 1.7 oz | $315.00 | Ayla Beauty, Cos Bar, Dermsilk | 0.0% | 3 | barcode |
-| Augustinus Bader · Augustinus Bader The Scalp Treatment | $93.00 | Ayla Beauty, Cos Bar, Dermsilk | 0.0% | 3 | barcode |
-| Macrene Actives · Macrene Actives Chria High Performance Tinted Lip Filler - Berry | $65.00 | Ayla Beauty, Cos Bar, Thirteen Lune | 0.0% | 3 | barcode |
-| Macrene Actives · Macrene Actives Chria High Performance Tinted Lip Filler - Nude | $65.00 | Ayla Beauty, Cos Bar, Thirteen Lune | 0.0% | 3 | barcode |
-| Macrene Actives · Macrene Actives Chria High Performance Tinted Lip Filler - Pink | $65.00 | Ayla Beauty, Cos Bar, Thirteen Lune | 0.0% | 3 | barcode |
+| LYS Beauty · Everyday Powder Brush - One Size | $15.00 | Thirteen Lune | 33.3% | 2 | barcode |
+| WESTMAN ATELIER · Lip Suede - Les Nudes | $63.75 | Cos Bar | 33.3% | 2 | barcode |
+| haruharu wonder · Black Rice Bakuchiol Eye Cream | $17.00 | Soko Glam | 29.4% | 2 | barcode |
+| haruharu wonder · Black Rice Hyaluronic Toner for Sensitive Skin | $17.00 | Soko Glam | 29.4% | 2 | barcode |
+| haruharu wonder · Black Rice Moisture Cleansing Oil | $22.00 | Soko Glam | 13.6% | 2 | barcode |
 
 
 ### What changed today
@@ -68,7 +68,8 @@ A product is compared only when the match is certain enough: same barcode, or a 
 
 ## What broke, and how was it fixed?
 
-- **Commits showed as "Unverified" on GitHub (2026-11-20)** (INC-001). the first commits were signed with an SSH key from the development environment that the owner's GitHub account does not hold. GitHub showed them as "Unverified" (API verification reason `unknown_key`), unlike the owner's other public repositories, whose commits are unsigned and carry no badge. *Fix:* signing switched off for this repository (`commit.gpgsign false`, `tag.gpgsign false`). The history was rewritten once with `git filter-repo`, which drops signatures and keeps authors, committers, dates and messages, and `main` was force-pushed while no live check was running. The two recon results that record the commit they ran on keep both SHAs (`git_sha`, `git_sha_before_rewrite`).
+- **Commits showed as "Unverified" on GitHub (2026-11-20)** (INC-001). The first commits were signed with an SSH key from the development environment that the owner's GitHub account does not hold. GitHub showed them as "Unverified" (API verification reason `unknown_key`), unlike the owner's other public repositories, whose commits are unsigned and carry no badge. *Fix:* signing switched off for this repository (`commit.gpgsign false`, `tag.gpgsign false`). The history was rewritten once with `git filter-repo`, which drops signatures and keeps authors, committers, dates and messages, and `main` was force-pushed while no live check was running. The two recon results that record the commit they ran on keep both SHAs (`git_sha`, `git_sha_before_rewrite`).
+- **Five retailers throttled a second catalog read (2026-11-20)** (INC-002). In `recon-004` Cos Bar, Credo Beauty, Integrity Botanicals, Safe & Chic and The Detox Market answered HTTP 429 on `/products.json` page 3 or 4 until the retries ran out. It was the second full read of each catalog within 30 minutes; `recon-002` had read the same catalogs without a 429. *Fix:* owner decision D-016: a 429 alone is rate limiting, not a challenge. Each of the five was re-tested with one catalog read after a cool-down of at least 90 minutes (`recon-005`): three passed and are kept, two throttled again and are dropped (D-018). The daily run reads each catalog once per day, and the first daily run started more than 90 minutes after the re-test.
 
 The full log, with the evidence for each: [`docs/incidents.md`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/incidents.md).
 
@@ -99,6 +100,8 @@ The same pipeline works for your products and the stores you choose. You get a *
 **How often is the comparison updated?** Once a day, at 07:43 UTC. The badges above show the last run and how many runs there have been.
 
 **Which stores are compared?** 11 US online stores: Ayla Beauty, Cos Bar, Credo Beauty, Dermsilk, Ohlolly, Onda Beauty, Petit Vour, Safe & Chic, Soko Glam, The Choosy Chick, Thirteen Lune. How they were chosen, and why other stores were left out, is in [`docs/sources.md`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/sources.md).
+
+**Why are so few products compared?** The 11 stores sell clean, Korean and luxury beauty, and most of their brands are sold by one of them only. In the recon before launch, the share of a store's products also sold by another of the stores was 15% at best and 1 to 7% for most, below the 30% this project aimed for ([decisions D-002, D-018](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/decisions.md)). The compared set grows as more barcodes are read each day.
 
 **How do you know two stores sell the same product?** By barcode first. Name and part-number matches are used only above a threshold whose precision was measured against barcodes, and 100 compared pairs are checked by hand ([method](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/precision.md)).
 

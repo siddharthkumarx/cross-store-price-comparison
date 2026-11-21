@@ -19,6 +19,7 @@ from typing import Any
 import yaml
 from jinja2 import Environment, select_autoescape
 
+from crossprice.match import strip_brand
 from crossprice.outputs import parse_iso, read_runs
 from crossprice.retailers import Retailer, load_retailers
 
@@ -57,7 +58,7 @@ def load_comparison(path: Path, retailers: list[Retailer]) -> list[dict[str, Any
                 {
                     "k": r["product_key"],
                     "b": r["brand"],
-                    "n": r["product"],
+                    "n": strip_brand(r["brand"], r["product"]),
                     "g": r["gtin"],
                     "t": r["match_tier"],
                     "lo": _num(r["lowest_price_usd"]),

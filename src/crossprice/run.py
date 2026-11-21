@@ -339,7 +339,7 @@ def _checks(
         },
         {
             "id": "gtin_coverage",
-            "label": "Product options with a verified barcode",
+            "label": "Product options whose barcode has been read so far",
             "value": gtin_share,
             "ok": True,
         },
