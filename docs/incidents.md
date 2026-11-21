@@ -81,22 +81,26 @@ are in [its incident log](https://github.com/siddharthkumarx/ecommerce-price-mon
 - **Detection:** a crash is a run record with `status: crashed` and its error, the
   "last run" badge, and the `run-alert` issue.
 
-## INC-005 - CI failed on a type error, then on a shade name read as a secret (2026-11-21)
+## INC-005 - CI failed on a type error, then on a product id read as a secret (2026-11-21)
 
 - **Runs:** `ci` from [run 26](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44896509377)
-  to [run 31](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44907191769);
+  to [run 33](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/44907516879);
   the README's CI badge showed "failing" for about two hours. The daily runs were
   not affected: they do not depend on CI.
 - **What happened:** first, `mypy` rejected a test that called `.startswith` on a
   value typed `object`; the tests had been run locally, the type check had not.
-  Once that was fixed, the secret scan reported 6 findings in the data committed by
-  the run of 12:41 UTC.
-- **Cause:** gitleaks' `generic-api-key` rule looks for a word such as `key` or
-  `token` followed by a separator and a random-looking value. The store row
-  `Colorblur Glow Balm,Whiskey,GOOBEA-50791-GBW` matches: whis**key**, a comma, and
-  a store SKU.
+  Once that was fixed, the secret scan reported 6 findings in
+  `data/latest/price-index.json` as committed by the run of 12:41 UTC.
+- **Cause:** gitleaks' `generic-api-key` rule looks for a name containing `key`
+  or `token` followed by a random-looking value. A product compared without a
+  barcode has the id `M` + 13 hex digits of a SHA-256, stored as
+  `"product_key": "M…"`; its entropy is just over the rule's limit. The first run
+  compared barcode products only, so the scan met the first such id on this run.
+  A first guess (a shade name next to a store SKU) was wrong; the scan's output
+  did not show the findings, so `--verbose` (still redacted) was added to the CI
+  step and the findings were read from it.
 - **Fix:** the type is narrowed in the test. `.gitleaks.toml` keeps the default
-  rules and exempts only the generated catalog CSVs (`data/**/*.csv`,
-  `docs/manual-checks/*.csv`) from that one rule; every other rule still scans
-  them, and the rule still scans all code, docs and workflows.
-- **Detection:** the `ci` workflow on every push, and its badge in the README.
+  rules and exempts from that one rule only values that are exactly this id
+  format (`^M[0-9a-f]{13}$`); everything else in every file is still scanned.
+- **Detection:** the `ci` workflow on every push, its findings in the log, and its
+  badge in the README.

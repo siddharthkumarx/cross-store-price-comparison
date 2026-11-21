@@ -4,9 +4,7 @@ title = "cross-store-price-comparison"
 useDefault = true
 
 [[allowlists]]
-description = "Generated public catalog data: a shade name such as Whiskey next to a store SKU reads as a generic API key. All other rules still scan these files."
+description = "The product_key of a match without a barcode: M and 13 hex digits of a SHA-256 (crossprice.match). The name product_key and that hash read as a generic API key."
 targetRules = ["generic-api-key"]
-paths = [
-  '''^data/.+\.csv$''',
-  '''^docs/manual-checks/[^/]+\.csv$''',
-]
+regexTarget = "secret"
+regexes = ['''^M[0-9a-f]{13}$''']
