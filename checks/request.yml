@@ -1,55 +1,27 @@
 # Live check request. Started by hand: Actions, "checks", Run workflow
 # (workflow_dispatch). Results are committed to checks/results/<id>/.
-id: recon-004
+id: recon-005
 check: catalog
 purpose: >-
-  Stage 2 for the skincare retailers: the 3 that passed recon-003 get their whole
-  catalog and 4 random GTIN probes; all 13 get product .js probes on overlap
-  candidates drawn from the recon-002 catalogs at random within score bands
-  0.5-0.6, 0.6-0.7, 0.7-0.8 and 0.8+, so the precision of each cut-off can be
-  checked against GTINs (D-002). At most 18 named probes per retailer.
+  Re-test under D-016 for the five skincare retailers that answered HTTP 429 in
+  recon-004 (the second full read of their catalogs within 30 minutes): one
+  catalog read each after a cool-down of at least 90 minutes, plus the product
+  .js probes recon-004 planned for them but could not make (same handles).
 candidates: checks/candidates.yml
 only:
-  - ayla-beauty
   - cos-bar
   - credo-beauty
-  - dermsilk
   - integrity-botanicals
-  - ohlolly
   - safe-chic
-  - soko-glam
   - the-detox-market
-  - thirteen-lune
-  - onda-beauty
-  - petit-vour
-  - the-choosy-chick
 max_pages: 16
-random_probes: 4
-concurrency: 5
+random_probes: 0
+concurrency: 3
 delay_s: 4.0
 jitter_s: 3.0
 edge_interval_s: 3.0
 edge_jitter_s: 1.5
 handles:
-  ayla-beauty:
-    - augustinus-bader-the-eye-cream
-    - augustinus-bader-the-light-cream
-    - augustinus-bader-the-scalp-treatment
-    - augustinus-bader-the-shampoo
-    - de-mamiel-gravity-fix
-    - de-mamiel-skin-recovery-concentrate
-    - evolvh-better-roots-growth-support-styling-foam
-    - evolvh-better-roots-rootboost-serum
-    - evolvh-smartcurl-boost-define-conditioner
-    - evolvh-smartcurl-boost-define-shampoo
-    - evolvh-ultrashine-ultra-hydrating-shampoo
-    - kosas-brow-pop-nano
-    - macrene-actives-chria-tinted-lip-filler
-    - macrene-actives-high-performance-cleanser
-    - macrene-actives-high-performance-tinted-moisturizer
-    - marie-veronique-colorfree-zinc-broad-spectrum-sunscreen-spf-32
-    - twelvelab-filaggrin-barrier-booster
-    - twelvelab-phyto-retinol-serum
   cos-bar:
     - high-performance-cleanser-899578002574
     - high-performance-tinted-lip-filler
@@ -88,19 +60,6 @@ handles:
     - vegan-mango-lip-honey
     - vital-skin-foundation-stick
     - youth-boost-peptide-serum
-  dermsilk:
-    - augustinus-bader-the-body-cleanser-6-7-oz
-    - augustinus-bader-the-eye-cream-complete-set-0-5-oz
-    - augustinus-bader-the-eye-cream-nomad-0-5-oz
-    - augustinus-bader-the-hair-oil-1-oz
-    - augustinus-bader-the-light-cream-1-oz
-    - augustinus-bader-the-mineral-sunscreen-broad-spectrum-spf-50-1-oz
-    - augustinus-bader-the-overnight-restorative-cream-1-6-oz
-    - augustinus-bader-the-rich-conditioner-5-oz
-    - augustinus-bader-the-rich-eye-cream-0-5-oz
-    - augustinus-bader-the-rich-shampoo-6-7-oz
-    - augustinus-bader-the-scalp-treatment-1-oz
-    - augustinus-bader-the-vitamin-c-serum-1-oz
   integrity-botanicals:
     - aqua-a-retinoid-renewing-serum
     - baking-soda-free-deodorant-stick-rose-geranium
@@ -120,25 +79,6 @@ handles:
     - the-advanced-response-complex-regenerating-firming-face-neck-moisture-cream
     - the-pearl-peptide-lip-mask
     - twelvelab-phyto-retinol-serum
-  ohlolly:
-    - cosrx-advanced-snail-92-all-in-one-cream
-    - cosrx-full-fit-propolis-synergy-toner
-    - haruharu-wonder-black-rice-10-hyaluronic-cream-unscented
-    - haruharu-wonder-black-rice-bakuchiol-eye-cream
-    - haruharu-wonder-black-rice-moisture-5-5-soft-cleansing-gel
-    - haruharu-wonder-black-rice-moisture-cleansing-oil
-    - haruharu-wonder-black-rice-probiotics-barrier-essence-a-k-a-makgeolli
-    - haruharu-wonder-centella-4-txa-dark-spot-go-away-serum
-    - isntree-green-tea-fresh-toner
-    - isntree-hyaluronic-acid-daily-sun-gel
-    - iunik-centella-calming-gel-cream
-    - mediheal-collagen-essential-mask
-    - mediheal-tea-tree-essential-mask
-    - melixir-airfit-invisible-sunscreen
-    - melixir-mandarin-morning-face-cleanser
-    - olivarrier-comfort-barrier-cream-50ml
-    - olivarrier-wash-all-barrier-relief-cleanser
-    - shaishaishai-caffeine-shot-collagen-eye-cream
   safe-chic:
     - aqua-a-retinoid-renewing-serum
     - dr-alkaitis-organic-herbal-toner-4-oz
@@ -157,25 +97,6 @@ handles:
     - ultrashine-hydrating-conditioner
     - ultrashine-hydrating-shampoo
     - vitamin-c-bakuchiol-body-serum-in-cream
-  soko-glam:
-    - airfit-invisible-sunscreen-spf-50
-    - black-rice-probiotics-barrier-essence
-    - centella-4-txa-gel-serum
-    - centella-calming-gel-cream
-    - cosrx-advanced-snail-92-all-in-one-cream
-    - full-fit-propolis-synergy-toner
-    - haruharu-wonder-black-rice-bakuchiol-eye-cream
-    - haruharu-wonder-black-rice-hyaluronic-cream-unscented
-    - haruharu-wonder-black-rice-moisture-5-5-soft-cleansing-gel
-    - haruharu-wonder-black-rice-moisture-cleansing-oil
-    - isntree-green-tea-fresh-toner
-    - isntree-hyaluronic-acid-daily-sun-gel-spf-30
-    - mediheal-collagen-essential-mask
-    - mediheal-tea-tree-essential-blemish-control-sheet-mask
-    - melixir-mandarin-morning-face-cleanser
-    - olivarrier-comfort-barrier-cream
-    - olivarrier-wash-all-barrier-relief
-    - shaishaishai-caffeine-shot-collagen-eye-cream
   the-detox-market:
     - agent-nateur-holi-radiance-beauty-from-within-2-daily-combined
     - agent-nateur-holi-wash-ageless-resurfacing-body-cleanser
@@ -195,19 +116,3 @@ handles:
     - rms-beauty-straight-line-kohl-eye-pencil-hd-black
     - rose-geranium-baking-soda-free-deodorant-stick
     - skin-recovery-blend
-  thirteen-lune:
-    - ere-perez-mango-lip-honey
-    - goop-3x-retinol-regenerative-serum
-    - high-performance-cleanser-eco-wood-glass-2oz
-    - hourglass-cosmetics-no-28-lip-treatment-oil
-    - hourglass-cosmetics-unlocked-instant-extensions-mascara
-    - lipstick
-    - lolavie-lightweight-hair-oil
-    - lys-beauty-lash-confidence-mascara
-    - lys-beauty-powder-brush
-    - macrene-actives-chria-high-performance-tinted-lip-filler-berry
-    - macrene-actives-chria-high-performance-tinted-lip-filler-clear
-    - macrene-actives-chria-high-performance-tinted-lip-filler-nude
-    - macrene-actives-chria-high-performance-tinted-lip-filler-pink
-    - macrene-actives-chria-high-performance-tinted-lip-filler-red
-    - rms-beauty-straight-line-kohl-eye-pencil
