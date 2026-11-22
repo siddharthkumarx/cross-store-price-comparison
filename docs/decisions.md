@@ -274,3 +274,20 @@ Numbers for the 11, from the committed catalogs and probes of `recon-002` to
 Consequence: the comparison starts small (barcode pairs only, until the blind test
 clears a name threshold) and grows as the GTIN cache fills. The README and the
 dataset card state the overlap shortfall.
+
+## D-019 - On-time trigger: cron-job.org with `slot: auto` (2026-11-22, owner decision)
+
+- **Trigger:** cron-job.org calls `POST
+  https://api.github.com/repos/siddharthkumarx/cross-store-price-comparison/actions/workflows/daily.yml/dispatches`
+  with headers `Authorization: Bearer <token>` and `Accept:
+  application/vnd.github+json` and the fixed body
+  `{"ref":"main","inputs":{"slot":"auto"}}`, in UTC at `43 7 * * *`. No VPS and
+  no other server. The token is fine-grained, this repository only, Actions read
+  and write, 90 days.
+- **Why `auto`:** a simple cron service cannot put the slot time in the body, and
+  the explicit form (`2026-11-22T07:43Z`) needs it. `auto` means the active slot
+  (`active_crons()`) within 10 minutes of now, before or after; none means skip
+  with a one-line reason and no run. A resolved slot then takes exactly the
+  explicit-slot path of the gate: EARLY wait, at most one pipeline run per slot,
+  `dispatch.by` "" = the on-time trigger. The run records the resolved slot, not
+  `auto`. `check` and empty keep their meaning.

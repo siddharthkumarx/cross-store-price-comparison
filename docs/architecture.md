@@ -191,9 +191,10 @@ Same envelope as the other SteadyData monitors, plus a `comparison` block:
 | `daily.yml` | one cron slot a day at a quiet minute; `workflow_dispatch` with a `slot` input | gate job (skips a slot already filled), the pipeline (job `timeout-minutes: 45`, no new request after the budget), Parquet upload, data commit, alert issue, Pages deploy |
 | `watchdog.yml` | its own cron, after the slot | starts a missed run, opens a `run-alert` issue |
 
-The `slot` input lets an external scheduler start the run on time later (GitHub
-starts scheduled runs late on busy days, F1 INC-007); the gate treats a dispatched
-run with a `slot` value as that slot's run.
+The `slot` input lets an external scheduler start the run on time (GitHub starts
+scheduled runs late on busy days, F1 INC-007); the gate treats a dispatched run
+with a `slot` value as that slot's run. cron-job.org sends `slot: auto`, which the
+gate resolves to the slot within 10 minutes of now (D-019).
 
 ## Exit codes of `python -m crossprice.run`
 

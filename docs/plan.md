@@ -48,3 +48,5 @@ Numbered build items. Status: `done`, `in progress`, `next`, `later`.
 20. `done` SEO/GEO: quotable first sentence, H2s as real searches, comparison
     table (Prisync, Price2Spy, checking by hand), dated numbers linked to runs,
     `docs/repo-settings.md`, `CITATION.cff`, dataset card.
+21. `done` On-time trigger with a fixed body: `slot: auto` (D-019); cron-job.org
+    settings in `docs/maintainers.md`, "On-time trigger".

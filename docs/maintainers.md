@@ -53,20 +53,7 @@ One daily run at a quiet minute, no extra runs around Black Friday. It must fini
 in under 45 minutes on one runner.
 
 GitHub starts `schedule` events for this account hours late or not at all (F1
-INC-009, INC-003 here), so the slot is meant to be filled by an on-time external
-trigger:
-
-- a fine-grained personal access token limited to this repository, with
-  **Actions: read and write** and nothing else;
-- at 07:43 UTC every day, one call:
-
-  ```
-  POST https://api.github.com/repos/siddharthkumarx/cross-store-price-comparison/actions/workflows/daily.yml/dispatches
-  Authorization: Bearer <token>
-  {"ref": "main", "inputs": {"slot": "<today>T07:43Z"}}
-  ```
-
-- `{"slot": "check"}` proves the token and the call work without running anything.
+INC-009, INC-003 here), so the slot is filled by the on-time trigger below.
 
 The `slot` gate (`python -m crossprice.schedule gate`) runs a dispatch only for
 the current slot and only if no run filled it; one up to 10 minutes early waits
@@ -74,6 +61,28 @@ for the slot. GitHub's late `schedule` event then skips. Without the trigger the
 schedule and the watchdog still fill each day, late. `status.json` counts every
 slot as on time (a good run within 2 hours), late (later the same UTC day), held
 or missed; the on-time count starts with the first slot the trigger dispatched.
+
+### On-time trigger
+
+cron-job.org (no VPS, no other server, D-019) calls the `workflow_dispatch` API
+with a **fixed** body; `slot: auto` makes the gate pick the active slot (07:43
+UTC) within 10 minutes of now, before or after. With no such slot the run skips
+with a one-line reason. Otherwise it is an explicit slot: a dispatch up to 10
+minutes early waits for the slot, at most one pipeline run per slot, and the run
+records `dispatch.by` "trigger" (on-time accounting).
+
+- URL: `https://api.github.com/repos/siddharthkumarx/cross-store-price-comparison/actions/workflows/daily.yml/dispatches`
+- Method: `POST`
+- Headers: `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`.
+  The token is fine-grained, this repository only, **Actions: read and write**
+  and nothing else, 90-day expiry; it lives only in cron-job.org, never in the
+  repository. Renew it before it expires.
+- Body: `{"ref":"main","inputs":{"slot":"auto"}}`
+- Schedule, time zone UTC: `43 7 * * *` (every day; no extra runs around Black
+  Friday).
+- Success is HTTP 204. Test the token with the body
+  `{"ref":"main","inputs":{"slot":"check"}}` (runs nothing). A call at any other
+  time skips, so an extra or mistimed call is harmless.
 
 ## Commands
 

@@ -190,6 +190,8 @@ def test_runs_record_who_dispatched_their_slot(monkeypatch: pytest.MonkeyPatch) 
     assert _env_run_meta()["dispatch"]["by"] == "watchdog"
     monkeypatch.setenv("DISPATCH_SLOT", "check")
     assert "dispatch" not in _env_run_meta()
+    monkeypatch.setenv("DISPATCH_SLOT", "auto")  # resolved by the gate, not by the run
+    assert "dispatch" not in _env_run_meta()
 
 
 def test_workflows_pass_the_dispatch_to_the_run_record() -> None:
@@ -199,7 +201,12 @@ def test_workflows_pass_the_dispatch_to_the_run_record() -> None:
     assert decide["env"]["SLOT"] == "${{ inputs.slot }}"
     assert "${{" not in decide["run"]  # no expression injection
     step = next(s for s in daily["jobs"]["run"]["steps"] if s.get("id") == "run")
-    assert step["env"] == {"DISPATCH_SLOT": "${{ inputs.slot }}", "DISPATCH_BY": "${{ inputs.by }}"}
+    # The gate's resolved slot, so `slot: auto` is recorded as the slot it filled.
+    assert step["env"] == {
+        "DISPATCH_SLOT": "${{ inputs.slot && (needs.slot.outputs.slot || inputs.slot) || '' }}",
+        "DISPATCH_BY": "${{ inputs.by }}",
+    }
+    assert daily["jobs"]["slot"]["outputs"]["slot"] == "${{ steps.decide.outputs.slot }}"
     watchdog = yaml.safe_load((WF / "watchdog.yml").read_text())
     rescue = next(s for s in watchdog["jobs"]["check"]["steps"] if s.get("id") == "rescue")
     assert '-f slot="$SLOT" -f by=watchdog' in rescue["run"]
@@ -212,3 +219,60 @@ def test_note_when_github_never_started_the_scheduled_run() -> None:
         "So far GitHub's scheduler did not start the daily run; "
         "the day was still delivered (INC-003)."
     )
+
+
+# -- slot: auto, for a scheduler with a fixed request body (D-019) -------------------
+@pytest.mark.parametrize(("hour", "minute", "wait"), [(7, 41, "120"), (7, 43, "0"), (7, 51, "0")])
+def test_auto_fills_the_slot_within_ten_minutes(hour: int, minute: int, wait: str) -> None:
+    got = gate("workflow_dispatch", [], at(22, hour, minute), slot="auto")
+    assert (got["run"], got["slot"], got["wait_s"]) == ("true", "2026-11-22T07:43:00Z", wait)
+
+
+@pytest.mark.parametrize(("hour", "minute"), [(9, 0), (7, 32), (7, 54), (6, 17)])
+def test_auto_away_from_the_slot_skips_with_one_line(hour: int, minute: int) -> None:
+    got = gate("workflow_dispatch", [], at(22, hour, minute), slot="auto")
+    assert (got["run"], got["slot"]) == ("false", "")
+    assert "no active slot within 10 minutes" in got["reason"]
+    assert "\n" not in got["reason"]
+
+
+@pytest.mark.parametrize(("hour", "minute"), [(0, 17), (12, 17), (18, 17), (7, 43)])
+def test_auto_in_black_friday_week_fills_only_the_one_daily_slot(hour: int, minute: int) -> None:
+    # No extra runs around Black Friday here (owner rule): only 07:43 runs on 26 Nov.
+    got = gate("workflow_dispatch", [], at(26, hour, minute), slot="auto")
+    assert got["run"] == ("true" if (hour, minute) == (7, 43) else "false")
+
+
+def test_a_second_auto_and_the_late_schedule_event_skip_after_an_auto_run() -> None:
+    assert gate("workflow_dispatch", [], at(22, 7, 43), slot="auto")["run"] == "true"
+    runs = [run("2026-11-22T07:43:40Z", run_id="20261122T074340Z")]
+    again = gate("workflow_dispatch", runs, at(22, 7, 46), slot="auto")
+    assert again["run"] == "false"
+    assert "already filled by run 20261122T074340Z" in again["reason"]
+    assert gate("schedule", runs, at(22, 15, 40))["run"] == "false"
+
+
+def test_an_auto_run_counts_as_the_on_time_trigger() -> None:
+    runs = [
+        dispatched("2026-11-21T12:41:42Z", "2026-11-21T07:43Z", by="manual"),
+        dispatched("2026-11-22T07:43:40Z", "2026-11-22T07:43:00Z", by="trigger"),
+    ]
+    acc = accounting(runs, at(22, 12))
+    assert acc["on_time_since"] == "2026-11-22T07:43:00Z"
+    assert acc["on_time_pct"] == 100.0
+
+
+def test_auto_gate_cli(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+    args = ["gate", "--runs", str(tmp_path / "none.jsonl"), "--event", "workflow_dispatch"]
+    assert main([*args, "--slot", "auto", "--now", "2026-11-22T07:41:00Z"]) == 0
+    assert capsys.readouterr().out.splitlines() == [
+        "run=true",
+        "slot=2026-11-22T07:43:00Z",
+        "wait_s=120",
+        "reason=auto: dispatch for slot 2026-11-22T07:43:00Z: runs",
+    ]
+
+
+def test_daily_workflow_documents_auto() -> None:
+    inputs = _on(WF / "daily.yml")["workflow_dispatch"]["inputs"]
+    assert "auto" in inputs["slot"]["description"]
