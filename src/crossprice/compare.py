@@ -234,6 +234,15 @@ CHANGE_COLUMNS = [
 ]
 
 
+def _lowest(prices: Mapping[str, tuple[int, bool]]) -> list[str]:
+    """Lowest-price retailers by the rule of ``ComparisonRow.lowest_retailers``."""
+    if not prices:
+        return []
+    pool = {r: c for r, (c, ok) in prices.items() if ok} or {r: c for r, (c, _) in prices.items()}
+    low = min(pool.values())
+    return sorted(r for r, c in pool.items() if c == low)
+
+
 def changes(
     previous: Sequence[Mapping[str, str]],
     current: Sequence[ComparisonRow],
@@ -242,8 +251,10 @@ def changes(
     """Changes on compared products since the previous comparison.
 
     ``price_up`` / ``price_down`` per retailer, ``out_of_stock`` / ``back_in_stock``
-    per retailer, and ``new_lowest`` when the set of lowest-price retailers changes.
-    Products new to (or gone from) the comparison raise no event.
+    per retailer, and ``new_lowest`` when the set of lowest-price retailers changes
+    among the retailers priced in both runs. Products, and retailers, new to (or
+    gone from) the comparison raise no event: a retailer that could not be read
+    must not look like a price change.
     """
     prev = {r["product_key"]: r for r in previous}
     out: list[dict[str, Any]] = []
@@ -286,9 +297,21 @@ def changes(
                         "change_pct": "",
                     }
                 )
-        new_low = " ".join(row.lowest_retailers)
-        old_low = old.get("lowest_price_retailers", "")
-        if old_low and new_low != old_low:
+        # Compared over the retailers priced in both runs only: a retailer that was
+        # not read (or newly lists the product) changes the set without any price
+        # having moved.
+        both = {
+            rid: (o.price_cents, o.available)
+            for rid, o in row.offers.items()
+            if old.get(f"{rid}_price_usd")
+        }
+        before = {
+            rid: (round(float(old[f"{rid}_price_usd"]) * 100), old.get(f"{rid}_in_stock") == "yes")
+            for rid in both
+        }
+        new_low = " ".join(_lowest(both))
+        old_low = " ".join(_lowest(before))
+        if len(both) >= 2 and old_low and new_low != old_low:
             out.append(
                 {
                     **base,

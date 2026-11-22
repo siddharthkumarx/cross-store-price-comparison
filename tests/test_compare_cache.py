@@ -52,6 +52,20 @@ def test_changes_report_moves_stock_and_new_lowest(tmp_path: Path) -> None:
     assert kinds == [("new_lowest", "b"), ("out_of_stock", "a"), ("price_down", "b")]
 
 
+def test_a_retailer_not_read_today_is_not_a_new_lowest(tmp_path: Path) -> None:
+    products, offers = _products()
+    offers[("b", 20)] = row("b", 20, "Encore ESP", price_cents=17000)  # a and b tie
+    write_csv(build(products, offers), RETAILERS, tmp_path / "c.csv")  # type: ignore[arg-type]
+    prev = read_csv(tmp_path / "c.csv")
+    assert prev[0]["lowest_price_retailers"] == "a b"
+    del offers[("b", 20)]  # b failed today: its offer is not in the comparison
+    events = changes(prev, build(products, offers), "2026-11-22T15:41:00Z")  # type: ignore[arg-type]
+    assert events == []
+    offers[("a", 10)] = row("a", 10, "Encore ESP", price_cents=17500)  # a real move
+    events = changes(prev, build(products, offers), "2026-11-22T15:41:00Z")  # type: ignore[arg-type]
+    assert [e["event"] for e in events] == ["price_up"]
+
+
 def test_price_index_demo() -> None:
     products, offers = _products()
     rows = build(products, offers)  # type: ignore[arg-type]
