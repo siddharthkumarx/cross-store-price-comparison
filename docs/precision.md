@@ -86,6 +86,15 @@ re-barcoded items above (MDSolarSciences, the Augustinus Bader shampoo and Rich
 Cream); the other four are Korean skincare items listed under two different barcodes of
 the same brand, which may be a new barcode or a different edition.
 
+**Blind test, run of 2026-11-22 15:41 UTC**
+([run](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/45039677577),
+[`data/precision/2026/2026-11-22.json`](../data/precision/2026/2026-11-22.json)). This
+run compared barcode pairs only (357 products). The name matcher still ran blind:
+98.4 % right on 313 pairs at a score of 0.95 or more, 97.9 % on 335 at 0.8. The
+lowest threshold that reaches 98 % on at least 100 pairs is 0.9062, so the next run
+uses name matches again from that score, a stricter cut than the 0.7643 of the
+first run.
+
 **Manual check, same run**
 ([`manual-checks/2026-11-21.csv`](manual-checks/2026-11-21.csv)). All 100 pairs
 in the sample were found by the name matcher without a barcode at one store.

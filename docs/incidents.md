@@ -104,3 +104,31 @@ are in [its incident log](https://github.com/siddharthkumarx/ecommerce-price-mon
   format (`^M[0-9a-f]{13}$`); everything else in every file is still scanned.
 - **Detection:** the `ci` workflow on every push, its findings in the log, and its
   badge in the README.
+
+## INC-006 - Dermsilk throttled a daily read; its absence showed as price changes (2026-11-22)
+
+- **Run:** `daily` for the 07:43 slot of 2026-11-22, started by GitHub's
+  `schedule` event at 15:41 UTC,
+  [Actions run 45039677577](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/45039677577);
+  status `partial`, 10 of 11 retailers read.
+- **What happened:** Dermsilk answered pages 1 to 4 of `/products.json` and then
+  HTTP 429 on page 5, four times over 200 seconds, until the retries ran out.
+  Its previous read was 27 hours earlier, so this is not the second-read pattern of
+  INC-002. The other 10 retailers were read normally. Then the change log recorded
+  8 `new_lowest` events, and none of them was a price move. In 6, Dermsilk had
+  shared the lowest price and dropped out of the set because it was not read. In
+  the other 2, Onda Beauty dropped out because its listing had been matched by
+  name on the previous run, and this run compared barcode matches only.
+- **Cause:** the throttle is Dermsilk's own rate limit; the run's pace (a page
+  about every 20 seconds) was unchanged. The false changes came from `changes()`
+  comparing the whole set of lowest-price retailers, including retailers present
+  in only one of the two runs.
+- **Fix:** `new_lowest` is now decided only among the retailers priced in both
+  runs, like the rule that products new to or gone from the comparison raise no
+  event. A regression test removes a tied-lowest retailer and expects no event.
+  The 8 events stay in `data/changes/2026/2026-11-22.csv` as that run wrote them.
+  For Dermsilk, D-016 applies: a 429 alone is rate limiting, not a challenge. If
+  it throttles again on the next runs, it gets one re-test after a cool-down and
+  is dropped if it throttles again, as in D-018.
+- **Detection:** `status: partial` with `retailers_not_updated` in the run record,
+  `retailers_ok` in `status.json`, and the "last run" badge.

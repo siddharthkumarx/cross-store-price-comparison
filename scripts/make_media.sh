@@ -19,7 +19,7 @@ stores="$(grep -c '^- id:' config/retailers.yml)"
 products="$(python3 -c '
 import json
 runs = [json.loads(line) for line in open("data/runs.jsonl") if line.strip()]
-good = [r for r in runs if r.get("status") == "ok"]
+good = [r for r in runs if r.get("status") in ("ok", "partial")]
 print(format(good[-1]["comparison"]["products_matched"], ","))
 ')"
 node scripts/render_media.cjs social src/crossprice/site_assets/fonts "$stores" "$products" assets/social-preview.png
