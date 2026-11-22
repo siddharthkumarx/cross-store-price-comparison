@@ -1,0 +1,9 @@
+observed_at,product_key,brand,product,event,retailer_id,old_value,new_value,change_pct
+2026-11-22T15:41:47Z,05060552900222,Augustinus Bader,Augustinus Bader The Cream - 1.0 oz,new_lowest,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,
+2026-11-22T15:41:47Z,05060552900802,Augustinus Bader,Augustinus Bader The Cream - 1.7 oz,new_lowest,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,
+2026-11-22T15:41:47Z,05060552901878,Augustinus Bader,Augustinus Bader The Rich Cream - 1.0 oz,new_lowest,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,
+2026-11-22T15:41:47Z,05060552901892,Augustinus Bader,Augustinus Bader The Rich Cream - 1.7 oz,new_lowest,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,
+2026-11-22T15:41:47Z,05060552903216,Augustinus Bader,Augustinus Bader The Scalp Treatment,new_lowest,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,
+2026-11-22T15:41:47Z,05060552903346,Augustinus Bader,Augustinus Bader The Ultimate Soothing Cream,new_lowest,ayla-beauty cos-bar,ayla-beauty cos-bar dermsilk,ayla-beauty cos-bar,
+2026-11-22T15:41:47Z,00850026647921,goop beauty,Colorblur Glow Balm - Afterglow (soft berry),new_lowest,thirteen-lune,onda-beauty thirteen-lune,thirteen-lune,
+2026-11-22T15:41:47Z,00850026647945,goop beauty,Colorblur Glow Balm - Slipper (warm peach),new_lowest,thirteen-lune,onda-beauty thirteen-lune,thirteen-lune,
