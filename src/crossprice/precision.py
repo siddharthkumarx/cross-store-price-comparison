@@ -161,7 +161,8 @@ def held_back(latest: Mapping[str, Any] | None) -> dict[str, Any] | None:
 
     A tier is held back when it had no threshold on the run; its curve is still
     measured. Returns the curve point with the highest precision on at least
-    ``MIN_EVALUATED`` pairs, or None when every measured tier was used.
+    ``MIN_EVALUATED`` pairs, with ``cleared`` true when this run's test chose a
+    threshold for the next run, or None when every measured tier was used.
     """
     if not latest:
         return None
@@ -173,5 +174,6 @@ def held_back(latest: Mapping[str, Any] | None) -> dict[str, Any] | None:
             if point.get("precision") is None or point["evaluated"] < MIN_EVALUATED:
                 continue
             if best is None or point["precision"] > best["precision"]:
-                best = {"tier": name, **point}
+                cleared = tier.get("next_threshold") is not None
+                best = {"tier": name, "cleared": cleared, **point}
     return best

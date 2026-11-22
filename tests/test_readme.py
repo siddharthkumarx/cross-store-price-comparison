@@ -108,14 +108,21 @@ def test_held_back_picks_the_best_measured_point_of_an_unused_tier() -> None:
     assert (best["tier"], best["threshold"], best["evaluated"]) == ("fuzzy", 0.95, 224)
 
 
-def test_a_barcode_only_run_says_name_matches_were_held_back(tmp_path: Path) -> None:
+def _barcode_only_readme(tmp_path: Path, next_threshold: float | None, best: float) -> str:
     import json
 
     data = tmp_path / "data"
     shutil.copytree(ROOT / "data", data)
     latest = data / "precision" / "latest.json"
     p = json.loads(latest.read_text())
-    p["tiers"]["fuzzy"]["threshold_used"] = None
+    p["tiers"]["fuzzy"].update(
+        threshold_used=None,
+        next_threshold=next_threshold,
+        curve=[
+            {"threshold": 0.5, "evaluated": 280, "true": 267, "precision": 0.9536},
+            {"threshold": 0.95, "evaluated": 224, "true": 219, "precision": best},
+        ],
+    )
     p.update(combined_evaluated=0, combined_true=0, combined_precision=None)
     latest.write_text(json.dumps(p))
     lines = (data / "runs.jsonl").read_text().splitlines()
@@ -124,7 +131,18 @@ def test_a_barcode_only_run_says_name_matches_were_held_back(tmp_path: Path) -> 
         if c["id"] == "matching_precision":
             c["value"] = None
     (data / "runs.jsonl").write_text("\n".join([*lines[:-1], json.dumps(last)]) + "\n")
-    text = render(ROOT / "templates" / "README.md.j2", context(data, ROOT))
+    return render(ROOT / "templates" / "README.md.j2", context(data, ROOT))
+
+
+def test_a_barcode_only_run_says_name_matches_were_held_back(tmp_path: Path) -> None:
+    text = _barcode_only_readme(tmp_path, next_threshold=None, best=0.9777)
     assert "name matches held back: best 97.8% on 224 pairs, below 98%" in text
     assert "so only barcode matches were compared" in text
     assert "not measured yet" not in text
+
+
+def test_a_barcode_only_run_whose_test_cleared_the_bar_says_so(tmp_path: Path) -> None:
+    text = _barcode_only_readme(tmp_path, next_threshold=0.95, best=0.9821)
+    assert "held back" not in text
+    assert "this run's test reached 98.2% on 224 pairs, so they are used again" in text
+    assert "so name matches are used again from the next run" in text
