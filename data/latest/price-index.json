@@ -1,56 +1,90 @@
 {
-  "generated_at": "2026-11-22T15:41:47Z",
+  "generated_at": "2026-11-23T19:30:22Z",
   "label": "Demo on public data",
   "retailers": [
     {
       "retailer_id": "ayla-beauty",
-      "products_shared": 51,
+      "products_shared": 96,
       "index": 100.0,
-      "within_band": 51,
+      "within_band": 94,
       "by_brand": [
+        {
+          "brand": "Kosas",
+          "products": 40,
+          "index": 100.0
+        },
         {
           "brand": "Macrene Actives",
           "products": 22,
           "index": 100.0
         },
         {
-          "brand": "Kosas",
-          "products": 15,
+          "brand": "Marie Veronique",
+          "products": 13,
           "index": 100.0
         },
         {
           "brand": "Augustinus Bader",
-          "products": 7,
+          "products": 8,
           "index": 100.0
         },
         {
           "brand": "VENN",
-          "products": 4,
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "Activist",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "EVOLVh",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "Symbiome",
+          "products": 2,
           "index": 100.0
         },
         {
           "brand": "Vintner's Daughter",
           "products": 2,
           "index": 100.0
-        },
-        {
-          "brand": "EVOLVh",
-          "products": 1,
-          "index": 100.0
         }
       ],
-      "above": [],
+      "above": [
+        {
+          "product_key": "00810021894805",
+          "brand": "Kosas",
+          "product": "Kosas Weightless Lip Color - Deep Talks",
+          "price_usd": "26.00",
+          "market_median_usd": "19.00",
+          "difference_pct": 36.8,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810021894966",
+          "brand": "Kosas",
+          "product": "Kosas Weightless Lip Color - Subconscious",
+          "price_usd": "26.00",
+          "market_median_usd": "19.00",
+          "difference_pct": 36.8,
+          "retailers": 2
+        }
+      ],
       "below": []
     },
     {
       "retailer_id": "cos-bar",
-      "products_shared": 138,
+      "products_shared": 211,
       "index": 100.0,
-      "within_band": 127,
+      "within_band": 200,
       "by_brand": [
         {
           "brand": "WESTMAN ATELIER",
-          "products": 98,
+          "products": 144,
           "index": 100.0
         },
         {
@@ -59,9 +93,19 @@
           "index": 100.0
         },
         {
+          "brand": "AUGUSTINUS BADER",
+          "products": 17,
+          "index": 100.0
+        },
+        {
           "brand": "HOURGLASS",
           "products": 11,
           "index": 105.6
+        },
+        {
+          "brand": "SALT & STONE",
+          "products": 9,
+          "index": 100.0
         },
         {
           "brand": "Augustinus Bader",
@@ -70,6 +114,11 @@
         },
         {
           "brand": "JENNY PATINKIN",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "VINTNER'S DAUGHTER",
           "products": 1,
           "index": 100.0
         },
@@ -185,13 +234,13 @@
     },
     {
       "retailer_id": "credo-beauty",
-      "products_shared": 204,
+      "products_shared": 283,
       "index": 100.0,
-      "within_band": 193,
+      "within_band": 270,
       "by_brand": [
         {
           "brand": "WESTMAN ATELIER",
-          "products": 98,
+          "products": 144,
           "index": 100.0
         },
         {
@@ -201,7 +250,7 @@
         },
         {
           "brand": "Kosas",
-          "products": 15,
+          "products": 40,
           "index": 100.0
         },
         {
@@ -226,12 +275,27 @@
         },
         {
           "brand": "Ere Perez",
-          "products": 4,
+          "products": 5,
           "index": 100.0
         },
         {
           "brand": "KOBA skincare",
           "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "The Outset",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Minori",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "Rye Beauty",
+          "products": 2,
           "index": 100.0
         },
         {
@@ -304,7 +368,7 @@
           "price_usd": "23.00",
           "market_median_usd": "34.00",
           "difference_pct": -32.4,
-          "retailers": 2
+          "retailers": 3
         },
         {
           "product_key": "00850026647938",
@@ -313,7 +377,7 @@
           "price_usd": "23.00",
           "market_median_usd": "34.00",
           "difference_pct": -32.4,
-          "retailers": 2
+          "retailers": 3
         },
         {
           "product_key": "00850026647914",
@@ -322,7 +386,7 @@
           "price_usd": "23.00",
           "market_median_usd": "34.00",
           "difference_pct": -32.4,
-          "retailers": 2
+          "retailers": 3
         },
         {
           "product_key": "00850049258371",
@@ -341,23 +405,52 @@
           "market_median_usd": "30.00",
           "difference_pct": -30.0,
           "retailers": 2
+        },
+        {
+          "product_key": "00810021894805",
+          "brand": "Kosas",
+          "product": "Kosas Weightless Lip Color - Deep Talks",
+          "price_usd": "19.00",
+          "market_median_usd": "26.00",
+          "difference_pct": -26.9,
+          "retailers": 2
+        },
+        {
+          "product_key": "00810021894966",
+          "brand": "Kosas",
+          "product": "Kosas Weightless Lip Color - Subconscious",
+          "price_usd": "19.00",
+          "market_median_usd": "26.00",
+          "difference_pct": -26.9,
+          "retailers": 2
         }
       ]
     },
     {
       "retailer_id": "dermsilk",
-      "products_shared": 0,
-      "index": null,
-      "within_band": 0,
-      "by_brand": [],
+      "products_shared": 24,
+      "index": 100.0,
+      "within_band": 24,
+      "by_brand": [
+        {
+          "brand": "AUGUSTINUS BADER",
+          "products": 17,
+          "index": 100.0
+        },
+        {
+          "brand": "Augustinus Bader",
+          "products": 7,
+          "index": 100.0
+        }
+      ],
       "above": [],
       "below": []
     },
     {
       "retailer_id": "ohlolly",
-      "products_shared": 21,
+      "products_shared": 22,
       "index": 100.0,
-      "within_band": 13,
+      "within_band": 14,
       "by_brand": [
         {
           "brand": "Purito",
@@ -375,6 +468,11 @@
           "index": 94.3
         },
         {
+          "brand": "Olivarrier",
+          "products": 2,
+          "index": 100.0
+        },
+        {
           "brand": "Isntree",
           "products": 1,
           "index": 100.0
@@ -386,11 +484,6 @@
         },
         {
           "brand": "Melixir",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "Olivarrier",
           "products": 1,
           "index": 100.0
         }
@@ -474,38 +567,142 @@
     },
     {
       "retailer_id": "onda-beauty",
-      "products_shared": 6,
+      "products_shared": 52,
       "index": 100.0,
-      "within_band": 6,
+      "within_band": 49,
       "by_brand": [
         {
+          "brand": "Marie Veronique",
+          "products": 13,
+          "index": 100.0
+        },
+        {
+          "brand": "SALT & STONE",
+          "products": 9,
+          "index": 100.0
+        },
+        {
           "brand": "VENN",
+          "products": 5,
+          "index": 100.0
+        },
+        {
+          "brand": "goop beauty",
+          "products": 5,
+          "index": 119.3
+        },
+        {
+          "brand": "AUNU BEAUTY",
           "products": 4,
+          "index": 100.0
+        },
+        {
+          "brand": "The Outset",
+          "products": 3,
+          "index": 100.0
+        },
+        {
+          "brand": "Activist",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "DR ALKAITIS",
+          "products": 2,
+          "index": 102.2
+        },
+        {
+          "brand": "GOOP BEAUTY",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "Rye Beauty",
+          "products": 2,
           "index": 100.0
         },
         {
           "brand": "Vintner's Daughter",
           "products": 2,
           "index": 100.0
+        },
+        {
+          "brand": "IOTA",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "Symbiome",
+          "products": 1,
+          "index": 100.0
+        },
+        {
+          "brand": "VINTNER'S DAUGHTER",
+          "products": 1,
+          "index": 100.0
         }
       ],
-      "above": [],
+      "above": [
+        {
+          "product_key": "00850026647952",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647938",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647914",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        }
+      ],
       "below": []
     },
     {
       "retailer_id": "petit-vour",
-      "products_shared": 0,
-      "index": null,
+      "products_shared": 1,
+      "index": 78.6,
       "within_band": 0,
-      "by_brand": [],
+      "by_brand": [
+        {
+          "brand": "Fitglow Beauty",
+          "products": 1,
+          "index": 78.6
+        }
+      ],
       "above": [],
-      "below": []
+      "below": [
+        {
+          "product_key": "00859976001746",
+          "brand": "Fitglow Beauty",
+          "product": "Plant Protein Brow Gel - Grey - Grey",
+          "price_usd": "22.00",
+          "market_median_usd": "28.00",
+          "difference_pct": -21.4,
+          "retailers": 2
+        }
+      ]
     },
     {
       "retailer_id": "safe-chic",
-      "products_shared": 22,
+      "products_shared": 29,
       "index": 100.0,
-      "within_band": 17,
+      "within_band": 24,
       "by_brand": [
         {
           "brand": "Axiology",
@@ -513,9 +710,9 @@
           "index": 100.0
         },
         {
-          "brand": "Dr. Alkaitis Organics",
-          "products": 5,
-          "index": 102.9
+          "brand": "28 Litsea",
+          "products": 4,
+          "index": 100.0
         },
         {
           "brand": "Madame Gabriela Beauty",
@@ -523,12 +720,41 @@
           "index": 111.4
         },
         {
+          "brand": "DR ALKAITIS",
+          "products": 3,
+          "index": 101.5
+        },
+        {
           "brand": "EVOLVh",
-          "products": 1,
+          "products": 2,
           "index": 100.0
+        },
+        {
+          "brand": "Minori",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "Dr. Alkaitis Organics",
+          "products": 1,
+          "index": 102.6
+        },
+        {
+          "brand": "Fitglow Beauty",
+          "products": 1,
+          "index": 127.3
         }
       ],
       "above": [
+        {
+          "product_key": "00859976001746",
+          "brand": "Fitglow Beauty",
+          "product": "Plant Protein Brow Gel - Grey - Grey",
+          "price_usd": "28.00",
+          "market_median_usd": "22.00",
+          "difference_pct": 27.3,
+          "retailers": 2
+        },
         {
           "product_key": "00860002460352",
           "brand": "Madame Gabriela Beauty",
@@ -564,24 +790,15 @@
           "market_median_usd": "35.00",
           "difference_pct": 11.4,
           "retailers": 2
-        },
-        {
-          "product_key": "00793573052063",
-          "brand": "Dr. Alkaitis Organics",
-          "product": "Organic Purifying Facial Cleanser - Regular (4oz / 120 ml)",
-          "price_usd": "72.00",
-          "market_median_usd": "68.00",
-          "difference_pct": 5.9,
-          "retailers": 2
         }
       ],
       "below": []
     },
     {
       "retailer_id": "soko-glam",
-      "products_shared": 21,
+      "products_shared": 23,
       "index": 100.0,
-      "within_band": 13,
+      "within_band": 15,
       "by_brand": [
         {
           "brand": "Purito",
@@ -599,6 +816,16 @@
           "index": 106.5
         },
         {
+          "brand": "Olivarrier",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "IOTA",
+          "products": 1,
+          "index": 100.0
+        },
+        {
           "brand": "Isntree",
           "products": 1,
           "index": 100.0
@@ -610,11 +837,6 @@
         },
         {
           "brand": "Melixir",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "Olivarrier",
           "products": 1,
           "index": 100.0
         }
@@ -698,34 +920,44 @@
     },
     {
       "retailer_id": "the-choosy-chick",
-      "products_shared": 5,
-      "index": 97.2,
-      "within_band": 4,
+      "products_shared": 8,
+      "index": 100.0,
+      "within_band": 7,
       "by_brand": [
         {
+          "brand": "28 Litsea",
+          "products": 4,
+          "index": 100.0
+        },
+        {
+          "brand": "DR ALKAITIS",
+          "products": 3,
+          "index": 97.0
+        },
+        {
           "brand": "Dr. Alkaitis Organics",
-          "products": 5,
-          "index": 97.2
+          "products": 1,
+          "index": 97.4
         }
       ],
       "above": [],
       "below": [
         {
           "product_key": "00793573052063",
-          "brand": "Dr. Alkaitis Organics",
-          "product": "Organic Purifying Facial Cleanser - Regular (4oz / 120 ml)",
+          "brand": "DR ALKAITIS",
+          "product": "Organic Purifying Facial Cleanser",
           "price_usd": "68.00",
           "market_median_usd": "72.00",
           "difference_pct": -5.6,
-          "retailers": 2
+          "retailers": 3
         }
       ]
     },
     {
       "retailer_id": "thirteen-lune",
-      "products_shared": 99,
+      "products_shared": 110,
       "index": 100.0,
-      "within_band": 75,
+      "within_band": 86,
       "by_brand": [
         {
           "brand": "RMS Beauty",
@@ -743,22 +975,27 @@
           "index": 100.0
         },
         {
+          "brand": "goop beauty",
+          "products": 8,
+          "index": 119.3
+        },
+        {
+          "brand": "Macrene Actives",
+          "products": 7,
+          "index": 100.0
+        },
+        {
           "brand": "LYS Beauty",
           "products": 6,
           "index": 81.8
         },
         {
-          "brand": "Macrene Actives",
-          "products": 6,
+          "brand": "Ere Perez",
+          "products": 5,
           "index": 100.0
         },
         {
-          "brand": "goop beauty",
-          "products": 6,
-          "index": 145.3
-        },
-        {
-          "brand": "Ere Perez",
+          "brand": "AUNU BEAUTY",
           "products": 4,
           "index": 100.0
         },
@@ -771,36 +1008,19 @@
           "brand": "KOBA skincare",
           "products": 3,
           "index": 100.0
+        },
+        {
+          "brand": "GOOP BEAUTY",
+          "products": 2,
+          "index": 100.0
+        },
+        {
+          "brand": "Symbiome",
+          "products": 1,
+          "index": 100.0
         }
       ],
       "above": [
-        {
-          "product_key": "00850026647952",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
-          "price_usd": "34.00",
-          "market_median_usd": "23.00",
-          "difference_pct": 47.8,
-          "retailers": 2
-        },
-        {
-          "product_key": "00850026647938",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
-          "price_usd": "34.00",
-          "market_median_usd": "23.00",
-          "difference_pct": 47.8,
-          "retailers": 2
-        },
-        {
-          "product_key": "00850026647914",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
-          "price_usd": "34.00",
-          "market_median_usd": "23.00",
-          "difference_pct": 47.8,
-          "retailers": 2
-        },
         {
           "product_key": "00850049258371",
           "brand": "goop beauty",
@@ -818,6 +1038,33 @@
           "market_median_usd": "21.00",
           "difference_pct": 42.9,
           "retailers": 2
+        },
+        {
+          "product_key": "00850026647952",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647938",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
+        },
+        {
+          "product_key": "00850026647914",
+          "brand": "goop beauty",
+          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
+          "price_usd": "34.00",
+          "market_median_usd": "28.50",
+          "difference_pct": 19.3,
+          "retailers": 3
         }
       ],
       "below": [

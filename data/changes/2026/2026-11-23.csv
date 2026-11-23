@@ -1,0 +1,7 @@
+observed_at,product_key,brand,product,event,retailer_id,old_value,new_value,change_pct
+2026-11-23T19:30:22Z,00793573052087,Dr. Alkaitis Organics,Organic Soothing Gel - Regular (4oz / 120 ml),out_of_stock,the-choosy-chick,yes,no,
+2026-11-23T19:30:22Z,00793573052087,Dr. Alkaitis Organics,Organic Soothing Gel - Regular (4oz / 120 ml),new_lowest,safe-chic,the-choosy-chick,safe-chic,
+2026-11-23T19:30:22Z,00810102032034,WESTMAN ATELIER,Vital Pressed Skincare Powder - Pink Bubble,out_of_stock,credo-beauty,yes,no,
+2026-11-23T19:30:22Z,00810102032034,WESTMAN ATELIER,Vital Pressed Skincare Powder - Pink Bubble,new_lowest,cos-bar,cos-bar credo-beauty,cos-bar,
+2026-11-23T19:30:22Z,00810102030740,WESTMAN ATELIER,Vital Skin Foundation Stick - Atelier X.25,out_of_stock,credo-beauty,yes,no,
+2026-11-23T19:30:22Z,00810102030740,WESTMAN ATELIER,Vital Skin Foundation Stick - Atelier X.25,new_lowest,cos-bar,cos-bar credo-beauty,cos-bar,
