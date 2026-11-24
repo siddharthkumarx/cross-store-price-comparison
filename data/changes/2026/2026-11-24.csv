@@ -1,0 +1,3 @@
+observed_at,product_key,brand,product,event,retailer_id,old_value,new_value,change_pct
+2026-11-24T19:06:49Z,00810102036421,WESTMAN ATELIER,Face Trace Contour Stick - Whiskey,out_of_stock,credo-beauty,yes,no,
+2026-11-24T19:06:49Z,00810102036421,WESTMAN ATELIER,Face Trace Contour Stick - Whiskey,new_lowest,cos-bar,cos-bar credo-beauty,cos-bar,
