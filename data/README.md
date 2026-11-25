@@ -15,18 +15,18 @@ size_categories:
 
 # Dataset card: cross-store price comparison, skincare and beauty
 
-The same skincare and beauty products at 11 US online stores, matched by barcode (GTIN), part number or name, with each store's price and stock, compared once a day. Rendered from the run of 2026-11-24.
+The same skincare and beauty products at 11 US online stores, matched by barcode (GTIN), part number or name, with each store's price and stock, compared once a day. Rendered from the run of 2026-11-25.
 
 ## Files
 
 | file | rows | what |
 |---|---:|---|
-| `latest/comparison.csv` | 347 | one row per product sold by 2+ stores |
+| `latest/comparison.csv` | 0 | one row per product sold by 2+ stores |
 | `latest/offers.csv` | 17,419 | every product option at every store (open SCD2 versions) |
-| `latest/possible_matches.csv` | 161 | candidate pairs below the confidence bar, never compared |
-| `changes/YYYY/YYYY-MM-DD.csv` | 2 on 2026-11-24 | price moves, new lowest store, stock changes |
+| `latest/possible_matches.csv` | 0 | candidate pairs below the confidence bar, never compared |
+| `changes/YYYY/YYYY-MM-DD.csv` | 0 on 2026-11-25 | price moves, new lowest store, stock changes |
 | `precision/` | one per run | blind matching precision against GTINs |
-| `runs.jsonl` | 6 | one line per run, with every data check |
+| `runs.jsonl` | 7 | one line per run, with every data check |
 | release `data-YYYY-MM` | | `offer_history_YYYY-MM.parquet`: every version of every offer in the month |
 
 ## Collection
@@ -35,14 +35,14 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 - Prices in integer US cents (USD proven on a product page every run), availability as in stock / out of stock.
 - Products in excluded categories (alcohol, tobacco/vape, weapons, adult, CBD, medicines) are never stored.
 
-## Quality, run of 2026-11-24
+## Quality, run of 2026-11-25
 
-- Stores read completely: 9/11
+- Stores read completely: 0/11
 - Rows rejected by validation: 0
-- Prices proven to be US dollars: USD
-- Prices confirmed by a second source: 213/213
-- Product options whose barcode has been read so far: 10.4%
-- Matching precision (blind, against barcodes): 97.5%
+- Prices proven to be US dollars: none
+- Prices confirmed by a second source: 0/0
+- Product options whose barcode has been read so far: not measured yet
+- Matching precision (blind, against barcodes): not measured yet
 
 
 ## Limits

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T19:06:49Z",
+  "generated_at": "2026-11-25T18:12:42Z",
   "label": "Demo on public data",
   "retailers": [
     {
@@ -13,674 +13,84 @@
     },
     {
       "retailer_id": "cos-bar",
-      "products_shared": 201,
-      "index": 100.0,
-      "within_band": 200,
-      "by_brand": [
-        {
-          "brand": "WESTMAN ATELIER",
-          "products": 158,
-          "index": 100.0
-        },
-        {
-          "brand": "AUGUSTINUS BADER",
-          "products": 27,
-          "index": 100.0
-        },
-        {
-          "brand": "SALT & STONE",
-          "products": 10,
-          "index": 100.0
-        },
-        {
-          "brand": "LA BONNE BROSSE",
-          "products": 3,
-          "index": 100.0
-        },
-        {
-          "brand": "VINTNER'S DAUGHTER",
-          "products": 2,
-          "index": 100.0
-        },
-        {
-          "brand": "JENNY PATINKIN",
-          "products": 1,
-          "index": 100.0
-        }
-      ],
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
       "above": [],
-      "below": [
-        {
-          "product_key": "00810102030573",
-          "brand": "WESTMAN ATELIER",
-          "product": "Lip Suede - Les Nudes",
-          "price_usd": "63.75",
-          "market_median_usd": "85.00",
-          "difference_pct": -25.0,
-          "retailers": 2
-        }
-      ]
+      "below": []
     },
     {
       "retailer_id": "credo-beauty",
-      "products_shared": 191,
-      "index": 100.0,
-      "within_band": 184,
-      "by_brand": [
-        {
-          "brand": "WESTMAN ATELIER",
-          "products": 158,
-          "index": 100.0
-        },
-        {
-          "brand": "Axiology",
-          "products": 15,
-          "index": 100.0
-        },
-        {
-          "brand": "Minori",
-          "products": 6,
-          "index": 100.0
-        },
-        {
-          "brand": "Ilia",
-          "products": 3,
-          "index": 200.0
-        },
-        {
-          "brand": "The Outset",
-          "products": 3,
-          "index": 100.0
-        },
-        {
-          "brand": "goop beauty",
-          "products": 3,
-          "index": 67.6
-        },
-        {
-          "brand": "Rye Beauty",
-          "products": 2,
-          "index": 100.0
-        },
-        {
-          "brand": "JENNY PATINKIN",
-          "products": 1,
-          "index": 100.0
-        }
-      ],
-      "above": [
-        {
-          "product_key": "00818107027086",
-          "brand": "Ilia",
-          "product": "Super Serum Skin Tint SPF 40 - ST16.5 Jardin (Very deep with golden undertones)",
-          "price_usd": "48.00",
-          "market_median_usd": "24.00",
-          "difference_pct": 100.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "00818107023408",
-          "brand": "Ilia",
-          "product": "Super Serum Skin Tint SPF 40 - ST17 Miho (Very deep with neutral cool undertones)",
-          "price_usd": "48.00",
-          "market_median_usd": "24.00",
-          "difference_pct": 100.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "00818107023415",
-          "brand": "Ilia",
-          "product": "Super Serum Skin Tint SPF 40 - ST18 Roque (Extra deep with cool undertones)",
-          "price_usd": "48.00",
-          "market_median_usd": "24.00",
-          "difference_pct": 100.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "00810102030573",
-          "brand": "WESTMAN ATELIER",
-          "product": "Lip Suede - Les Nudes",
-          "price_usd": "85.00",
-          "market_median_usd": "63.75",
-          "difference_pct": 33.3,
-          "retailers": 2
-        }
-      ],
-      "below": [
-        {
-          "product_key": "00850026647952",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
-          "price_usd": "23.00",
-          "market_median_usd": "34.00",
-          "difference_pct": -32.4,
-          "retailers": 2
-        },
-        {
-          "product_key": "00850026647938",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
-          "price_usd": "23.00",
-          "market_median_usd": "34.00",
-          "difference_pct": -32.4,
-          "retailers": 2
-        },
-        {
-          "product_key": "00850026647914",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
-          "price_usd": "23.00",
-          "market_median_usd": "34.00",
-          "difference_pct": -32.4,
-          "retailers": 2
-        }
-      ]
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
+      "above": [],
+      "below": []
     },
     {
       "retailer_id": "dermsilk",
-      "products_shared": 27,
-      "index": 100.0,
-      "within_band": 27,
-      "by_brand": [
-        {
-          "brand": "AUGUSTINUS BADER",
-          "products": 27,
-          "index": 100.0
-        }
-      ],
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
       "above": [],
       "below": []
     },
     {
       "retailer_id": "ohlolly",
-      "products_shared": 24,
-      "index": 100.0,
-      "within_band": 15,
-      "by_brand": [
-        {
-          "brand": "Purito",
-          "products": 9,
-          "index": 100.0
-        },
-        {
-          "brand": "haruharu wonder",
-          "products": 7,
-          "index": 100.0
-        },
-        {
-          "brand": "Cosrx",
-          "products": 2,
-          "index": 94.3
-        },
-        {
-          "brand": "Olivarrier",
-          "products": 2,
-          "index": 100.0
-        },
-        {
-          "brand": "Isntree",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "Mediheal",
-          "products": 1,
-          "index": 110.0
-        },
-        {
-          "brand": "Melixir",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "shaishaishai",
-          "products": 1,
-          "index": 112.5
-        }
-      ],
-      "above": [
-        {
-          "product_key": "08809532221523",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Bakuchiol Eye Cream",
-          "price_usd": "22.00",
-          "market_median_usd": "17.00",
-          "difference_pct": 29.4,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809532221462",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Hyaluronic Toner for Sensitive Skin",
-          "price_usd": "22.00",
-          "market_median_usd": "17.00",
-          "difference_pct": 29.4,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809532221349",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Moisture Cleansing Oil",
-          "price_usd": "25.00",
-          "market_median_usd": "22.00",
-          "difference_pct": 13.6,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809850070117",
-          "brand": "shaishaishai",
-          "product": "shaishaishai Liposome Repair Milky Cream - 50 ml / 1.69 fl oz",
-          "price_usd": "31.50",
-          "market_median_usd": "28.00",
-          "difference_pct": 12.5,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809615058688",
-          "brand": "Mediheal",
-          "product": "Mediheal Madecassoside Blemish Pad",
-          "price_usd": "26.40",
-          "market_median_usd": "24.00",
-          "difference_pct": 10.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809563101054",
-          "brand": "Purito",
-          "product": "Purito Oat-in Calming Gel Cream",
-          "price_usd": "21.00",
-          "market_median_usd": "19.50",
-          "difference_pct": 7.7,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809563103652",
-          "brand": "Purito",
-          "product": "Purito Mighty Bamboo Panthenol Cleanser",
-          "price_usd": "15.00",
-          "market_median_usd": "14.00",
-          "difference_pct": 7.1,
-          "retailers": 2
-        }
-      ],
-      "below": [
-        {
-          "product_key": "08809532222186",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Night Knight Retinol Serum",
-          "price_usd": "22.00",
-          "market_median_usd": "26.00",
-          "difference_pct": -15.4,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809416470085",
-          "brand": "Cosrx",
-          "product": "Cosrx Centella Water Alcohol-Free Toner",
-          "price_usd": "14.99",
-          "market_median_usd": "17.00",
-          "difference_pct": -11.8,
-          "retailers": 2
-        }
-      ]
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
+      "above": [],
+      "below": []
     },
     {
       "retailer_id": "onda-beauty",
-      "products_shared": 27,
-      "index": 100.0,
-      "within_band": 24,
-      "by_brand": [
-        {
-          "brand": "SALT & STONE",
-          "products": 10,
-          "index": 100.0
-        },
-        {
-          "brand": "DR ALKAITIS",
-          "products": 3,
-          "index": 101.5
-        },
-        {
-          "brand": "LA BONNE BROSSE",
-          "products": 3,
-          "index": 100.0
-        },
-        {
-          "brand": "The Outset",
-          "products": 3,
-          "index": 100.0
-        },
-        {
-          "brand": "goop beauty",
-          "products": 3,
-          "index": 147.8
-        },
-        {
-          "brand": "Rye Beauty",
-          "products": 2,
-          "index": 100.0
-        },
-        {
-          "brand": "VINTNER'S DAUGHTER",
-          "products": 2,
-          "index": 100.0
-        },
-        {
-          "brand": "IOTA",
-          "products": 1,
-          "index": 100.0
-        }
-      ],
-      "above": [
-        {
-          "product_key": "00850026647952",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Velveteen (soft mauve)",
-          "price_usd": "34.00",
-          "market_median_usd": "23.00",
-          "difference_pct": 47.8,
-          "retailers": 2
-        },
-        {
-          "product_key": "00850026647938",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Venus (soft fuscia)",
-          "price_usd": "34.00",
-          "market_median_usd": "23.00",
-          "difference_pct": 47.8,
-          "retailers": 2
-        },
-        {
-          "product_key": "00850026647914",
-          "brand": "goop beauty",
-          "product": "Colorblur Glow Balm - Whiskey (warm terra-cotta)",
-          "price_usd": "34.00",
-          "market_median_usd": "23.00",
-          "difference_pct": 47.8,
-          "retailers": 2
-        }
-      ],
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
+      "above": [],
       "below": []
     },
     {
       "retailer_id": "petit-vour",
-      "products_shared": 4,
-      "index": 50.0,
+      "products_shared": 0,
+      "index": null,
       "within_band": 0,
-      "by_brand": [
-        {
-          "brand": "Ilia",
-          "products": 3,
-          "index": 50.0
-        },
-        {
-          "brand": "Fitglow Beauty",
-          "products": 1,
-          "index": 78.6
-        }
-      ],
+      "by_brand": [],
       "above": [],
-      "below": [
-        {
-          "product_key": "00818107027086",
-          "brand": "Ilia",
-          "product": "Super Serum Skin Tint SPF 40 - ST16.5 Jardin (Very deep with golden undertones)",
-          "price_usd": "24.00",
-          "market_median_usd": "48.00",
-          "difference_pct": -50.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "00818107023408",
-          "brand": "Ilia",
-          "product": "Super Serum Skin Tint SPF 40 - ST17 Miho (Very deep with neutral cool undertones)",
-          "price_usd": "24.00",
-          "market_median_usd": "48.00",
-          "difference_pct": -50.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "00818107023415",
-          "brand": "Ilia",
-          "product": "Super Serum Skin Tint SPF 40 - ST18 Roque (Extra deep with cool undertones)",
-          "price_usd": "24.00",
-          "market_median_usd": "48.00",
-          "difference_pct": -50.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "00859976001746",
-          "brand": "Fitglow Beauty",
-          "product": "Plant Protein Brow Gel - Grey - Grey",
-          "price_usd": "22.00",
-          "market_median_usd": "28.00",
-          "difference_pct": -21.4,
-          "retailers": 2
-        }
-      ]
+      "below": []
     },
     {
       "retailer_id": "safe-chic",
-      "products_shared": 33,
-      "index": 100.0,
-      "within_band": 32,
-      "by_brand": [
-        {
-          "brand": "Axiology",
-          "products": 15,
-          "index": 100.0
-        },
-        {
-          "brand": "28 Litsea",
-          "products": 6,
-          "index": 100.0
-        },
-        {
-          "brand": "Minori",
-          "products": 6,
-          "index": 100.0
-        },
-        {
-          "brand": "DR ALKAITIS",
-          "products": 4,
-          "index": 100.8
-        },
-        {
-          "brand": "Dr. Alkaitis Organics",
-          "products": 1,
-          "index": 102.6
-        },
-        {
-          "brand": "Fitglow Beauty",
-          "products": 1,
-          "index": 127.3
-        }
-      ],
-      "above": [
-        {
-          "product_key": "00859976001746",
-          "brand": "Fitglow Beauty",
-          "product": "Plant Protein Brow Gel - Grey - Grey",
-          "price_usd": "28.00",
-          "market_median_usd": "22.00",
-          "difference_pct": 27.3,
-          "retailers": 2
-        }
-      ],
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
+      "above": [],
       "below": []
     },
     {
       "retailer_id": "soko-glam",
-      "products_shared": 25,
-      "index": 100.0,
-      "within_band": 16,
-      "by_brand": [
-        {
-          "brand": "Purito",
-          "products": 9,
-          "index": 100.0
-        },
-        {
-          "brand": "haruharu wonder",
-          "products": 7,
-          "index": 100.0
-        },
-        {
-          "brand": "Cosrx",
-          "products": 2,
-          "index": 106.5
-        },
-        {
-          "brand": "Olivarrier",
-          "products": 2,
-          "index": 100.0
-        },
-        {
-          "brand": "IOTA",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "Isntree",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "Mediheal",
-          "products": 1,
-          "index": 90.9
-        },
-        {
-          "brand": "Melixir",
-          "products": 1,
-          "index": 100.0
-        },
-        {
-          "brand": "shaishaishai",
-          "products": 1,
-          "index": 88.9
-        }
-      ],
-      "above": [
-        {
-          "product_key": "08809532222186",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Night Knight Retinol Serum",
-          "price_usd": "26.00",
-          "market_median_usd": "22.00",
-          "difference_pct": 18.2,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809416470085",
-          "brand": "Cosrx",
-          "product": "Cosrx Centella Water Alcohol-Free Toner",
-          "price_usd": "17.00",
-          "market_median_usd": "14.99",
-          "difference_pct": 13.4,
-          "retailers": 2
-        }
-      ],
-      "below": [
-        {
-          "product_key": "08809532221523",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Bakuchiol Eye Cream",
-          "price_usd": "17.00",
-          "market_median_usd": "22.00",
-          "difference_pct": -22.7,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809532221462",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Hyaluronic Toner for Sensitive Skin",
-          "price_usd": "17.00",
-          "market_median_usd": "22.00",
-          "difference_pct": -22.7,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809532221349",
-          "brand": "haruharu wonder",
-          "product": "haruharu wonder Black Rice Moisture Cleansing Oil",
-          "price_usd": "22.00",
-          "market_median_usd": "25.00",
-          "difference_pct": -12.0,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809850070117",
-          "brand": "shaishaishai",
-          "product": "shaishaishai Liposome Repair Milky Cream - 50 ml / 1.69 fl oz",
-          "price_usd": "28.00",
-          "market_median_usd": "31.50",
-          "difference_pct": -11.1,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809615058688",
-          "brand": "Mediheal",
-          "product": "Mediheal Madecassoside Blemish Pad",
-          "price_usd": "24.00",
-          "market_median_usd": "26.40",
-          "difference_pct": -9.1,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809563101054",
-          "brand": "Purito",
-          "product": "Purito Oat-in Calming Gel Cream",
-          "price_usd": "19.50",
-          "market_median_usd": "21.00",
-          "difference_pct": -7.1,
-          "retailers": 2
-        },
-        {
-          "product_key": "08809563103652",
-          "brand": "Purito",
-          "product": "Purito Mighty Bamboo Panthenol Cleanser",
-          "price_usd": "14.00",
-          "market_median_usd": "15.00",
-          "difference_pct": -6.7,
-          "retailers": 2
-        }
-      ]
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
+      "above": [],
+      "below": []
     },
     {
       "retailer_id": "the-choosy-chick",
-      "products_shared": 10,
-      "index": 100.0,
-      "within_band": 9,
-      "by_brand": [
-        {
-          "brand": "28 Litsea",
-          "products": 6,
-          "index": 100.0
-        },
-        {
-          "brand": "DR ALKAITIS",
-          "products": 3,
-          "index": 97.0
-        },
-        {
-          "brand": "Dr. Alkaitis Organics",
-          "products": 1,
-          "index": 97.4
-        }
-      ],
+      "products_shared": 0,
+      "index": null,
+      "within_band": 0,
+      "by_brand": [],
       "above": [],
-      "below": [
-        {
-          "product_key": "00793573052063",
-          "brand": "DR ALKAITIS",
-          "product": "Organic Purifying Facial Cleanser",
-          "price_usd": "68.00",
-          "market_median_usd": "72.00",
-          "difference_pct": -5.6,
-          "retailers": 3
-        }
-      ]
+      "below": []
     },
     {
       "retailer_id": "thirteen-lune",

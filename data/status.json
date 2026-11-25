@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T19:21:43Z",
+  "generated_at": "2026-11-25T18:19:42Z",
   "first_run": "2026-11-21T02:45:59Z",
-  "days_running": 4,
-  "runs_total": 6,
-  "runs_good": 5,
+  "days_running": 5,
+  "runs_total": 7,
+  "runs_good": 6,
   "runs_held": 0,
   "missed_runs": 0,
   "missed_slots": [],
   "schedule": {
     "on_time_window_h": 2,
-    "delivered": 4,
+    "delivered": 5,
     "on_time_since": null,
     "since": {
       "slots": 0,
@@ -20,9 +20,9 @@
     },
     "on_time_pct": null,
     "note": "So far GitHub started the scheduled run 7-11 h late; every day was still delivered (INC-003).",
-    "slots": 4,
+    "slots": 5,
     "on_time": 0,
-    "late": 4,
+    "late": 5,
     "held": 0,
     "missed": 0,
     "pending": 0,
@@ -30,31 +30,32 @@
       "2026-11-21T07:43:00Z",
       "2026-11-22T07:43:00Z",
       "2026-11-23T07:43:00Z",
-      "2026-11-24T07:43:00Z"
+      "2026-11-24T07:43:00Z",
+      "2026-11-25T07:43:00Z"
     ],
     "missed_slots": []
   },
   "last_run": {
-    "run_id": "20261124T190649Z",
-    "started_at": "2026-11-24T19:06:49Z",
+    "run_id": "20261125T181242Z",
+    "started_at": "2026-11-25T18:12:42Z",
     "status": "partial",
-    "duration_s": 893.6,
-    "retailers_ok": 9,
+    "duration_s": 420.2,
+    "retailers_ok": 0,
     "retailers_total": 11,
     "offers": 17419,
     "hold_reasons": [],
-    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/45466670990"
+    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/45672695573"
   },
-  "products_matched": 347,
+  "products_matched": 0,
   "matching_precision": {
-    "gtin_pairs": 301,
-    "measured_at": "2026-11-24T19:06:49Z",
-    "pairs": 238,
-    "recall": 0.7708,
+    "gtin_pairs": 0,
+    "measured_at": "2026-11-25T18:12:42Z",
+    "pairs": 0,
+    "recall": null,
     "thresholds": {
-      "fuzzy": 0.7485,
+      "fuzzy": 0.9062,
       "mpn": null
     },
-    "value": 0.9748
+    "value": null
   }
 }
