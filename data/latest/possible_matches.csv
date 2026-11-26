@@ -1,1 +1,820 @@
 score,tier,reason,brand,retailer_a,product_a,sku_a,price_a_usd,retailer_b,product_b,sku_b,price_b_usd
+1.000,fuzzy,mutual best,MD SolarSciences,ayla-beauty,MDSolarSciences Quick Dry Body Spray SPF 40,1403-01,27.00,onda-beauty,Quick Dry Body Spray SPF 40,163001,27.00
+1.000,fuzzy,mutual best,MD SolarSciences,ayla-beauty,MDSolarSciences Mineral Tinted Creme SPF 30,1401-01,36.00,onda-beauty,Mineral Tinted Creme SPF 30,,35.00
+1.000,fuzzy,mutual best,Vintner's Daughter,ayla-beauty,Vintner's Daughter Active Botanical Serum,3300-01,215.00,onda-beauty,Active Botanical Serum,VINTNERS101,215.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Protective Day Oil,5503-01,95.00,onda-beauty,Protective Day Oil,FG-10029,95.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Gentle Retinol Night Serum,5506-01,120.00,onda-beauty,Gentle Retinol Night Serum,FG-10018,115.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Gentle Gel Cleanser,5515-01,55.00,onda-beauty,Gentle Gel Cleanser,,55.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Replenishing Oil Cleanser,5516-01,65.00,onda-beauty,Replenishing Oil Cleanser,FG-10036,65.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Soothing B3 Serum,5519-01,120.00,onda-beauty,Soothing B3 Serum,FG-10038,120.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Intensive Repair Serum,5518-01,120.00,onda-beauty,Intensive Repair Serum,FG-10019,120.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Barrier Restore Serum,5517-01,120.00,onda-beauty,Barrier Restore Serum,FG-10006,120.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Barrier Lipid Complex,5523-01,95.00,onda-beauty,Barrier Lipid Complex,FG-10005,95.00
+1.000,fuzzy,mutual best,Lily Lolo,ayla-beauty,Lily Lolo Big Lash Mascara,8501-01,22.00,the-choosy-chick,Big Lash Mascara,,26.00
+1.000,fuzzy,mutual best,Vintner's Daughter,ayla-beauty,Vintner's Daughter Active Treatment Essence,3301-01,230.00,cos-bar,Active Treatment Essence,869542000134,230.00
+1.000,fuzzy,mutual best,Vintner's Daughter,ayla-beauty,Vintner's Daughter Active Treatment Essence,3301-01,230.00,onda-beauty,Active Treatment Essence,10450,230.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Cleanser,2110-01,95.00,cos-bar,High Performance Cleanser,899578002574,95.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Tinted Moisturizer - Light,2112-01,175.00,cos-bar,High Performance Tinted Moisturizer - LIGHT,899578002604,175.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Tinted Moisturizer - Medium,2112-02,175.00,cos-bar,High Performance Tinted Moisturizer - MEDIUM,899578002611,175.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Tinted Moisturizer - Deep,2112-03,175.00,cos-bar,High Performance Tinted Moisturizer - DEEP,899578002628,175.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Lip Filler,2113-01,135.00,cos-bar,High Performance Lip Filler,899578002598,135.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Face Serum,2114-01,195.00,cos-bar,High Performance Face Serum,899578002581,195.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique C-Therapy Serum,5524-01,120.00,onda-beauty,C-Therapy Serum,FG-10007,120.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Concealer - Light,2115-01,95.00,cos-bar,High Performance Concealer - LIGHT,899578002772,95.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Concealer - Medium,2115-02,95.00,cos-bar,High Performance Concealer - MEDIUM,899578002789,95.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Concealer - Deep,2115-03,95.00,cos-bar,High Performance Concealer - DEEP,899578002796,95.00
+1.000,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Altitude Oil,8909-01,58.00,onda-beauty,Altitude Oil,10523,52.00
+1.000,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Restorative Cleansing Balm,8900-01,112.00,onda-beauty,Restorative Cleansing Balm,10499,112.00
+1.000,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Cream - 1.7 oz,9000-01,315.00,dermsilk,Augustinus Bader The Cream (1.7 oz),5060552900802,315.00
+1.000,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Rich Cream - 1.7 oz,9001-01,315.00,dermsilk,Augustinus Bader The Rich Cream (1.7 oz),5060552901892,315.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Probiotic + Exfoliation Mask,6525-01,85.00,onda-beauty,Probiotic + Exfoliation Mask,FG-10028,85.00
+1.000,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Multi-Active Hydramist,8912-01,109.00,onda-beauty,Multi-Active Hydramist,DMMAH,99.00
+1.000,fuzzy,mutual best,Bare Hands,ayla-beauty,Bare Hands The Natural Pedicure,8376-01,39.00,onda-beauty,The Natural Pedicure,,42.00
+1.000,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Altitude Bath Soak,8915-01,96.00,onda-beauty,Altitude Bath Soak,,85.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Tinted Moisturizer - Light-Medium,2112-04,175.00,cos-bar,High Performance Tinted Moisturizer - LIGHT MEDIUM,899578002857,175.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Tinted Moisturizer - Medium-Deep,2112-05,175.00,cos-bar,High Performance Tinted Moisturizer - MEDIUM DEEP,899578002864,175.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Tinted Moisturizer - Extra Deep,2112-06,175.00,cos-bar,High Performance Tinted Moisturizer - EXTRA DEEP,899578002871,175.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Concealer - Light-Medium,2115-04,95.00,cos-bar,High Performance Concealer - LIGHT MEDIUM,899578002888,95.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Concealer - Medium-Deep,2115-05,95.00,cos-bar,High Performance Concealer - MEDIUM DEEP,899578002895,95.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Concealer - Extra Deep,2115-06,95.00,cos-bar,High Performance Concealer - EXTRA DEEP,899578002901,95.00
+1.000,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Shampoo,9007-01,67.00,cos-bar,The Shampoo,5060990630200,67.00
+1.000,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Scalp Treatment,9010-01,93.00,cos-bar,The Scalp Treatment,5060552903216,93.00
+1.000,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Gravity Fix,8919-01,270.00,onda-beauty,Gravity Fix,,265.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Multi-Retinol Night Emulsion,5525-01,135.00,onda-beauty,Multi-Retinol Night Emulsion,FG-10045,135.00
+1.000,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Eyebrow and Lash Enhancing Serum,9011-01,160.00,onda-beauty,The Eyebrow & Lash Enhancing Serum,EB-1001-008,155.00
+1.000,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Ultimate Soothing Cream,9013-01,315.00,cos-bar,The Ultimate Soothing Cream,5060552903346,315.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Skinny Dip,5629-01,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Skinny Dip (cool baby pink),210000013669,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Baby Rose,5629-02,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Baby Rose (neutral light pink),210000013670,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Heatwave,5629-03,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Heatwave (neutral rosy beige),210000013671,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Malibu,5629-04,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Malibu (cool mauvey pink),210000013672,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Hot Beach,5629-05,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Hot Beach (warm rosy beige),210000013673,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - 100 Degrees,5629-07,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - 100 Degrees (neutral pink beige),210000013675,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Sunset Simmer,5629-08,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Sunset Simmer (warm rosy brown),210000013676,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Island High,5629-09,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Island High (warm toasty red),210000013677,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Tropic Bliss,5629-10,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Tropic Bliss (cool rosy mauve),210000013678,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Cinnamon Spritz,5629-11,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Cinnamon Spritz (warm rich brown),210000013679,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Bikini Blaze,5629-12,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Bikini Blaze (cool vibrant magenta),210000013680,25.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Stick Moisturizing Lip Shine - Papaya Treat,5629-06,25.00,credo-beauty,Wet Stick Moisturizing Lip Shine - Papaya Treat (warm peachy beige),210000013674,25.00
+1.000,fuzzy,mutual best,Activist,ayla-beauty,Activist Manuka Honey Lip Balm,8303-01,35.00,onda-beauty,Mānuka Honey Lip Balm,AAMSLB,35.00
+1.000,fuzzy,mutual best,Activist,ayla-beauty,Activist Manuka Honey Botanical Soap,8304-01,30.00,onda-beauty,Manuka Honey Botanical Soap,,30.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Hypnotize,5630-01,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Hypnotize (intense black matte),210000014760,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Orbit,5630-02,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Orbit (smokey gray matte),210000014761,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Allure,5630-03,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Allure (dark brown matte),210000014762,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Depth,5630-04,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Depth (warm brown matte),210000014763,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Mesmerize,5630-05,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Mesmerize (soft lilac matte),210000014768,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Enigma,5630-06,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Enigma (blackened blue satin),210000014764,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Eternal,5630-07,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Eternal (emerald green satin),210000014765,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Bewitch,5630-08,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Bewitch (night violet satin),210000014766,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Cosmic,5630-09,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Cosmic (deep aqua satin),210000014767,24.00
+1.000,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Soulgazer Intensifying Gel Eyeliner - Gravitate,5630-10,24.00,credo-beauty,Soulgazer Intensifying Gel Eyeliner - Gravitate (creamy beige matte),210000014769,24.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Nude,2119-01,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Nude,MACACT-LIPFLN-51130,65.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Berry,2119-02,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Berry,MACACT-LIPFLB-51131,65.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Red,2119-03,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Red,MACACT-LIPFLR-51132,65.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Pink,2119-04,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Pink,MACACT-LIPFLP-51133,65.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Clear,2119-05,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Clear,MACACT-LIPFLC-51134,65.00
+1.000,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Overnight Exfoliating Oil,8929-01,135.00,onda-beauty,Overnight Exfoliating Oil,,135.00
+1.000,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Eye Mask - Single Sachet,2120-02,20.00,thirteen-lune,Macrene actives high performance eye mask single sachet,MACACT-EYEMSK-51129,20.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Spot Intensive,5532-01,44.00,onda-beauty,Spot Intensive,,44.00
+1.000,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique All Day Age-Delay Emulsion,5535-01,125.00,onda-beauty,All Day Age-Delay Emulsion,,125.00
+1.000,fuzzy,mutual best,Symbiome,ayla-beauty,Symbiome The Renewal Daily Cleanser,10400-01,60.00,thirteen-lune,The Renewal Daily Cleanser,SYMB-RWCL-51170,60.00
+1.000,fuzzy,mutual best,Symbiome,ayla-beauty,Symbiome The One Restorative Cream,10401-01,125.00,thirteen-lune,The One Restorative Cream,SYMB-OFCR-51172,125.00
+1.000,fuzzy,mutual best,VENN,ayla-beauty,VENN Age-Recharge Compound K Eye Concentrate,10453-01,210.00,onda-beauty,Age-Recharge Compound K Eye Concentrate,858871007938,210.00
+1.000,fuzzy,mutual best,VENN,ayla-beauty,VENN Concentrated Revitalizing Lifting Mask,10454-01,90.00,onda-beauty,Concentrated Revitalizing Lifting Mask,858871007051,90.00
+1.000,fuzzy,mutual best,VENN,ayla-beauty,VENN Vitamin B Activated All-In-One Concentrate,10455-01,210.00,onda-beauty,Vitamin B Activated All-In-One Concentrate,858871007099,210.00
+1.000,fuzzy,mutual best,VENN,ayla-beauty,VENN Advanced Multi-Perfecting Red Oil Serum,10456-01,140.00,onda-beauty,Advanced Multi-Perfecting Red Oil Serum,858871007105,140.00
+1.000,fuzzy,mutual best,VENN,ayla-beauty,VENN Synbiotic Defense Mist,10457-01,90.00,onda-beauty,Synbiotic Defense Mist,858871007471,90.00
+1.000,fuzzy,mutual best,JENNY PATINKIN,cos-bar,BLOTTER BABY MATTIFYING ROLLER,860007882302,22.00,credo-beauty,Blotter Baby Mattifying Roller - One Size,210000011687,22.00
+1.000,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Lip Balm,5060552900543,47.00,onda-beauty,The Lip Balm,1010016,46.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,BABY BLENDER BRUSH,810102030351,64.00,credo-beauty,Baby Blender Brush - One Size,210000008764,64.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,EYE SHADOW BRUSH I,810102030337,58.00,credo-beauty,Eye Shadow I Brush - One Size,210000008765,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Blender Brush,810102030238,125.00,credo-beauty,Blender Brush - One Size,210000008761,125.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,EYE SHADOW BRUSH II,810102030344,62.00,credo-beauty,Eye Shadow II Brush - One Size,210000008766,62.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,SPOT CHECK BRUSH,810102030634,38.00,credo-beauty,Spot Check Brush - One Size,210000010074,38.00
+1.000,fuzzy,mutual best,VINTNER'S DAUGHTER,cos-bar,Active Treatment Essence,869542000134,230.00,onda-beauty,Active Treatment Essence,10450,230.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Pressed Skincare Powder - Translucent,810102032027,75.00,credo-beauty,Vital Pressed Skincare Powder - Translucent (works on most complexions),210000012073,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Pressed Skincare Powder - Pink Bubble,810102032034,75.00,credo-beauty,Vital Pressed Skincare Powder - Pink Bubble (for fair-light complexions),210000012074,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Pressed Skincare Powder - Creme,810102032041,75.00,credo-beauty,Vital Pressed Skincare Powder - Crème (for light-medium complexions),210000012075,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Pressed Skincare Powder - Dune,810102032058,75.00,credo-beauty,Vital Pressed Skincare Powder - Dune (for medium-tan complexions),210000012076,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Pressed Skincare Powder - Cafe,810102032065,75.00,credo-beauty,Vital Pressed Skincare Powder - Café (for tan-deep complexions),210000012077,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,LIQUID BLENDER BRUSH,810102032584,125.00,credo-beauty,Liquid Blender Brush - One Size,210000012417,125.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Biscuit,810102030160,48.00,credo-beauty,Face Trace Contour Stick - Biscuit (cool beige coffee),210000008744,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Truffle,810102030641,48.00,credo-beauty,Face Trace Contour Stick - Truffle (rich mocha),210000010073,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Ganache,810102031242,48.00,credo-beauty,Face Trace Contour Stick - Ganache (deep cocoa),210000010687,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede - Les Nudes,810102030573,63.75,credo-beauty,"Lip Suede Les Nudes - Les Nudes (warm rose, peony, café crème, mulled wine)",210000010399,85.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Bergamot and Hinoki Hand Cream,711221983705,20.00,onda-beauty,Hand Cream - Bergamot & Hinoki,Hand01,20.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Santal and Vetiver Hand Cream,711221983620,20.00,onda-beauty,Hand Cream - Santal & Vetiver,Hand02,20.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Beauty Butter Powder Bronzer - Coup De Soleil,810102030207,75.00,credo-beauty,Beauty Butter Powder Bronzer - Coup de Soleil (true matte terra-cotta),210000008750,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Beauty Butter Powder Bronzer - Soleil Riche,810102030658,75.00,credo-beauty,Beauty Butter Powder Bronzer - Soleil Riche (rich terra cotta),210000010138,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Beauty Butter Powder Bronzer - Beau Soleil,810102031259,75.00,credo-beauty,Beauty Butter Powder Bronzer - Beau Soleil (deep rich brown),210000013741,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Liquid Super Loaded Drops - Peau De Peche,810102033475,58.00,credo-beauty,Liquid Super Loaded Drops - Peau de Pêche (warm peach),210000013758,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Liquid Super Loaded Drops - Peau De Rose,810102033482,58.00,credo-beauty,Liquid Super Loaded Drops - Peau de Rosé (soft cool rose),210000013760,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Liquid Super Loaded Drops - Peau de Soleil,810102033499,58.00,credo-beauty,Liquid Super Loaded Drops - Peau de Soleil (warm bronze gold),210000013759,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Super Loaded Tinted Highlight - Peau De Peche,810102030184,75.00,credo-beauty,Super Loaded Tinted Highlight - Peau de Peche (soft pearlized bronze suede),210000008751,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Super Loaded Tinted Highlight - Peau De Rose,810102030191,75.00,credo-beauty,Super Loaded Tinted Highlight - Peau de Rosé (soft cool rose with iridescent glitter),210000008941,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Want You Mascara - Clean Black,810102033611,45.00,credo-beauty,Eye Want You Mascara - Clean Black,210000014021,45.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Want You Mascara - Le Brun Clean,810102033628,45.00,credo-beauty,Eye Want You Mascara - Le Brun Clean,210000014022,45.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Black Rose and Oud Hand Cream,711221984030,20.00,onda-beauty,Hand Cream - Black Rose & Oud,Hand03,20.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Black Rose and Oud Candle,711221984405,49.00,onda-beauty,Candle - Black Rose & Oud,Cand02,49.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Saffron and Cedar Candle,711221984115,49.00,onda-beauty,Candle - Saffron & Cedar,Cand01,49.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Santal and Vetiver Candle,711221983798,49.00,onda-beauty,Candle - Santal & Vetiver,Cand04,49.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,FIG AND VIOLET CANDLE,711221984177,49.00,onda-beauty,Candle - Fig & Violet,CAND05,49.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Super Loaded Tinted Highlight - Peau de Soleil,810102030320,75.00,credo-beauty,Super Loaded Tinted Highlight - Peau de Soleil (warm bronze gold),210000008752,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Rue,810102033895,50.00,credo-beauty,Lip Suede Matte Lipstick - Rue (tawny chesnut),210000014430,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Je Reve,810102033871,50.00,credo-beauty,Lip Suede Matte Lipstick - Je Rêve (blushy nude),210000014428,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Läcker,810102033857,50.00,credo-beauty,Lip Suede Matte Lipstick - Läcker (coral flush),210000014426,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Le Rouge,810102033949,50.00,credo-beauty,Lip Suede Matte Lipstick - Le Rouge (bright tomato),210000014435,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - LFG,810102033918,50.00,credo-beauty,Lip Suede Matte Lipstick - LFG (orchid fuchsia),210000014432,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Lou Lou,810102033901,50.00,credo-beauty,Lip Suede Matte Lipstick - Lou Lou (barolo red),210000014431,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Ma Biche,810102033925,50.00,credo-beauty,Lip Suede Matte Lipstick - Ma Biche (spanish red),210000014433,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Minx,810102033864,50.00,credo-beauty,Lip Suede Matte Lipstick - Minx (blooming peony),210000014427,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Pip,810102033932,50.00,credo-beauty,Lip Suede Matte Lipstick - Pip (poppy red),210000014434,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Pique,810102034007,50.00,credo-beauty,Lip Suede Matte Lipstick - Piqué (taupey nude),210000014429,50.00
+1.000,fuzzy,mutual best,JENNY PATINKIN,cos-bar,The Big Reveal Eyelash Curler For Hooded and Deep Set Eyes,860010580639,20.00,credo-beauty,The Big Reveal Eyelash Curler for Hooded and Deep Set Eyes - One Size,210000014668,20.00
+1.000,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Rich Cream - 30 ml,5060552901878,195.00,onda-beauty,The Rich Cream - 30 ml,11676,190.00
+1.000,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Rich Cream - 50 ml,5060552901892,315.00,onda-beauty,The Rich Cream - 50 ml,11677,305.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Saffron and Cedar Deodorant,850063840293,20.00,onda-beauty,Deodorant - Saffron & Cedar,DEOD11,20.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Saffron and Cedar Body Wash,850063840057,36.00,onda-beauty,Body Wash - Saffron & Cedar.,,36.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Saffron and Cedar Hand Cream,850063840118,20.00,onda-beauty,Hand Cream - Saffron & Cedar (New),,20.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Petal,810102033888,50.00,credo-beauty,Lip Suede Matte Lipstick - Petal (dusty nude rose),210000015398,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Drops Soleil Parfait - Soleil Parfait 1,810102035240,58.00,credo-beauty,Sun Tone Bronzing Drops - Soleil Parfait 1 (light tan),210000015680,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Drops Soleil Parfait - Soleil Parfait 2,810102035264,58.00,credo-beauty,Sun Tone Bronzing Drops - Soleil Parfait 2 (medium tan),210000015681,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Drops Soleil Parfait - Soleil Parfait 3,810102035257,58.00,credo-beauty,Sun Tone Bronzing Drops - Soleil Parfait 3 (dark tan),210000015682,58.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Drops Soleil Parfait - Soleil Parfait 4,810102035431,58.00,credo-beauty,Sun Tone Bronzing Drops - Soleil Parfait 4 (rich deep tan),210000015683,58.00
+1.000,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Cream - 50 ml,5060552900802,315.00,onda-beauty,The Cream 50ml,FC-0001-50-FC,305.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Powder Brush II,810102035769,85.00,credo-beauty,Powder Brush II - One Size,210000015804,85.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Black Rose and Oud Deodorant,850063840026,20.00,onda-beauty,Deodorant - Black Rose & Oud,DEOD09,20.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Neroli and Basil Body Wash,850063840064,36.00,onda-beauty,Body Wash - Neroli & Basil,BODY04,36.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Reine,810102035585,50.00,credo-beauty,Lip Suede Matte Lipstick - Reine (peachy nude),210000015805,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Rose,810102035615,50.00,credo-beauty,Lip Suede Matte Lipstick - Rose (pink mauve),210000015808,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Suede Matte Lipstick - Pinch,810102035592,50.00,credo-beauty,Lip Suede Matte Lipstick - Pinch (bright raspberry),210000015806,50.00
+1.000,fuzzy,mutual best,JENNY PATINKIN,cos-bar,Sheer Beauty Ultra Thin Cosmetic Brush,856213004096,22.00,credo-beauty,Sheer Beauty Ultra Thin Cosmetic Brush - One Size,210000016434,22.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Bonne Brow Defining Pencil - Slate,810102031754,38.00,credo-beauty,Bonne Brow Defining Pencil - Slate (for black/brown and black hair),210000011710,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Bichette,810102030665,48.00,credo-beauty,Baby Cheeks Blush Stick - Bichette (red berry),210000010072,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Chouchette,810102030276,48.00,credo-beauty,Baby Cheeks Blush Stick - Chouchette (nude peach),210000008749,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Dou Dou,810102030146,48.00,credo-beauty,Baby Cheeks Blush Stick - Dou Dou (warm rose),210000008747,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Minette,810102030122,48.00,credo-beauty,Baby Cheeks Blush Stick - Minette (luminous peach),210000008745,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Petal,810102030139,48.00,credo-beauty,Baby Cheeks Blush Stick - Petal (dusty nude rose),210000008746,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Poppet,810102030153,48.00,credo-beauty,Baby Cheeks Blush Stick - Poppet (poppy pink),210000008748,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XIII,810102030542,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier XIII (Deep neutral undertone),210000009651,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Coquette,810102033673,48.00,credo-beauty,Baby Cheeks Blush Stick - Coquette (cool soft pink),210000013911,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Blush Stick - Garconne,810102033666,48.00,credo-beauty,Baby Cheeks Blush Stick - Garçonne (just pinched mauve),210000013910,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier T1,810102035158,48.00,credo-beauty,Vital Skincare Concealer - Atelier T1 (Medium tan golden),210000015025,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier T2,810102035165,48.00,credo-beauty,Vital Skincare Concealer - Atelier T2 (Tan golden),210000015026,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier T3,810102035172,48.00,credo-beauty,Vital Skincare Concealer - Atelier T3 (Tan deep peach),210000015027,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier T4,810102035189,48.00,credo-beauty,Vital Skincare Concealer - Atelier T4 (Tan neutral),210000015028,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier D1,810102035196,48.00,credo-beauty,Vital Skincare Concealer - Atelier D1 (Deep tan warm),210000015029,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier D2,810102035202,48.00,credo-beauty,Vital Skincare Concealer - Atelier D2 (Deep golden),210000015030,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier D3,810102035219,48.00,credo-beauty,Vital Skincare Concealer - Atelier D3 (Deep rich warm),210000015031,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Petal,810102033543,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Petal (dusty nude rose),210000015400,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XI,810102030115,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier XI (Tan to deep golden undertone),210000008741,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XII,810102030269,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier XII (Deep peach undertone),210000008742,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier II,810102030023,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier II (Light peach undertone),210000008732,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier IX,810102030092,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier IX (Tan neutral undertone),210000008739,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier I,810102030016,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier I (Fair to light warm undertone),210000008731,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier X,810102030108,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier X (Tan warm undertone),210000008740,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier N,810102030313,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier N (Fair cool undertone),210000008729,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier III,810102030030,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier III (Light warm undertone),210000008733,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier IV,810102030047,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier IV (Medium peach undertone),210000008734,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier V,810102030054,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier V (Medium warm undertone),210000008735,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier VI,810102030061,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier VI (Medium neutral undertone),210000008736,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier VII,810102030078,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier VII (Medium to tan neutral undertone),210000008737,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XI.5,810102030535,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier XI.5 (Deep warm undertone),210000009650,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XIV,810102030559,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier XIV (Deep to rich warm undertone),210000009652,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XV,810102030566,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier XV (Deep to rich neutral undertone),210000009653,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier X.25,810102030740,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier X.25 (Tan peach undertone),210000010760,68.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier L1,810102035059,48.00,credo-beauty,Vital Skincare Concealer - Atelier L1 (Fair neutral),210000015017,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier L2,810102035066,48.00,credo-beauty,Vital Skincare Concealer - Atelier L2 (Fair to light warm),210000015018,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier L3,810102035073,48.00,credo-beauty,Vital Skincare Concealer - Atelier L3 (Light warm),210000015019,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier L4,810102035080,48.00,credo-beauty,Vital Skincare Concealer - Atelier L4 (Light medium peach),210000015020,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier M1,810102035103,48.00,credo-beauty,Vital Skincare Concealer - Atelier M1 (Light medium warm),210000015021,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier M2,810102035110,48.00,credo-beauty,Vital Skincare Concealer - Atelier M2 (Medium golden),210000015022,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier M3,810102035127,48.00,credo-beauty,Vital Skincare Concealer - Atelier M3 (Medium tan cool),210000015023,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier M4,810102035134,48.00,credo-beauty,Vital Skincare Concealer - Atelier M4 (Medium tan neutral),210000015024,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Vital Skincare Concealer Atelier - Atelier D4,810102035226,48.00,credo-beauty,Vital Skincare Concealer - Atelier D4 (Rich neutral),210000015032,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Chou Chou,810102030511,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Chou Chou (pale pink),210000010143,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Garconne,810102030474,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Garçonne (just bitten),210000010139,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Ma Puce,810102030498,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Ma Puce (raspberry lolly),210000010142,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Nana,810102030467,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Nana (cool beige),210000010140,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Nou Nou,810102030504,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Nou Nou (soft coral),210000010144,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Squeaky Clean Liquid Lip Balm - Pipsqueak,810102030481,38.00,credo-beauty,Squeaky Clean Liquid Lip Balm - Pipsqueak (bright brick),210000010141,38.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 145 Entice,810063690021,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Entice 145,HOUCOS-21827-ENT,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 135 Haze,810063690038,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Haze 135,HOUCOS-21828-HAZ,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 155 Lucid,810063690045,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Lucid 155,HOUCOS-21829-LUC,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 175 Lure,810063690052,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Lure 175,HOUCOS-21830-LUR,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 115 Mist,810063690069,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Mist 115,HOUCOS-21831-MIS,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 125 Slip,810063690076,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Slip 125,HOUCOS-21832-SLI,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 165 Thrill,810063690083,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Thrill 165,HOUCOS-21833-THR,36.00
+1.000,fuzzy,mutual best,HOURGLASS,cos-bar,Phantom Volumizing Glossy Balm - 105 Trace,810063690090,38.00,thirteen-lune,Phantom Volumizing Glossy Balm - Trace 105,HOUCOS-21834-TRA,36.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Bonne Brow Defining Pencil - Bark,810102031747,38.00,credo-beauty,Bonne Brow Defining Pencil - Bark (for dark brown hair),210000011709,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Bonne Brow Defining Pencil - Clay,810102031730,38.00,credo-beauty,Bonne Brow Defining Pencil - Clay (for medium blonde and brown hair),210000011708,38.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Bonne Brow Defining Pencil - Stone,810102031723,38.00,credo-beauty,Bonne Brow Defining Pencil - Stone (for blonde and red hair),210000011707,38.00
+1.000,fuzzy,mutual best,SALT & STONE,cos-bar,Black Rose and Oud Body Wash,850063840316,36.00,onda-beauty,Body Wash - Black Rose & Oud,BODY07,36.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Au Lait,810102036407,48.00,credo-beauty,Face Trace Contour Stick - Au Lait (neutral nude latte),210000016938,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Toast,810102036414,48.00,credo-beauty,Face Trace Contour Stick - Toast (neutral pecan),210000016940,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Coco,810102036469,48.00,credo-beauty,Face Trace Contour Stick - Coco (cool mocha),210000016941,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Whiskey,810102036421,48.00,credo-beauty,Face Trace Contour Stick - Whiskey (neutral rich fudge),210000016942,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Face Trace Contour Stick - Kola,810102036445,48.00,credo-beauty,Face Trace Contour Stick - Kola (cool rich espresso),210000016943,48.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Cafe Creme,810102036537,50.00,credo-beauty,HydroBalm Tinted Lipstick - Café Crème (sheer cool nude),210000017030,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Pippy,810102036605,50.00,credo-beauty,HydroBalm Tinted Lipstick - Pippy (sheer poppy red),210000017037,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Brique,810102036612,50.00,credo-beauty,HydroBalm Tinted Lipstick - Brique (sheer burnt sienna),210000017038,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Glogg,810102036629,50.00,credo-beauty,HydroBalm Tinted Lipstick - Glögg (sheer black cherry),210000017039,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Nectar,810102036544,50.00,credo-beauty,HydroBalm Tinted Lipstick - Nectar (sheer peach with shimmer),210000017031,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Ballerine,810102036551,50.00,credo-beauty,HydroBalm Tinted Lipstick - Ballerine (sheer cool peony),210000017032,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - English Rose,810102036568,50.00,credo-beauty,HydroBalm Tinted Lipstick - English Rose (sheer winter rose),210000017033,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Bob,810102036575,50.00,credo-beauty,HydroBalm Tinted Lipstick - Bob (sheer flushed rosewood),210000017034,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Juice,810102036582,50.00,credo-beauty,HydroBalm Tinted Lipstick - Juice (sheer coral flush),210000017035,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Pop,810102036599,50.00,credo-beauty,HydroBalm Tinted Lipstick - Pop (sheer deep coral),210000017036,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Soda,810102036636,50.00,credo-beauty,HydroBalm Tinted Lipstick - Soda (sheer cool cocoa),210000017040,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,HydroBalm Tinted Lipstick - Onyx,810102036643,50.00,credo-beauty,HydroBalm Tinted Lipstick - Onyx (sheer deep plum),210000017041,50.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Blender II Brush,810102037275,85.00,credo-beauty,Blender II Brush - One Size,210000017046,85.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Crème Soleil - Soleil Parfait 1,810102036810,75.00,credo-beauty,Sun Tone Bronzing Crème - Soleil Parfait 1 (light tan),210000017042,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Crème Soleil - Soleil Parfait 2,810102036827,75.00,credo-beauty,Sun Tone Bronzing Crème - Soleil Parfait 2 (medium tan),210000017043,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Crème Soleil - Soleil Parfait 3,810102036834,75.00,credo-beauty,Sun Tone Bronzing Crème - Soleil Parfait 3 (dark tan),210000017044,75.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Sun Tone Bronzing Crème Soleil - Soleil Parfait 4,810102036841,75.00,credo-beauty,Sun Tone Bronzing Crème - Soleil Parfait 4 (rich deep tan),210000017045,75.00
+1.000,fuzzy,mutual best,VINTNER'S DAUGHTER,cos-bar,The Discovery Set,860008576491,175.00,onda-beauty,The Discovery Set,VDDS04,175.00
+1.000,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Eye Patches - 6 pack,5060552907214,132.00,onda-beauty,The Eye Patches (6 Pack),ABEP6,130.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Liquid Foundation Brush,810102036292,95.00,credo-beauty,Liquid Foundation Brush - One Size,210000018056,95.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier L1,810102035837,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier L1 (Fair to light neutral),210000018022,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier D2,810102036025,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier D2 (Tan to deep peach),210000018038,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier D3,810102036032,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier D3 (Deep warm),210000018039,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier D4,810102036049,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier D4 (Deep neutral),210000018040,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier F3,810102035790,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier F3 (Fair rosy),210000018019,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier F4,810102035806,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier F4 (Fair neutral),210000018020,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier L3,810102035851,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier L3 (Light rosy),210000018024,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier L4,810102035868,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier L4 (Light warm),210000018025,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier F2,810102035783,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier F2 (Very fair peach),210000018018,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier D1,810102036018,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier D1 (Tan to deep neutral),210000018037,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier M5,810102035936,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier M5 (Medium to tan neutral),210000018031,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier R1,810102037367,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier R1 (Deep to rich warm),210000018042,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier R2,810102037374,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier R2 (Deep to rich neutral),210000018043,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier R4,810102037398,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier R4 (Rich warm),210000018045,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier L5,810102035875,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier L5 (Light to medium peach),210000018026,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier M1,810102035899,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier M1 (Light to medium neutral),210000018027,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier M2,810102035905,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier M2 (Medium neutral),210000018028,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier M3,810102035912,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier M3 (Medium peach),210000018029,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier M4,810102035929,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier M4 (Medium warm),210000018030,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier R5,810102037404,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier R5 (Very rich neutral),210000018046,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier T1,810102035950,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier T1 (Medium to tan olive),210000018032,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier T2,810102035967,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier T2 (Medium to tan warm),210000018033,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier T3,810102035974,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier T3 (Tan rosy),210000018034,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier T4,810102035981,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier T4 (Tan neutral),210000018035,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier T5,810102035998,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier T5 (Tan warm),210000018036,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier R3,810102037381,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier R3 (Rich neutral),210000018044,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier D5,810102036056,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier D5 (Deep peach),210000018041,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier F1,810102035776,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier F1 (Very fair neutral),210000018017,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier F5,810102035813,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier F5 (Fair to light warm),210000018021,69.00
+1.000,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Suprême Bio-Complex Liquid Foundation - Atelier L2,810102035844,69.00,credo-beauty,Suprême Bio-Complex Liquid Foundation - Atelier L2 (Light neutral),210000018023,69.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Luminizer - Living Luminizer (translucent satin-pearl glow),210000002456,42.00,thirteen-lune,Living Luminizer,RMSBEA-50333-LIV,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Lip2Cheek - Beloved (true red with a hint of poppy),210000002388,42.00,thirteen-lune,Lip2Cheek - Beloved,RMSBEA-21644-BEL,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Lip2Cheek - Demure (soft pink rose with hint of mauve),210000002390,42.00,thirteen-lune,Lip2Cheek - Demure,RMSBEA-21640-DEM,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Lip2Cheek - Modest (fresh berry pink),210000002396,42.00,thirteen-lune,Lip2Cheek - Modest,RMSBEA-21642-MOD,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Lip2Cheek - Illusive (matte burnt rose with hint of plum),210000002394,42.00,thirteen-lune,Lip2Cheek - Illusive,RMSBEA-21643-ILL,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Skin2Skin Blush Brush - One Size,210000003823,39.00,thirteen-lune,Skin2Skin Blush Brush,RMSBEA-50073-BLU,39.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Skin2Skin Foundation Brush - One Size,210000003825,45.00,thirteen-lune,Skin2Skin Foundation Brush,RMSBEA-50071-FOU,45.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Lip2Cheek - Spell (nude dusty rose),210000005138,42.00,thirteen-lune,Lip2Cheek - Spell,RMSBEA-21641-SPE,42.00
+1.000,fuzzy,mutual best,Ere Perez,credo-beauty,Jojoba Eye Pencil - Black (natural black),210000006466,24.00,thirteen-lune,Jojoba Eye Pencil - Black,EREPER-20527-BLA,24.00
+1.000,fuzzy,mutual best,Ere Perez,credo-beauty,Avocado Waterproof Mascara - Black,210000006460,29.00,thirteen-lune,Avocado Waterproof Mascara Black,EREPER-20515-AVO,29.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,G.Tox Ultimate Dry Brush - One Size,210000007099,25.00,onda-beauty,G. Tox Ultimate Dry Brush,,25.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Master Radiance Base - Rich in Radiance,210000009530,42.00,thirteen-lune,Master Radiance Base - Rich in Radiance,RMSBEA-50118-RIC,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Master Radiance Base - Deep in Radiance,210000009531,42.00,thirteen-lune,Master Radiance Base - Deep in Radiance,RMSBEA-50119-DEE,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Lip2Cheek - Lost Angel (coral),210000010003,42.00,thirteen-lune,Lip2Cheek - Lost Angel,RMSBEA-21639-LOS,42.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Sunbeam (a golden coral with a hint of peach),210000011466,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Sunbeam,RMSBEA-21657-SUN,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Spark (bronzed plum with a hint of violet),210000011476,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Spark,RMSBEA-21655-SPA,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Blaze (muted silvery mauve),210000011477,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Blaze,RMSBEA-21656-BLA,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Flare (deep warm gold),210000011478,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Flare,RMSBEA-21654-FLA,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Strobe (champagne pink),210000011479,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Strobe,RMSBEA-21658-STR,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Halo (a rich ruby brown),210000011480,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Halo,RMSBEA-21659-HAL,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Straight Line Kohl Eye Pencil - HD Black,210000011706,27.00,thirteen-lune,Straight Line Kohl Eye Pencil - HD Black,RMSBEA-50552-PBL,27.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Back2Brow Brush - One Size,210000012101,25.00,thirteen-lune,Back2Brow Brush,RMSBEA-50072-BRO,25.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Hanky Panky (a playfully iridescent magenta plum),210000012025,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Hanky Panky,RMSBEA-50001-HAN,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,"ReDimension Hydra Powder Blush - Mai Tai (a sunlit, citrusy coral)",210000012026,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Mai Tai,RMSBEA-50002-MAI,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Maiden's Blush (soft cinnamon sparked with sweet pink),210000012027,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Maiden's Blush,RMSBEA-50003-MDN,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,"ReDimension Hydra Powder Blush - Pomegranate Fizz (a sunny, effervescent red-pink)",210000012028,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Pomegranate Fizz,RMSBEA-50004-FZZ,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Sangria (a golden-spriced ruby rose),210000012029,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Sangria,RMSBEA-50005-SGA,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - French Rosé (a innocent pink),210000012030,38.00,thirteen-lune,ReDimension Hydra Powder Blush - French Rose,RMSBEA-50006-FRR,38.00
+1.000,fuzzy,mutual best,Ere Perez,credo-beauty,Carrot Colour Pot - holy (rich grape),210000012366,31.00,thirteen-lune,Carrot Colour Pot - Holy,EREPER-20510-HOL,31.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Liplights Cream Lip Gloss - Bare (personalized PH flush of color),210000012846,30.00,thirteen-lune,Liplights Cream Lip Gloss - Bare,RMSBEA-50007-BAR,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Liplights Cream Lip Gloss - Bisou (a muted coral),210000012847,30.00,thirteen-lune,Liplights Cream Lip Gloss - Bisou,RMSBEA-50008-BIS,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Liplights Cream Lip Gloss - Rumor (a dusty mauve),210000012848,30.00,thirteen-lune,Liplights Cream Lip Gloss - Rumor,RMSBEA-50009-RUM,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Liplights Cream Lip Gloss - Crush (a modern dusty pink),210000012849,30.00,thirteen-lune,Liplights Cream Lip Gloss - Crush,RMSBEA-50010-CRU,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Liplights Cream Lip Gloss - Rhythm (kissable cranberry),210000012850,30.00,thirteen-lune,Liplights Cream Lip Gloss - Rhythm,RMSBEA-50011-RHY,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Liplights Cream Lip Gloss - Rhapsody (spicy cinnamon),210000012851,30.00,thirteen-lune,Liplights Cream Lip Gloss - Rhapsody,RMSBEA-50012-RHP,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Morning Dew (cool dusty rose),210000013082,26.00,thirteen-lune,Go Nude Lip Pencil - Morning Dew,RMSBEA-50083-DEW,26.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Sunrise Nude (soft muted pink),210000013111,26.00,thirteen-lune,Go Nude Lip Pencil - Sunrise Nude,RMSBEA-50081-SUN,26.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Midnight Nude (deep mahogany),210000013113,26.00,thirteen-lune,Go Nude Lip Pencil - Midnight Nude,RMSBEA-50086-MID,26.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Sunset Nude (rich auburn),210000013115,26.00,thirteen-lune,Go Nude Lip Pencil - Sunset Nude,RMSBEA-50085-SET,26.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Nighttime Nude (tawny port),210000013123,26.00,thirteen-lune,Go Nude Lip Pencil - Nighttime Nude,RMSBEA-50084-NIG,26.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Daytime Nude (ginger earth),210000013124,26.00,thirteen-lune,Go Nude Lip Pencil - Daytime Nude,RMSBEA-50082-DAY,26.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Go Nude Lip Pencil - Pavla Red (orange red),210000013125,26.00,thirteen-lune,Go Nude Lip Pencil - Pavla Red,RMSBEA-50087-PAV,26.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Speak Love Glossy Lip Treatment Oil - Clear,210000013265,15.00,thirteen-lune,Speak Love Glossy Lip Treatment Oil - Clear,LYSBEA-22142-CLE,12.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Higher Standard Satin Matte Cream Blush - Self Love (rosey mauve),210000013249,22.00,thirteen-lune,Higher Standard Satin Matte Cream Blush - Self Love,LYSBEA-22137-SEL,18.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Higher Standard Satin Matte Cream Blush - Kindness (soft peachy nude),210000013250,22.00,thirteen-lune,Higher Standard Satin Matte Cream Blush - Kindness,LYSBEA-22138-KIN,18.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Higher Standard Satin Matte Cream Blush - Confident (pink cinnamon spice),210000013251,22.00,thirteen-lune,Higher Standard Satin Matte Cream Blush - Confident,LYSBEA-22136-CON,18.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Higher Standard Satin Matte Cream Blush - Empower (deep berry plum),210000013253,22.00,thirteen-lune,Higher Standard Satin Matte Cream Blush - Empower,LYSBEA-22133-EMP,18.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Higher Standard Satin Matte Cream Blush - Passion (fuchsia pink),210000013255,22.00,thirteen-lune,Higher Standard Satin Matte Cream Blush - Passion,LYSBEA-22135-PAS,18.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Higher Standard Satin Matte Cream Blush - Humble (cool soft pink),210000013256,22.00,thirteen-lune,Higher Standard Satin Matte Cream Blush - Humble,LYSBEA-22141-HUM,18.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,SuperNatural Radiance Serum Broad Spectrum SPF 30 Sunscreen - Light Aura (an ultra sheer champagne radiance),210000013685,49.00,thirteen-lune,SuperNatural Radiance Serum Broad Spectrum SPF 30 Sunscreen - Light Aura,RMSBEA-50147-LIG,49.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,SuperNatural Radiance Serum Broad Spectrum SPF 30 Sunscreen - Medium Aura (an ultra sheer golden radiance),210000013686,49.00,thirteen-lune,SuperNatural Radiance Serum Broad Spectrum SPF 30 Sunscreen - Medium Aura,RMSBEA-50148-MED,49.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,SuperNatural Radiance Serum Broad Spectrum SPF 30 Sunscreen - Rich Aura (an ultra sheer bronze radiance),210000013687,49.00,thirteen-lune,SuperNatural Radiance Serum Broad Spectrum SPF 30 Sunscreen - Rich Aura,RMSBEA-50149-DEE,49.00
+1.000,fuzzy,mutual best,Corpus,credo-beauty,Katrafay Body Scrub - 5.5 oz / 160 ml,210000013800,36.00,onda-beauty,Katrafay Body Scrub - 5.5 oz / 160ml,,52.00
+1.000,fuzzy,mutual best,LYS Beauty,credo-beauty,Lash Confidence Mascara - Black,210000013263,19.00,thirteen-lune,Lash Confidence Mascara - Black,LYSBEA-31086-MAS,19.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Eclipse (a mossy silver),210000013779,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Eclipse,RMSBEA-50281-ECL,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Kir Royale (a mauve surprise),210000013782,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Kir Royale,RMSBEA-50286-KIR,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Bohemian Girl (a 70’s peach),210000013783,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Bohemian Girl,RMSBEA-50285-BOH,38.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Aurora (a vibrant violet),210000013780,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Aurora,RMSBEA-50282-AUR,30.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Eyelights Cream Eyeshadow - Moondust (starlit champagne),210000013781,30.00,thirteen-lune,Eyelights Cream Eyeshadow - Moondust,RMSBEA-50283-MOO,30.00
+1.000,fuzzy,mutual best,LolaVie,credo-beauty,Restorative Shampoo - 8.5 oz / 250 ml,210000013982,32.00,thirteen-lune,Restorative Shampoo - 8.5 oz / 250 ml,LOLVIE-33330-RSH,32.00
+1.000,fuzzy,mutual best,LolaVie,credo-beauty,Intensive Repair Treatment - 5 oz / 150 ml,210000013991,35.00,thirteen-lune,Intensive Repair Treatment - 5 oz / 150 ml,LOLVIE-33332-IRT,35.00
+1.000,fuzzy,mutual best,LolaVie,credo-beauty,Restorative Conditioner - 8.5 oz / 250 ml,210000013985,32.00,thirteen-lune,Restorative Conditioner - 8.5 oz / 250 ml,LOLVIE-33331-RCO,32.00
+1.000,fuzzy,mutual best,LolaVie,credo-beauty,Lightweight Hair Oil - 1.5 oz / 45 ml,210000013981,33.00,thirteen-lune,Lightweight Hair Oil - 1.5 oz / 45 ml,LOLVIE-33333-LHO,33.00
+1.000,fuzzy,mutual best,LolaVie,credo-beauty,Perfecting Leave In - 5 oz / 150 ml,210000013979,33.00,thirteen-lune,Perfecting Leave-In - 5 oz / 150 ml,LOLVIE-33329-PLI,33.00
+1.000,fuzzy,mutual best,LolaVie,credo-beauty,Glossing Detangler - 5 oz / 150 ml,210000013978,29.00,thirteen-lune,Glossing Detangler - 5 oz / 150 ml,LOLVIE-33328-GLD,29.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,"ReDimension Hydra Dew Luminizer - Prosecco Fizz (a warm, champagne glow)",210000013788,44.00,thirteen-lune,ReDimension Hydra Dew Luminizer - Prosecco Fizz,RMSBEA-50334-DEW,44.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Monica (a neutral berry),210000014007,36.00,thirteen-lune,Legendary Serum Lipstick - Monica,RMSBEA-50299-MON,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Ruby Moon (poppy orange-red),210000014008,36.00,thirteen-lune,Legendary Serum Lipstick - Ruby Moon,RMSBEA-50300-RUB,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Linda (a vibrant raspberry),210000014009,36.00,thirteen-lune,Legendary Serum Lipstick - Linda,RMSBEA-50301-LIN,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Mickey (a tawny brown),210000014010,36.00,thirteen-lune,Legendary Serum Lipstick - Mickey,RMSBEA-50302-MIK,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Audrey (a neutral tawny red),210000014011,36.00,thirteen-lune,Legendary Serum Lipstick - Audrey,RMSBEA-50303-AUD,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Melanie (tahitian coral),210000014012,36.00,thirteen-lune,Legendary Serum Lipstick - Melanie,RMSBEA-50304-MEL,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Miranda (classic soft rose),210000014013,36.00,thirteen-lune,Legendary Serum Lipstick - Miranda,RMSBEA-50305-MIR,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Serum Lipstick - Angela (rose brown),210000014014,36.00,thirteen-lune,Legendary Serum Lipstick - Angela,RMSBEA-50306-ANG,36.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Straight Line Kohl Eye Pencil - Plum Definition,210000014294,27.00,thirteen-lune,Straight Line Kohl Eye Pencil - Plum Definition,RMSBEA-50554-PPL,27.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Straight Line Kohl Eye Pencil - Bronze Definition,210000014295,27.00,thirteen-lune,Straight Line Kohl Eye Pencil - Bronze Definition,RMSBEA-50553-PBR,27.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Skin2Skin Beauty Sponge - One Size,210000014249,16.00,thirteen-lune,Skin2Skin Beauty Sponge,RMSBEA-50075-SPO,16.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Crystal Slipper (a sun kissed buff),210000013784,38.00,thirteen-lune,ReDimension Hydra Powder Blush - Crystal Slipper,RMSBEA-50284-CRY,38.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Velveteen (soft mauve),210000014906,23.00,onda-beauty,Colorblur Glow Balm - Velveteen,,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Velveteen (soft mauve),210000014906,23.00,thirteen-lune,Colorblur Glow Balm - Velveteen,GOOBEA-50795-GBE,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Venus (soft fuscia),210000014908,23.00,onda-beauty,Colorblur Glow Balm - Venus,,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Venus (soft fuscia),210000014908,23.00,thirteen-lune,Colorblur Glow Balm - Venus,GOOBEA-50794-GBV,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Slipper (warm peach),210000014909,23.00,onda-beauty,Colorblur Glow Balm - Slipper,,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Slipper (warm peach),210000014909,23.00,thirteen-lune,Colorblur Glow Balm - Slipper,GOOBEA-50792-GBS,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Afterglow (soft berry),210000014910,34.00,onda-beauty,Colorblur Glow Balm - Afterglow,,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Afterglow (soft berry),210000014910,34.00,thirteen-lune,Colorblur Glow Balm - Afterglow,GOOBEA-50793-GBA,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Whiskey (warm terra-cotta),210000014911,23.00,onda-beauty,Colorblur Glow Balm - Whiskey,,34.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Colorblur Glow Balm - Whiskey (warm terra-cotta),210000014911,23.00,thirteen-lune,Colorblur Glow Balm - Whiskey,GOOBEA-50791-GBW,34.00
+1.000,fuzzy,mutual best,Rye Beauty,credo-beauty,Tinted Brow Milk - Cool Blond (medium blond and light brunette),210000015190,32.00,onda-beauty,Tinted Brow Milk - Cool Blond,,32.00
+1.000,fuzzy,mutual best,Rye Beauty,credo-beauty,Tinted Brow Milk - Soft Brown (darker blond or light to medium brown hair),210000015191,32.00,onda-beauty,Tinted Brow Milk - Soft Brown,,32.00
+1.000,fuzzy,mutual best,Rye Beauty,credo-beauty,"Tinted Brow Milk - Medium Brown (warm, rich shade of brown)",210000015192,32.00,onda-beauty,Tinted Brow Milk - Medium Brown,,32.00
+1.000,fuzzy,mutual best,Rye Beauty,credo-beauty,Tinted Brow Milk - Black Brown (soft black with subtle brown tones),210000015193,32.00,onda-beauty,Tinted Brow Milk - Black Brown,,32.00
+1.000,fuzzy,mutual best,KOBA skincare,credo-beauty,Gold Drip Nourishing Body & Hair Oil - 3.4 oz / 100 ml,210000015319,70.00,thirteen-lune,Gold Drip Nourishing Body & Hair Oil - 3.4 oz / 100 ml,KOBSKI-33838-OIL,70.00
+1.000,fuzzy,mutual best,KOBA skincare,credo-beauty,Bottom Up Foot Cream - 3.4 oz / 100 ml,210000015317,45.00,thirteen-lune,Bottom Up Foot Cream - 3.4 oz / 100 ml,KOBSKI-33839-FOO,45.00
+1.000,fuzzy,mutual best,KOBA skincare,credo-beauty,Touch Me Hand Cream - 2.2 oz / 65 ml,210000015318,35.00,thirteen-lune,Touch Me Hand Cream - 2.2 oz / 65 ml,KOBSKI-33840-HAN,35.00
+1.000,fuzzy,mutual best,The Outset,credo-beauty,Lip Oasis™️ Glossy Treatment - Clear,210000015639,28.00,onda-beauty,Lip Oasis™️ Glossy Treatment - Clear,T150,28.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Hydra Barrier Gel Gloss - Spice (brown),210000015816,30.00,thirteen-lune,Hydra-Barrier Gel Gloss - Spice,GOOBEA-50789-HGS,30.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Hydra Barrier Gel Gloss - Glaze (clear),210000015817,21.00,thirteen-lune,Hydra-Barrier Gel Gloss - Glaze,GOOBEA-50787-HGG,30.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Hydra Barrier Gel Gloss - Blossom (red),210000015818,30.00,thirteen-lune,Hydra-Barrier Gel Gloss - Blossom,GOOBEA-50785-HGB,30.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Hydra Barrier Gel Gloss - Lilac (light purple),210000015819,30.00,thirteen-lune,Hydra-Barrier Gel Gloss - Lilac,GOOBEA-50788-HGL,30.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Hydra Barrier Gel Gloss - Tulip (pink),210000015820,30.00,thirteen-lune,Hydra-Barrier Gel Gloss - Tulip,GOOBEA-50790-HGT,30.00
+1.000,fuzzy,mutual best,goop beauty,credo-beauty,Hydra Barrier Gel Gloss - Fig (purple),210000015821,21.00,thirteen-lune,Hydra-Barrier Gel Gloss - Fig,GOOBEA-50786-HGF,30.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 1 (very fair skin with neutral to cool undertones),210000015935,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 1 - Very fair skin with neutral to cool undertones,Fun1,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 2 (fair skin with warm undertones),210000015936,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 2 - Fair skin with warm undertones,Fun2,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 3 (light skin with neutral undertones),210000015937,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 3 - Light skin with neutral undertones,Fun3,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 4 (light skin with warm undertones),210000015938,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 4 - Light skin with warm undertones,Fun4,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 5 (light to medium with neutral to golden undertones),210000015939,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 5 - Light to medium with neutral to golden undertones,Fun5,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 6 (light to medium with warm undertones),210000015940,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 6 - Light to medium with warm undertones,Fun6,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 7 (medium skin with warm undertones),210000015941,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 7 - Medium skin with warm undertones,Fun7,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 8 (medium skin with neutral to golden warm undertones),210000015942,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 8 - Medium skin with neutral to golden warm undertones,Fun8,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 9 (tan skin with neutral olive undertones),210000015943,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 9 - Tan skin with neutral olive undertones,Fun9,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 10 (tan skin with warm undertones),210000015944,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 10 - Tan skin with warm undertones,Fun10,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 11 (tan skin with olive undertones),210000015945,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 11 - Tan skin with olive undertones,Fun11,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 12 (tan to deep skin with warm undertones),210000015946,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 12 - Tan to deep skin with warm undertones,Fun12,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 13 (deep skin with neutral warm undertones),210000015947,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 13 - Deep skin with neutral warm undertones,Fun13,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 14 (deep skin with neutral olive undertones),210000015948,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 14 - Deep skin with neutral olive undertones,Fun14,42.00
+1.000,fuzzy,mutual best,Axiology,credo-beauty,Fungdation Mushroom Foundation - Shade 15 (deep skin with cool undertones),210000015949,42.00,safe-chic,Fungdation - Mushroom Foundation - Shade 15 - Deep skin with cool undertones,Fun15,42.00
+1.000,fuzzy,mutual best,The Outset,credo-beauty,Lip Oasis™️ Glossy Treatment - Dune (Beige),210000015998,28.00,onda-beauty,Lip Oasis™️ Glossy Treatment - Dune,T157,28.00
+1.000,fuzzy,mutual best,The Outset,credo-beauty,Lip Oasis™️ Glossy Treatment - Sun Kiss (Red),210000015999,28.00,onda-beauty,Lip Oasis™️ Glossy Treatment - Sun Kiss,T155,28.00
+1.000,fuzzy,mutual best,The Outset,credo-beauty,Lip Oasis™️ Glossy Treatment - Mirage (Berry),210000016000,28.00,onda-beauty,Lip Oasis™️ Glossy Treatment - Mirage,T156,28.00
+1.000,fuzzy,mutual best,RMS Beauty,credo-beauty,Legendary Lip Oil - Chameleon (natural pH reacting vibrant pink),210000017622,26.00,thirteen-lune,Legendary Lip Oil - Chameleon,RMSBEA-70010-LLO,26.00
+1.000,fuzzy,mutual best,Minori,credo-beauty,Mother of Lashes Mascara - Black,210000017893,26.00,safe-chic,Mother of Lashes Mascara - Black,MOLBL,26.00
+1.000,fuzzy,mutual best,Minori,credo-beauty,Mother of Lashes Mascara - Brown,210000017894,26.00,safe-chic,Mother of Lashes Mascara - Brown,MOLBR,26.00
+1.000,fuzzy,mutual best,Cosrx,ohlolly,Cosrx Centella Water Alcohol-Free Toner,TRCX1X00-C3,14.99,soko-glam,Centella Water Alcohol-Free Toner,CRX120085,17.00
+1.000,fuzzy,mutual best,Olivarrier,ohlolly,Olivarrier Dual Moist Toning Lotion,TROV1X01-C3,22.00,soko-glam,Dual Moist Toning Lotion,OLI122185,22.00
+1.000,fuzzy,mutual best,Sioris,ohlolly,Sioris Deep In A Barrier Cream,MCSO1X01-D3,34.00,soko-glam,Deep In A Barrier Cream,SIO127106,34.00
+1.000,fuzzy,mutual best,Olivarrier,ohlolly,Olivarrier Wash All Barrier Relief Cleanser,CFOV1X01-B1,28.00,soko-glam,Wash All Barrier Relief Cleanser,OLI101614,28.00
+1.000,fuzzy,mutual best,Cosrx,ohlolly,Cosrx Full Fit Propolis Synergy Toner,TRCX1X01-C3,19.99,soko-glam,Full Fit Propolis Synergy Toner,CRX121896,22.00
+1.000,fuzzy,mutual best,Isntree,ohlolly,Isntree Green Tea Fresh Toner,TRIS1X02-C3,20.00,soko-glam,Green Tea Fresh Toner,ISN110421,20.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Moisture Cleansing Oil,CQHW1X01-B2,25.00,soko-glam,Black Rice Moisture Cleansing Oil,HAR101349,22.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Moisture 5.5 Soft Cleansing Gel,CFHW1X01-B1,18.00,soko-glam,Black Rice Moisture 5.5 Soft Cleansing Gel,HAR101356,16.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Hyaluronic Toner for Sensitive Skin,TRHW1S02-C3,22.00,soko-glam,Black Rice Hyaluronic Toner For Sensitive Skin,HAR121462,17.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Bakuchiol Eye Cream,ECHW1X01-C5,22.00,soko-glam,Black Rice Bakuchiol Eye Cream,HAR221523,17.00
+1.000,fuzzy,mutual best,Mediheal,ohlolly,Mediheal Collagen Essential Mask - 10 Pack,SMMH3S15-C1,22.00,soko-glam,Collagen Essential Mask - 10 Pack,MED137032,20.00
+1.000,fuzzy,mutual best,Mediheal,ohlolly,Mediheal Madecassoside Blemish Pad,TPMH1X02-B4,26.40,soko-glam,Madecassoside Blemish Pad,MED138688,24.00
+1.000,fuzzy,mutual best,Mediheal,ohlolly,Mediheal Collagen Ampoule Pad,TPMH1X01-B4,26.40,soko-glam,Collagen Ampoule Pad,MED128701,24.00
+1.000,fuzzy,mutual best,Mediheal,ohlolly,Mediheal Collagen Essential Mask - 4 Pack,SMMH3S25-C1,8.80,soko-glam,Collagen Essential Mask - 4 Pack,MED137490,8.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice 10 Hyaluronic Cream | Unscented,MCHW1X02-D3,22.00,soko-glam,Black Rice 10 Hyaluronic Cream (Unscented),HAR221721,19.00
+1.000,fuzzy,mutual best,VT Cosmetics,ohlolly,VT Cosmetics Reedle Shot 100,SRVT1X01-D2,32.00,soko-glam,VT Reedle Shot 100,VTR111857,26.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Night Knight Retinol Serum,SRHW2X03-D2,22.00,soko-glam,Black Rice Night Knight Retinol Serum,HAR112186,26.00
+1.000,fuzzy,mutual best,shaishaishai,ohlolly,shaishaishai Caffeine Shot Collagen Eye Cream,ECSH1X02,28.50,soko-glam,Caffeine Shot Collagen Eye Cream,SHA220063,26.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Wonder Releaf Centella Serum Unscented,SRPS1X01,23.00,soko-glam,Wonder Releaf Centella Serum Unscented,PUR110316,23.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Wonder Releaf Centella Toner Unscented,TRPS1X01,19.80,soko-glam,Wonder Releaf Centella Toner Unscented,PUR210347,24.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Wonder Releaf Centella Eye Cream Unscented,ECPS1X01,16.00,soko-glam,Wonder Releaf Centella Eye Cream Unscented,PUR221023,16.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Mighty Bamboo Panthenol Cream,MCPS1X02,23.00,soko-glam,Mighty Bamboo Panthenol Cream,PUR123430,23.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Oat-in Calming Gel Cream,MGPS1X01,21.00,soko-glam,Oat-in Calming Gel Cream,PUR211054,19.50
+1.000,fuzzy,mutual best,Melixir,ohlolly,Melixir Mandarin Vitamin C5 Dark Spot Serum,SRME1X01,32.00,soko-glam,Mandarin Vitamin C5 Dark Spot Serum,MEL111244,25.00
+1.000,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice 5 Ceramide Barrier Moisturizing Cream,MCHW1X03,24.00,soko-glam,Black Rice 5 Ceramide Barrier Moisturizing Cream,HAR122247,24.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Oat-in Gentle Exfoliating Face Cleanser,CFPS1X01,22.00,soko-glam,Oat-in Gentle Exfoliating Face Cleanser,PUR103904,22.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Mighty Bamboo Panthenol Cleanser,CFPS1X02,15.00,soko-glam,Mighty Bamboo Panthenol Cleanser,PUR103652,14.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Azelaic Acid 10 Kojic Tea Tree Serum,SRPS2X01,25.00,soko-glam,Azelaic Acid 10 Kojic Tea Tree Serum,PUR113980,25.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito TXA 6 Niacinamide 10 Retinal Serum,SRPS2X02,25.00,soko-glam,TXA 6 Niacinamide 10 Retinal Serum,PUR113973,25.00
+1.000,fuzzy,mutual best,Olivarrier,ohlolly,Olivarrier Comfort Barrier Cream (50ml),MCOV1X04-D3,24.00,soko-glam,Comfort Barrier Cream - 50ml,OLI122727,24.00
+1.000,fuzzy,mutual best,Purito,ohlolly,Purito Oat PDRN Gentle Refining Toner,TRPS1X02,23.00,soko-glam,Oat PDRN Gentle Refining Toner,PUR213959,23.00
+1.000,fuzzy,mutual best,Melixir,ohlolly,Melixir Mandarin Morning Face Cleanser,CFME1X01,32.00,soko-glam,Melixir Mandarin Morning Face Cleanser,MEL101237,25.00
+1.000,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,GOOPGLOW Microderm Instant Glow Body Polish,GMIGBP,48.00,thirteen-lune,GoopGlow Microderm Instant Glow Body Polish,GOOBEA-21884-GBP,48.00
+1.000,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,Colorblur Glow Balm - Afterglow,,34.00,thirteen-lune,Colorblur Glow Balm - Afterglow,GOOBEA-50793-GBA,34.00
+1.000,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,Colorblur Glow Balm - Slipper,,34.00,thirteen-lune,Colorblur Glow Balm - Slipper,GOOBEA-50792-GBS,34.00
+1.000,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,Colorblur Glow Balm - Velveteen,,34.00,thirteen-lune,Colorblur Glow Balm - Velveteen,GOOBEA-50795-GBE,34.00
+1.000,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,Colorblur Glow Balm - Venus,,34.00,thirteen-lune,Colorblur Glow Balm - Venus,GOOBEA-50794-GBV,34.00
+1.000,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,Colorblur Glow Balm - Whiskey,,34.00,thirteen-lune,Colorblur Glow Balm - Whiskey,GOOBEA-50791-GBW,34.00
+1.000,fuzzy,mutual best,IOTA,onda-beauty,Supervitamin Body Wash+ - Soothing (Fragrance Free),PCBW010001,23.00,soko-glam,Supervitamin Body Wash+ Soothing,IOT601847,23.00
+1.000,fuzzy,mutual best,IOTA,onda-beauty,Supermochi Body Exfoliator+,PCBE010101,39.00,soko-glam,Supermochi Body Exfoliator+,IOT601931,39.00
+1.000,fuzzy,mutual best,AUNU BEAUTY,onda-beauty,Mānuka Cleanser,AUNUMC,58.00,thirteen-lune,Manuka Cleanser,AUNU-20100-CLE,58.00
+1.000,fuzzy,mutual best,AUNU BEAUTY,onda-beauty,Mānuka Salve,AUNUMS,68.00,thirteen-lune,Manuka Salve,,68.00
+1.000,fuzzy,mutual best,AUNU BEAUTY,onda-beauty,Mānuka Cream,AUNUMCR,88.00,thirteen-lune,Manuka Cream,AUNU-20101-MAN,88.00
+1.000,fuzzy,mutual best,AUNU BEAUTY,onda-beauty,Mānuka Essence,AUNUME,110.00,thirteen-lune,Manuka Essence,AUNU-20102-ESS,110.00
+1.000,fuzzy,mutual best,IOTA,onda-beauty,Supervitamin Body Wash+ - Clarifying (Eucalyptus Leaf + Lemon Rind),PCBW030101,23.00,soko-glam,Supervitamin Body Wash+ Clarifying,IOT601830,23.00
+1.000,fuzzy,mutual best,AUNU BEAUTY,onda-beauty,Mānuka Moisturizer,AMM06,86.00,thirteen-lune,Manuka Moisturizer,,86.00
+1.000,fuzzy,mutual best,Fitglow Beauty,petit-vour,Plant Protein Brow Gel - Grey - Grey,FTGLW-PLNT-PRO-BRW-GEL-GREY,22.00,safe-chic,Plant Protein Brow Gel - Grey,859976001746,28.00
+1.000,fuzzy,mutual best,28 Litsea,safe-chic,Top Note Peruvian Clove Body Oil,SQ4523138,24.00,the-choosy-chick,Top Note Peruvian Clove Body Oil,,24.00
+1.000,fuzzy,mutual best,28 Litsea,safe-chic,Top Note Wild Citrus Body Oil,SQ0816141,24.00,the-choosy-chick,Top Note Wild Citrus Body Oil,,24.00
+1.000,fuzzy,mutual best,28 Litsea,safe-chic,Top Note Red Ginger Body Oil,SQ9976745,24.00,the-choosy-chick,Top Note Red Ginger Body Oil,,24.00
+1.000,fuzzy,mutual best,28 Litsea,safe-chic,Top Note Minted Juniper Body Oil,SQ7142209,24.00,the-choosy-chick,Top Note Minted Juniper Body Oil,,24.00
+0.943,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Probiotics Barrier 2% NAD+ Serum Mist,RRHW1X01,24.00,soko-glam,Black Rice Probiotics 2% NAD+ Serum Mist,HAR112520,22.00
+0.934,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Sheer Tint Zinc SPF 30 - Sheer 02,5536-02,65.00,credo-beauty,"Sheer Tint Zinc SPF 30 Sunscreen - Sheer 02 (Warm beige with golden-pink undertones, ideal for light-to-medium skin)",210000017733,65.00
+0.934,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Sheer Tint Zinc SPF 30 - Sheer 03,5536-03,65.00,credo-beauty,"Sheer Tint Zinc SPF 30 Sunscreen - Sheer 03 (Rich caramel with warm undertones, ideal for deeper tones seeking even coverage)",210000017734,65.00
+0.932,fuzzy,not mutual,RMS Beauty,credo-beauty,"ReDimension Hydra Powder Blush Refill - Mai Tai (a sunlit, citrusy coral)",210000012089,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Mai Tai,RMSBEA-50002-MAI,38.00
+0.932,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - Maiden's Blush (soft cinnamon sparked with sweet pink),210000012090,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Maiden's Blush,RMSBEA-50003-MDN,38.00
+0.932,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - Kir Royale (a mauve surprise),210000013785,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Kir Royale,RMSBEA-50286-KIR,38.00
+0.932,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - Bohemian Girl (a 70’s peach),210000013786,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Bohemian Girl,RMSBEA-50285-BOH,38.00
+0.931,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Sheer Tint Zinc SPF 30 - Sheer 01,5536-01,65.00,credo-beauty,"Sheer Tint Zinc SPF 30 Sunscreen - Sheer 01 (Subtle peachy tones, ideal for fair skin with warm or neutral undertones)",210000017732,65.00
+0.929,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - French Rosé (a innocent pink),210000012093,32.00,thirteen-lune,ReDimension Hydra Powder Blush - French Rose,RMSBEA-50006-FRR,38.00
+0.927,fuzzy,not mutual,RMS Beauty,credo-beauty,"ReDimension Hydra Powder Blush Refill - Pomegranate Fizz (a sunny, effervescent red-pink)",210000012091,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Pomegranate Fizz,RMSBEA-50004-FZZ,38.00
+0.927,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - Crystal Slipper (a sun kissed buff),210000013787,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Crystal Slipper,RMSBEA-50284-CRY,38.00
+0.925,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,Lift + Depuff Eye Masks,,125.00,thirteen-lune,GoopGenes Lift + Depuff Eye Masks,GOOBEA-21886-EYE,125.00
+0.924,fuzzy,not mutual,RMS Beauty,credo-beauty,"ReDimension Hydra Dew Luminizer Refill - Prosecco Fizz (a warm, champagne glow)",210000013789,34.00,thirteen-lune,ReDimension Hydra Dew Luminizer - Prosecco Fizz,RMSBEA-50334-DEW,44.00
+0.922,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - Hanky Panky (a playfully iridescent magenta plum),210000012088,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Hanky Panky,RMSBEA-50001-HAN,38.00
+0.920,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Pods Eye Shadow - Rendez Vous,810102031136,88.00,credo-beauty,"Eye Pods - Rendez Vous (earthy green, peach, cool brown)",210000010999,88.00
+0.915,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Pods Eye Shadow - Les Jours,810102030290,88.00,credo-beauty,"Eye Pods - Les Jours (rich chocolate, warm bronze, iridescent ivory)",210000009064,88.00
+0.915,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Pods Eye Shadow - Les Nuits,810102030306,88.00,credo-beauty,"Eye Pods - Les Nuits (rich black, burgundy, iridescent pink)",210000009065,88.00
+0.914,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Red,2119-03,65.00,cos-bar,High Performance Tinted Lip Filler - Red,850046038471,65.00
+0.914,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Pink,2119-04,65.00,cos-bar,High Performance Tinted Lip Filler - Pink,850046038488,65.00
+0.914,fuzzy,mutual best,MACRENE ACTIVES,cos-bar,High Performance Tinted Lip Filler - Red,850046038471,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Red,MACACT-LIPFLR-51132,65.00
+0.914,fuzzy,mutual best,MACRENE ACTIVES,cos-bar,High Performance Tinted Lip Filler - Pink,850046038488,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Pink,MACACT-LIPFLP-51133,65.00
+0.913,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush Refill - Sangria (a golden-spriced ruby rose),210000012092,32.00,thirteen-lune,ReDimension Hydra Powder Blush - Sangria,RMSBEA-50005-SGA,38.00
+0.911,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Nude,2119-01,65.00,cos-bar,High Performance Tinted Lip Filler - Nude,850046038457,65.00
+0.911,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Chria High Performance Tinted Lip Filler - Berry,2119-02,65.00,cos-bar,High Performance Tinted Lip Filler - Berry,850046038464,65.00
+0.911,fuzzy,mutual best,MACRENE ACTIVES,cos-bar,High Performance Tinted Lip Filler - Berry,850046038464,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Berry,MACACT-LIPFLB-51131,65.00
+0.911,fuzzy,mutual best,MACRENE ACTIVES,cos-bar,High Performance Tinted Lip Filler - Nude,850046038457,65.00,thirteen-lune,Macrene actives Chria high performance tinted lip filler — Nude,MACACT-LIPFLN-51130,65.00
+0.903,fuzzy,mutual best,Ere Perez,credo-beauty,Beetroot Cheek & Lip Tint - Fun (bright fuchsia pink),210000008001,30.00,thirteen-lune,Beetroot Cheek + Lip Tint - Fun,EREPER-20525-FUN,30.00
+0.902,fuzzy,mutual best,Sioris,ohlolly,Sioris Cleanse Me Softly Milk Cleanser Signature,CQSO1X02,29.00,soko-glam,Cleanse Me Softly Milk Cleanser,SIO107083,28.00
+0.897,fuzzy,mutual best,shaishaishai,ohlolly,shaishaishai Banana PDRN Conceal Eye Cream - Cream,PESH1O01,28.50,soko-glam,Banana Conceal Eye Cream,SHA223085,26.00
+0.896,fuzzy,mutual best,Activist,ayla-beauty,Activist Manuka Honey 850+ MGO,8300-01,95.00,onda-beauty,850+MGO Raw Mānuka Honey,AMH800,95.00
+0.896,fuzzy,mutual best,Activist,ayla-beauty,Activist Manuka Honey 300+ MGO,8301-01,50.00,onda-beauty,300+MGO Raw Mānuka Honey,A300MH,50.00
+0.892,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Medium Chocolate Brown,5620-05,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Medium Chocolate Brown (warm medium brown),210000010275,26.00
+0.892,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Supernutrient Firming Facial,5522-01,135.00,onda-beauty,Supernutrient Firming Facial Mask,,135.00
+0.888,fuzzy,mutual best,Madame Gabriela Beauty,safe-chic,Mexico City at 9PM,2400,39.00,thirteen-lune,Lipstick - Mexico City at 9pm,MADGAB-50117-MEX,35.00
+0.888,fuzzy,mutual best,Madame Gabriela Beauty,safe-chic,Saint-Tropez At 11AM,0,39.00,thirteen-lune,Lipstick - Saint Tropez at 11am,MADGAB-20475-SAI,35.00
+0.886,fuzzy,mutual best,Corpus,credo-beauty,Body Wash - Santalum,210000011545,30.00,onda-beauty,Natural Body Wash - Santalum,,30.00
+0.884,fuzzy,mutual best,Ere Perez,credo-beauty,Vegan Mango Lip Honey - Glaze (quartz crystal clear),210000009503,27.00,thirteen-lune,Mango Lip Honey - Glaze,EREPER-20517-GLA,27.00
+0.880,fuzzy,not mutual,Purito,ohlolly,Purito Wonder Releaf Centella Cream Unscented,MCPS1X01,21.00,soko-glam,Wonder Releaf Centella Eye Cream Unscented,PUR221023,16.00
+0.879,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Pods Eye Shadow - Toujours,810102031013,88.00,credo-beauty,"Eye Pods - Toujours (vanille, beige, café crème)",210000014853,88.00
+0.878,fuzzy,mutual best,HOURGLASS,cos-bar,Translucent Setting Powder - Translucent,877231006930,52.00,thirteen-lune,Veil Translucent Setting Powder,HOUCOS-21856-POW,49.00
+0.873,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Soft Brown,5620-03,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Soft Brown (light brown or dark blonde),210000010273,26.00
+0.873,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Medium Brown,5620-06,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Medium Brown (neutral medium brown),210000010276,26.00
+0.873,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Dark Brown,5620-07,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Dark Brown (rich dark brown),210000010277,26.00
+0.873,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Brown Black,5620-08,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Brown Black (soft brown black),210000010278,26.00
+0.866,fuzzy,mutual best,SALT & STONE,cos-bar,Neroli and Basil Natural Deodorant,711221983866,20.00,onda-beauty,Deodorant - Neroli & Basil,DEOD08,20.00
+0.863,fuzzy,not mutual,RMS Beauty,credo-beauty,Skin2Skin Powder Blush Brush - One Size,210000014250,45.00,thirteen-lune,Skin2Skin Blush Brush,RMSBEA-50073-BLU,39.00
+0.860,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Honey Blonde,5620-01,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Honey Blonde (warm golden blonde),210000010257,26.00
+0.855,fuzzy,mutual best,Madame Gabriela Beauty,safe-chic,New York At 1PM,1347,39.00,thirteen-lune,Lipstick - New York at 1pm,MADGAB-20367-NEW,35.00
+0.855,fuzzy,mutual best,Madame Gabriela Beauty,safe-chic,Paris At 7PM,sku-12511979929647,39.00,thirteen-lune,Lipstick - Paris at 7pm,MADGAB-20366-PAR,35.00
+0.855,fuzzy,mutual best,OSEA,cos-bar,Hyaluronic Acid Sea Serum,675468100168,88.00,onda-beauty,Hyaluronic Sea Serum,10033,88.00
+0.854,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Eyebrow and Lash Enhancing Serum,9011-01,160.00,cos-bar,The Eyebrow and Lash Serum,5060552906118,160.00
+0.854,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Eyebrow and Lash Serum,5060552906118,160.00,onda-beauty,The Eyebrow & Lash Enhancing Serum,EB-1001-008,155.00
+0.854,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Skyros High Performance Body Lotion,2118-01,95.00,cos-bar,High Performance Body Lotion,850046038266,95.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Malibu,5614-02,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Malibu (surfy pink),210000008338,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Jaws,5614-04,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Jaws (hot blood red),210000008341,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Fruitjuice,5614-05,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Fruitjuice (magenta),210000008339,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Unzipped,5614-06,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Unzipped (pink champagne),210000010768,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Unhooked,5614-07,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Unhooked (rosy beige),210000010766,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Unbuttoned,5614-08,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Unbuttoned (warm blush),210000010767,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Exposed,5614-09,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Exposed (champagne pink shimmer),210000012882,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Revealed,5614-10,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Revealed (soft warm pink),210000012884,25.00
+0.848,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Bare,5614-11,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Bare (creamy nectar),210000012883,25.00
+0.846,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Auburn,5620-04,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Auburn (true auburn),210000010274,26.00
+0.846,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Black,5620-09,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Black (true black),210000010279,26.00
+0.846,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Grey,5620-10,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Grey (true grey),210000010280,26.00
+0.845,fuzzy,not mutual,AUGUSTINUS BADER,cos-bar,The Cream - 30 ml,5060552900222,195.00,onda-beauty,The Rich Cream - 30 ml,11676,190.00
+0.840,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Jellyfish,5614-01,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Jellyfish (glossy clear),210000008337,25.00
+0.840,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Wet Lip Oil Gloss - Dip,5614-03,25.00,credo-beauty,Wet Lip Oil Plumping Treatment Gloss - Dip (bikini nude),210000008340,25.00
+0.839,fuzzy,not mutual,VT Cosmetics,ohlolly,VT Cosmetics Reedle Shot 100,SRVT1X01-D2,32.00,soko-glam,PDRN Reedle Shot 100,VTR116853,32.00
+0.838,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives Skyros High Performance Body Cream,2117-01,145.00,cos-bar,High Performance Body Cream,850046038273,145.00
+0.838,fuzzy,mutual best,Madame Gabriela Beauty,safe-chic,Sydney At 8AM,2173,39.00,thirteen-lune,Lipstick - Sydney at 8am,MADGAB-20368-SYD,35.00
+0.833,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Air Brow Tinted Gel - Taupe,5620-02,26.00,credo-beauty,Air Brow Tinted Volumizing Treatment Gel - Taupe (cool blonde),210000010256,26.00
+0.832,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Medium Chocolate Brown,5621-05,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Medium Chocolate Brown (warm medium brown),210000010286,26.00
+0.827,fuzzy,mutual best,EVOLVh,ayla-beauty,EVOLVh Better Roots Growth Support Styling Foam,3838-01,36.00,safe-chic,Growth Support Styling Foam,BRF100,36.00
+0.824,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Retinol Serum - 30 ml,5060552906859,380.00,onda-beauty,The Serum 30ml,,380.00
+0.818,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,FOUNDATION BRUSH,810102030214,80.00,credo-beauty,Liquid Foundation Brush - One Size,210000018056,95.00
+0.818,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Lip Rx Treatment,8920-01,60.00,onda-beauty,De Mamiel Lip Treatment,,55.00
+0.813,fuzzy,mutual best,Symbiome,ayla-beauty,Symbiome The Renewal Daily Cleanser,10400-01,60.00,onda-beauty,The Renewal Cleanser,11103,60.00
+0.813,fuzzy,mutual best,SYMBIOME,onda-beauty,The Renewal Cleanser,11103,60.00,thirteen-lune,The Renewal Daily Cleanser,SYMB-RWCL-51170,60.00
+0.813,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.04 - Creamy White,3760355351086,198.00,onda-beauty,N.04 The Massaging Detangling Hair Brush (Large) - Creamy White,,198.00
+0.809,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.02 - Cherry Red,3760355350980,198.00,onda-beauty,N.02 The Care & Detangling Hair Brush The Essential (Large) - Cherry Red,,198.00
+0.805,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Soft Brown,5621-03,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Soft Brown (light brown or dark blonde),210000010284,26.00
+0.805,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Medium Brown,5621-06,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Medium Brown (neutral medium brown),210000010287,26.00
+0.805,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Dark Brown,5621-07,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Dark Brown (rich dark brown),210000010288,26.00
+0.805,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Brown Black,5621-08,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Brown Black (soft brown black),210000010289,26.00
+0.800,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Beach House,5628-05,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Beach House (warm vibrant pink),210000013663,19.00
+0.800,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Deep Talks,5628-08,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Deep Talks (neutral brick red),210000013666,19.00
+0.800,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Star Power,5628-09,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Star Power (cool burgundy),210000013667,19.00
+0.800,fuzzy,mutual best,Ilia,credo-beauty,Super Serum Skin Tint SPF 40 - ST16 Pavones (Very deep with cool undertones),210000008549,48.00,petit-vour,Super Serum Skin Tint SPF 40 - Pavones ST16,ILIA-SPR-SRM-TNT-PAVNS,24.00
+0.800,fuzzy,mutual best,Ilia,credo-beauty,Super Serum Skin Tint SPF 40 - ST17 Miho (Very deep with neutral cool undertones),210000008550,48.00,petit-vour,Super Serum Skin Tint SPF 40 - Miho ST17,ILIA-SPR-SRM-TNT-MIHO,24.00
+0.800,fuzzy,mutual best,Ilia,credo-beauty,Super Serum Skin Tint SPF 40 - ST18 Roque (Extra deep with cool undertones),210000008551,48.00,petit-vour,Super Serum Skin Tint SPF 40 - Roque ST18,ILIA-SPR-SRM-TNT-ROQU,24.00
+0.800,fuzzy,mutual best,Ilia,credo-beauty,Super Serum Skin Tint SPF 40 - ST16.5 Jardin (Very deep with golden undertones),210000010112,48.00,petit-vour,Super Serum Skin Tint SPF 40 - Jardin ST16.5,ILIA-SPR-SRM-TNT-JRDN,24.00
+0.800,fuzzy,mutual best,Ilia,credo-beauty,Super Serum Skin Tint SPF 40 - ST17.5 Perissa (Extra deep with golden undertones),210000010113,48.00,petit-vour,Super Serum Skin Tint SPF 40 - Perissa ST17.5,ILIA-SPR-SRM-TNT-PRSS,24.00
+0.800,fuzzy,mutual best,Ilia,credo-beauty,Super Serum Skin Tint SPF 40 - ST19 Lovina (Extra deep with neutral undertones),210000010114,48.00,petit-vour,Super Serum Skin Tint SPF 40 - Lovina ST19,ILIA-SPR-SRM-TNT-LOVN,24.00
+0.799,fuzzy,mutual best,Corpus,credo-beauty,N° Green Body Butter - 5.5 oz / 160 ml,210000013799,58.00,onda-beauty,Body Butter - No. Green - 5.5 oz / 160ml,,58.00
+0.795,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.01 - Cherry Red,3760355350997,198.00,onda-beauty,N.01 The Shine & Care Hair Brush - The Universal (Large) - Cherry Red,,198.00
+0.795,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.03 - Cherry Red,3760355350973,198.00,onda-beauty,N.03 The Gentle Scalp Care Hair Brush (Large) - Cherry Red,LBB03LCR,198.00
+0.795,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - High Cut,5628-03,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - High Cut (warm rosy pink),210000013661,19.00
+0.792,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Black Rice Probiotics Barrier Essence a.k.a. Makgeolli,TEHW2X01-C3,28.00,soko-glam,Black Rice Probiotics Barrier Essence,HAR211967,28.00
+0.792,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 2 - French Melon,6501-01,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 2 French Melon,OLIOE002,28.00
+0.791,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Fantasy Life,5628-02,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Fantasy Life (neutral baby pink),210000013660,19.00
+0.790,fuzzy,not mutual,Augustinus Bader,ayla-beauty,Augustinus Bader The Shampoo,9007-01,67.00,cos-bar,The Rich Shampoo,5060552909850,67.00
+0.789,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Sugar High,5628-01,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Sugar High (neutral baby peach),210000013659,19.00
+0.789,fuzzy,mutual best,28 Litsea,safe-chic,Blended With Flowers + Exfoliant For Body - Lavender Mint,SQ0628635,28.00,the-choosy-chick,Blended With Flowers Exfoliant Body Scrub - Lavender Mint,,28.00
+0.789,fuzzy,not mutual,VT Cosmetics,ohlolly,VT Cosmetics Reedle Shot 100,SRVT1X01-D2,32.00,soko-glam,VT Collagen Reedle Shot 100,VTR113692,32.00
+0.789,fuzzy,not mutual,VT Cosmetics,ohlolly,VT Cosmetics Reedle Shot 100,SRVT1X01-D2,32.00,soko-glam,VT Reti-A Reedle Shot 100,VTR116396,32.00
+0.788,fuzzy,mutual best,Minori,credo-beauty,Sheer Hydrating Lip Gloss - Blossom (Petal Pink),210000017898,22.00,safe-chic,Lip Gloss - Blossom,LG03,22.00
+0.788,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,POWDER BRUSH,810102030221,85.00,credo-beauty,Powder Brush II - One Size,210000015804,85.00
+0.787,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Honey Blonde,5621-01,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Honey Blonde (warm golden blonde),210000010283,26.00
+0.786,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL PIN POINT LINER BRUSH,860009537781,20.00,credo-beauty,Sustainable Luxury Pin Point Liner Brush - One Size,210000013170,20.00
+0.785,fuzzy,mutual best,Axiology,credo-beauty,Shape Stick - Medium,210000014224,28.00,safe-chic,Contour + Shape Stick - Medium - Medium tan with neutral undertones. Best for light to medium skin.,SMe,28.00
+0.785,fuzzy,mutual best,Axiology,credo-beauty,Shape Stick - Dark,210000014225,28.00,safe-chic,Contour + Shape Stick - Dark - Dark brown with warm to neutral undertones. Best for medium to dark skin.,SDa,28.00
+0.785,fuzzy,mutual best,Axiology,credo-beauty,Shape Stick - Deep,210000014226,28.00,safe-chic,Contour + Shape Stick - Deep - Deep brown with cool to neutral undertones. Best for deep skin.,SDee,28.00
+0.781,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.02 - Creamy White,3760355351109,198.00,onda-beauty,N.02 The Care & Detangling Hair Brush The Essential (Large) - Creamy White,,198.00
+0.778,fuzzy,mutual best,LYS Beauty,credo-beauty,Everyday Powder Brush - One Size,210000013303,20.00,thirteen-lune,Powder Brush,LYSBEA-22158-POW,15.00
+0.777,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,FOUNDATION BRUSH,810102030214,80.00,credo-beauty,Luxury Foundation Brush - One Size,210000008763,80.00
+0.775,fuzzy,mutual best,Minori,credo-beauty,Sheer Hydrating Lip Gloss - Juneberry (Cool Berry),210000017896,22.00,safe-chic,Lip Gloss - Juneberry,LG04,22.00
+0.775,fuzzy,mutual best,Minori,credo-beauty,Sheer Hydrating Lip Gloss - Cozy (Warm Nude),210000017897,22.00,safe-chic,Lip Gloss - Cozy,LG02,22.00
+0.773,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Nano - Soft Brown,5627-02,23.00,credo-beauty,Brow Pop Nano Ultra-Fine Detailing Pencil - Soft Brown (light brown or dark blonde),210000013794,23.00
+0.773,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Nano - Medium Brown,5627-03,23.00,credo-beauty,Brow Pop Nano Ultra-Fine Detailing Pencil - Medium Brown (neutral medium brown),210000013795,23.00
+0.773,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Nano - Dark Brown,5627-04,23.00,credo-beauty,Brow Pop Nano Ultra-Fine Detailing Pencil - Dark Brown (rich dark brown),210000013796,23.00
+0.773,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Nano - Brown Black,5627-05,23.00,credo-beauty,Brow Pop Nano Ultra-Fine Detailing Pencil - Brown Black (soft brown black),210000013797,23.00
+0.772,fuzzy,mutual best,Le Prunier,ayla-beauty,Le Prunier Plum Beauty Oil - 30 ml / 1 oz,8000-01,78.00,credo-beauty,Plum Beauty Oil Superfood Antioxidant Booster - 1 oz / 30 ml,210000017501,78.00
+0.772,fuzzy,mutual best,EVOLVh,ayla-beauty,EVOLVh Better Roots RootBoost Serum,3833-01,48.00,safe-chic,RootBoost Serum,BRS30,48.00
+0.772,fuzzy,mutual best,Cosrx,ohlolly,Cosrx Advanced Snail 92 All In One Cream,MCCX1X00-D3,21.99,soko-glam,Advanced Snail 92 All In One Cream - Jar,CRX120016,21.90
+0.771,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Brush,810102030450,38.00,credo-beauty,Luxury Lip Brush - One Size,210000008767,38.00
+0.769,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 10 - Tea Rose,6501-09,28.00,credo-beauty,Olio E Osso Tinted Balms - No 10 Tea Rose,210000006917,28.00
+0.768,fuzzy,mutual best,Mediheal,ohlolly,Mediheal Tea Tree Essential Mask - 10 Pack,SMMH3S14-C1,22.00,soko-glam,Tea Tree Essential Blemish Control Sheet Mask - 10 Pack,MED136974,20.00
+0.767,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.01 - Creamy White,3760355351116,198.00,onda-beauty,N.01 The Shine & Care Hair Brush - The Universal (Large) - Creamy White,,198.00
+0.767,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.03 - Creamy White,3760355351093,198.00,onda-beauty,N.03 The Gentle Scalp Care Hair Brush (Large) - Creamy White,,198.00
+0.767,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Auburn,5621-04,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Auburn (true auburn),210000010285,26.00
+0.767,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Black,5621-09,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Black (true black),210000010290,26.00
+0.767,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Grey,5621-10,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Grey (true grey),210000010291,26.00
+0.766,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,POWDER BRUSH,810102030221,85.00,credo-beauty,Luxury Powder Brush - One Size,210000008762,85.00
+0.766,fuzzy,mutual best,HOURGLASS,cos-bar,No. 28 Lip Treatment Oil - Clear,877231002062,56.00,thirteen-lune,No 28 Lip Treatment Oil,HOUCOS-21854-OIL,54.00
+0.764,fuzzy,mutual best,Mediheal,ohlolly,Mediheal Tea Tree Essential Mask - 4 Pack,SMMH3S24-C1,8.80,soko-glam,Tea Tree Essential Blemish Control Sheet Mask - 4 Pack,MED137469,8.00
+0.762,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Vegas,5628-04,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Vegas (warm beige),210000013662,19.00
+0.762,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Daydream,5628-06,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Daydream (cool pink),210000013664,19.00
+0.762,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Turned On,5628-07,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Turned On (warm pinkish brown),210000013665,19.00
+0.762,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Weightless Lip Color - Subconscious,5628-10,26.00,credo-beauty,Weightless Lip Color Nourishing Satin Lipstick - Subconscious (rich warm brown),210000013668,19.00
+0.762,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks And Face Trace Sculpting Powder Duo - Tulle/Truffle,810102035479,75.00,credo-beauty,Baby Cheeks + Face Trace Sculpting Powder Duo - Tulle + Truffle (cool pink + rich mocha),210000015796,75.00
+0.762,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks And Face Trace Sculpting Powder Duo - Poppet/Ganache,810102035486,75.00,credo-beauty,Baby Cheeks + Face Trace Sculpting Powder Duo - Poppet + Ganache (poppy pink + deep espresso),210000015797,75.00
+0.761,fuzzy,mutual best,Bonjout,credo-beauty,Le Balm Unscented - Skin Savior Solid Serum - Refill,210000016204,115.00,onda-beauty,Le Balm - Unscented - Refill,BLBUR04,115.00
+0.760,fuzzy,not mutual,Augustinus Bader,ayla-beauty,Augustinus Bader The Cream - 1.7 oz,9000-01,315.00,dermsilk,Augustinus Bader The Face Cream Mask (1.7 oz),5060552906378,230.00
+0.760,fuzzy,mutual best,28 Litsea,safe-chic,Blended With Flowers + Exfoliant For Body - Citrus Pop,SQ0628634,28.00,the-choosy-chick,Blended With Flowers Exfoliant Body Scrub - Citrus Pop,,28.00
+0.760,fuzzy,mutual best,DR ALKAITIS,onda-beauty,Organic Nourishing Treatment Oil,DRALK19,96.00,safe-chic,Organic Nourishing Treatment Oil - Regular (4oz / 120 ml),ONTO,96.00
+0.758,fuzzy,not mutual,haruharu wonder,ohlolly,haruharu wonder Black Rice Hyaluronic Toner for Sensitive Skin,TRHW1S02-C3,22.00,soko-glam,Black Rice Hyaluronic Toner,HAR120953,22.00
+0.758,fuzzy,mutual best,DR ALKAITIS,onda-beauty,Organic Purifying Facial Cleanser,DRALK17,72.00,safe-chic,Organic Purifying Facial Cleanser - Regular (4oz / 120 ml),OPFC,72.00
+0.757,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks And Face Trace Sculpting Powder Duo - Petal/Biscuit,810102035462,75.00,credo-beauty,Baby Cheeks + Face Trace Sculpting Powder Duo - Petal + Biscuit (dusty nude rose + cool beige coffee),210000015795,75.00
+0.757,fuzzy,not mutual,Cosrx,ohlolly,Cosrx Advanced Snail 92 All In One Cream,MCCX1X00-D3,21.99,soko-glam,Advanced Snail 92 All In One Cream - Tube,CRX125283,21.90
+0.756,fuzzy,mutual best,Axiology,credo-beauty,Shape Stick - Light,210000014223,28.00,safe-chic,Contour + Shape Stick - Light - Light tan with warm to neutral undertones. Best for fair to light skin.,SLi,28.00
+0.755,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 2 - French Melon,6501-01,28.00,credo-beauty,Olio E Osso Tinted Balms - No 2 French Melon,210000005206,28.00
+0.755,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Supreme C Vitamin C Concentrate,810102033529,325.00,credo-beauty,Suprême C Vitamin C Concentrate - Refill,210000014709,275.00
+0.753,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 3 - Crimson,6501-02,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 3 Crimson,OLIOE003,28.00
+0.753,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 4 - Berry,6501-03,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 4 Berry,OLIOE004,28.00
+0.753,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 5 - Currant,6501-04,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 5 Currant,OLIOE005,28.00
+0.752,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Powder Blush Duo - Coquette/Mimi,810102035509,75.00,credo-beauty,Baby Cheeks Powder Blush Duo - Coquette + Mimi (bright pinky peach + tawny beige),210000015799,75.00
+0.750,fuzzy,mutual best,SALT & STONE,cos-bar,BERGAMOT and HINOKI NATURAL DEODORANT GEL,711221983460,20.00,onda-beauty,Deodorant - Bergamot & Hinoki,DEOD12,20.00
+0.750,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Powder Blush Duo - Fizz/Jam,810102035493,75.00,credo-beauty,Baby Cheeks Powder Blush Duo - Fizz + Jam (watermelon flush + deep berry),210000015798,75.00
+0.749,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Pencil - Taupe,5621-02,26.00,credo-beauty,Brow Pop Dual-Action Defining Pencil - Taupe (cool blonde),210000010282,26.00
+0.748,fuzzy,mutual best,SALT & STONE,cos-bar,Santal And Vetiver Natural Deodorant Gel,711221983545,20.00,onda-beauty,Deodorant - Santal & Vetiver,DEOD13,20.00
+0.748,fuzzy,mutual best,JENNY PATINKIN,cos-bar,GREEN TEA MAKEUP SPONGE,860006685546,16.00,credo-beauty,Pure Luxury Au Naturel Green Tea Makeup Sponge - One Size,210000010715,16.00
+0.748,fuzzy,mutual best,Bare Hands,ayla-beauty,Bare Hands Dry Gloss Manicure Kit - Unscented,8375-01,42.00,onda-beauty,The Dry Gloss Manicure Kit,CITRWS,42.00
+0.747,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Baby Cheeks Powder Blush Duo - Suede/Sable,810102035516,75.00,credo-beauty,Baby Cheeks Powder Blush Duo - Suede + Sable (warm tawny + warm rose),210000015800,75.00
+0.740,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 1 - Clear,6500-01,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 1 Clear,OLIOE001,28.00
+0.739,fuzzy,mutual best,HOURGLASS,cos-bar,Unlocked Instant Extensions Mascara - Espresso,810063697143,34.00,thirteen-lune,Unlocked Instant Extensions Mascara,HOUCOS-21852-UNL,32.00
+0.739,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lit Up Highlighter Stick - Nectar,810102030580,48.00,credo-beauty,Lit Up Highlight Stick - Nectar (glassy golden peach),210000010136,48.00
+0.739,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lit Up Highlighter Stick - Brulee,810102030696,48.00,credo-beauty,Lit Up Highlight Stick - Brûlée (glassy bronze gold),210000010137,48.00
+0.736,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Nano - Black,5627-06,23.00,credo-beauty,Brow Pop Nano Ultra-Fine Detailing Pencil - Black (true black),210000013798,23.00
+0.735,fuzzy,not mutual,Augustinus Bader,ayla-beauty,Augustinus Bader The Cream - 1.7 oz,9000-01,315.00,dermsilk,Augustinus Bader The Ultimate Soothing Cream (1.7 oz),5060552903346,315.00
+0.735,fuzzy,mutual best,Minori,credo-beauty,Squalane + Hyaluronic Lip Serum - Dream (Clear Pink),210000017895,24.00,safe-chic,Lip Serum - Dream,LG05,24.00
+0.733,fuzzy,not mutual,Purito,ohlolly,Purito Mighty Bamboo Panthenol Serum,SRPS1X02,22.00,soko-glam,Mighty Bamboo Panthenol Cream,PUR123430,23.00
+0.732,fuzzy,mutual best,DR ALKAITIS,onda-beauty,Organic Herbal Toner,DRALK16,67.00,safe-chic,Organic Herbal Toner - Regular (4oz / 120 ml),OHT,67.00
+0.732,fuzzy,mutual best,DR ALKAITIS,onda-beauty,Organic Soothing Gel,DRALK15,72.00,safe-chic,Organic Soothing Gel - Regular (4oz / 120 ml),OSG,72.00
+0.732,fuzzy,mutual best,Rye Beauty,credo-beauty,Brow Grooming Serum - Clear,210000013234,49.00,onda-beauty,Brow Grooming Serum,338-020,49.00
+0.724,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Love You Eye Liner - Brun,810102032607,34.00,credo-beauty,Eye Love You Eye Liner - Khôl Brun (brown),210000012945,34.00
+0.723,fuzzy,mutual best,MD SolarSciences,ayla-beauty,MDSolarSciences SPF 50 Mineral Creme - 1.7 oz,1400-01,33.00,onda-beauty,Mineral Crème SPF 50 Broad Spectrum UVA-UVB Sunscreen - 1.7oz,,33.00
+0.723,fuzzy,mutual best,MD SolarSciences,ayla-beauty,MDSolarSciences SPF 50 Mineral Creme - 3.4 oz,1400-02,46.00,onda-beauty,Mineral Crème SPF 50 Broad Spectrum UVA-UVB Sunscreen - 3.4oz,135001,46.00
+0.719,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Love You Eye Liner - Noir,810102032591,34.00,credo-beauty,Eye Love You Eye Liner - Khôl Noir (black),210000012944,34.00
+0.718,fuzzy,mutual best,Kosas,ayla-beauty,Kosas DreamBeam SPF 40 - Sunlit,5626-02,40.00,credo-beauty,DreamBeam Comfy Smooth Sunscreen Broad Spectrum SPF 40 - Sunlit,210000014514,40.00
+0.718,fuzzy,not mutual,Bare Hands,ayla-beauty,Bare Hands Dry Gloss Manicure Kit - Citrine,8375-02,42.00,onda-beauty,The Dry Gloss Manicure Kit,CITRWS,42.00
+0.718,fuzzy,mutual best,Kosas,ayla-beauty,Kosas Brow Pop Nano - Taupe,5627-01,23.00,credo-beauty,Brow Pop Nano Ultra-Fine Detailing Pencil - Taupe (cool blonde),210000013793,23.00
+0.717,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XI.5,810102030535,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier X.5 (Tan to deep warm undertone),210000010761,68.00
+0.716,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 9 - Spring,6501-08,28.00,credo-beauty,Olio E Osso Tinted Balms - No 9 Spring,210000006916,28.00
+0.716,fuzzy,mutual best,IOTA,onda-beauty,Oishii Berry Body Lotion+,PCBL040101,38.00,soko-glam,Oishii Berry Body Wash+,IOT605293,32.00
+0.711,fuzzy,mutual best,LolaVie,credo-beauty,Peptide Plumping Volume Conditioner - 2.0 oz / 60 ml,210000017100,15.00,thirteen-lune,Restorative Conditioner - 2.0 oz / 60 ml,LOLVIE-50512-RCT,15.00
+0.711,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,SKIN ACTIVATOR REFILL,810102032805,125.00,credo-beauty,Skin Activator - Standard Refill - 0.7 oz / 20 ml,210000012946,125.00
+0.711,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lit Up Highlighter Stick - Petal,810102035400,48.00,credo-beauty,Lit Up Highlight Stick - Petal (dusty nude rose),210000015399,48.00
+0.710,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL POWDER/BRONZER BRUSH,860009537705,40.00,credo-beauty,Sustainable Luxury Powder Bronzer Brush - One Size,210000013162,40.00
+0.710,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL LINE/SMUDGE BRUSH,860009537804,22.00,credo-beauty,Sustainable Luxury Line and Smudge Brush - One Size,210000013172,22.00
+0.710,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL POWDER/HIGHLIGHT BRUSH,856213004263,30.00,credo-beauty,Sustainable Luxury Powder & Highlight Brush - One Size,210000014802,30.00
+0.710,fuzzy,mutual best,UpCircle,petit-vour,Face Moisturizer with Vitamin E - 2 oz,UPCRCL-FC-SRM,28.00,safe-chic,Face Moisturizer with Vitamin E - Normal 2oz,FMAP,30.00
+0.707,fuzzy,mutual best,RMS Beauty,credo-beauty,Straight Up™ Volumizing Peptide Mascara - Standard Size: Black,210000010373,29.00,thirteen-lune,Straight Up Volumizing Peptide Mascara,RMSBEA-21660-STR,29.00
+0.705,fuzzy,not mutual,Ere Perez,credo-beauty,Mini Avocado Waterproof Mascara - Black,210000017273,17.00,thirteen-lune,Avocado Waterproof Mascara Black,EREPER-20515-AVO,29.00
+0.704,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Vitamins C+E+Ferulic Serum,5505-01,120.00,onda-beauty,Vitamin C+E+Ferulic Serum,FG-10047,120.00
+0.704,fuzzy,mutual best,LolaVie,credo-beauty,Peptide Plumping Volume Shampoo - 2.0 oz / 60 ml,210000017098,15.00,thirteen-lune,Restorative Shampoo - 2.0 oz / 60 ml,LOLVIE-50511-RST,15.00
+0.703,fuzzy,mutual best,OSEA,cos-bar,Undaria Algae Body Butter in Bergamot & Vanilla Bean,675468104050,54.00,onda-beauty,Undaria Algae Body Butter,11583,56.00
+0.703,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Lip Suede - Les Nudes,810102030573,63.75,credo-beauty,Lip Suede Les Nudes - Les Nudes Refill,210000012952,50.00
+0.703,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL EYESHADOW BRUSH SMALL,860009537774,22.00,credo-beauty,Sustainable Luxury Eyeshadow Brush Small - One Size,210000013169,22.00
+0.702,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL SHEER FOUNDATION BRUSH,856213004294,34.00,credo-beauty,Sustainable Luxury Sheer Foundation Brush - One Size,210000014800,34.00
+0.701,fuzzy,not mutual,SALT & STONE,cos-bar,Santal and Vetiver Deodorant and Mini Mist Duo,850063840477,28.00,onda-beauty,Deodorant - Santal & Vetiver,DEOD13,20.00
+0.701,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Pre+Probiotic Daily Mist - 4 oz / 120 ml full size,5500-01,65.00,credo-beauty,Pre + Probiotic Daily Mist - 4 oz / 120 ml,210000005023,65.00
+0.700,fuzzy,not mutual,SALT & STONE,cos-bar,Saffron and Cedar Deodorant and Mini Mist Duo,850063840484,28.00,onda-beauty,Deodorant - Saffron & Cedar,DEOD11,20.00
+0.697,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL EYESHADOW BRUSH LARGE,860009537767,25.00,credo-beauty,Sustainable Luxury Eyeshadow Brush Large - One Size,210000013168,25.00
+0.697,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL BROW/LINE BRUSH,860009537811,24.00,credo-beauty,Sustainable Luxury Brow and Line Brush - One Size,210000013173,24.00
+0.696,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier X,810102030108,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier O (Fair peach undertone),210000008730,68.00
+0.696,fuzzy,not mutual,LA BONNE BROSSE,cos-bar,Large Brush N.02 - Cherry Red,3760355350980,198.00,onda-beauty,N.02 The Care & Detangling Hair Brush The Essential (Small) - Cherry Red,,155.00
+0.695,fuzzy,mutual best,Dr. Alkaitis Organics,safe-chic,Organic Beautifying Mask - Full Size: 1.05 oz (30 g),OBM,44.00,the-choosy-chick,Organic Beautifying Mask,,41.00
+0.695,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 3 - Crimson,6501-02,28.00,credo-beauty,Olio E Osso Tinted Balms - No 3 Crimson,210000005207,28.00
+0.695,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 4 - Berry,6501-03,28.00,credo-beauty,Olio E Osso Tinted Balms - No 4 Berry,210000005208,28.00
+0.695,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Supreme C Vitamin C Concentrate,810102033529,325.00,credo-beauty,Suprême C Vitamin C Concentrate - Full Size,210000014708,325.00
+0.692,fuzzy,mutual best,Dr. Alkaitis Organics,safe-chic,Organic Night Crème - Full Size: 1 fl oz (30 ml),ONC,78.00,the-choosy-chick,Organic Night Crème,,76.00
+0.692,fuzzy,not mutual,HOURGLASS,cos-bar,Unlocked Instant Extensions Mascara - Ultra Black,877231006527,34.00,thirteen-lune,Unlocked Instant Extensions Mascara,HOUCOS-21852-UNL,32.00
+0.686,fuzzy,not mutual,LA BONNE BROSSE,cos-bar,Large Brush N.01 - Cherry Red,3760355350997,198.00,onda-beauty,N.01 The Shine & Care Hair Brush - The Universal (Small) - Cherry Red,LBB01SCR,155.00
+0.686,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL CONCEAL/BUFF,860007882326,24.00,credo-beauty,Sustainable Luxury Conceal & Buff - One Size,210000014806,24.00
+0.683,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Eye Cream - Nomad Refill,9006-02,215.00,cos-bar,The Eye Cream Nomad,5060552900536,215.00
+0.683,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Eye Want You Mascara - Petite Clean Black,810102035394,26.00,credo-beauty,Eye Want You Mascara - Petite: Clean Black,210000015430,26.00
+0.673,fuzzy,not mutual,shaishaishai,ohlolly,shaishaishai Banana PDRN Conceal Eye Cream - Vanilla,PESH1O02,28.50,soko-glam,Banana Conceal Eye Cream,SHA223085,26.00
+0.673,fuzzy,not mutual,shaishaishai,ohlolly,shaishaishai Banana PDRN Conceal Eye Cream - Latte,PESH1O03,28.50,soko-glam,Banana Conceal Eye Cream,SHA223085,26.00
+0.673,fuzzy,not mutual,shaishaishai,ohlolly,shaishaishai Banana PDRN Conceal Eye Cream - Caramel,PESH1O04,28.50,soko-glam,Banana Conceal Eye Cream,SHA223085,26.00
+0.673,fuzzy,not mutual,shaishaishai,ohlolly,shaishaishai Banana PDRN Conceal Eye Cream - Toffee,PESH1O05,28.50,soko-glam,Banana Conceal Eye Cream,SHA223085,26.00
+0.671,fuzzy,not mutual,LA BONNE BROSSE,cos-bar,Large Brush N.04 - Creamy White,3760355351086,198.00,onda-beauty,N.04 The Massaging Detangling Hair Brush (Small) - Creamy White,,155.00
+0.671,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 1 - Clear,6500-01,28.00,credo-beauty,Olio E Osso Tinted Balms - No 1 Clear,210000005205,28.00
+0.661,fuzzy,mutual best,EVOLVh,ayla-beauty,EVOLVh SmartCurl Boost & Define Shampoo - 8.5 oz Full size,3822-01,26.00,safe-chic,SmartCurl Boost & Define Shampoo - 8.5 oz,SBS250,26.00
+0.660,fuzzy,mutual best,Symbiome,ayla-beauty,Symbiome The One Restorative Cream,10401-01,125.00,onda-beauty,The One,11106,125.00
+0.660,fuzzy,mutual best,SYMBIOME,onda-beauty,The One,11106,125.00,thirteen-lune,The One Restorative Cream,SYMB-OFCR-51172,125.00
+0.659,fuzzy,mutual best,EVOLVh,ayla-beauty,EVOLVh SmartCurl Boost & Define Conditioner - 8.5 oz Full size,3823-01,28.00,safe-chic,SmartCurl Boost & Define Conditioner - 8.5 oz,SBC250,28.00
+0.658,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lit Up Highlighter Stick - Lit,810102030177,48.00,credo-beauty,Lit Up Highlight Stick - Lit (glassy iridescent),210000008743,48.00
+0.657,fuzzy,mutual best,SYMBIOME,onda-beauty,The Answer,11104,200.00,thirteen-lune,The Answer Reparative Serum,SYMB-ANWS-51174,200.00
+0.657,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.01 - Saffron Yellow,3760355350072,198.00,onda-beauty,N.01 The Shine & Care Hair Brush - The Universal (Small) - Saffron Yellow,,155.00
+0.656,fuzzy,mutual best,Olio E Osso,credo-beauty,Olio E Osso Tinted Balms - No 2 French Melon,210000005206,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 2 French Melon,OLIOE002,28.00
+0.655,fuzzy,mutual best,VENN,ayla-beauty,VENN Regenerative 10B-EXO EGF Ampoule Face Serum,10459-01,250.00,onda-beauty,Regenerative 10B-EXO EGF Ampoules,,250.00
+0.650,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL SHEER CHEEK,856213004324,32.00,credo-beauty,Sustainable Luxury Sheer Cheek - One Size,210000014804,32.00
+0.649,fuzzy,not mutual,LA BONNE BROSSE,cos-bar,Large Brush N.02 - Creamy White,3760355351109,198.00,onda-beauty,N.02 The Care & Detangling Hair Brush The Essential (Small) - Creamy White,LBB02SCW,155.00
+0.649,fuzzy,not mutual,LolaVie,credo-beauty,Peptide Plumping Volume Conditioner - 8.5 oz / 250 ml,210000017101,32.00,thirteen-lune,Restorative Conditioner - 8.5 oz / 250 ml,LOLVIE-33331-RCO,32.00
+0.645,fuzzy,not mutual,Mediheal,ohlolly,Mediheal Madecassoside Essential Mask - 10 Pack,SMMH3S11-C1,22.00,soko-glam,Collagen Essential Mask - 10 Pack,MED137032,20.00
+0.639,fuzzy,not mutual,LA BONNE BROSSE,cos-bar,Large Brush N.01 - Creamy White,3760355351116,198.00,onda-beauty,N.01 The Shine & Care Hair Brush - The Universal (Small) - Creamy White,LBB01SCW,155.00
+0.639,fuzzy,not mutual,LA BONNE BROSSE,cos-bar,Large Brush N.03 - Creamy White,3760355351093,198.00,onda-beauty,N.03 The Gentle Scalp Care Hair Brush (Small) - Creamy White,LBB03SCW,155.00
+0.639,fuzzy,mutual best,KOBA skincare,credo-beauty,Gimme Glow Dry Brush - One Size,210000015320,25.00,thirteen-lune,Gimmie Glow Dry Brush,KOBSKI-33841-BRU,25.00
+0.637,fuzzy,not mutual,LolaVie,credo-beauty,Peptide Plumping Volume Shampoo - 8.5 oz / 250 ml,210000017099,32.00,thirteen-lune,Restorative Shampoo - 8.5 oz / 250 ml,LOLVIE-33330-RSH,32.00
+0.637,fuzzy,mutual best,Good Weather Skin,credo-beauty,Daily Lip Sun Gloss SPF 30 - Iced Coffee,210000017010,24.00,onda-beauty,Sungloss SPF 30 - Iced Coffee,GWSSGIC,24.00
+0.633,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Vitamin C Serum,5060990635311,380.00,dermsilk,Augustinus Bader The Vitamin C Serum (1 oz),,380.00
+0.631,fuzzy,mutual best,Le Prunier,ayla-beauty,Le Prunier Plum Cleanse,8005-01,60.00,onda-beauty,Plum Cleanse Biome Balanceing Cleansing Oil,PC-800,60.00
+0.631,fuzzy,not mutual,Mediheal,ohlolly,Mediheal Madecassoside Essential Mask - 4 Pack,SMMH3S21-C1,8.80,soko-glam,Collagen Essential Mask - 4 Pack,MED137490,8.00
+0.620,fuzzy,mutual best,LYS Beauty,credo-beauty,Triple Fix Loose Translucent Setting Powder - Resilience (translucent),210000014846,26.00,thirteen-lune,Triple Fix Translucent Pressed Setting Powder - Resilience | Translucent,LYSBEA-22149-RES,19.00
+0.618,fuzzy,not mutual,Mediheal,ohlolly,Mediheal Placenta Essential Mask - 10 Pack,SMMH3S12-C1,22.00,soko-glam,Collagen Essential Mask - 10 Pack,MED137032,20.00
+0.618,fuzzy,not mutual,Mediheal,ohlolly,Mediheal Vita Essential Mask - 10 Pack,SMMH3S16-C1,22.00,soko-glam,Collagen Essential Mask - 10 Pack,MED137032,20.00
+0.615,fuzzy,mutual best,JENNY PATINKIN,cos-bar,Sustainable Luxury Angled Multiblender Brush - Small,860009537736,28.00,credo-beauty,Sustainable Luxury Angled Multi Blender Brush Small - One Size,210000013165,28.00
+0.613,fuzzy,mutual best,LA BONNE BROSSE,cos-bar,Large Brush N.01 - Terracotta,3760355350362,198.00,onda-beauty,N.01 The Shine & Care Hair Brush - The Universal (Small) - Terracotta,,155.00
+0.610,fuzzy,mutual best,JENNY PATINKIN,cos-bar,Sustainable Luxury Angled Multiblender Brush - Large,860009537729,32.00,credo-beauty,Sustainable Luxury Angled Multi-Blender Brush Large - One Size,210000013164,32.00
+0.610,fuzzy,mutual best,EVOLVh,petit-vour,SmartColor Protecting Conditioner - 2 fl oz,EVOL-SMRT-CLR-CNDTNR-TRVL,12.00,the-choosy-chick,SmartStart Leave-in Conditioner - 2 Fl. oz,,11.00
+0.606,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Scalp Treatment,9010-01,93.00,dermsilk,Augustinus Bader The Scalp Treatment (1 oz),5060552903216,93.00
+0.606,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Scalp Treatment,5060552903216,93.00,dermsilk,Augustinus Bader The Scalp Treatment (1 oz),5060552903216,93.00
+0.606,fuzzy,mutual best,VENN,ayla-beauty,VENN Rejuvenative PDRN-NE Ampoule Face Serum,10452-01,250.00,onda-beauty,Rejuvenative PDRN-NE Ampoules,,250.00
+0.605,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL COMPLEXION BRUSH,860009537712,36.50,credo-beauty,Sustainable Luxury Complexion Brush - One Size,210000013163,36.00
+0.605,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL CREASE BRUSH,860009537798,26.00,credo-beauty,Sustainable Luxury Crease Brush - One Size,210000013171,26.00
+0.605,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL SCULPT BRUSH,856213004300,34.00,credo-beauty,Sustainable Luxury Sculpt Brush - One Size,210000014801,34.00
+0.605,fuzzy,not mutual,AUGUSTINUS BADER,cos-bar,The Tinted Lip Balm - RASPBERRY,5060990630729,47.00,onda-beauty,The Lip Balm,1010016,46.00
+0.604,fuzzy,mutual best,EVOLVh,safe-chic,InstaVolume Volumizing Foam,VF100,24.00,the-choosy-chick,InstaVolume Volumizing Mousse,,29.00
+0.604,fuzzy,not mutual,Mediheal,ohlolly,Mediheal Vita Essential Mask - 4 Pack,SMMH3S26-C1,8.80,soko-glam,Collagen Essential Mask - 4 Pack,MED137490,8.00
+0.603,fuzzy,mutual best,EVOLVh,ayla-beauty,EVOLVh UltraShine Ultra Hydrating Shampoo - 8.5 oz Full size,3800-01,26.00,safe-chic,UltraShine Hydrating Shampoo - 8.5 oz,USS250,26.00
+0.601,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Hair Oil,5060552903278,62.00,dermsilk,Augustinus Bader The Hair Oil (1 oz),5060552903278,62.00
+0.598,fuzzy,mutual best,haruharu wonder,ohlolly,haruharu wonder Centella 4% TXA Dark Spot Go Away Serum,SRHW2X02-D2,25.00,soko-glam,Centella 4% TXA Gel Serum,HAR111817,25.00
+0.595,fuzzy,not mutual,AUGUSTINUS BADER,cos-bar,The Tinted Lip Balm - STRAWBERRY,5060990630736,47.00,onda-beauty,The Lip Balm,1010016,46.00
+0.595,fuzzy,not mutual,AUGUSTINUS BADER,cos-bar,The Tinted Lip Balm - PLUM,5060990630743,47.00,onda-beauty,The Lip Balm,1010016,46.00
+0.594,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,Geranium Rose Body Oil,5060552909935,112.00,dermsilk,Augustinus Bader The Geranium Rose Body Oil (3.38 oz),5060552909935,115.00
+0.594,fuzzy,mutual best,Olio E Osso,credo-beauty,Olio E Osso Tinted Balms - No 3 Crimson,210000005207,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 3 Crimson,OLIOE003,28.00
+0.594,fuzzy,mutual best,Olio E Osso,credo-beauty,Olio E Osso Tinted Balms - No 4 Berry,210000005208,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 4 Berry,OLIOE004,28.00
+0.594,fuzzy,mutual best,Augustinus Bader,dermsilk,Augustinus Bader The Retinol Serum (1 oz),5060990631368,380.00,onda-beauty,The Retinol Serum,,380.00
+0.593,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Light Cream,9012-01,195.00,dermsilk,Augustinus Bader The Light Cream (1 oz),5060552905647,195.00
+0.593,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,SKIN ACTIVATOR,810102032799,150.00,credo-beauty,Skin Activator - Standard Refill - 0.7 oz / 20 ml,210000012946,125.00
+0.590,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL CONTOUR BRUSH,860009537750,32.00,credo-beauty,Sustainable Luxury Contour Brush - One Size,210000013167,32.00
+0.588,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Rich Conditioner,5060552909867,67.00,dermsilk,Augustinus Bader The Rich Conditioner (5 oz),5060552909867,67.00
+0.587,fuzzy,mutual best,Le Prunier,ayla-beauty,Le Prunier Plumbody,8002-01,82.00,onda-beauty,Plumbody™ Hydrating Antioxidant Body Creme,PB-200,82.00
+0.585,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Geranium Rose Body Cream,5060990635595,200.00,dermsilk,Augustinus Bader The Geranium Rose Body Cream (6.7 oz),5060990635595,200.00
+0.584,fuzzy,mutual best,Augustinus Bader,ayla-beauty,Augustinus Bader The Eye Cream - Complete Set,9006-01,230.00,dermsilk,Augustinus Bader The Eye Cream Complete Set (0.5 oz),5060990631733,230.00
+0.583,fuzzy,mutual best,Minori,credo-beauty,Lightweight Squalane Cream Blush - Sweet Pea (Cool tone pink),210000017901,32.00,safe-chic,Cream Blush - Sweet Pea / Full,BMS03,32.00
+0.582,fuzzy,mutual best,Isntree,ohlolly,Isntree Hyaluronic Acid Daily Sun Gel,PFIS1X04,20.00,soko-glam,Hyaluronic Acid Daily Sun Gel SPF 30,ISN500743,20.00
+0.582,fuzzy,not mutual,HOURGLASS,cos-bar,Veil Powder Brush,877231007746,68.00,thirteen-lune,Veil Translucent Setting Powder,HOUCOS-21856-POW,49.00
+0.581,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Leave-In Hair Treatment,5060552905807,93.00,dermsilk,Augustinus Bader The Leave-In Hair Treatment (3.38 oz),5060552905807,93.00
+0.581,fuzzy,mutual best,Olio E Osso,ayla-beauty,Olio E Osso Balm No. 6 - Bronze Shimmer,6501-05,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 6 Bronze,OLIOE006,28.00
+0.580,fuzzy,mutual best,HOURGLASS,cos-bar,"Ambient Lighting Palette, Volume II",850004373835,75.00,thirteen-lune,Ambient Lighting Palette - Volume lll,HOUCOS-21843-III,69.00
+0.580,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier XI.5,810102030535,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier O.5 (Very fair neutral undertone),210000010759,68.00
+0.579,fuzzy,mutual best,JENNY PATINKIN,cos-bar,SL CHEEK BRUSH,860009537743,32.00,credo-beauty,Sustainable Luxury Cheek Brush - One Size,210000013166,32.00
+0.578,fuzzy,mutual best,LYS Beauty,credo-beauty,Triple Fix Loose Translucent Setting Powder - Brilliance (banana),210000014849,26.00,thirteen-lune,Triple Fix Translucent Pressed Setting Powder - Brilliance | Banana,LYSBEA-22148-BRI,19.00
+0.578,fuzzy,mutual best,LYS Beauty,credo-beauty,Triple Fix Loose Translucent Setting Powder - Independent (tan skin tones),210000014851,26.00,thirteen-lune,Triple Fix Translucent Pressed Setting Powder - Independent | Tan,LYSBEA-22146-IND,19.00
+0.578,fuzzy,mutual best,LYS Beauty,credo-beauty,Triple Fix Loose Translucent Setting Powder - Faithful (brown skin tones),210000014852,26.00,thirteen-lune,Triple Fix Translucent Pressed Setting Powder - Faithful | Dark,LYSBEA-22145-FAI,19.00
+0.575,fuzzy,not mutual,Augustinus Bader,ayla-beauty,Augustinus Bader The Ultimate Soothing Cream,9013-01,315.00,dermsilk,Augustinus Bader The Ultimate Soothing Cream (1.7 oz),5060552903346,315.00
+0.575,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Ultimate Soothing Cream,5060552903346,315.00,dermsilk,Augustinus Bader The Ultimate Soothing Cream (1.7 oz),5060552903346,315.00
+0.573,fuzzy,not mutual,haruharu wonder,ohlolly,haruharu wonder Black Rice Hyaluronic Essence,SRHW1X02-D2,23.99,soko-glam,Black Rice Probiotics Barrier Essence,HAR211967,28.00
+0.572,fuzzy,not mutual,RMS Beauty,credo-beauty,Straight Up™ Volumizing Peptide Mascara - Travel Size: Black,210000010360,15.00,thirteen-lune,Straight Up Volumizing Peptide Mascara,RMSBEA-21660-STR,29.00
+0.571,fuzzy,mutual best,Olio E Osso,credo-beauty,Olio E Osso Tinted Balms - No 1 Clear,210000005205,28.00,onda-beauty,Tinted Lip + Cheek Balm: No 1 Clear,OLIOE001,28.00
+0.571,fuzzy,not mutual,de Mamiel,ayla-beauty,de Mamiel Anchor Bath Soak,8922-01,96.00,onda-beauty,Altitude Bath Soak,,85.00
+0.571,fuzzy,not mutual,de Mamiel,ayla-beauty,de Mamiel Soothe Bath Soak,8924-01,96.00,onda-beauty,Altitude Bath Soak,,85.00
+0.570,fuzzy,not mutual,HOURGLASS,cos-bar,"Ambient Lighting Palette, Volume II",850004373835,75.00,thirteen-lune,Ambient Lighting Palette - Volume ll,HOUCOS-21844-VII,69.00
+0.570,fuzzy,not mutual,HOURGLASS,cos-bar,"Ambient Lighting Palette, Volume II",850004373835,75.00,thirteen-lune,Ambient Lighting Palette - Volume l,HOUCOS-21845-ALP,69.00
+0.569,fuzzy,mutual best,SAINT JANE BEAUTY,onda-beauty,Luxury Sun Ritual Pore Smoothing SPF 30 Sunscreen,59018,38.00,thirteen-lune,Luxury Sun Ritual - Pore Smoothing SPF 30 Sunscreen - 50 mL,SAIJAN-31003-SPF,38.00
+0.568,fuzzy,mutual best,Good Weather Skin,credo-beauty,Daily Lip Sun Gloss SPF 30 - Ripe Berry,210000017009,24.00,onda-beauty,Sungloss SPF 30 - Ripe Berry,GWSSGRB,24.00
+0.567,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Elixir,5060990632037,550.00,dermsilk,Augustinus Bader The Elixir (1 oz),5060990632037,550.00
+0.563,fuzzy,mutual best,Augustinus Bader,dermsilk,Augustinus Bader The Cream Cleansing Gel (3.38 oz),5060552902097,76.00,onda-beauty,The Cream Cleansing Gel,CG-1002-100,74.00
+0.562,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Face Cream Mask,5060552906378,230.00,dermsilk,Augustinus Bader The Face Cream Mask (1.7 oz),5060552906378,230.00
+0.561,fuzzy,not mutual,Ere Perez,credo-beauty,Avocado Waterproof Mascara - Brown,210000015156,29.00,thirteen-lune,Avocado Waterproof Mascara Black,EREPER-20515-AVO,29.00
+0.555,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Mineral Sunscreen SPF 50,5060990632983,145.00,dermsilk,Augustinus Bader The Mineral Sunscreen Broad Spectrum SPF 50 (1 oz),5060990632983,145.00
+0.555,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Hand Treatment,5060552905685,60.00,dermsilk,Augustinus Bader The Hand Treatment (1.7 oz),5060552905685,60.00
+0.554,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Overnight Restorative Cream,5060990635793,365.00,dermsilk,Augustinus Bader The Overnight Restorative Cream (1.6 oz),,365.00
+0.554,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Foaming Cleanser,5060552906576,76.00,dermsilk,Augustinus Bader The Foaming Cleanser (3.38 oz),5060990633515,76.00
+0.553,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Eye Cream Nomad,5060552900536,215.00,dermsilk,Augustinus Bader The Eye Cream Nomad (0.5 oz),5060990630262,215.00
+0.551,fuzzy,mutual best,de Mamiel,ayla-beauty,de Mamiel Skin Recovery Concentrate,8902-01,174.00,onda-beauty,Skin Recovery Blend,10522,168.00
+0.547,fuzzy,mutual best,OSEA,cos-bar,Anti-aging Body Balm - 5 oz,675468000284,54.00,onda-beauty,Anti-Aging Body Balm,10032,54.00
+0.547,fuzzy,mutual best,LYS Beauty,credo-beauty,Triple Fix Loose Translucent Setting Powder - Ambition (medium/tan skin tones),210000014847,26.00,thirteen-lune,Triple Fix Translucent Pressed Setting Powder - Ambition | Medium Tan,LYSBEA-22147-AMB,19.00
+0.546,fuzzy,mutual best,LYS Beauty,credo-beauty,Triple Fix Loose Translucent Setting Powder - Loyalty (deep/dark skin tones),210000014848,26.00,thirteen-lune,Triple Fix Translucent Pressed Setting Powder - Loyalty | Dark/Deep,LYSBEA-22144-LOY,19.00
+0.545,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Face Mist,5060990630675,98.00,dermsilk,Augustinus Bader The Face Mist (3.38 oz),5060990630675,98.00
+0.545,fuzzy,mutual best,Melixir,ohlolly,Melixir Airfit Invisible Sunscreen,PFME1X01,24.00,soko-glam,Airfit Invisible™ Sunscreen SPF 50,MEL501367,24.00
+0.544,fuzzy,not mutual,HOURGLASS,cos-bar,"Ambient Lighting Palette, Volume I",877231002611,75.00,thirteen-lune,Ambient Lighting Palette - Volume lll,HOUCOS-21843-III,69.00
+0.544,fuzzy,mutual best,Macrene Actives,ayla-beauty,Macrene Actives High Performance Cleanser,2110-01,95.00,thirteen-lune,High Performance Cleanser 2oz,MACACT-70405-HPC,85.00
+0.544,fuzzy,mutual best,MACRENE ACTIVES,cos-bar,High Performance Cleanser,899578002574,95.00,thirteen-lune,High Performance Cleanser 2oz,MACACT-70405-HPC,85.00
+0.541,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Cleansing Balm,5060552900420,84.00,dermsilk,Augustinus Bader The Cleansing Balm (3.1 oz),5060990633423,84.00
+0.539,fuzzy,tied candidates,IOTA,onda-beauty,Supervitamin Body Wash+ - Brightening (Mandarin Rind + Cedar Atlas),PCBW020101,23.00,soko-glam,Supervitamin Body Wash+ Clarifying,IOT601830,23.00
+0.538,fuzzy,mutual best,JENNY PATINKIN,cos-bar,Luxury Sustainable Dual-Ended Makeup Brush Set,860007882388,150.00,credo-beauty,Sustainable Luxury Dual-Ended Makeup Brush Set - 6 piece set,210000012708,150.00
+0.538,fuzzy,mutual best,JENNY PATINKIN,cos-bar,"The Big Reveal Touch Up Tools, for Lashes and Brows",856213004119,22.00,credo-beauty,"The Big Reveal Touch Up Tools, for Lashes and Brows - 2 piece set",210000016435,22.00
+0.538,fuzzy,not mutual,RMS Beauty,credo-beauty,ReDimension Hydra Powder Blush - Bermuda Rose (a tropical soft fuchsia),210000014535,38.00,thirteen-lune,ReDimension Hydra Powder Blush - French Rose,RMSBEA-50006-FRR,38.00
+0.538,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Rich Eye Cream,5060990630996,215.00,dermsilk,Augustinus Bader The Rich Eye Cream (0.5 oz),5060990630996,215.00
+0.537,fuzzy,mutual best,GOOP BEAUTY,onda-beauty,3x Retinol Eye Lift Serum,,88.00,thirteen-lune,3x Retinol Eye Lift Serum - 15ml,GOOBEA-50782-ELS,88.00
+0.535,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Body Cleanser,5060552908617,58.00,dermsilk,Augustinus Bader The Body Cleanser (6.7 oz),5060552908617,58.00
+0.534,fuzzy,mutual best,Kosas,ayla-beauty,Kosas DreamBeam SPF 40 - Original,5626-01,40.00,credo-beauty,DreamBeam Comfy Smooth Sunscreen Broad Spectrum SPF 40 - Original Radiant Finish,210000013224,40.00
+0.533,fuzzy,mutual best,JENNY PATINKIN,cos-bar,Brow Bijoux Mini Tweezer Set,860015312143,36.00,credo-beauty,Brow Bijoux Mini Tweezer Set - 3 piece set,210000018279,36.00
+0.533,fuzzy,mutual best,Marie Veronique,credo-beauty,Pure + E.O. Free Oil Cleanser - 4 oz / 120 ml,210000006572,65.00,onda-beauty,Pure + E.O Free Oil Cleanser,FG-10030,65.00
+0.532,fuzzy,not mutual,SALT & STONE,cos-bar,Santal and Vetiver Body Cream,850063840446,42.00,onda-beauty,Candle - Santal & Vetiver,Cand04,49.00
+0.531,fuzzy,not mutual,Macrene Actives,ayla-beauty,Macrene Actives High Performance Eye Cream,2116-01,135.00,cos-bar,High Performance Body Cream,850046038273,145.00
+0.531,fuzzy,mutual best,goop beauty,credo-beauty,GOOPGLOW Dark Spot Exfoliating Sleep Milk - 1 oz / 30 ml,210000012420,105.00,thirteen-lune,GoopGlow Dark Spot Exfoliating Sleep Milk - 1 oz,GOOBEA-21586-DAR,98.00
+0.529,fuzzy,mutual best,OSEA,cos-bar,Undaria Algae Body Oil - 5 oz,675468000338,52.00,onda-beauty,Undaria Algae Body Oil,10922,52.00
+0.527,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Rich Shampoo,5060552909850,67.00,dermsilk,Augustinus Bader The Rich Shampoo (6.7 oz),5060552909850,67.00
+0.527,fuzzy,not mutual,SALT & STONE,cos-bar,Santal and Vetiver Body Mist,850073050811,45.00,onda-beauty,Candle - Santal & Vetiver,Cand04,49.00
+0.527,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Vitamins C+E+Ferulic Serum,5505-01,120.00,credo-beauty,Vitamins C+E+Ferulic Serum - 1 oz / 30 ml,210000005024,120.00
+0.527,fuzzy,not mutual,SALT & STONE,cos-bar,Saffron and Cedar Body Cream,850063840453,42.00,onda-beauty,Candle - Saffron & Cedar,Cand01,49.00
+0.527,fuzzy,not mutual,Augustinus Bader,ayla-beauty,Augustinus Bader The Cream - 1.7 oz,9000-01,315.00,dermsilk,Augustinus Bader The Serum (1.7 oz),5060990630576,575.00
+0.522,fuzzy,not mutual,SALT & STONE,cos-bar,Saffron and Cedar Body Mist,850073050828,45.00,onda-beauty,Candle - Saffron & Cedar,Cand01,49.00
+0.522,fuzzy,mutual best,LYS Beauty,credo-beauty,No Limits Cream Bronzer Stick - Strength (dark),210000013336,24.00,thirteen-lune,No Limits Matte Bronzer - Strength | Dark,LYSBEA-22151-STR,19.00
+0.519,fuzzy,mutual best,goop beauty,credo-beauty,3x RETINOL REGENERATIVE SERUM - 1 oz / 30 ml,210000015283,150.00,thirteen-lune,3x Retinol Regenerative Serum - 30ml,GOOBEA-50784-RRS,150.00
+0.517,fuzzy,mutual best,Marie Veronique,credo-beauty,Pre + Probiotic Daily Mist - 4 oz / 120 ml,210000005023,65.00,onda-beauty,Pre+Probiotic Daily Mist,FG-10026,65.00
+0.517,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Colorfree Zinc Broad Spectrum Sunscreen SPF 32,5534-01,65.00,credo-beauty,COLORFREE Zinc Broad Spectrum Sunscreen SPF 32 - 1.7 oz / 50 ml,210000016118,65.00
+0.516,fuzzy,mutual best,ROZ,cos-bar,Root Lift Spray - 142 ml,197644462551,42.00,credo-beauty,ROOT Lift Spray - 5 oz / 142 ml,210000015337,42.00
+0.515,fuzzy,mutual best,LYS Beauty,credo-beauty,No Limits Cream Bronzer Stick - Worthy (deep),210000013337,24.00,thirteen-lune,No Limits Matte Bronzer - Worthy | Deep,LYSBEA-22150-WOR,19.00
+0.515,fuzzy,mutual best,LYS Beauty,credo-beauty,No Limits Cream Bronzer Stick - Harmony (medium),210000013334,24.00,thirteen-lune,No Limits Matte Bronzer - Harmony | Medium,LYSBEA-22153-HAR,19.00
+0.515,fuzzy,mutual best,LYS Beauty,credo-beauty,No Limits Cream Bronzer Stick - Courage (tan),210000013335,24.00,thirteen-lune,No Limits Matte Bronzer - Courage | Tan,LYSBEA-22152-COU,19.00
+0.514,fuzzy,mutual best,ROZ,cos-bar,Santa Lucia Styling Oil - 2 oz,197644026470,45.00,credo-beauty,Santa Lucia Styling Oil - 2 oz / 60 ml,210000016487,45.00
+0.514,fuzzy,mutual best,ROZ,cos-bar,Air Thickening Spray - 148 mL,197644467815,39.00,credo-beauty,AIR Thickening Spray - 5 oz / 148 ml,210000014677,39.00
+0.514,fuzzy,not mutual,RMS Beauty,credo-beauty,Skin2Skin Everything Brush - One Size,210000014307,39.00,thirteen-lune,Skin2Skin Blush Brush,RMSBEA-50073-BLU,39.00
+0.513,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier 0.5,810102030764,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier X.5 (Tan to deep warm undertone),210000010761,68.00
+0.513,fuzzy,mutual best,OSEA,cos-bar,Anti-aging Body Balm - 5 oz,675468000284,54.00,credo-beauty,Anti-Aging Body Balm - 5 oz / 150 ml,210000008364,54.00
+0.513,fuzzy,mutual best,Purito,ohlolly,Purito Sun Day Adventure Sunscreen,PFPS1X02,21.50,soko-glam,Sun Day Adventure Sunscreen Broad Spectrum SPF 50,PUR213850,21.50
+0.512,fuzzy,mutual best,CV Skinlabs,credo-beauty,"Calming Moisture for Face, Neck & Scalp - 2 oz / 60 ml",210000004549,52.00,safe-chic,"Calming Moisture for Face, Neck and Scalp - 60ml",CVS002,52.00
+0.512,fuzzy,mutual best,EVOLVh,ayla-beauty,EVOLVh SmartStart Detangling Leave-In Conditioner - 8.5 oz / 250 ml,3802-01,28.00,safe-chic,SmartStart Detangling Leave-In Conditioner - 8.5 oz,SSL250,28.00
+0.511,fuzzy,not mutual,LolaVie,credo-beauty,Peptide Plumping Volume Conditioner - 8.5 oz / 250 ml,210000017101,32.00,thirteen-lune,Peptide Plumping Volume Conditioner - 8.5oz,LOLA-PPVCO-51091,32.00
+0.509,fuzzy,not mutual,OSEA,cos-bar,Hyaluronic Body Serum,675468102971,48.00,onda-beauty,Hyaluronic Sea Serum,10033,88.00
+0.509,fuzzy,not mutual,LolaVie,credo-beauty,Peptide Plumping Volume Shampoo - 8.5 oz / 250 ml,210000017099,32.00,thirteen-lune,Peptide Plumping Volume Shampoo - 8.5oz,LOLA-PPVSH-51090,32.00
+0.509,fuzzy,mutual best,goop beauty,credo-beauty,GOOPGENES All-in-One Super Nutrient Face Oil - 1.0 oz / 30 ml,210000009944,105.00,thirteen-lune,GoopGenes All-in-One Super Nutrient Face Oil,GOOBEA-21587-ALL,98.00
+0.508,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Cream Cleansing Gel - 100 ML,5060552902097,76.00,onda-beauty,The Cream Cleansing Gel,CG-1002-100,74.00
+0.507,fuzzy,mutual best,The Outset,credo-beauty,Smoothing Vitamin C Eye + Expression Lines Cream - 0.5 oz / 15 ml,210000015633,42.00,onda-beauty,Smoothing Vitamin C Eye + Expression Lines Cream,TOT103,42.00
+0.505,fuzzy,not mutual,RMS Beauty,credo-beauty,Legendary Lip Oil - Milla (a deep sugary plum),210000015218,26.00,thirteen-lune,Legendary Lip Oil - Chameleon,RMSBEA-70010-LLO,26.00
+0.505,fuzzy,mutual best,OSEA,credo-beauty,Anti-Aging Body Balm - 5 oz / 150 ml,210000008364,54.00,onda-beauty,Anti-Aging Body Balm,10032,54.00
+0.505,fuzzy,mutual best,ROZ,cos-bar,Air Thickening Spray - 60 ml,850058671345,21.00,credo-beauty,AIR Thickening Spray - 2 oz / 60 ml,210000016222,21.00
+0.505,fuzzy,mutual best,OSEA,cos-bar,Undaria Algae Body Butter - 6.7 oz,675468101455,54.00,credo-beauty,Undaria Algae Body Butter - 6.7 oz / 195 ml,210000011246,54.00
+0.504,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Lip Balm,5060552900543,47.00,dermsilk,Augustinus Bader The Lip Balm (0.14 oz),5060552900543,47.00
+0.504,fuzzy,mutual best,Augustinus Bader,dermsilk,Augustinus Bader The Lip Balm (0.14 oz),5060552900543,47.00,onda-beauty,The Lip Balm,1010016,46.00
+0.504,fuzzy,mutual best,Marie Veronique,ayla-beauty,Marie Veronique Multi-Retinol Night Emulsion,5525-01,135.00,credo-beauty,Multi Retinol Night Emulsion - 1 oz / 30 ml,210000012744,135.00
+0.504,fuzzy,mutual best,Marie Veronique,credo-beauty,Multi Retinol Night Emulsion - 1 oz / 30 ml,210000012744,135.00,onda-beauty,Multi-Retinol Night Emulsion,FG-10045,135.00
+0.504,fuzzy,mutual best,EVOLVh,petit-vour,SmartColor Protecting Conditioner - 8.5 oz,EVOL-SMRT-CLR-CNDTNR-8.5,36.00,the-choosy-chick,Smartcolor Protecting Conditioner,,36.00
+0.504,fuzzy,mutual best,ROZ,cos-bar,Milk Hair Serum - 3.4 oz,196852371075,52.00,credo-beauty,MILK Hair Serum - 3.4 oz / 100 ml,210000014675,52.00
+0.504,fuzzy,mutual best,LYS Beauty,credo-beauty,No Limits Cream Bronzer Stick - Motivate (light),210000013333,24.00,thirteen-lune,No Limits Matte Bronzer - Motivate | Light,LYSBEA-22154-MOT,19.00
+0.503,fuzzy,mutual best,The Outset,credo-beauty,Ultralight Moisture-Boosting Oil - 1 oz / 30 ml,210000015637,44.00,onda-beauty,Ultralight Moisture-Boosting Oil,T120,44.00
+0.503,fuzzy,mutual best,goop beauty,credo-beauty,G.Tox Himalayan Salt Scalp Scrub Shampoo - 6.7 oz / 200 ml,210000007070,55.00,onda-beauty,G.Tox Himalayan Salt Scalp Scrub Shampoo,10362,55.00
+0.503,fuzzy,mutual best,AUGUSTINUS BADER,cos-bar,The Body Cream,5060552902141,200.00,dermsilk,Augustinus Bader The Body Cream (6.7 oz),5060552902141,200.00
+0.502,fuzzy,mutual best,Minori,credo-beauty,Lightweight Squalane Cream Blush - Orchid (Moody Mauve),210000017899,32.00,safe-chic,Cream Blush - Orchid / Full,BMS01,32.00
+0.502,fuzzy,mutual best,Minori,credo-beauty,Lightweight Squalane Cream Blush - Rosewood (Neutral Pink),210000017900,32.00,safe-chic,Cream Blush - Rosewood / Full,BMS04-K,32.00
+0.502,fuzzy,mutual best,OSEA,cos-bar,Undaria Algae Body Butter - 1.7 oz,675468101615,26.00,credo-beauty,Undaria Algae Body Butter - 1.7 oz / 50 ml,210000011247,26.00
+0.501,fuzzy,mutual best,CV Skinlabs,credo-beauty,Body Repair Lotion - 6 oz / 175 ml,210000004545,39.00,safe-chic,Body Repair Lotion - 175ml,CVS007,39.00
+0.501,fuzzy,not mutual,WESTMAN ATELIER,cos-bar,Vital Skin Foundation Stick - Atelier 0,810102030245,68.00,credo-beauty,Vital Skin Foundation Stick - Atelier X (Tan warm undertone),210000008740,68.00
+0.500,fuzzy,mutual best,goop beauty,credo-beauty,GOOPGLOW Cloudberry Exfoliating Jelly Cleanser - 4 oz / 120 ml,210000011412,35.00,onda-beauty,GOOPGLOW Cloudberry Exfoliating Jelly Cleanser,GLW08-4oz,35.00
+0.500,fuzzy,mutual best,WESTMAN ATELIER,cos-bar,Lip Shade Lip Liner - Je Reve,810102035523,34.00,credo-beauty,Lip Shape Lip Pencil - Je Rêve (blushy nude),210000016036,34.00

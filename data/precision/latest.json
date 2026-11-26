@@ -1,9 +1,9 @@
 {
-  "measured_at": "2026-11-25T18:12:42Z",
-  "run_id": "20261125T181242Z",
-  "gtin_pairs": 0,
-  "offers_with_gtin": 0,
-  "offers": 0,
+  "measured_at": "2026-11-26T17:55:03Z",
+  "run_id": "20261126T175503Z",
+  "gtin_pairs": 595,
+  "offers_with_gtin": 2149,
+  "offers": 17400,
   "tiers": {
     "mpn": {
       "tier": "mpn",
@@ -66,60 +66,60 @@
     },
     "fuzzy": {
       "tier": "fuzzy",
-      "threshold_used": 0.9062,
+      "threshold_used": null,
       "evaluated": 0,
       "true_matches": 0,
       "false_matches": 0,
       "precision": null,
-      "next_threshold": null,
+      "next_threshold": 0.8535,
       "curve": [
         {
           "threshold": 0.5,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 561,
+          "true": 528,
+          "precision": 0.9412
         },
         {
           "threshold": 0.6,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 517,
+          "true": 498,
+          "precision": 0.9632
         },
         {
           "threshold": 0.7,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 492,
+          "true": 477,
+          "precision": 0.9695
         },
         {
           "threshold": 0.8,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 423,
+          "true": 414,
+          "precision": 0.9787
         },
         {
           "threshold": 0.85,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 396,
+          "true": 389,
+          "precision": 0.9823
         },
         {
           "threshold": 0.9,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 379,
+          "true": 373,
+          "precision": 0.9842
         },
         {
           "threshold": 0.95,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 362,
+          "true": 357,
+          "precision": 0.9862
         },
         {
           "threshold": 1.0,
-          "evaluated": 0,
-          "true": 0,
-          "precision": null
+          "evaluated": 362,
+          "true": 357,
+          "precision": 0.9862
         }
       ]
     }
@@ -127,9 +127,9 @@
   "combined_evaluated": 0,
   "combined_true": 0,
   "combined_precision": null,
-  "combined_recall": null,
+  "combined_recall": 0.0,
   "next_thresholds": {
     "mpn": null,
-    "fuzzy": null
+    "fuzzy": 0.8535
   }
 }
