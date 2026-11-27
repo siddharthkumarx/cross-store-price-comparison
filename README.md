@@ -170,7 +170,7 @@ Public prices and stock only, read from public pages within robots.txt rules. No
 
 ## License
 
-Code: [MIT](LICENSE). Data: prices and stock are facts; the compiled dataset is shared under CC BY 4.0 with attribution to this repository.
+Code: [PolyForm Noncommercial 1.0.0](LICENSE). Data: prices and stock are facts; the compiled dataset is shared under [CC BY-NC 4.0](LICENSE-DATA.md) with attribution to SteadyData. Free to read, learn from and use for non-commercial purposes; for commercial use or a managed feed for your own competitors, contact hello@steadydata.co. Earlier terms: [license history](LICENSE-HISTORY.md).
 
 ---
 

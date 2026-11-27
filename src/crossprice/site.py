@@ -417,6 +417,7 @@ TEMPLATE = r"""<!doctype html>
   <div class="wrap">
     <p>Built and maintained by {{ public.owner }}, founder of {{ public.company }} · <a href="{{ public.company_site }}">steadydata.co</a> · <a href="{{ public.site }}">siddharthkumar.com</a></p>
     <p>Public prices and stock only, no personal data. Prices are shown as found; differences are numbers, not judgments. Store and product names belong to their owners. A retailer can opt out at <a href="mailto:{{ public.email }}">{{ public.email }}</a>; removal within 24 hours.</p>
+    <p>Code: <a href="https://github.com/{{ public.repo }}/blob/{{ public.branch }}/LICENSE">PolyForm Noncommercial 1.0.0</a>. Data: <a href="https://github.com/{{ public.repo }}/blob/{{ public.branch }}/LICENSE-DATA.md">CC BY-NC 4.0</a>, with attribution to {{ public.company }}. For commercial use, contact <a href="mailto:{{ public.email }}">{{ public.email }}</a>.</p>
   </div>
 </footer>
 <script id="data" type="application/json">{{ data_json | safe }}</script>
