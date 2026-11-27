@@ -291,3 +291,22 @@ dataset card state the overlap shortfall.
   explicit-slot path of the gate: EARLY wait, at most one pipeline run per slot,
   `dispatch.by` "" = the on-time trigger. The run records the resolved slot, not
   `auto`. `check` and empty keep their meaning.
+
+## D-020 - License terms live in the templates, and a test guards them (2026-11-27, owner decision)
+
+- **Terms:** from 27 Nov 2026 the code is under the PolyForm Noncommercial License
+  1.0.0 (`LICENSE`) and the data under CC BY-NC 4.0 with attribution to SteadyData
+  (`LICENSE-DATA.md`). Earlier copies keep their earlier terms, recorded only in
+  `LICENSE-HISTORY.md`.
+- **Why:** commit b76a667 changed the rendered `README.md` and `data/README.md`, but
+  both are rewritten by every daily run from `templates/README.md.j2` and
+  `templates/DATASET_CARD.md.j2`, which still had the earlier terms. The run of
+  2026-11-27 (c9cf337) rendered them back.
+- **What follows:** license wording is changed in the templates and then rendered
+  with `python -m crossprice.readme`, never in the rendered files alone. The
+  dataset card's front matter says `cc-by-nc-4.0`, and the dashboard footer
+  (`src/crossprice/site.py`) states both licenses. `CITATION.cff` and
+  `pyproject.toml` say `PolyForm-Noncommercial-1.0.0`. A test
+  (`tests/test_repo_hygiene.py`) fails if the earlier terms appear in any tracked
+  text file other than `LICENSE-HISTORY.md`, and the README, dataset card and
+  dashboard tests check that the current terms are rendered.
