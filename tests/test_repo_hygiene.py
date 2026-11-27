@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -15,6 +16,7 @@ JUDGMENT_WORDS = ("map violation", "overpriced", "too expensive", "rip-off", "pr
 # this file does not match itself.
 OLD_LICENSES = (
     re.compile(r"\bMI[T]\b"),
+    re.compile(r"licen[cs]e\s*[:=]\s*[\"']?mi[t]\b|\bmi[t] licen[cs]e\b", re.IGNORECASE),
     re.compile(r"\bCC[ _-]BY[ _-]4\.0\b", re.IGNORECASE),
     re.compile(r"creativecommons\.org/licenses/by/4\.0", re.IGNORECASE),
     re.compile(r"Attribution 4\.0 International", re.IGNORECASE),
@@ -88,6 +90,8 @@ def test_old_license_pattern_catches_the_old_wording() -> None:
         "Code: [" + "MI" + "T](LICENSE)",
         "shared under CC BY " + "4.0 with attribution",
         "license: cc-by-" + "4.0",
+        "license: m" + "it",
+        'license = "M' + 'IT"',
         "https://creativecommons.org/licenses/by/" + "4.0/legalcode",
     )
     new = (
@@ -95,7 +99,8 @@ def test_old_license_pattern_catches_the_old_wording() -> None:
         "shared under [CC BY-NC 4.0](LICENSE-DATA.md)",
         "license: cc-by-nc-4.0",
         "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
-        "No new request after the time LIMIT; SUBMIT; Mitigation",
+        "No new request after the time LIMIT; SUBMIT; Mitigation; license: permitted",
+        "Attribution-NonCommercial 4.0 International",
     )
     assert all(any(p.search(s) for p in OLD_LICENSES) for s in old)
     assert not any(p.search(s) for p in OLD_LICENSES for s in new)
@@ -110,7 +115,8 @@ def test_no_tool_specific_maintainer_file() -> None:
 def test_commit_hook_is_executable() -> None:
     hook = ROOT / ".githooks" / "commit-msg"
     assert hook.exists()
-    # The mode git records, not the checkout's: Windows file systems have no exec bit.
+    # The mode git records, which every clone gets; Windows file systems have no exec bit,
+    # so the checkout's own mode is checked only where it exists.
     staged = subprocess.run(
         ["git", "ls-files", "-s", ".githooks/commit-msg"],
         cwd=ROOT,
@@ -118,4 +124,7 @@ def test_commit_hook_is_executable() -> None:
         capture_output=True,
         text=True,
     ).stdout
-    assert staged.startswith("100755 "), "commit-msg hook must be executable"
+    assert staged, "commit-msg hook must be tracked"
+    assert staged.startswith("100755 "), "commit-msg hook must be executable in git"
+    if os.name != "nt":
+        assert hook.stat().st_mode & 0o111, "commit-msg hook must be executable"
