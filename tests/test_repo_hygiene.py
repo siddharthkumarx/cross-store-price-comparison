@@ -18,6 +18,11 @@ def _tracked() -> list[Path]:
     return [ROOT / p for p in out.split("\0") if p]
 
 
+def _rel(path: Path) -> str:
+    """Repository-relative path with forward slashes, on every platform."""
+    return path.relative_to(ROOT).as_posix()
+
+
 def test_every_tracked_file_is_under_50_mb() -> None:
     big = [p for p in _tracked() if p.exists() and p.stat().st_size >= MAX_BYTES]
     assert big == [], f"files at or over 50 MB: {big}"
@@ -36,7 +41,7 @@ def test_committed_data_holds_no_descriptions_or_images() -> None:
 
 def test_published_markdown_has_no_html_comments_or_placeholders() -> None:
     for path in _tracked():
-        if path.suffix != ".md" or not path.exists() or "checks/results" in str(path):
+        if path.suffix != ".md" or not path.exists() or _rel(path).startswith("checks/results/"):
             continue
         text = path.read_text(encoding="utf-8")
         assert "<!--" not in text, path
@@ -47,7 +52,7 @@ def test_no_judgment_words_in_published_text() -> None:
     for path in _tracked():
         if not path.exists() or path.suffix not in (".md", ".html", ".j2", ".svg"):
             continue
-        if path.name == "test_repo_hygiene.py" or "docs/decisions.md" in str(path):
+        if path.name == "test_repo_hygiene.py" or _rel(path) == "docs/decisions.md":
             continue
         text = path.read_text(encoding="utf-8", errors="replace").lower()
         assert not [w for w in JUDGMENT_WORDS if w in text], path
@@ -62,4 +67,12 @@ def test_no_tool_specific_maintainer_file() -> None:
 def test_commit_hook_is_executable() -> None:
     hook = ROOT / ".githooks" / "commit-msg"
     assert hook.exists()
-    assert hook.stat().st_mode & 0o111, "commit-msg hook must be executable"
+    # The mode git records, not the checkout's: Windows file systems have no exec bit.
+    staged = subprocess.run(
+        ["git", "ls-files", "-s", ".githooks/commit-msg"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    assert staged.startswith("100755 "), "commit-msg hook must be executable"
