@@ -3,7 +3,7 @@ name = "cross-store-price-comparison"
 version = "0.1.0"
 description = "Daily cross-store price comparison: the same products at several US online retailers, matched by GTIN, compared every day."
 requires-python = ">=3.12,<3.13"
-license = "MIT"
+license = "PolyForm-Noncommercial-1.0.0"
 dependencies = [
     "duckdb>=2.0.0,<3",
     "httpx>=0.28.1,<0.29",

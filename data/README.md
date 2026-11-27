@@ -52,4 +52,4 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 
 ## Use and opt-out
 
-Code MIT, data CC BY 4.0 with attribution. Store and product names belong to their owners. Opt-out: [hello@steadydata.co](mailto:hello@steadydata.co), removal within 24 hours.
+Code PolyForm Noncommercial 1.0.0, data CC BY-NC 4.0 with attribution to SteadyData (see LICENSE-DATA.md). Store and product names belong to their owners. Opt-out: [hello@steadydata.co](mailto:hello@steadydata.co), removal within 24 hours.
