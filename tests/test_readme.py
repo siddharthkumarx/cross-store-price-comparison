@@ -70,6 +70,15 @@ def test_readme_client_part_comes_first(rendered: dict[str, str]) -> None:
     assert "hello@steadydata.co" in text
 
 
+def test_license_terms_are_the_current_ones(rendered: dict[str, str]) -> None:
+    readme, card = rendered["README.md.j2"], rendered["DATASET_CARD.md.j2"]
+    assert "Code: [PolyForm Noncommercial 1.0.0](LICENSE)" in readme
+    assert "[CC BY-NC 4.0](LICENSE-DATA.md)" in readme
+    assert "[license history](LICENSE-HISTORY.md)" in readme
+    assert card.startswith("---\nlicense: cc-by-nc-4.0\n")
+    assert "Code PolyForm Noncommercial 1.0.0, data CC BY-NC 4.0" in card
+
+
 def test_numbers_come_from_the_run(rendered: dict[str, str]) -> None:
     text = rendered["README.md.j2"]
     assert "Encore ESP Grinder" in text  # a real row of the run

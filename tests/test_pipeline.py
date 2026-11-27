@@ -209,6 +209,8 @@ def test_dashboard_builds_from_run_files(workdir: Path, monkeypatch: pytest.Monk
         assert (workdir / "site" / "assets" / name).exists()
     for word in ("overpriced", "MAP violation", "too expensive"):
         assert word.lower() not in html.lower()
+    assert '/LICENSE">PolyForm Noncommercial 1.0.0</a>' in html
+    assert '/LICENSE-DATA.md">CC BY-NC 4.0</a>' in html
 
 
 def test_manual_check_sample_is_drawn_from_the_run(

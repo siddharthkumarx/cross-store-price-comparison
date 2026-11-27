@@ -9,6 +9,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 50 * 1024 * 1024
 JUDGMENT_WORDS = ("map violation", "overpriced", "too expensive", "rip-off", "price gouging")
+# The terms before 27 Nov 2026 (LICENSE-HISTORY.md, decisions D-020): the code license
+# named by its three-letter id, and the data license without "-NC", in any spelling
+# (spaces, dashes, lower case, the legal-code URL or the full name). Written so that
+# this file does not match itself.
+OLD_LICENSES = (
+    re.compile(r"\bMI[T]\b"),
+    re.compile(r"\bCC[ _-]BY[ _-]4\.0\b", re.IGNORECASE),
+    re.compile(r"creativecommons\.org/licenses/by/4\.0", re.IGNORECASE),
+    re.compile(r"Attribution 4\.0 International", re.IGNORECASE),
+)
+LICENSE_HISTORY = "LICENSE-HISTORY.md"
 
 
 def _tracked() -> list[Path]:
@@ -56,6 +67,38 @@ def test_no_judgment_words_in_published_text() -> None:
             continue
         text = path.read_text(encoding="utf-8", errors="replace").lower()
         assert not [w for w in JUDGMENT_WORDS if w in text], path
+
+
+def test_old_license_terms_appear_only_in_the_license_history() -> None:
+    found = []
+    for path in _tracked():
+        if not path.is_file() or _rel(path) == LICENSE_HISTORY:
+            continue
+        raw = path.read_bytes()
+        if b"\0" in raw[:8192]:  # binary: images, fonts, video, gzip
+            continue
+        for n, line in enumerate(raw.decode("utf-8", errors="replace").splitlines(), 1):
+            if any(p.search(line) for p in OLD_LICENSES):
+                found.append(f"{_rel(path)}:{n}: {line.strip()[:120]}")
+    assert found == [], "old license terms outside LICENSE-HISTORY.md:\n" + "\n".join(found)
+
+
+def test_old_license_pattern_catches_the_old_wording() -> None:
+    old = (
+        "Code: [" + "MI" + "T](LICENSE)",
+        "shared under CC BY " + "4.0 with attribution",
+        "license: cc-by-" + "4.0",
+        "https://creativecommons.org/licenses/by/" + "4.0/legalcode",
+    )
+    new = (
+        "Code: [PolyForm Noncommercial 1.0.0](LICENSE)",
+        "shared under [CC BY-NC 4.0](LICENSE-DATA.md)",
+        "license: cc-by-nc-4.0",
+        "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+        "No new request after the time LIMIT; SUBMIT; Mitigation",
+    )
+    assert all(any(p.search(s) for p in OLD_LICENSES) for s in old)
+    assert not any(p.search(s) for p in OLD_LICENSES for s in new)
 
 
 def test_no_tool_specific_maintainer_file() -> None:
