@@ -145,7 +145,7 @@ jobs:
         run: |
           if ! gh release view "$TAG" > /dev/null 2>&1; then
             gh release create "$TAG" --title "Comparison data $MONTH" \
-              --notes "comparison.csv: today's cross-store comparison (one row per matched product). offer_history_$MONTH.parquet: every price and stock version of every offer this month. Both are replaced by every good run; the data dictionary is in the README."
+              --notes "comparison.csv: today's cross-store comparison (one row per matched product). offer_history_$MONTH.parquet: every price and stock version of every offer this month. Both are replaced by every good run; the data dictionary is in the README. Data license: CC BY-NC 4.0 (LICENSE-DATA.md in the repository)."
           fi
           cp data/latest/comparison.csv work/comparison.csv
           gh release upload "$TAG" "work/offer_history_$MONTH.parquet" work/comparison.csv --clobber
