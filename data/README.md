@@ -15,18 +15,18 @@ size_categories:
 
 # Dataset card: cross-store price comparison, skincare and beauty
 
-The same skincare and beauty products at 11 US online stores, matched by barcode (GTIN), part number or name, with each store's price and stock, compared once a day. Rendered from the run of 2026-11-26.
+The same skincare and beauty products at 11 US online stores, matched by barcode (GTIN), part number or name, with each store's price and stock, compared once a day. Rendered from the run of 2026-11-27.
 
 ## Files
 
 | file | rows | what |
 |---|---:|---|
-| `latest/comparison.csv` | 551 | one row per product sold by 2+ stores |
-| `latest/offers.csv` | 17,400 | every product option at every store (open SCD2 versions) |
-| `latest/possible_matches.csv` | 819 | candidate pairs below the confidence bar, never compared |
-| `changes/YYYY/YYYY-MM-DD.csv` | 0 on 2026-11-26 | price moves, new lowest store, stock changes |
+| `latest/comparison.csv` | 637 | one row per product sold by 2+ stores |
+| `latest/offers.csv` | 17,399 | every product option at every store (open SCD2 versions) |
+| `latest/possible_matches.csv` | 346 | candidate pairs below the confidence bar, never compared |
+| `changes/YYYY/YYYY-MM-DD.csv` | 16 on 2026-11-27 | price moves, new lowest store, stock changes |
 | `precision/` | one per run | blind matching precision against GTINs |
-| `runs.jsonl` | 8 | one line per run, with every data check |
+| `runs.jsonl` | 9 | one line per run, with every data check |
 | release `data-YYYY-MM` | | `offer_history_YYYY-MM.parquet`: every version of every offer in the month |
 
 ## Collection
@@ -35,14 +35,14 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 - Prices in integer US cents (USD proven on a product page every run), availability as in stock / out of stock.
 - Products in excluded categories (alcohol, tobacco/vape, weapons, adult, CBD, medicines) are never stored.
 
-## Quality, run of 2026-11-26
+## Quality, run of 2026-11-27
 
 - Stores read completely: 11/11
 - Rows rejected by validation: 0
 - Prices proven to be US dollars: USD
-- Prices confirmed by a second source: 200/200
-- Product options whose barcode has been read so far: 12.4%
-- Matching precision (blind, against barcodes): not measured yet
+- Prices confirmed by a second source: 312/312
+- Product options whose barcode has been read so far: 13.2%
+- Matching precision (blind, against barcodes): 98.2%
 
 
 ## Limits
@@ -52,4 +52,4 @@ The same skincare and beauty products at 11 US online stores, matched by barcode
 
 ## Use and opt-out
 
-Code PolyForm Noncommercial 1.0.0, data CC BY-NC 4.0 with attribution to SteadyData (see LICENSE-DATA.md). Store and product names belong to their owners. Opt-out: [hello@steadydata.co](mailto:hello@steadydata.co), removal within 24 hours.
+Code MIT, data CC BY 4.0 with attribution. Store and product names belong to their owners. Opt-out: [hello@steadydata.co](mailto:hello@steadydata.co), removal within 24 hours.

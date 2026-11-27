@@ -1,9 +1,9 @@
 {
-  "measured_at": "2026-11-26T17:55:03Z",
-  "run_id": "20261126T175503Z",
-  "gtin_pairs": 595,
-  "offers_with_gtin": 2149,
-  "offers": 17400,
+  "measured_at": "2026-11-27T17:40:09Z",
+  "run_id": "20261127T174009Z",
+  "gtin_pairs": 618,
+  "offers_with_gtin": 2293,
+  "offers": 17399,
   "tiers": {
     "mpn": {
       "tier": "mpn",
@@ -66,24 +66,24 @@
     },
     "fuzzy": {
       "tier": "fuzzy",
-      "threshold_used": null,
-      "evaluated": 0,
-      "true_matches": 0,
-      "false_matches": 0,
-      "precision": null,
+      "threshold_used": 0.8535,
+      "evaluated": 396,
+      "true_matches": 389,
+      "false_matches": 7,
+      "precision": 0.9823,
       "next_threshold": 0.8535,
       "curve": [
         {
           "threshold": 0.5,
-          "evaluated": 561,
-          "true": 528,
-          "precision": 0.9412
+          "evaluated": 581,
+          "true": 547,
+          "precision": 0.9415
         },
         {
           "threshold": 0.6,
-          "evaluated": 517,
-          "true": 498,
-          "precision": 0.9632
+          "evaluated": 518,
+          "true": 499,
+          "precision": 0.9633
         },
         {
           "threshold": 0.7,
@@ -124,10 +124,10 @@
       ]
     }
   },
-  "combined_evaluated": 0,
-  "combined_true": 0,
-  "combined_precision": null,
-  "combined_recall": 0.0,
+  "combined_evaluated": 396,
+  "combined_true": 389,
+  "combined_precision": 0.9823,
+  "combined_recall": 0.6294,
   "next_thresholds": {
     "mpn": null,
     "fuzzy": 0.8535

@@ -5,15 +5,15 @@
     "name": "Cross-store price comparison",
     "repo": "https://github.com/siddharthkumarx/cross-store-price-comparison",
     "dashboard": "https://siddharthkumar.com/cross-store-price-comparison/",
-    "generated_at": "2026-11-26T18:07:41Z"
+    "generated_at": "2026-11-27T17:56:20Z"
   },
   "last_run": {
-    "run_id": "20261126T175503Z",
-    "started_at": "2026-11-26T17:55:03Z",
-    "finished_at": "2026-11-26T18:07:41Z",
+    "run_id": "20261127T174009Z",
+    "started_at": "2026-11-27T17:40:09Z",
+    "finished_at": "2026-11-27T17:56:20Z",
     "status": "ok",
-    "duration_s": 758.1,
-    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/45871668451"
+    "duration_s": 970.9,
+    "run_url": "https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/46043579455"
   },
   "checks": [
     {
@@ -38,29 +38,29 @@
       "id": "second_source",
       "label": "Prices confirmed by a second source",
       "ok": true,
-      "value": "200/200"
+      "value": "312/312"
     },
     {
       "id": "gtin_coverage",
       "label": "Product options whose barcode has been read so far",
       "ok": true,
-      "value": 0.124
+      "value": 0.132
     },
     {
       "id": "matching_precision",
       "label": "Matching precision (blind, against barcodes)",
       "ok": true,
-      "value": null
+      "value": 0.9823
     }
   ],
   "totals": {
-    "runs": 8,
-    "runs_good": 7,
-    "days_running": 6,
+    "runs": 9,
+    "runs_good": 8,
+    "days_running": 7,
     "missed_runs": 0,
-    "runs_delivered": 6,
+    "runs_delivered": 7,
     "retailers": 11,
-    "offers": 17400
+    "offers": 17399
   },
   "daily": [
     {
@@ -118,22 +118,29 @@
       "offers": 17400,
       "products_matched": 551,
       "changes": 0
+    },
+    {
+      "date": "2026-11-27",
+      "status": "ok",
+      "offers": 17399,
+      "products_matched": 637,
+      "changes": 16
     }
   ],
   "comparison": {
-    "products_matched": 551,
-    "retailers": 10,
+    "products_matched": 637,
+    "retailers": 11,
     "matching_precision": {
-      "gtin_pairs": 595,
-      "measured_at": "2026-11-26T17:55:03Z",
-      "pairs": 0,
-      "recall": 0.0,
+      "gtin_pairs": 618,
+      "measured_at": "2026-11-27T17:40:09Z",
+      "pairs": 396,
+      "recall": 0.6294,
       "thresholds": {
-        "fuzzy": null,
+        "fuzzy": 0.8535,
         "mpn": null
       },
-      "value": null
+      "value": 0.9823
     },
-    "avg_spread_pct": 1.7
+    "avg_spread_pct": 1.6
   }
 }
