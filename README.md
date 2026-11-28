@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-still.svg">
-    <img src="assets/hero.svg" width="820" alt="Same product, different price: DR ALKAITIS Organic Purifying Facial Cleanser costs $68.00 at The Choosy Chick and up to $72.00 elsewhere (5.9% gap) on 2026-11-27. 637 products compared across 11 US skincare and beauty stores in that run.">
+    <img src="assets/hero.svg" width="820" alt="Same product, different price: haruharu wonder Black Rice Bakuchiol Eye Cream costs $17.00 at Soko Glam and up to $22.00 elsewhere (29.4% gap) on 2026-11-28. 117 products compared across 11 US skincare and beauty stores in that run.">
   </picture>
 </p>
 
@@ -19,57 +19,55 @@
 
 ## What does a daily cross-store price comparison give you?
 
-One row per product sold by at least two of the stores, with each store's price, stock and link, the lowest price and the gap between the highest and the lowest. Real rows from the run of 2026-11-27 ([run log](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/46043579455)):
+One row per product sold by at least two of the stores, with each store's price, stock and link, the lowest price and the gap between the highest and the lowest. Real rows from the run of 2026-11-28 ([run log](https://github.com/siddharthkumarx/cross-store-price-comparison/actions/runs/46165060132)):
 
 | product | lowest price | at | gap | stores in stock | matched by |
 |---|---:|---|---:|---:|---|
-| DR ALKAITIS · Organic Purifying Facial Cleanser | $68.00 | The Choosy Chick | 5.9% | 3 | barcode |
-| OSEA · Undaria Algae Body Butter - 6.7 oz | $54.00 | Cos Bar, Credo Beauty | 3.7% | 3 | barcode |
-| DR ALKAITIS · Organic Herbal Toner | $65.00 | The Choosy Chick | 3.1% | 3 | barcode |
-| AUGUSTINUS BADER · The Cream Cleansing Gel - 100 ML | $74.00 | Onda Beauty | 2.7% | 3 | barcode |
-| goop beauty · Colorblur Glow Balm - Velveteen (soft mauve) | $23.00 | Credo Beauty | 47.8% | 3 | name |
+| haruharu wonder · Black Rice Bakuchiol Eye Cream | $17.00 | Soko Glam | 29.4% | 2 | barcode |
+| haruharu wonder · Black Rice Hyaluronic Toner for Sensitive Skin | $17.00 | Soko Glam | 29.4% | 2 | barcode |
+| Etude · SoonJung pH 5.5 Relief Toner | $26.99 | Ohlolly | 18.9% | 2 | barcode |
+| haruharu wonder · Black Rice Night Knight Retinol Serum | $22.00 | Ohlolly | 18.2% | 2 | barcode |
+| haruharu wonder · Black Rice Moisture Cleansing Oil | $22.00 | Soko Glam | 13.6% | 2 | barcode |
 
 
 ### What changed today
 
-7 new lowest-price stores, 9 sold out at a store on the compared products since the previous run.
+2 new lowest-price stores, 2 sold out at a store on the compared products since the previous run.
 
 
 | product | change | store | before | now |
 |---|---|---|---:|---:|
-| Cosrx · Full Fit Propolis Synergy Toner | out of stock | Ohlolly | yes | no |
-| Kosas · Weightless Lip Color - Turned On | out of stock | Ayla Beauty | yes | no |
-| Kosas · Weightless Lip Color - Turned On | new lowest | Credo Beauty | Ayla Beauty | Credo Beauty |
-| Kosas · Wet Stick Moisturizing Lip Shine - Skinny Dip | out of stock | Credo Beauty | yes | no |
-| Kosas · Wet Stick Moisturizing Lip Shine - Skinny Dip | new lowest | Ayla Beauty, Credo Beauty | Credo Beauty | Ayla Beauty, Credo Beauty |
-| LYS Beauty · Lash Confidence Mascara - Black | out of stock | Thirteen Lune | yes | no |
+| Mediheal · Madecassoside Blemish Pad | out of stock | Soko Glam | yes | no |
+| Mediheal · Madecassoside Blemish Pad | new lowest | Ohlolly | Soko Glam | Ohlolly |
+| Olivarrier · Dual Moist Toning Lotion | out of stock | Soko Glam | yes | no |
+| Olivarrier · Dual Moist Toning Lotion | new lowest | Ohlolly | Ohlolly, Soko Glam | Ohlolly |
 
-Every change of the day: [`data/changes/2026/2026-11-27.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/changes/2026/2026-11-27.csv).
+Every change of the day: [`data/changes/2026/2026-11-28.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/changes/2026/2026-11-28.csv).
 
 
 ## Why can you trust these numbers?
 
-Every run checks its own data and publishes the result. Latest run, 2026-11-27:
+Every run checks its own data and publishes the result. Latest run, 2026-11-28:
 
 | check | result |
 |---|---|
-| Stores read completely | 11/11 |
+| Stores read completely | 7/11 |
 | Rows rejected by validation | 0 |
 | Prices proven to be US dollars | USD |
-| Prices confirmed by a second source | 312/312 |
-| Product options whose barcode has been read so far | 13.2% |
-| Matching precision (blind, against barcodes) | 98.2% (389 of 396 pairs, [measured 2026-11-27](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/precision/2026/2026-11-27.json)) |
+| Prices confirmed by a second source | 172/172 |
+| Product options whose barcode has been read so far | 19.6% |
+| Matching precision (blind, against barcodes) | 90.4% (47 of 52 pairs, [measured 2026-11-28](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/precision/2026/2026-11-28.json)) |
 | Matching method | [published, with a manual check](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/precision.md) |
 | Stores that block automated readers | left out, never worked around ([sources](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/docs/sources.md)) |
 
-A product is compared only when the match is certain enough: same barcode, or a part-number or name match whose precision was measured against barcodes on the previous run and reached 98% on at least 100 pairs. In the run of 2026-11-27, 389 of 396 name and part-number pairs checked against barcodes were the same item. Everything below the bar is listed in [`possible_matches.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/possible_matches.csv) and never compared.
+A product is compared only when the match is certain enough: same barcode, or a part-number or name match whose precision was measured against barcodes on the previous run and reached 98% on at least 100 pairs. In the run of 2026-11-28, 47 of 52 name and part-number pairs checked against barcodes were the same item. Everything below the bar is listed in [`possible_matches.csv`](https://github.com/siddharthkumarx/cross-store-price-comparison/blob/main/data/latest/possible_matches.csv) and never compared.
 
 ## How does cross-store price matching work?
 
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/pipeline-still.svg">
-    <img src="assets/pipeline.svg" width="760" alt="How it works: 1 Read 11 store catalogs (17,399 product options). 2 Match by barcode, part number and name. 3 Compare lowest price, gap and stock for 637 products. 4 Publish CSV, dashboard and feed, 16 changes on 2026-11-27.">
+    <img src="assets/pipeline.svg" width="760" alt="How it works: 1 Read 7 store catalogs (5,094 product options). 2 Match by barcode, part number and name. 3 Compare lowest price, gap and stock for 117 products. 4 Publish CSV, dashboard and feed, 4 changes on 2026-11-28.">
   </picture>
 </p>
 
@@ -129,22 +127,22 @@ The same pipeline works for your products and the stores you choose. You get a *
 
 ## Data dictionary
 
-`data/latest/comparison.csv`, one row per compared product. Example values from the run of 2026-11-27.
+`data/latest/comparison.csv`, one row per compared product. Example values from the run of 2026-11-28.
 
 | field | type | meaning | example |
 |---|---|---|---|
-| `product_key` | text | The product's GTIN-14 barcode, or `M` + a stable id for a non-barcode match | M34f02d74653ad |
-| `brand` | text | Brand, as the first store lists it | 28 Litsea |
-| `product` | text | Product name and option (shade, size), as the first store lists it | Top Note Minted Juniper Body Oil |
-| `gtin` | 14 digits or empty | GTIN-14 barcode when the match is barcode-verified | (empty) |
+| `product_key` | text | The product's GTIN-14 barcode, or `M` + a stable id for a non-barcode match | 00720260144114 |
+| `brand` | text | Brand, as the first store lists it | Activist |
+| `product` | text | Product name and option (shade, size), as the first store lists it | Activist Manuka Honey 300+ MGO |
+| `gtin` | 14 digits or empty | GTIN-14 barcode when the match is barcode-verified | 00720260144114 |
 | `match_tier` | text | `gtin` (barcode), `mpn` (brand + part number) or `fuzzy` (brand + name) | fuzzy |
-| `match_confidence` | 0 to 1 | Score of the weakest link in the match; 1.00 for barcode | 1.00 |
+| `match_confidence` | 0 to 1 | Score of the weakest link in the match; 1.00 for barcode | 0.90 |
 | `retailers` | integer | Stores that sell the product | 2 |
-| `retailers_in_stock` | integer | Stores that have it in stock | 2 |
-| `lowest_price_usd` | USD | Lowest in-stock price (lowest of all when none is in stock) | 24.00 |
-| `lowest_price_retailers` | text | Store id(s) at the lowest price | safe-chic the-choosy-chick |
-| `highest_price_usd` | USD | Highest in-stock price | 24.00 |
-| `spread_pct` | percent or empty | (highest - lowest) / lowest x 100, in-stock prices, 2+ stores | 0.0 |
+| `retailers_in_stock` | integer | Stores that have it in stock | 1 |
+| `lowest_price_usd` | USD | Lowest in-stock price (lowest of all when none is in stock) | 50.00 |
+| `lowest_price_retailers` | text | Store id(s) at the lowest price | ayla-beauty |
+| `highest_price_usd` | USD | Highest in-stock price | 50.00 |
+| `spread_pct` | percent or empty | (highest - lowest) / lowest x 100, in-stock prices, 2+ stores | (empty) |
 | `<store>_price_usd` | USD or empty | That store's price (one column per store) | see the per-store columns |
 | `<store>_in_stock` | yes / no / empty | That store's stock | see the per-store columns |
 | `<store>_url` | URL or empty | The product page at that store | see the per-store columns |

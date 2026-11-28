@@ -1,0 +1,5 @@
+observed_at,product_key,brand,product,event,retailer_id,old_value,new_value,change_pct
+2026-11-28T16:25:37Z,08809615058688,Mediheal,Mediheal Madecassoside Blemish Pad,out_of_stock,soko-glam,yes,no,
+2026-11-28T16:25:37Z,08809615058688,Mediheal,Mediheal Madecassoside Blemish Pad,new_lowest,ohlolly,soko-glam,ohlolly,
+2026-11-28T16:25:37Z,08806158552185,Olivarrier,Olivarrier Dual Moist Toning Lotion,out_of_stock,soko-glam,yes,no,
+2026-11-28T16:25:37Z,08806158552185,Olivarrier,Olivarrier Dual Moist Toning Lotion,new_lowest,ohlolly,ohlolly soko-glam,ohlolly,
